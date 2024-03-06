@@ -85,6 +85,7 @@ function alterar_dados(botao, parametro) {
   botao.classList.add('active');
 };
 
+
 // Mostrar resposta ao clicar no botao
 function alterar_resposta(btn, id) {
   resposta = document.getElementById(id);

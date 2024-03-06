@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/animacao.min.css">
+    <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sidenav.min.css">
     <!-- https://github.com/AparicioFermiano -->
@@ -129,14 +129,16 @@
         </div>
     </div>
 
-    <div id="capa" class="background-image container-fluid padding-container">
+    <div id="capa"
+        class="background-image container-fluid padding-container vh-100 d-flex align-items-center min-vh-100">
         <div class="row pt-mobile-5">
-            <div class="col-12 col-lg-5 pe-5">
+            <div class="col-12 col-lg-5 px-5">
                 <img src="./image/mosquito.png" alt="Mosquito" class="img-fluid">
                 <span class="titulo mx-auto d-block">ABORDAGEM CLÍNICA DE <br><span class="tituloZ">ZIKA</span><br>
                     NA ATENÇÃO PRIMÁRIA À SAÚDE</span><br>
-                    <span class="col-2 fs-4">ASPECTOS EPIDEMIOLÓGICOS, PROMOÇÃO À SAÚDE E PREVENÇÃO DE INFECÇÃO POR VÍRUS ZIKA</span>
-                    
+                <span class="col-2 fs-4">ASPECTOS EPIDEMIOLÓGICOS, PROMOÇÃO À SAÚDE E PREVENÇÃO DE INFECÇÃO POR VÍRUS
+                    ZIKA</span>
+
                 <div class="d-flex flex-column justify-content-between pt-5 pe-5">
                     <button class="button btn-col-4 btn-outline mb-3"
                         onclick="window.open('creditos.html', '_self')">Créditos</button>
@@ -171,14 +173,14 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-7 d-flex flex-column-reverse justify-content-between pl-5">
+            <div class="col-12 col-lg-7 d-flex flex-column-reverse justify-content-between pe-5">
                 <img src="./image/logos_capa.svg" alt="Logos" class="img-fluid">
             </div>
-
         </div>
     </div>
 
-    <div id="sobre" class="container-fluid pt-5 bg-primary-dark-hover">
+
+    <div id="sobre" class="container-fluid px- pt-5 bg-primary-dark-hover">
         <p class="text-light titulo text-center">SOBRE O MATERIAL</p>
         <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -294,7 +296,7 @@
         </div>
     </div>
 
-    <div id="definicao" class="container-fluid pt-2 bg-light">
+    <div id="definicao" class="container-fluid pt-2">
         <p class="titulo font-oswald font-dark medium text-center pt-5">UNIDADE 01</p>
         <p class="text-center pb-5">ASPECTOS EPIDEMIOLÓGICOS, PROMOÇÃO À SAÚDE E PREVENÇÃO DE INFECÇÃO POR VÍRUS ZIKA
         </p>
@@ -341,12 +343,12 @@
                 epidemias das Ilhas do Pacífico.
             </p>
         </div>
-        <div class="row padding-x-container">
-            <div class="py-4">
+        <div class="row padding-x-container py-5">
+            <div class="padding-x-container">
                 <span class="bold titulo">A propagação do vírus Zika</span><br>
                 <small class="desativado">Clique nos botões numerados para interagir:</small>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 padding-x-container">
 
                 <div class="padding-desk-5 padding-y-mobile-5">
 
@@ -406,7 +408,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-8">
-                <img src="./image/mapa_interativo.png" alt="Mapa">
+                <img src="./image/mapa_interativo.png" class="img-fluid alt=" Mapa">
             </div>
         </div>
         <div class="container text-justify p-3">
@@ -444,847 +446,281 @@
                 Nordeste, seguido das regiões Sudeste, Centro-Oeste, Norte e Sul.
             </p>
         </div>
-
-
     </div>
 
-    <div id="tempo" class="container-fluid pt-2 bg-secondary overflow-hidden">
-        <p class="titulo font-oswald text-light medium text-center">LINHA DO TEMPO</p>
-        <div class="line bg-light"></div>
-        <div class="row justify-content-center padding-x-container">
-            <div class="col-12 col-lg-6 order-last order-lg-first d-flex align-items-center">
-                <img src="./image/tempo_1958.png" alt="1958" class="d-block mx-auto w-50 w-sm-75 padding-desk-5 pt-md-0"
-                    data-animation="left-to-right">
-            </div>
-            <div class="col-12 col-lg-6 padding-x-container text-light order-first order-lg-last pt-md-5">
-                <p class="titulo font-oswald medium text-center">1958</p>
-                <p class="py-2 text-justify">O vírus foi identificado em 1958, em duas colônias de macacos provenientes
-                    da África, e mantidas para pesquisa na Dinamarca.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center padding-x-container">
-            <div class="col-12 col-lg-6 padding-x-container text-light pt-md-5">
-                <p class="titulo font-oswald medium text-center">1970 A 1979</p>
-                <p class="py-2 text-justify">O primeiro caso humano foi identificado em 1970 na República Democrática do
-                    Congo, na África. Desde então, apresenta-se como doença endêmica no continente africano, com poucos
-                    casos e baixa letalidade.</p>
-                <p class="py-2 text-justify">Entre 1970 e 1979, foram descritos casos humanos nas regiões Central e
-                    Ocidental da África.</p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center">
-                <img src="./image/tempo_1970.png" alt="1970 A 1979"
-                    class="d-block mx-auto w-50 w-sm-75 padding-desk-5 pt-md-0" data-animation="right-to-left">
-            </div>
-        </div>
-
-        <div class="row justify-content-center padding-x-container">
-            <div class="col-12 col-lg-6 order-last order-lg-first d-flex align-items-center">
-                <img src="./image/tempo_2003.png" alt="2003" class="d-block mx-auto w-50 w-sm-75 padding-desk-5 pt-md-0"
-                    data-animation="left-to-right">
-            </div>
-            <div class="col-12 col-lg-6 padding-x-container text-light order-first order-lg-last pt-md-5">
-                <p class="titulo font-oswald medium text-center">2003</p>
-                <p class="py-2 text-justify">Em 2003, ocorreu um surto nos EUA. Foram registrados cerca de 47 casos
-                    humanos devido à importação de roedores infectados capturados nas florestas de Gana.</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center padding-x-container">
-            <div class="col-12 col-lg-6 padding-container text-light pt-md-5">
-                <p class="titulo font-oswald medium text-center">2018 A 2021</p>
-                <p class="py-2 text-justify">Entre 2018 e 2021 casos relacionados a viagens para países endêmicos foram
-                    relatados em Israel (2018), Reino Unido (2018, 2019 e 2021), Singapura (2019) e EUA (2021).
-                    Praticamente todos os casos fora da África nesses anos foram relacionados
-                    a viagens para países africanos endêmicos ou à importação de animais silvestres capturados nas
-                    florestas africanas para venda como pets exóticos em outros países.</p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center">
-                <img src="./image/tempo_2018.png" alt="2018 A 2021"
-                    class="d-block mx-auto w-50 w-sm-75 mx-2 padding-desk-5 pt-md-0" data-animation="right-to-left">
-            </div>
-        </div>
-
-        <div class="row justify-content-center padding-x-container">
-            <div class="col-12 col-lg-6 order-last order-lg-first d-flex align-items-center">
-                <img src="./image/tempo_maio_2022.png" alt="MAIO / 2022"
-                    class="d-block mx-auto w-50 w-sm-75 mx-2 padding-desk-5 pt-md-0" data-animation="left-to-right">
-            </div>
-            <div class="col-12 col-lg-6 padding-x-container text-light order-first order-lg-last pt-md-5">
-                <p class="titulo font-oswald medium text-center">MAIO / 2022</p>
-                <p class="py-2 text-justify">Entre 13 e 15 de maio de 2022, o Reino Unido notificou 7 casos confirmados
-                    de monkeypox, sem vínculo com viagens a áreas endêmicas ou com contato com animais silvestres
-                    importados. Desde então, outros casos começaram a ser notificados
-                    em diversos países. A forma de entrada do vírus nesses países e os meios de disseminação ainda não
-                    estão identificados.</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center padding-x-container">
-            <div class="col-12 col-lg-6 padding-container text-light pt-md-5">
-                <p class="titulo font-oswald medium text-center">JUNHO / 2022</p>
-                <p class="py-2 text-justify">Em 23 de junho de 2022, o Comitê de Emergência do Regulamento Sanitário
-                    Internacional (2005) (RSI) da OMS se reuniu em Genebra para tratar sobre o surto multipaís de
-                    varíola. O Comitê recomendou ao Diretor-Geral da OMS que não declarasse
-                    esse surto como uma Emergência de Saúde Pública de Interesse Internacional (ESPII), embora
-                    reconhecesse, por unanimidade, a natureza emergencial do evento e que controlar a propagação do
-                    surto iria requerer intensos esforços de resposta.
-                    Reforçou ainda que <i>“o evento deve ser monitorado de perto e
-                        revisado
-                        após algumas semanas, assim que mais informações sobre as incógnitas atuais estiverem
-                        disponíveis,
-                        para determinar se ocorreram mudanças significativas que podem justificar uma reconsideração de
-                        seu
-                        conselho”</i>. Apesar da opinião do Comitê, o diretor da OMS decidiu, em 23 de julho de 2022,
-                    declarar a monkeypox uma Emergência de Saúde Pública de Preocupação Internacional (ESPII).</p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center">
-                <img src="./image/tempo_junho_2022.png" alt="JUNHO / 2022"
-                    class="d-block w-50 w-sm-75 mx-auto padding-desk-5 pt-md-0" data-animation="right-to-left">
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-6 order-last order-lg-first px-0 padding-x-mobile-3">
-                <img src="./image/tempo_novembro_2022.png" alt="NOVEMBRO / 2022"
-                    class="d-block w-50 w-md-75 mx-auto padding-container pt-md-0" data-animation="left-to-right">
-                <div class="box-saiba-mais padding-container">
-                    <div class="row">
-                        <div class="col-12 col-md-4 d-flex align-items-center">
-                            <img src="./image/interrogacao.png" alt="Saiba mais"
-                                class="d-block mx-auto py-3 w-50 w-lg-75" data-animation="shake">
-                        </div>
-                        <div class="col-12 col-md-8 padding-x-container primary-dark-hover">
-                            <div class="d-flex">
-                                <span data-animation="circle-saiba-mais"></span>
-                                <small class="medium">Entendendo melhor</small>
-                            </div>
-                            <p class="titulo bold">Curiosidade</p>
-                            <p class="text-justify">
-                                Entre 1981 e maio de 2022, a maior parte dos casos no mundo ocorreu na África Central,
-                                com mortalidade de 10% em indivíduos não vacinados contra varíola.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 padding-x-container text-light order-first order-lg-last pt-md-5">
-                <div class="padding-x-container">
-                    <p class="titulo font-oswald medium text-center">NOVEMBRO / 2022</p>
-                    <p class="py-2 text-justify">Em 28 de novembro de 2022, a OMS recomendou a mudança do nome da doença
-                        para <b>mpox</b>, devido aos fortes estigmas e preconceitos observados durante a sua expansão no
-                        mundo - <a
-                            href="https://www.who.int/news/item/28-11-2022-who-recommends-new-name-for-monkeypox-disease"
-                            target="_blank">(https://www.who.int/news/item/28-11-2022-who-recommends-new-name-for-monkeypox-disease)</a>.
-                        A substituição do nome acontecerá de forma gradual. No primeiro ano, ambos os nomes foram
-                        aceitos para que houvesse tempo
-                        para finalizar o processo de atualização da Classificação Internacional de Doenças (CID). O
-                        termo monkeypox deixará de ser utilizado, mas continuará sendo pesquisável no CID para fins
-                        históricos. Até 30 de novembro de 2022, o Comitê
-                        Internacional de Taxonomia de Vírus ainda não havia decidido pela mudança na nomenclatura do
-                        Monkeypox vírus. Nesse curso adotamos o novo nome (mpox), mantendo o nome monkeypox e suas
-                        traduções para o português apenas no título
-                        para facilitar a busca e nos documentos incluídos na íntegra que foram produzidos antes da
-                        mudança de nomenclatura.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center pt-5 overflow-hidden">
-            <div class="col-12 col-md-10 col-lg-6 order-first order-lg-last px-0 padding-x-mobile-3">
-                <img src="./image/tempo_junho_2022.png" alt="MAIO / 2023"
-                    class="d-block w-50 w-md-75 mx-auto padding-container pt-md-0" data-animation="right-to-left">
-            </div>
-            <div class="col-12 col-lg-6 padding-x-container text-light order-last order-lg-first pt-md-5">
-                <div class="padding-x-container">
-                    <p class="titulo font-oswald medium text-center">MAIO / 2023</p>
-                    <p class="py-2 text-justify">Em 11 de maio de 2023, a Mpox deixou de ser considerada, pela OMS, uma
-                        Emergência em Saúde Pública de Importância Internacional. Contudo, é importante ressaltar que a
-                        doença ainda representa um desafio significativo a saúde pública que necessita
-                        de respostas enérgicas e robustas.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container w-lg-75">
-            <div class="row justify-content-center padding-container">
-                <div class="col-12 col-md-4 d-flex align-items-center">
-                    <img src="./image/interrogacao.png" alt="Saiba mais" class="d-block mx-auto py-3 w-50 w-lg-75"
-                        data-animation="shake">
-                </div>
-                <div class="col-12 col-md-8 padding-x-container text-light">
-                    <div class="d-flex">
-                        <span data-animation="circle-saiba-mais"></span>
-                        <small class="medium">Conhecimento</small>
-                    </div>
-                    <p class="titulo bold">Saiba mais!</p>
-                    <p class="py-2">
-                        Leia o editorial do periódico <i>The Lancet</i> sobre a declaração da OMS em (inglês):
-                    </p>
-                    <p>
-                        <a href="./documentos/monkeypox_global_wake_up_call.pdf" download
-                            class="py-2 text-light text-break">Clique aqui para baixar o conteúdo.</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid py-4 px-0">
-            <button class="card w-100 w-lg-50 mx-auto bg-secondary not-flipped" onclick="virar_card(this)">
-                <div class="row card-front padding-x-container pt-3 bg-secondary-dark w-100 h-100 text-light">
-                    <div class="col-12 col-md-4 d-flex align-items-center">
-                        <img src="./image/megafone.png" alt="Megafone" class="d-block mx-auto py-3 w-50 w-lg-75"
-                            data-animation="shake">
-                    </div>
-                    <div class="col-12 col-md-8 my-auto padding-x-container">
-                        <div class="d-flex">
-                            <span class="bg-primary-dark-hover" data-animation="circle-saiba-mais"></span>
-                            <small class="medium">Video aprendizado</small>
-                        </div>
-                        <p class="titulo bold text-start">Assista e aprenda</p>
-                        <p class="py-2 text-justify">
-                            Veja mais detalhes sobre os casos de mpox relatados antes de maio de 2022, apresentados por
-                            Estevão Portela Nunes, médico infectologista e vice-diretor de serviços clínicos do
-                            Instituto Nacional de Infectologia Evandro Chagas (INI), da Fiocruz, assistindo ao vídeo.
-                        </p>
-                    </div>
-                    <div class="d-flex">
-                        <small class="text-center text-light my-auto">Clique nesta caixa para interagir!</small>
-                        <i class="bi bi-arrow-repeat titulo d-block my-auto ml-auto"></i>
-                    </div>
-                </div>
-                <div class="card-back d-flex flex-column padding-x-container py-3 bg-secondary-dark w-100 text-light">
-                    <div class="my-auto ajuste-video">
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="./video/video1-un1_720p.mp4" type="video/mp4">
-                                Seu navegador não suporta a tag de vídeo.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <small class="text-center text-light my-auto">Clique nesta caixa para interagir!</small>
-                        <i class="bi bi-arrow-repeat titulo d-block my-auto ml-auto"></i>
-                    </div>
-                </div>
-            </button>
-        </div>
-    </div>
-    <div class="onda onda-primary bg-secondary"></div>
-    <div id="dados" class="container-fluid px-0 pt-2 bg-primary">
-        <p class="titulo font-oswald text-dark medium text-center padding-x-container">DADOS EPIDEMIOLÓGICOS NO MUNDO E
-            NO BRASIL</p>
-        <div class="line bg-dark"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-6 padding-container">
-                    <small>Clique nos botões para interagir.</small>
-                    <div class="d-flex justify-content-between mt-2">
-                        <button class="btn-dados button btn-col-3 btn-light active"
-                            onclick="alterar_dados(this, 1)">Parte 01</button>
-                        <button class="btn-dados button btn-col-3 btn-light" onclick="alterar_dados(this, 2)">Parte
-                            02</button>
-                        <button class="btn-dados button btn-col-3 btn-light" onclick="alterar_dados(this, 3)">Parte
-                            03</button>
-                    </div>
-                    <button type="button" class="box-img p-4 text-light text-justify" data-bs-toggle="modal"
-                        data-bs-target="#modal_img_mapa_global">
-                        <p id="titulo_imagem" class="py-3 text-center my-auto">Figura 1 - Mapa global com a localização
-                            dos casos de mpox
-                            até 28 de dezembro de 2022. Círculos alaranjados indicam os países sem histórico de mpox, e
-                            os azuis os países com histórico de mpox</p>
-                        <img id="url_imagem" src="./image/mapa_01.png" alt="Mapa global" class="img-fluid pb-2">
-                        <small id="fonte_imagem">Fonte: Centers for Disease Control and Prevention (2022a).</small>
-                        <div class="d-flex pt-2">
-                            <i class="bi bi-arrows-fullscreen"></i>
-                            <small class="my-auto mx-2 medium">Clique para expandir a imagem</small>
-                        </div>
-                    </button>
-                    <div class="modal fade" id="modal_img_mapa_global" tabindex="-1" aria-labelledby="Modal Imagem"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Fechar"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img id="url_imagem_modal" src="./image/mapa_01.png" alt="Imagem" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <p id="dados_texto" class="padding-container text-justify">O surto de mpox atingiu muitos países em
-                        todo o mundo. A partir de maio de 2022, houve uma transmissão mais abrangente do vírus, uma
-                        distribuição geográfica mais ampla de casos e casos com sinais e sintomas diferentes dos casos
-                        endêmicos
-                        da África.<br><br> O primeiro caso identificado de mpox foi em 6 de maio de 2022 no Reino Unido
-                        e até 28 de dezembro de 2022 foram confirmados no mundo - em 110 países - 83.539 casos de mpox,
-                        com 74 mortes distribuídas em 18 países
-                        (CDC, 2022a). Acompanhe na Figura 1 os locais com maior número de casos de mpox no mundo, que
-                        estão marcados no mapa com círculos de maior diâmetro.</p>
-                    <img id="imagem_saiba_mais" src="./image/virus_saiba_mais.svg" alt="Virus"
-                        class="d-none w-75 d-block mx-auto padding-x-container">
-                    <div id="dados_saiba_mais" class="box-saiba-mais bg-primary-hover padding-container">
-                        <div class="row">
-                            <div class="col-12 col-md-4 d-flex align-items-center">
-                                <img src="./image/interrogacao.png" alt="Saiba mais"
-                                    class="d-block mx-auto py-3 w-50 w-lg-75" data-animation="shake">
-                            </div>
-                            <div class="col-12 col-md-8 padding-x-container primary-dark-hover text-justify">
-                                <div class="d-flex">
-                                    <span data-animation="circle-saiba-mais"></span>
-                                    <small class="medium">Conhecimento</small>
-                                </div>
-                                <p class="titulo bold">Saiba mais!</p>
-                                <p id="saiba_mais_texto">
-                                    Você pode acessar os dados e mapas atualizados na página do Centro de Controle e
-                                    Prevenção de Doenças (do inglês: Centers for <i>Disease Control and Prevention</i> -
-                                    CDC) no sítio eletrônico
-                                </p>
-                                <a id="saiba_mais_link" class="text-light"
-                                    href="https://www.cdc.gov/poxvirus/monkeypox/response/2022/world-map.html"
-                                    target="_blank">https://www.cdc.gov/poxvirus/monkeypox/response/2022/world-map.html</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid pt-5">
-            <div class="row mx-0">
-                <div class="col-12 col-lg-6">
-                    <div class="row h-100 flex-column justify-content-around">
-                        <div class="padding-x-container">
-                            <p class="py-2 text-justify">
-                                Até o dia 30 de dezembro de 2022 - Semana Epidemiológica 52 (SE 52), 10.511 casos de
-                                mpox foram confirmados no Brasil, a grande maioria dos casos se concentram nos estados
-                                da região sudeste, como pode ser observado na Figura 4.
-                            </p>
-                        </div>
-                        <div class="box-saiba-mais bg-primary-hover padding-container mt-5 w-100">
-                            <div class="row mx-0">
-                                <div class="col-12 col-md-4 d-flex align-items-center">
-                                    <img src="./image/interrogacao.png" alt="Saiba mais"
-                                        class="d-block mx-auto py-3 w-50 w-lg-75" data-animation="shake">
-                                </div>
-                                <div class="col-12 col-md-8 padding-x-container primary-dark-hover text-justify">
-                                    <div class="d-flex">
-                                        <span data-animation="circle-saiba-mais"></span>
-                                        <small class="medium">Conhecimento</small>
-                                    </div>
-                                    <p class="titulo bold">Saiba mais!</p>
-                                    <p>
-                                        Se você quiser saber a atualização dos casos no seu estado e no Brasil, acesse:
-                                    </p>
-                                    <a href="https://www.gov.br/saude/pt-br/composicao/svs/resposta-a-emergencias/coes/monkeypox/atualizacao-dos-casos"
-                                        target="_blank"
-                                        class="text-light">https://www.gov.br/saude/pt-br/composicao/svs/resposta-a-emergencias/coes/monkeypox/atualizacao-dos-casos</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-5">
-                            <img src="./image/detalhes_5.png" alt="Pessoas conversando" class="w-75 d-block mx-auto"
-                                data-animation="left-to-right">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 padding-x-container">
-                    <button type="button" class="box-img p-4 text-light text-justify" data-bs-toggle="modal"
-                        data-bs-target="#modal_img_casos">
-                        <p id="titulo_imagem" class="py-3 text-center my-auto">Figura 4 - Distribuição dos casos
-                            confirmados de mpox por unidade federada - SE 52</p>
-                        <img loading="lazy" src="./image/diagrama_casos_mpox.png" alt="Mapa global"
-                            class="w-75 d-block mx-auto pb-2">
-                        <small>Fonte: Centers for Disease Control and Prevention (2022a).</small>
-                        <div class="d-flex pt-2">
-                            <i class="bi bi-arrows-fullscreen"></i>
-                            <small class="my-auto mx-2 medium">Clique para expandir a imagem</small>
-                        </div>
-                    </button>
-                    <div class="modal fade" id="modal_img_casos" tabindex="-1" aria-labelledby="Modal Imagem"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Fechar"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img loading="lazy" src="./image/diagrama_casos_mpox.png" alt="Imagem"
-                                        class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="onda onda-primary-dark bg-primary"></div>
-    <div id="caracteristicas" class="container-fluid pt-2 bg-primary-dark-hover text-light">
-        <p class="titulo font-oswald medium text-center padding-x-container">AGENTE ETIOLÓGICO</p>
-        <div class="line bg-light"></div>
-        <div class="container padding-container text-justify">
-            <p class="text-center py-2 medium">Sabemos que os vírus são estruturas microscópicas, mas você já parou para
-                pensar em como é essa estrutura capaz de causar tanto impacto na saúde pública?</p>
-            <p class="titulo text-center py-5">Características gerais do vírus</p>
-            <p class="py-2">O <i>Monkeypox virus</i>, assim como os outros membros da família <i>Poxviridae</i>, tem
-                genoma composto por DNA de fita dupla, que é replicado no citoplasma da célula hospedeira. O material
-                genético tem aproximadamente 197 kilobases (kb)
-                com 190 genes. Eles têm morfologia ovoide ou semelhante a tijolos e são envolvidos por envelope
-                lipoproteico. Apesar de serem observados apenas por microscopia eletrônica, são considerados de grande
-                porte, uma vez que seu tamanho pode
-                variar de 200 a 250 nanômetros (nm) (ALAKUNLE <i>et al</i>., 2022).</p>
-            <p class="pt-2">Uma característica interessante do MPXV é que ele apresenta duas formas infecciosas: vírion
-                maduro (VM) e vírion envelopado (VE). A diferença é baseada na quantidade de camadas de membranas que o
-                envolvem. As partículas VMs são caracterizadas
-                pela presença de apenas uma membrana externa, enquanto os VEs têm a membrana externa e mais uma membrana
-                também chamada de envelope, que é derivada da célula hospedeira (Figura 5). As proteínas da membrana
-                externa dos VMs desempenham importantes
-                funções relacionadas à entrada na célula hospedeira e subsequente patogênese. De forma simplificada, o
-                VM é aquele vírus sem o envelope externo e o VE é um VM que tem o envelope viral (CHADHA <i>et al</i>.,
-                2022).
+    <div class="bg-aux box-saiba-mais padding-container text-center">
+        <img src="./image/exclamation-circle.svg" class=" " alt="Exclamação" data-animation="circle-saiba-mais">
+        <div class="text-center ">
+            <p class="pt-3">Entendendo melhor</p>
+            <p class="titulo bold">Saiba mais</p>
+            <p class="">
+                Para conhecer os dados sobre Zika no mundo,
+                <a href="https://worldpopulationreview.com/country-rankings/zika-countries" target="_blank">clique
+                    aqui.</a><br>
+                <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica"
+                    target="_blank">Dados epidemiológicos</a> do Ministério da Saúde do Brasil
             </p>
-        </div>
-        <div class="row mx-0">
-            <div class="col-12 col-lg-6 my-auto padding-x-container">
-                <p class="subtitulo text-center pb-3">(Figura 05) Estrutura do MPXV</p>
-                <small>Clique nos botões para interagir</small>
-                <div class="d-flex my-2">
-                    <button class="button w-50 mx-1 btn-primary text-dark"
-                        onclick="mostrar_legenda('external_evenloped')"><small>External Enveloped
-                            Virus (EEV)</small></button>
-                    <button class="button w-25 mx-1" onclick="mostrar_legenda('lateral_bodies')"><small>Lateral
-                            bodies</small></button>
-                    <button class="button w-25 mx-1" onclick="mostrar_legenda('outer_membrane')"><small>Outer
-                            membrane</small></button>
-                </div>
-                <div class="d-flex my-2">
-                    <button class="button w-25 mx-1 btn-secondary"
-                        onclick="mostrar_legenda('inner_membrane')"><small>Inner membrane</small></button>
-                    <button class="button w-25 mx-1 btn-secondary"
-                        onclick="mostrar_legenda('viral_proteins')"><small>Viral proteins</small></button>
-                    <button class="button w-25 mx-1 btn-secondary" onclick="mostrar_legenda('core_wall')"><small>Core
-                            Wall</small></button>
-                    <button class="button w-25 mx-1" onclick="mostrar_legenda('viral_dna')"><small>Viral
-                            DNA</small></button>
-                </div>
-                <div class="d-flex my-2">
-                    <button class="button w-25 mx-1" onclick="mostrar_legenda('i5l')"><small>I5L</small></button>
-                    <button class="button w-25 mx-1" onclick="mostrar_legenda('m1r')"><small>M1R</small></button>
-                    <button class="button w-25 mx-1 btn-secondary"
-                        onclick="mostrar_legenda('h3l')"><small>H3L</small></button>
-                    <button class="button w-25 mx-1 btn-secondary"
-                        onclick="mostrar_legenda('e8l')"><small>E8L</small></button>
-                </div>
-                <div class="d-flex my-2">
-                    <button class="button w-20 mx-1 btn-secondary"
-                        onclick="mostrar_legenda('e13l')"><small>E13L</small></button>
-                    <button class="button w-20 mx-1 btn-secondary"
-                        onclick="mostrar_legenda('a18l')"><small>A18L</small></button>
-                    <button class="button w-20 mx-1" onclick="mostrar_legenda('a29l')"><small>A29L</small></button>
-                    <button class="button w-20 mx-1" onclick="mostrar_legenda('b16r')"><small>B16R</small></button>
-                    <button class="button w-50 mx-1 btn-primary"
-                        onclick="mostrar_legenda('internal_mature')"><small>Internal Mature Virus (IMV)</small></button>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center px-0">
-                <div class="position-relative w-100 py-5">
-                    <img loading="lazy" src="./image/estrutura_mpxv/estrutura.png" alt="Estrutura MPOX"
-                        class="d-block mx-auto w-75">
-                    <img id="external_evenloped" loading="lazy"
-                        src="./image/estrutura_mpxv/External Evenloped Virus (EEV).png" alt="Estrutura MPOX"
-                        class="img-estrutura d-none">
-                    <img id="lateral_bodies" loading="lazy" src="./image/estrutura_mpxv/Lateral bodies.png"
-                        alt="Lateral bodies" class="img-estrutura d-none">
-                    <img id="outer_membrane" loading="lazy" src="./image/estrutura_mpxv/Outer Membrane.png"
-                        alt="Outer Membrane" class="img-estrutura d-none">
-                    <img id="inner_membrane" loading="lazy" src="./image/estrutura_mpxv/Inner membrane.png"
-                        alt="Inner membrane" class="img-estrutura d-none">
-                    <img id="viral_proteins" loading="lazy" src="./image/estrutura_mpxv/Viral proteins.png"
-                        alt="Viral proteins" class="img-estrutura d-none">
-                    <img id="core_wall" loading="lazy" src="./image/estrutura_mpxv/Core Wall.png" alt="Core Wall"
-                        class="img-estrutura d-none">
-                    <img id="viral_dna" loading="lazy" src="./image/estrutura_mpxv/Viral DNA.png" alt="Viral DNA"
-                        class="img-estrutura d-none">
-                    <img id="i5l" loading="lazy" src="./image/estrutura_mpxv/I5L.png" alt="I5L"
-                        class="img-estrutura d-none">
-                    <img id="m1r" loading="lazy" src="./image/estrutura_mpxv/M1R.png" alt="M1R"
-                        class="img-estrutura d-none">
-                    <img id="h3l" loading="lazy" src="./image/estrutura_mpxv/H3L.png" alt="H3L"
-                        class="img-estrutura d-none">
-                    <img id="e8l" loading="lazy" src="./image/estrutura_mpxv/E8L.png" alt="E8L"
-                        class="img-estrutura d-none">
-                    <img id="e13l" loading="lazy" src="./image/estrutura_mpxv/E13L.png" alt="E13L"
-                        class="img-estrutura d-none">
-                    <img id="a18l" loading="lazy" src="./image/estrutura_mpxv/A18L.png" alt="A18L"
-                        class="img-estrutura d-none">
-                    <img id="a29l" loading="lazy" src="./image/estrutura_mpxv/A29L.png" alt="A29L"
-                        class="img-estrutura d-none">
-                    <img id="b16r" loading="lazy" src="./image/estrutura_mpxv/B16R.png" alt="B16R"
-                        class="img-estrutura d-none">
-                    <img id="internal_mature" loading="lazy"
-                        src="./image/estrutura_mpxv/Internal Mature Virus (IMV).png" alt="Internal Mature Virus (IMV)"
-                        class="img-estrutura d-none">
 
-                </div>
-            </div>
-        </div>
-        <div class="row mx-0 text-justify">
-            <div class="col-12 col-lg-6 my-auto padding-x-container">
-                <p class="pb-2">Diferentemente dos vírus com genoma de RNA, os vírus de DNA geralmente apresentam poucas
-                    mutações. No entanto, as amostras de MPXV isoladas do surto de 2022 parecem ter muitas mutações.
-                    Foram identificadas cerca de 40 mutações que os diferem
-                    da linhagem mais próxima, que é de 2017, sugerindo um processo evolutivo que pode estar associado à
-                    disseminação com maior eficiência, o que explica a maior transmissibilidade (KUMAR <i>et al</i>.,
-                    2022).
-                <p class="py-2">Acredita-se que a habilidade dos poxvírus de se tornarem restritos aos hospedeiros seja
-                    devido tanto à transferência e acúmulo de genes de escape do sistema imunológico do hospedeiro como
-                    à coevolução dos vírus e de seus hospedeiros
-                    ao longo dos anos. Além disso, o tropismo tecidual afeta a distribuição e a propagação do vírus em
-                    hospedeiros infectados e entre os hospedeiros saudáveis (ALAKUNLE <i>et al</i>., 2022).</p>
-                <p class="py-2">Com relação às propriedades físicas e químicas, o MPXV é resistente à secagem e pode ser
-                    facilmente inativado por formol, clorofórmio, metanol, fenol e outros reagentes químicos, além de
-                    perder sua infecciosidade após 20 minutos de
-                    aquecimento em torno de 55°C. Por outro lado, pode permanecer estável por um longo tempo quando
-                    armazenado de 4°C a -70°C (LUO, HAN, 2022).
-                </p>
-                </p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center px-0">
-                <div class="box-saiba-mais bg-primary-dark padding-container">
-                    <div class="row">
-                        <div class="col-12 col-md-4 d-flex align-items-center">
-                            <img src="./image/interrogacao.png" alt="Saiba mais"
-                                class="d-block mx-auto py-3 w-50 w-lg-75" data-animation="shake">
-                        </div>
-                        <div class="col-12 col-md-8 padding-x-container text-light text-justify">
-                            <div class="d-flex">
-                                <span data-animation="circle-saiba-mais"></span>
-                                <small class="medium">Conhecimento</small>
-                            </div>
-                            <p class="titulo bold secondary">Saiba mais!</p>
-                            <p>
-                                Leia a reportagem sobre o isolamento do vírus da mpox pela FIOCRUZ e conheça sua
-                                estrutura por imagens de microscopia eletrônica no endereço eletrônico:
-                            </p>
-                            <a href="https://www.ioc.fiocruz.br//noticias/fiocruz-isola-o-virus-monkeypox-e-registra-em-imagens-sua-estrutura-detalhada"
-                                class="text-light"
-                                target="_blank">https://www.ioc.fiocruz.br//noticias/fiocruz-isola-o-virus-monkeypox-e-registra-em-imagens-sua-estrutura-detalhada</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="card bg-primary-dark-hover w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
-            <div class="row card-front padding-x-container pt-3 bg-primary-dark w-100 h-100 text-light">
-                <div class="col-12 col-md-4 d-flex align-items-center">
-                    <img src="./image/megafone.png" alt="Megafone" class="d-block mx-auto py-3 w-50 w-lg-75"
-                        data-animation="shake">
-                </div>
-                <div class="col-12 col-md-8 my-auto padding-x-container">
-                    <div class="d-flex">
-                        <span class="bg-secondary" data-animation="circle-saiba-mais"></span>
-                        <small class="medium">Video aprendizado</small>
-                    </div>
-                    <p class="titulo bold text-start secondary">Assista e aprenda</p>
-                    <p class="py-2 text-justify">
-                        Veja mais detalhes sobre as características do MPXV e da mpox no vídeo da pesquisadora da UFRJ
-                        Clarissa Damaso:
-                    </p>
-                </div>
-                <div class="d-flex">
-                    <small class="text-center text-light my-auto">Clique nesta caixa para interagir!</small>
-                    <i class="bi bi-arrow-repeat titulo d-block my-auto ml-auto"></i>
-                </div>
-            </div>
-            <div class="card-back d-flex flex-column padding-x-container py-3 bg-primary-dark w-100 text-light">
-                <div class="my-auto ajuste-video">
-                    <div class="video-wrapper">
-                        <video controls>
-                            <source src="./video/video2-un1_720p.mp4" type="video/mp4">
-                            Seu navegador não suporta a tag de vídeo.
-                        </video>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <small class="text-center text-light my-auto">Clique nesta caixa para interagir!</small>
-                    <i class="bi bi-arrow-repeat titulo d-block my-auto ml-auto text-light"></i>
-                </div>
-            </div>
-        </button>
-        <div id="subtipos" class="container-fluid">
-            <p class="titulo-capa font-oswald text-light medium text-center padding-x-container pt-5">SUBTIPOS E CLADOS
-                EXISTENTES NO MUNDO E LINHAGENS ENCONTRADAS NO BRASIL</p>
-            <div class="line bg-light"></div>
-            <div class="row pt-5 text-justify">
-                <div class="col-12 col-lg-6 padding-x-container">
-                    <p class="pb-2">De acordo com sua estrutura genômica, historicamente o MPXV foi classificado em dois
-                        clados, ou seja, dois vírus diferentes com um ancestral em comum, denominados clados “África
-                        Ocidental” e “África Central”, também conhecido por “Bacia
-                        do Congo”, que convivem na região entre Camarões e República Democrática do Congo (FORNI <i>et
-                            al</i>., 2022).
-                    <p class="py-2">Devido à necessidade de alterar tanto o nome da doença quanto do vírus, que já foi
-                        citada anteriormente, o grupo de especialistas convocados pela OMS concordou em alterar o nome
-                        das variantes do ortopoxvirus que causam a mpox tanto
-                        para minimizar ofensas a grupos sociais, culturais, nacionais, regionais, profissionais ou
-                        étnicos como para mitigar as repercussões negativas desses nomes no comércio, viagens, turismo e
-                        bem-estar animal.</p>
-                    <p class="py-2">Sendo assim, os clados Bacia do Congo e África Ocidental passariam a ser denominados
-                        clado um (I) e clado dois (II), respectivamente. O clado II ainda tem dois subclados, clado IIa
-                        e clado IIb. Esses clados representam a diversidade
-                        genética acumulada ao longo de muitos anos de evolução no reservatório animal e incluem a
-                        maioria dos isolados ligados a surtos na República Democrática do Congo. Esses clados, que são
-                        responsáveis pela maioria dos ciclos naturais
-                        de transmissão e das manifestações endêmicas na África, têm transmissão diferente e padrões
-                        patobiológicos e manifestações clínicas distintas, evidenciando as diferenças entre eles (LUNA
-                        <i>et al</i>., 2022).
-                    </p>
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 padding-x-container">
-                    <p class="pb-2">Os clados I e II têm diferenças de 0,5% na sequência genômica e estão associados a
-                        apresentações clínicas diferentes da doença. O clado I é clinicamente mais grave, portanto está
-                        associado a maiores taxas de mortalidade e maior transmissibilidade,
-                        quando comparado ao clado II (KUMAR <i>et al</i>., 2022).
-                    <p class="py-2">Foi proposto também nomear um subclado IIb (hMPXV1) referente aos isolados presentes
-                        nos surtos de 2017 a 2019 e nos surtos de 2022, uma vez que esses isolados têm sido transmitidos
-                        pessoa-pessoa em dezenas de países e demonstrado
-                        uma rota de transmissão diferente da dos casos anteriores da doença (HAPPI <i>et al</i>., 2022).
-                        Apesar do número ainda limitado de estudos disponíveis, é possível observar uma enorme
-                        diversidade dentro desse subclado (Figura
-                        6). A linhagem B.1, responsável pelo surto de 2022, é descendente da linhagem A.1.1 (Figura 7).
-                        Alguns pesquisadores sugerem nomear o subclado IIb de clado III, porém a nomenclatura ainda não
-                        está totalmente definida.</p>
-                    </p>
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col-12 col-lg-6 px-0 padding-desk-3">
-                    <button type="button" class="box-img bg-primary-dark p-4 text-light text-justify"
-                        data-bs-toggle="modal" data-bs-target="#modal_figura_6">
-                        <p id="titulo_imagem" class="py-3 text-center my-auto">Figura 6 - Análise filogenética de
-                            infecções humanas e não humanas por MPXV nos anos de 1970 a 2022. A: Distribuição dos
-                            isolados dos vírus em dois diferentes clados (I e II) e subclados (IIa e IIb); B:
-                            Distribuição dos isolados dos vírus pertencentes ao subclado IIb (hMPXV1) e suas diferentes
-                            linhagens (A, A.1, A.2, A.1.1 e B.1)</p>
-                        <img src="./image/figura_6.png" alt="Figura 06" class="w-75 d-block mx-auto pb-2">
-                        <small>Fonte: Happi <i>et al</i>. (2022).</small>
-                        <div class="d-flex pt-2">
-                            <i class="bi bi-arrows-fullscreen"></i>
-                            <small class="my-auto mx-2 medium">Clique para expandir a imagem</small>
-                        </div>
-                    </button>
-                    <div class="modal fade" id="modal_figura_6" tabindex="-1" aria-labelledby="Modal Imagem"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Fechar"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="./image/figura_6.png" alt="Figura 06" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 px-0 padding-desk-3">
-                    <button type="button" class="box-img bg-primary-dark p-4 text-light text-justify"
-                        data-bs-toggle="modal" data-bs-target="#modal_figura_7">
-                        <p id="titulo_imagem" class="py-3 text-center my-auto">Figura 7 - Epidemiologia Genômica do
-                            MPXV: círculos azuis referentes ao clado I; círculo verde referente ao subclado IIa; e
-                            círculos alaranjados referentes ao subclado IIb e suas linhagens</p>
-                        <img src="./image/figura_7.jpg" alt="Figura 07" class="w-75 d-block mx-auto pb-2">
-                        <small>Fonte: Nextsrtain (2022).</small>
-                        <div class="d-flex pt-2">
-                            <i class="bi bi-arrows-fullscreen"></i>
-                            <small class="my-auto mx-2 medium">Clique para expandir a imagem</small>
-                        </div>
-                    </button>
-                    <div class="modal fade" id="modal_figura_7" tabindex="-1" aria-labelledby="Modal Imagem"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Fechar"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="./image/figura_7.jpg" alt="Figura 07" class="img-fluid d-block mx-auto">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-0">
-                <div class="box-saiba-mais padding-container bg-primary-dark w-100">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="d-flex">
-                                <span class="bg-secondary" data-animation="circle-saiba-mais"></span>
-                                <small class="medium">Entendendo mais</small>
-                            </div>
-                            <p class="titulo bold text-start primary-light">Responda</p>
-                            <p class="py-2">
-                                No Brasil, o padrão genético do vírus também é semelhante ao observado em outras partes
-                                do mundo?
-                            </p>
-                            <img src="./image/megafone.png" alt="Megafone" class="d-block mx-auto py-3 w-50"
-                                data-animation="shake">
-                        </div>
-                        <div class="col-12 col-md-8 mx-auto padding-x-container">
-                            <small class="d-block text-center pb-2">Clique no botão para interagir</small>
-                            <button class="button w-75 d-block mx-auto btn-secondary"
-                                onclick="alterar_resposta(this, 'padrao_generico')">Ver resposta</button>
-                            <p id="padrao_generico" class="pt-5 text-justify d-none">Sim. O sequenciamento genético dos
-                                primeiros casos confirmados de mpox no Brasil, assim como vem acontecendo nos outros
-                                países que tiveram surto da doença no ano de 2022, identificou que o vírus pertencia ao
-                                subclado IIb, linhagem
-                                B.1 (Figura 7). Além disso, as amostras identificadas estavam intimamente relacionadas
-                                com as amostras sequenciadas em Portugal, Alemanha, Espanha e EUA (CLARO <i>et al</i>.,
-                                2022).
-                                <br>As principais diferenças entre os clados parecem estar associadas a determinantes
-                                antigênicos imunomoduladores e de reconhecimento do hospedeiro. A divergência acentuada
-                                e os sinais de subagrupamento podem estar associados
-                                a diferentes panoramas epidemiológicos entre os surtos, que podem estar impulsionando
-                                microeventos evolutivos, redesenhando a arquitetura genômica do MPXV.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <div class="onda onda-aux bg-primary-dark-hover"></div>
-    <div id="interface" class="container-fluid px-0 pt-2 bg-aux text-light overflow-hidden">
-        <p class="titulo font-oswald medium text-center text-dark padding-x-container">INTERFACE HUMANOS-ANIMAIS-MEIO
-            AMBIENTE
+
+    <div id="tempo" class="bg-primary-light font-dark padding-x-container pt-2 overflow-hidden">
+
+        <p class="row titulo font-oswald medium text-justify padding-x-container">Modos de transmissão de infecção
+            causada por ZIKV
         </p>
-        <div class="line bg-dark"></div>
-        <div class="container-fluid">
-            <div class="row mx-0 text-justify">
-                <div class="col-12 col-lg-8 text-dark my-auto padding-container">
-                    <p class="py-2">Embora o reservatório definitivo do MPXV ainda não tenha sido completamente
-                        identificado, infecções espontâneas foram descritas em diversas espécies de mamíferos, e vírions
-                        viáveis foram encontrados em diferentes tecidos de animais
-                        que morreram em decorrência da infecção. Suspeita-se ainda que roedores que vivem na África
-                        desempenham um papel fundamental na transmissão da infecção.
-                    </p>
-                    <p class="py-2">A transmissão do vírus entre os animais pode ocorrer pelo contato com lesões
-                        cutâneas de animais infectados, fluídos corporais ou gotículas respiratórias. A transmissão do
-                        animal para o homem pode ocorrer por arranhões, mordedura,
-                        preparo da caça como alimento ou contato direto/indireto com fluidos corporais ou material da
-                        lesão. Já a transmissão entre humanos ocorre, de acordo com a descrição clássica, por meio de
-                        gotículas respiratórias que são principalmente
-                        eliminadas durante espirros, tosse e fala, e, para tal, é necessário um tempo de contato
-                        prolongado (KUMAR <i>et al</i>., 2022).</p>
+        <div class="row justify-content-center padding-x-container">
+            <div class="col-12 col-lg-6 accordion pt-md-5" id="accordion_remedios">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_1" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Transmissão vetorial, decorrente da picada do mosquito
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_1" class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body padding-x-container">
+                            <p class="pb-2">
+                                O ZIKV é normalmente transmitido ao homem pela picada de mosquitos do gênero Aedes,
+                                dentre eles A. africanus, A. apicoargenteus, A. vitattus, A. furcifer, A. luteocephalus,
+                                A. hensilli e A. aegypti. A espécie A. hensilii foi a predominante na Ilha de Yap
+                                durante a epidemia de 2007. Nas Américas, o principal vetor é o A. aegypti. Esta espécie
+                                de mosquito também é responsável pela transmissão da dengue e da chikungunya no Brasil.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-4">
-                    <img src="./image/menino_tossindo.png" alt="Menino tossindo"
-                        class="d-block mx-auto py-3 w-75 w-md-50" data-animation="right-to-left">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_2" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Transmissão sexual
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_2" class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body padding-x-container">
+                            <p class="pb-1">
+                                O ZIKV pode ser transmitido através do sexo (vaginal, anal, oral) de uma pessoa com zika
+                                para seus parceiros, bem como pelo compartilhamento de brinquedos sexuais. Em
+                                localidades de elevada frequência do mosquito vetor, há dificuldade de se estabelecer o
+                                risco atribuível à transmissão primária pela via sexual.
+                                <br>
+                                <br>
+                                De acordo com a Organização Mundial da Saúde (OMS), que publicou documento contendo
+                                orientações para a prevenção da transmissão sexual pelo ZIKV (primeiramente publicado em
+                                2016, com as evidências disponíveis, e atualizado em 2020), com base nas evidências
+                                científicas mais atualizadas, a transmissão sexual do ZIKV é muito mais provável de
+                                homens para mulheres do que de mulheres para homens; já a transmissão pelo mesmo sexo,
+                                de homem para homem, só foi documentada uma vez. Ainda segundo a OMS, o material
+                                genético do vírus no sêmen é eliminado por volta de cinquenta dias na grande maioria dos
+                                casos.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_3" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Transmissão vertical
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_3" class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body padding-x-container">
+                            <p class="pb-1">
+                                A transmissão vertical para ZIKV é aquela que é passada da gestante ao feto, podendo
+                                ocorrer em diferentes idades gestacionais, resultando em um amplo espectro de
+                                malformações no feto, independentemente da presença ou da ausência de sintomas na mãe.
+                                De acordo com o Ministério da Saúde do Brasil, aproximadamente 26% das mães infectadas
+                                transmitem o ZIKV aos fetos; no entanto, o risco de desenvolver defeitos congênitos,
+                                incluindo anormalidades neurológicas como a microcefalia, é maior entre as mulheres
+                                infectadas durante o primeiro trimestre. Por isso, um cuidado especial deve ser dado às
+                                mulheres grávidas com sintomas de zika. Uma anamnese detalhada e a realização de
+                                diagnóstico laboratorial são essenciais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="pt-2">Sugestão de disponibilização do vídeo do Discovery, disponível em: <a
+                        href="https://www.youtube.com/watch?v=wuhINzMJjyQ">https://www.youtube.com/watch?v=wuhINzMJjyQ</a>
+                </p>
             </div>
-            <div class="row mx-0 text-justify">
-                <div class="col-12 col-lg-4 order-last order-lg-first">
-                    <img src="./image/mulher_gravida.png" alt="Mulher Grávida" class="d-block mx-auto py-3 w-75 w-md-50"
-                        data-animation="left-to-right">
-                </div>
-                <div class="col-12 col-lg-8 text-dark my-auto padding-container order-first order-lg-last">
-                    <p class="py-2">O MPXV pode atravessar a placenta, ou seja, a transmissão da mãe infectada para o
-                        feto também deve ser considerada. Outras formas de contágio são pelo contato direto com a lesão
-                        e com fluidos corporais ou pelo contato indireto com
-                        objetos contaminados, como roupas e lençóis. Ainda não está confirmada a transmissão sexual.
-                        Embora o vírus já tenha sido encontrado no sêmen, são necessários mais estudos confirmatórios.
-                    </p>
-                </div>
-            </div>
-            <hr class="text-dark">
-            <div>
-                <p class="titulo font-oswald text-center text-dark padding-x-container">Ciclo de transmissão do MPXV
-                    gerais do vírus</p>
-                <small class="d-block text-center text-dark">Clique nos números para interagir</small>
-                <div class="container padding-container position-relative">
-                    <img src="./image/ciclo_mpxv.png" alt="Ciclo de transmissão" class="d-block mx-auto w-75"
-                        usemap="#ciclo_transmissao">
-                    <button type="button" class="btn-ciclo-mpox btn-ciclo-1" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="de roedores a macacos;">
-                    </button>
-                    <button type="button" class="btn-ciclo-mpox btn-ciclo-2" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="de macacos a humanos;">
-                    </button>
-                    <button type="button" class="btn-ciclo-mpox btn-ciclo-3" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="de roedores a humanos">
-                    </button>
-                    <button type="button" class="btn-ciclo-mpox btn-ciclo-4" data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;">
-                    </button>
-                    <button type="button" class="btn-ciclo-mpox btn-ciclo-5" data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;">
-                    </button>
-                </div>
-            </div>
-            <div class="row mx-0 text-justify">
-                <div class="col-12 col-lg-6 text-dark padding-x-container">
-                    <p class="py-2">Por ser um vírus zoonótico (termo utilizado para classificar as doenças que são
-                        transmitidas de maneira natural entre os animais e os seres humanos), a maior parte das
-                        infecções humanas em áreas endêmicas acontece em áreas rurais e
-                        associadas aos reservatórios animais (FORNI <i>et al</i>., 2022). Dessa forma, a epidemiologia
-                        da doença sugere que o reservatório do vírus esteja associado à floresta tropical africana,
-                        região endêmica da doença.
-                    </p>
-                    <p class="py-2">
-                        Com o surto de 2017 na Nigéria, os casos alcançaram áreas de savana e áreas urbanas. Nessa mesma
-                        época, além do aumento de casos em humanos na África Ocidental, foi observado um aumento no
-                        número de infecções em chimpanzés, embora não tenham sido observadas
-                        alterações comportamentais ou de hábitos no grupo de animais que explicasse o aumento de casos.
-                        Os pesquisadores sugeriram que o aumento nos casos de mpox tanto em humanos quanto nos animais
-                        estava associado à mudança na demografia
-                        e na distribuição do reservatório do vírus (PATRONO <i>et al</i>., 2022).</p>
-                </div>
-                <div class="col-12 col-lg-6 text-dark padding-x-container">
-                    <p class="py-2">
-                        É importante lembrar que o MPXV já foi identificado em uma grande variedade de animais
-                        diferentes. Muitos desses animais infectados são caçados para alimentação, tornando-os fonte de
-                        infecção para os humanos. Alguns animais têm distribuição restrita a
-                        algumas regiões, enquanto outros são amplamente distribuídos. Dessa forma, é possível que, nas
-                        regiões onde existam os dois clados do vírus (I, IIa e IIb), as barreiras geográficas podem ser
-                        oportunidades ecológicas de infecção
-                        e de adaptação a diferentes hospedeiros para o vírus (FORNI <i>et al</i>., 2022).
-                    </p>
-                    <p class="py-2">
-                        É possível também que alterações climáticas e ecológicas tenham causado epizootias (ocorrência
-                        de um determinado evento em um número de animais ao mesmo tempo e na mesma região, podendo levar
-                        ou não à morte) em roedores na África Ocidental e Central nos
-                        últimos anos, com consequente aumento da transmissão do MPXV a humanos e primatas não humanos. A
-                        invasão de habitats selvagens pode favorecer a interação entre animal e homem, criando
-                        oportunidades de transbordamento da cadeia
-                        de transmissão, e a variabilidade genética encontrada nos isolados do surto de 2022 demonstra
-                        que também ocorreu uma grande mudança biológica do vírus (FORNI, <i>et al</i>., 2022).
-                    </p>
-                    <p class="py-2">
-                        Muito ainda precisa ser estudado sobre as estratégias evolutivas e adaptativas do vírus, além do
-                        desenvolvimento e implementação de estratégias para um diagnóstico precoce, prevenção e
-                        tratamento da doença. Estudos de vigilância genômica também devem
-                        ser implementados para esclarecer a distribuição e natureza dos reservatórios e hospedeiros do
-                        vírus tanto na África quanto nos outros países pelos quais o vírus está se espalhando.
-                    </p>
-                </div>
-            </div>
-            <div class="container padding-container">
-                <p class="text-dark text-center">Figura 9 - Típica floresta tropical na região do Zaire, atual República
-                    Democrática do Congo (África Ocidental), onde casos de mpox ocorreram entre 1970-1984.</p>
-                <img src="./image/floresta_tropical.png" alt="Floresta tropical" class="d-block mx-auto w-100">
+            <div class="col-12 col-lg-6 padding-x-container  order-first order-lg-last pt-md-5">
+                <img src="./image/ciclo_transmissao.png" class="img-fluid img-ciclo" alt="Ciclo de Transmissão">
+                <p class="pt-2">Fonte: Adaptado de Guia de apoio para profissionais da Atenção Primária à Saúde no
+                    contexto da Síndrome da Zika Congênita. Recife: Fundação Altino Ventura, 2020. Disponível em: <a
+                        href="https://linhasdecuidado.saude.gov.br/portal/zika/definicao/">https://linhasdecuidado.saude.gov.br/portal/zika/definicao/</a>
+                </p>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid padding-x-container">
+        
+        <div id="dados" class="container-fluid padding-x-container py-5">
+            <p class="titulo bold">Período de incubação do ZIKV</p>
+        <p>O período de incubação intrínseco do ZIKV é de dois a sete dias, em média. Estima-se que o período de viremia no homem se estenda até o quinto dia do início dos sintomas.
+        </p>
+
+        <p class="titulo pt-5 bold">Diagnóstico e orientações</p>
+        <p>Clique nos botões para interagir
+        </p>
+            <div class="d-flex col-6 py-4" role="tablist">
+                <button class="button btn-col-4 btn-aux w-100" onclick="selecionarCaso('caso_01', this)" type="button" role="tab" aria-selected="true">Parte 01</button>
+                <button class="button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_02', this)" type="button" role="tab" aria-selected="false">Parte 02</button>
+                <button class="button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_03', this)" type="button" role="tab" aria-selected="false">Parte 03</button>
+            </div>
+            <div class="bg-primary-dark rounded-4 text-light col-12 col-lg-12 p-3 text-justify">
+                <div class="tab-content padding-container div-modal-orientacao">
+                    <div class="tab-pane fade show active" id="caso_01" role="tabpanel" tabindex="0">
+                        <p class="font-weight-bold display-6 col-12 col-lg-6 pb-3">Transmissão vetorial, decorrente da picada do mosquito</p>
+                        <p>Por se tratar de uma doença febril, o diagnóstico diferencial é amplo e aconselha-se utilizar os dados epidemiológicos de sua localidade, de maneira a auxiliar nas possibilidades de diagnóstico.
+                            Assim, é importante conhecer as definições de caso para ZIKV, em que, casos suspeitos são considerados aqueles pacientes que apresentam exantema maculopapular pruriginoso, acompanhado de um dos seguintes sinais e sintomas: Febre; Hiperemia conjuntival/conjuntivite não purulenta; Artralgia/poliartralgia e Edema periarticular. 
+                            Os casos confirmados por critério clínico-epidemiológico (indicados para localidades com impossibilidade de realização de exames laboratoriais/ exames laboratoriais inconclusivos) são aqueles que atendem à definição de caso suspeito de Zika e foram confirmados por um ou mais dos seguintes testes laboratoriais e seus respectivos resultados: Isolamento viral; detecção de RNA viral por RT-PCR em tempo real (RT-qPCR) detectável e Sorologia IgM. Por fim, os casos confirmados por critério laboratorial são aqueles que atendem à definição de caso suspeito de zika e confirmados por um ou mais dos testes laboratoriais e seus respectivos resultados: Isolamento viral; detecção de RNA viral por RT-PCR em tempo real (RT-qPCR) detectável e sorologia IgM.
+                            É importante lembrar que a testagem para confirmação do diagnóstico de ZIKV seja realizada por métodos diretos em amostras coletadas até o quinto dia de início dos sintomas.
+                            Qualquer pessoa pode se infectar com ZIKV, seja pela picada de mosquitos infectados, por transmissão vertical, seja por meio de relações sexuais sem camisinha com alguém infectado pelo ZIKV, mesmo que essa pessoa não apresente sintomas da doença. Entretanto, o grupo de maior risco são as gestantes, uma vez que o risco de malformações congênitas após infecção na gravidez está presente. Ainda, a infecção por zika na gravidez também pode causar complicações como perda fetal, natimorto e parto prematuro.
+                            </p>
+                    </div>
+                    <div class="tab-pane fade" id="caso_02" role="tabpanel" tabindex="0">
+                        <p class="font-weight-bold display-6 col-12 col-lg-6">Diagnóstico</p>
+                        <p>O diagnóstico é feito por meio de testes laboratoriais (mencionados acima) que permitem diferenciar entre chikungunya e zika, já que as manifestações clínicas produzidas são parecidas.
+                            As manifestações causadas pela infecção por ZIKV podem apresentar-se, normalmente, através dos seguintes sintomas: sem febre ou com febre baixa < 38,5°C (1-2 dias subfebril), rash cutâneo no 1º ou segundo dia de sintomas, pode apresentar artralgia leve a moderada (normalmente nos punhos e mãos), pode apresentar conjuntivite (não purulenta), dores de cabeça frequentes, prurido (moderado a intenso) presença de linfonodomegalia (moderado a intenso), síndrome de Guillain-Barré.
+                            Para os casos confirmados de ZIKV, o profissional deverá comunicar à Secretaria Municipal de Saúde (SMS) / Secretaria Estadual de Saúde (SES) em até 24 horas, por se tratar de uma <b>doença de notificação compulsória</b>, conforme os fluxos estabelecidos em seu território.
+                            </p>
+                    </div>
+                    <div class="tab-pane fade" id="caso_03" role="tabpanel" tabindex="0">
+                        <p class="font-weight-bold display-6 col-12 col-lg-6">Meios de proteção individual e coletiva</p>
+                        <p>Orientar a população quanto aos meios de proteção é uma das ações fundamentais para o controle da doença. É preciso que a cada encontro com as pessoas construam-se parcerias para a eliminação de criadouros do vetor. Os profissionais devem discutir como prevenir a propagação de doenças transmitidas pelo Aedes spp. Para fins didáticos, as medidas de proteção foram divididas em três, descritas adiante:
+                            <br>
+                            <br>
+                            Prevenção domiciliar: a quantidade de mosquitos deve ser reduzida pela eliminação dos focos de procriação dos vetores. Deve-se extinguir todo e qualquer tipo de reservatório de água parada que possa servir como criadouro do mosquito. Os reservatórios de água para consumo devem ser cobertos (utilizar telas ou capas), impedindo o acesso do vetor. É aconselhável a utilização de mosquiteiros e telas em portas e janelas, como medida adicional de proteção.
+                            <br>
+                            <br>
+                            Prevenção individual: a proteção individual por meio do uso de repelentes na pele exposta e nas roupas e a utilização de roupas que minimizem a exposição da pele durante o dia, quando os mosquitos são mais ativos, podem proporcionar alguma proteção contra as picadas dos mosquitos. Essas medidas também podem ser adotadas principalmente durante surtos ou em locais com presença de focos e grande população de alados. 
+                            <br>
+                            <br>
+                            Recomenda-se utilizar repelentes na dose descrita pelo fabricante, pois existem produtos que têm duração curta, sendo necessário reutilizá-los várias vezes durante o dia. 
+                            <br>
+                            <br>
+                            A utilização de repelentes em gestantes é possível; para mais esclarecimentos, recomenda-se a leitura das orientações do Ministério da Saúde. Acesse as orientações atualizadas em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus
+                            Prevenção na comunidade: a prevenção na comunidade deve ser baseada nos métodos realizados para o controle da dengue, utilizando-se estratégias eficazes para reduzir a densidade de mosquitos vetores, acionando-se inclusive outros órgãos municipais, como limpeza urbana, para se manter o território livre de criadouros. 
+                            <br>
+                            <br>
+                            Um programa de controle do vetor em pleno funcionamento irá reduzir a probabilidade de um ser humano virêmico servir como fonte de alimentação sanguínea, além de infecção para A. aegypti e A. albopictus.
+                            As medidas de proteção contra o vetor são as mesmas adotadas para a dengue. Para acompanhar as orientações e atualizações do Ministério da Saúde, acesse: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function selecionarCaso(id, button) {
+        // Oculta todos os casos
+        document.querySelectorAll('.tab-pane').forEach(tab => {
+            tab.classList.remove('show', 'active');
+        });
+
+        // Remove a classe 'clicado' de todos os botões
+        document.querySelectorAll('.button.btn-aux').forEach(btn => {
+            btn.classList.remove('clicado');
+        });
+        
+        // Exibe o caso selecionado
+        document.getElementById(id).classList.add('show', 'active');
+
+        // Ativa o botão clicado
+        button.classList.add('clicado');
+    }
+    </script>
+    
+    </div>
+    </div>
+    </div>
+
+
+
+    </div>
+    
+
+    <div id="tempo" class="bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
+
+        <p class="row titulo font-oswald medium text-justify padding-x-container">Estratégias de educação em saúde e educação permanente
+        </p>
+        <p class="row padding-x-container">A informação sobre a doença, suas complicações, modos de prevenção, precisa ser trabalhada em todo e qualquer encontro, na unidade de saúde, no seu grupo de trabalho, na sua rede social. Discutir a necessidade da participação de cada indivíduo para realizar o controle do vetor, somente dessa forma conseguiremos minimizar as consequências provocadas pela tríplice carga de doenças: dengue, chikungunya e zika. O Ministério da Saúde recomenda que sejam abordadas informações sobre a doença através de um porta-voz, repassando dados sobre como eliminar os criadouros do mosquito, ciclo do mosquito, quadro clínico da doença, riscos da automedicação e sobre a necessidade de procurar o serviço de saúde.</p>
+    </div>
+
+    <div class="bg-aux box-saiba-mais padding-container text-center">
+        <img src="./image/exclamation-triangle.svg" class=" " alt="Exclamação" data-animation="circle-saiba-mais">
+        <div class="text-center padding-x-container">
+            <p class="pt-3">Atenção</p>
+            <p class="titulo bold">Atenção profissional de saúde!</p>
+            <p class="text-justify">
+                Cada um de nós devemos assumir o papel de porta-voz para difusão de conhecimentos sobre zika, dengue, chikungunya. Oriente a população com seus conhecimentos. A melhor estratégia, ainda é a prevenção.
+<br>
+<br>
+A equipe de saúde precisa estar capacitada para acolher e reconhecer os sintomas de infecção pelo vírus Zika, assim como realizar os protocolos de atenção voltados à dengue e a notificação dos casos. O cuidado às pessoas doentes deve ser pautado na resolutividade das necessidades em saúde que a pessoa apresente. De igual importância, é o seu papel como difusora de conhecimentos sobre a doença.
+<br>
+<br>
+Uma das maneiras mais eficazes para o combate tanto para dengue, como chikunguya e a zika, está diretamente relacionada à participação da população no combate ao vetor e ações diárias que podem ser realizadas.
+<br>
+<br>
+Esse combate pode ser realizado através da eliminação dos criadouros potenciais dos mosquitos vetores, aplicação de larvicidas em depósitos de água de consumo e uso de inseticidas para as formas adultas, durante os períodos de transmissão. Essas informações podem ser trabalhadas nas escolas, com ações de educação em saúde e ambiente para crianças e adolescentes de todas as faixas etárias.
+<br>
+<br>
+A responsabilidade social no combate ao vetor é obrigatoriedade de todos!
+            </p>
+            <div class="col-12 col-lg-4 order-last order-lg-first">
+                <img src="./image/agua_parada.png" alt="Mulher Grávida" class="d-block mx-auto py-3 img-fluid mw-100"
+                    data-animation="left-to-right">
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="tempo" class="text-justify bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
+
+        <p class="row titulo font-oswald medium text-justify padding-x-container">Vigilância em Saúde
+        </p>
+        <p class="row padding-x-container">O sistema de vigilância epidemiológica no Brasil é organizado em uma rede de vigilância em saúde. Em todos os níveis de atenção de saúde existe uma unidade operacional de vigilância para receber a notificação, realizar a investigação de casos suspeitos, confirmar ou descartar os casos e acompanhar as coletividades ou os indivíduos afetados. 
+            <p class="row padding-x-container">
+            A vigilância epidemiológica é “um processo contínuo e sistemático de coleta, consolidação, disseminação de dados sobre eventos relacionados à saúde, visando o planejamento e a implementação de medidas de saúde pública para a proteção da saúde da população, a prevenção e controle de riscos, agravos e doenças, bem como para a promoção da saúde”.
+        </p>
+            <p class="row padding-x-container">
+            Os profissionais nos serviços de saúde devem estar preparados para desencadear ações que possam prevenir, proteger, controlar e dar uma resposta rápida para a saúde pública. Dessa forma é fundamental conhecer os marcos legais, o fluxo de informação e as atividades desenvolvidas na vigilância epidemiológica de seu território.
+        </p>
+            <p class="row padding-x-container">
+            As doenças e os agravos de notificação compulsória no Brasil foram regulamentados a partir de 1975 e frequentes atualizações são realizadas para incluir outras doenças conhecidas, mas sem circulação, ou com circulação esporádica no território nacional. São exemplos de inclusão de novas doenças: a vigilância da Febre de Chikungunya e a vigilância de óbitos relacionados a dengue.
+        </p>
+            <p class="row padding-x-container">
+            No Brasil, a Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública define quais as doenças e agravos devem ser notificadas imediatamente, quais são as doenças que devem ser notificadas compulsoriamente e qual a responsabilidade dos profissionais de saúde. Os critérios para estruturar a lista das doenças e agravos de notificação compulsória estão relacionados a magnitude, potencial de disseminação, transcendência, vulnerabilidade e disponibilidade de medidas de controle. Os casos confirmados para ZIKV são de notificação compulsória.
+        </p>
+            <p class="row padding-x-container">
+            A notificação é o ato de comunicação da suspeita de um caso, baseado na definição de caso estabelecida para uma determinada doença.
+        </p>
+            <p class="row padding-x-container">
+            A notificação deve descrever a situação incluindo o tempo, a pessoa e o lugar – isto é, há quanto tempo está ocorrendo o evento, onde está acontecendo, quantas pessoas estão sendo atingidas. As notificações de zika devem ser registradas na Ficha de Notificação Individual/Conclusão e inseridas no Sinan Net.
+        </p>
+            <p class="row padding-x-container">
+            Os casos de malformação congênita devem ser notificados e investigados conforme normas estabelecidas no documento <span class="bold">Orientações integradas de vigilância e atenção à saúde no âmbito da Emergência de Saúde Pública de Importância Nacional: procedimentos para o monitoramento das alterações no crescimento e desenvolvimento a partir da gestação até a primeira infância, relacionadas à infecção pelo ZIKV e outras etiologias infeciosas dentro da capacidade operacional do SUS.</span>
+        </p>
+            <p class="row padding-x-container">
+            Já os casos de manifestações neurológicas suspeitos de infecção prévia por dengue, zika e chikungunya devem ser informados por meio de instrumento específico, de acordo com o <b>Manual de vigilância sentinela de doenças neuroinvasivas por arbovírus.</b>
+        </p>
+            <p class="row padding-x-container">
+            Os casos suspeitos notificados serão informados por profissionais de saúde, laboratórios ou serviços de saúde e até mesmo pela imprensa ou por cidadãos comuns. Os serviços de vigilância epidemiológica irão proceder à investigação a fim de confirmar ou descartar esses casos.
+            </p>
+    </div>
+
+        
     <div id="grupos" class="container-fluid px-0 pt-2 bg-aux text-light">
         <p class="titulo font-oswald medium text-center primary-dark-hover padding-x-container">GRUPOS VULNERÁVEIS E
             POPULAÇÃO-CHAVE

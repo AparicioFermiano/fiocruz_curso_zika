@@ -121,15 +121,7 @@
     animation-timing-function: ease-in-out;
 }
 
-.onda {
-    background-size: cover;
-    min-height: 250px;
-    background-repeat: repeat-x;
-    animation: move-wave 100s linear infinite, move-down 10s linear infinite;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-color: var(--primary-dark-hover);
-    transform: translateY(0px);
-}
+
 
 .onda.onda-light {
     background-image: url('../image/ondas/onda_branca.svg');
@@ -295,16 +287,7 @@
 
 /* Animacao para piscar bolinha no destaque */
 
-[data-animation="circle-saiba-mais"] {
-    width: 15px;
-    background-color: var(--secondary-dark);
-    height: 15px;
-    border-radius: 100%;
-    display: flex;
-    margin-right: 2%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+
 
 [data-animation="circle-saiba-mais"].active {
     animation-name: circle_saiba_mais;

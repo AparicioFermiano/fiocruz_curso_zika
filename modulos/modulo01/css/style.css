@@ -4,16 +4,16 @@ https://github.com/AparicioFermiano */
 :root {
     --primary: #4BC2EF;
     --primary-hover: #369FCE;
-    --primary-light: #A2D9EE;
+    --primary-light: #ffffff;
     --primary-light-hover: #6EC9EA;
     --primary-dark: #403C01;
     --primary-dark-hover: #403C01;
     --secondary: #A60311;
     --secondary-hover: #8d0510;
     --secondary-dark: #B33433;
-    --aux: #F1B398;
+    --aux: #D9D491;
     --font-dark: #212121;
-    --font-light: #f2f2f2;
+    --font-light: #FFFEF0;
     --disabled-dark: #8b8b8b62;
     --disabled: #B8B8B8;
     --card-size: 550px;
@@ -369,6 +369,23 @@ a.button {
     border: 2px var(--secondary-hover);
 }
 
+.button.btn-aux {
+    color: var(--font-dark);
+    background-color: var(--aux);
+    border: 2px solid var(--aux);
+    font-weight: bold;
+}
+
+
+
+.button.btn-aux.clicado {
+    background-color: var(--primary-dark-hover);
+    color: var(--font-light);
+    border-color: var(--primary-dark-hover); /* Adicione a cor da borda ativa */
+}
+
+
+
 .button.btn-primary {
     background-color: var(--primary);
     border: 2px var(--primary);
@@ -406,6 +423,34 @@ a.button {
     margin: 1.4rem !important;
 }
 
+.div-modal-orientacao {
+    max-width: 1652px;
+    max-height: 546px;
+    overflow-y: auto;
+}
+
+.div-modal-orientacao::-webkit-scrollbar,
+.box-scrool::-webkit-scrollbar {
+    width: 12px;
+}
+
+.div-modal-orientacao::-webkit-scrollbar-track,
+.box-scrool::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.div-modal-orientacao::-webkit-scrollbar-thumb,
+.box-scrool::-webkit-scrollbar-thumb {
+    background-color: var(--aux);
+    border-radius: 20px;
+    border: 3px solid var(--aux);
+
+
+/* Estilos para WebKit (Chrome, Safari, Opera) */
+.div-modal-orientacao::-webkit-scrollbar {
+    width: 12px;
+}
+
 /* Accordion - Animacao */
 
 .accordion-button {
@@ -417,12 +462,37 @@ a.button {
     background-color: var(--aux);
 }
 
+/* LINK */
+
+ a {
+    color: #A60311;
+    font-weight:bold;
+}
+
+/* IMAGEM CICLO */
+
+.img-ciclo {
+    width: 80%;
+}
+
+/* SEPARADOR */
+
+.onda {
+    background-size: cover;
+    min-height: 250px;
+    background-repeat: repeat-x;
+    background-color: var(--primary-dark-hover);
+    transform: translateY(0px);
+}
 
 /* OTHERS */
 
 .box-saiba-mais {
     background-color: var(--aux);
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .video-wrapper {
@@ -438,7 +508,7 @@ a.button {
 }
 
 .box-img {
-    border: none;
+    border-radius: 1rem;
     background-color: var(--primary-dark-hover);
     margin-top: 3%;
     margin-bottom: 3%;
@@ -629,4 +699,5 @@ a.button {
     .carousel-person {
         height: 750px;
     }
+}
 }
