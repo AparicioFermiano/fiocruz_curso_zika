@@ -905,40 +905,36 @@
     </div>
 
 
-    <div id="tempo" class=" text-justify bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
+    <div id="pergunta1" class="text-justify bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
         <span class="titulo padding-x-container">Exercícios interativos</span>
-        <div id="tempo" class="text-justify bg-primary-light text-light padding-x-container py-5 overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="bg-primary-dark rounded-3 p-5">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-6">
-                                    <div class="container-fluid pergunta" id="pergunta">
-                                        <span class="pergunta-texto">São consideradas formas de transmissão de doença
-                                            causada por ZIKV:</span>
-                                        <div class="opcoes">
-                                            <label><input type="radio" name="q1" value="a"> <span>a</span> Transmissão
+        <div class="text-justify bg-primary-light text-light padding-x-container py-5 overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-primary-dark rounded-4 p-5">
+                        <div class="row g-0">
+                            <div class="col-12 col-lg-6">
+                                <div class="container-fluid pergunta">
+                                    <span class="pergunta-texto">São consideradas formas de transmissão de doença
+                                        causada por ZIKV:</span>
+                                    <div class="opcoes">
+                                        <label><input type="radio" name="q1" value="a"> <span>a</span> Transmissão
                                                 sexual, transmissão por contato pessoa-pessoa, vetorial</label>
-                                            <label><input type="radio" name="q1" value="b"> <span>b</span> Transmissão
+                                        <label><input type="radio" name="q1" value="b"> <span>b</span> Transmissão
                                                 vetorial, transmissão pela saliva, transmissão através do consumo de
                                                 alimentos contaminados</label>
-                                            <label><input type="radio" name="q1" value="c"> <span>c</span> Transmissão
+                                        <label><input type="radio" name="q1" value="c"> <span>c</span> Transmissão
                                                 da mãe para o feto, transmissão sexual, transmissão através da picada de
                                                 mosquito contaminado</label>
-                                            <label><input type="radio" name="q1" value="d"> <span>d</span> Transmissão
+                                        <label><input type="radio" name="q1" value="d"> <span>d</span> Transmissão
                                                 sexual, transmissão vetorial, transmissão através do contato com água
                                                 suja.</label>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6 padding-x-container">
-                                    <button class="button w-50 mb-3 btn-aux-responder"
-                                        onclick="verificarResposta('c',
-                                        'As três formas de transmissão mais estudadas são: A transmissão vetorial, decorrente da picada do mosquito, a transmissão sexual/interpessoal, que pode ser através do sexo (vaginal, anal, oral) de uma pessoa com ZIKV para seus parceiros, bem como pelo compartilhamento de brinquedos sexuais, e a transmissão vertical, que é passada da gestante ao feto, podendo ocorrer em diferentes idades gestacionais')">Responder</button>
-                                    <div class="retorno">
-                                        <p class="explicacao"></p>
-                                    </div>
+                            </div>
+                            <div class="col-12 col-lg-6 padding-x-container">
+                                <button class="button w-50 mb-3 btn-aux-responder" onclick="verificarResposta('pergunta1', 'c', 'As três formas de transmissão mais estudadas são: A transmissão vetorial, decorrente da picada do mosquito, a transmissão sexual/interpessoal, que pode ser através do sexo (vaginal, anal, oral) de uma pessoa com ZIKV para seus parceiros, bem como pelo compartilhamento de brinquedos sexuais, e a transmissão vertical, que é passada da gestante ao feto, podendo ocorrer em diferentes idades gestacionais')">Responder</button>
+                                <div class="retorno">
+                                    <p class="explicacao"></p>
                                 </div>
                             </div>
                         </div>
@@ -947,6 +943,68 @@
             </div>
         </div>
     </div>
+    
+    <div id="pergunta2" class="text-justify bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
+        <div class="text-justify bg-primary-light text-light padding-x-container py-5 overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-primary-dark rounded-4 p-5">
+                        <div class="row g-0">
+                            <div class="col-12 col-lg-6">
+                                <div class="container-fluid pergunta">
+                                    <span class="pergunta-texto">Dentre os sintomas ocasionados pela infecção de ZIKV, podem ser listados</span>
+                                    <div class="opcoes">
+                                        <label><input type="radio" name="q2" value="a"> <span>a</span> Febre alta, manchas vermelhas no corpo, tontura.</label>
+                                        <label><input type="radio" name="q2" value="b"> <span>b</span> Febre baixa, dores nas articulações, manchas vermelhas no corpo.</label>
+                                        <label><input type="radio" name="q2" value="c"> <span>c</span> Coceira, dor nas costas, dores no peito.</label>
+                                        <label><input type="radio" name="q2" value="d"> <span>d</span> Manchas vermelhas no corpo, febre alta, sangramento no nariz.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 padding-x-container">
+                                <button class="button w-50 mb-3 btn-aux-responder" onclick="verificarResposta('pergunta2', 'a', 'Os sintomas da zika incluem febre baixa, dor nos músculos e articulações, além de vermelhidão nos olhos e manchas vermelhas na pele. ')">Responder</button>
+                                <div class="retorno">
+                                    <p class="explicacao"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- CORRETA E INCORRETA -->
+    <div id="pergunta3" class="text-justify bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
+        <div class="text-justify bg-primary-light text-light padding-x-container py-5 overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-primary-dark rounded-4 p-5">
+                        <div class="row g-0">
+                            <div class="col-12 col-lg-6">
+                                <div class="container-fluid pergunta">
+                                    <span class="pergunta-texto">Dentre os sintomas ocasionados pela infecção de ZIKV, podem ser listados</span>
+                                    <div class="opcoes">
+                                        <label><input type="radio" name="q2" value="a"> <span>a</span> Febre alta, manchas vermelhas no corpo, tontura.</label>
+                                        <label><input type="radio" name="q2" value="b"> <span>b</span> Febre baixa, dores nas articulações, manchas vermelhas no corpo.</label>
+                                        <label><input type="radio" name="q2" value="c"> <span>c</span> Coceira, dor nas costas, dores no peito.</label>
+                                        <label><input type="radio" name="q2" value="d"> <span>d</span> Manchas vermelhas no corpo, febre alta, sangramento no nariz.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 padding-x-container">
+                                <button class="button w-50 mb-3 btn-aux-responder" onclick="verificarResposta('pergunta3', 'd', 'Os sintomas da zika incluem febre baixa, dor nos músculos e articulações, além de vermelhidão nos olhos e manchas vermelhas na pele. ')">Responder</button>
+                                <div class="retorno">
+                                    <p class="explicacao"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
     

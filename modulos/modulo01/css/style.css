@@ -1,6 +1,5 @@
 /* Criado por Aparicio Fermiano Junior
 https://github.com/AparicioFermiano */
-
 :root {
     --primary: #4BC2EF;
     --primary-hover: #369FCE;
@@ -43,14 +42,14 @@ https://github.com/AparicioFermiano */
 
 @font-face {
     font-family: 'Oswald Regular';
-    src: url('../fonts/Oswald/Oswald-Medium.woff2') format('truetype');
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
     font-weight:500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Bold';
-    src: url('../fonts/Poppins/Poppins-Bold.woff2') format('truetype');
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -76,6 +75,12 @@ body {
     color: var(--font-dark);
     background-color: var(--font-light);
 }
+
+/* CSS para desativar a barra de rolagem horizontal durante a animação shake */
+body.shake-animation-active {
+    overflow-x: hidden;
+}
+
 
 body::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
@@ -793,7 +798,6 @@ a.button {
   
   .explicacao {
     color: var(--font-light);
-    padding: 2rem;
   }
   
   .opcao-correta {

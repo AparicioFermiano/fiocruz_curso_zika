@@ -1,13 +1,14 @@
-var jaRespondeu = false;
-
-function verificarResposta(respostaCorreta, explicacaoCorreta) {
-    if (jaRespondeu) {
+function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta) {
+    var jaRespondeu = document.getElementById(perguntaId).dataset.jaRespondeu;
+    
+    if (jaRespondeu === "true") {
         mostrarPopup();
         return;
     }
 
-    var opcaoSelecionada = document.querySelector('input[name="q1"]:checked');
-    var retorno = document.querySelector('.retorno');
+    var opcaoSelecionada = document.querySelector('#' + perguntaId + ' input[type="radio"]:checked');
+
+    var retorno = document.querySelector('#' + perguntaId + ' .retorno');
     var explicacaoElement = retorno.querySelector('.explicacao');
 
     if (!opcaoSelecionada) {
@@ -28,24 +29,20 @@ function verificarResposta(respostaCorreta, explicacaoCorreta) {
         explicacaoElement.innerHTML = textoExplicacao;
         retorno.style.display = 'block';
         opcaoSelecionada.parentNode.classList.add('opcao-incorreta');
-        document.querySelector('input[value="' + respostaCorreta + '"]').parentNode.classList.add('opcao-correta');
-        var pergunta = document.getElementById('pergunta');
+        document.querySelector('#' + perguntaId + ' input[value="' + respostaCorreta + '"]').parentNode.classList.add('opcao-correta');
+        
+        // Adicionar a classe shake-animation ao elemento da pergunta
+        var pergunta = document.getElementById(perguntaId);
         pergunta.classList.add('shake-animation');
+        
+        // Adicionar a classe shake-animation-active ao body
+        document.body.classList.add('shake-animation-active');
+        
+        // Remover a classe shake-animation-active do body após a animação terminar
+        setTimeout(function() {
+            document.body.classList.remove('shake-animation-active');
+        }, 1000); // Tempo de espera deve ser igual ao tempo da animação de agitação em milissegundos
     }
 
-    jaRespondeu = true;
-}
-
-function mostrarPopup() {
-    var popup = document.getElementById('popup');
-    var overlay = document.getElementById('popup-overlay');
-    popup.style.display = 'block';
-    overlay.style.display = 'block'; // Mostra o overlay quando o pop-up aparece
-}
-
-function fecharPopup() {
-    var popup = document.getElementById('popup');
-    var overlay = document.getElementById('popup-overlay');
-    popup.style.display = 'none';
-    overlay.style.display = 'none'; // Oculta o overlay quando o pop-up é fechado
+    document.getElementById(perguntaId).dataset.jaRespondeu = "true";
 }
