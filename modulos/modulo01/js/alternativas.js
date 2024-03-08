@@ -51,3 +51,21 @@ function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta, exibi
 
     document.getElementById(perguntaId).dataset.jaRespondeu = "true";
 }
+
+function selecionarCaso(id, button) {
+    // Oculta todos os casos
+    document.querySelectorAll('.tab-pane').forEach(tab => {
+        tab.classList.remove('show', 'active');
+    });
+
+    // Remove a classe 'clicado' de todos os botões
+    document.querySelectorAll('.button.btn-aux').forEach(btn => {
+        btn.classList.remove('clicado');
+    });
+
+    // Exibe o caso selecionado
+    document.getElementById(id).classList.add('show', 'active');
+
+    // Ativa o botão clicado
+    button.classList.add('clicado');
+}

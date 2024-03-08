@@ -84,6 +84,7 @@ body.shake-animation-active {
 body a {
     color: #A60311;
     font-weight:bold;
+    word-wrap: break-word;
 }
 
 
@@ -107,7 +108,9 @@ body::-webkit-scrollbar-thumb,
 p {
     font-size: 1em;
 }
-
+.div-modal-orientacao {
+    
+}
 .background-image {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 5%, rgba(0, 0, 0, 0) 60%), url(../image/fundo_capa.png);
     position: relative;
@@ -316,21 +319,33 @@ p {
 }
 
 .sub-titulo {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 4rem;
 }
-
 
 
 .titulo {
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .tituloZ {
-    font-size: 5rem;
+    font-size: 5.6rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    line-height: 6rem;
+}
+
+.titulo-unidade {
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+
+.titulo-material {
+    font-size: 3.75rem;
+    font-weight: 400;
 }
 
 .padding-custom {
@@ -464,10 +479,13 @@ a.button {
 }
 
 .div-modal-orientacao {
-    max-width: 1652px;
-    max-height: 546px;
+    min-width: 103.25rem; /* Definindo o mínimo como 1652px */
+    max-width: 103.25rem; /* Definindo o máximo como 1652px */
+    max-height: 34.125rem;
+    min-height: 34.125rem;
     overflow-y: auto;
 }
+
 
 .div-modal-orientacao::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
@@ -502,7 +520,13 @@ a.button {
     background-color: var(--aux);
 }
 
-
+.animada-div {
+    min-width: 47.5rem; /* Definindo o mínimo como 1652px */
+    max-width: 47.5rem; /* Definindo o máximo como 1652px */
+    max-height: 7.5rem;
+    min-height: 7.5rem;
+    overflow-y: auto;
+}
 
 /* IMAGEM CICLO */
 
@@ -595,152 +619,6 @@ a.button {
 
 
 /* CAIXA DE PERGUNTAS */
-
-
-
-@media (min-width: 992px) {
-    .w-lg-75 {
-        width: 75% !important;
-    }
-
-    .w-lg-50 {
-        width: 50% !important;
-    }
-
-    .padding-desk-5 {
-        padding: 5% !important;
-    }
-
-    .padding-desk-3 {
-        padding: 3% !important;
-    }
-}
-
-@media (max-width: 992px) {
-    .w-md-100 {
-        width: 100% !important;
-    }
-
-    .w-md-75 {
-        width: 75% !important;
-    }
-
-    .w-md-50 {
-        width: 50% !important;
-    }
-
-    .titulo-capa {
-        font-size: 1.8rem;
-    }
-
-    .capitulo-capa {
-        font-size: 10rem;
-        text-align: center;
-    }
-
-    .modulo-capa {
-        font-size: 8rem;
-        font-weight: 900;
-    }
-
-    .padding-container {
-        padding: 2rem;
-    }
-
-    .padding-x-container {
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-
-    .titulo {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-
-    #creditos {
-        margin-top: 8%;
-        margin-bottom: 15%;
-    }
-    
-
-}
-
-@media (max-width: 767px) {
-    .pt-mobile-5 {
-        padding-top: 5%;
-    }
-
-    .py-mobile-5 {
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    .padding-container {
-        padding: 1.2rem;
-    }
-
-    .padding-x-container {
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
-    }
-
-    .titulo-capa {
-        font-size: 1rem;
-    }
-
-    .capitulo-capa {
-        font-size: 5rem;
-        text-align: center;
-    }
-
-    .modulo-capa {
-        font-size: 3.5rem;
-        font-weight: 900;
-    }
-
-    .padding-y-mobile-5 {
-        padding-top: 5% !important;
-        padding-bottom: 5% !important;
-    }
-
-    .padding-x-mobile-3 {
-        padding-left: 3% !important;
-        padding-right: 3% !important;
-    }
-
-    .capitulo-capa {
-        display: none;
-    }
-
-    .pt-md-0 {
-        padding-top: 0% !important;
-    }
-
-    .pt-md-5 {
-        padding-top: 3rem !important;
-    }
-
-    .w-sm-75 {
-        width: 75% !important;
-    }
-
-    .small-sm {
-        font-size: 0.6rem;
-    }
-
-    #creditos {
-        margin-top: 15%;
-        margin-bottom: 25%;
-    }
-}
-
-@media (min-width: 767px) and (max-width: 992px) {
-    .carousel-person {
-        height: 750px;
-    }
-}
-}
 
 /* CAIXA DE PERGUNTAS */
 .opcoes label {
@@ -897,8 +775,164 @@ a.button {
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
   }
-  
-  @keyframes fadeInPopup {
+
+@media (min-width: 992px) {
+    
+    .w-lg-75 {
+        width: 75% !important;
+    }
+
+    .w-lg-50 {
+        width: 50% !important;
+    }
+
+    .padding-desk-5 {
+        padding: 5% !important;
+    }
+
+    .padding-desk-3 {
+        padding: 3% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .w-md-100 {
+        width: 100% !important;
+    }
+
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .w-md-50 {
+        width: 50% !important;
+    }
+
+    .titulo-capa {
+        font-size: 1.8rem;
+    }
+
+    .capitulo-capa {
+        font-size: 10rem;
+        text-align: center;
+    }
+
+    .modulo-capa {
+        font-size: 8rem;
+        font-weight: 900;
+    }
+
+    .padding-container {
+        padding: 2rem;
+    }
+
+    .padding-x-container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .titulo {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+
+    #creditos {
+        margin-top: 8%;
+        margin-bottom: 15%;
+    }
+    
+
+}
+
+@media (max-width: 1224px) {
+    .carousel-indicators {
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .carousel-indicators {
+        position: relative;
+    }
+    
+    .pt-mobile-5 {
+        padding-top: 5%;
+    }
+
+    .py-mobile-5 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .padding-container {
+        padding: 1.2rem;
+    }
+
+    .padding-x-container {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .titulo-capa {
+        font-size: 1rem;
+    }
+
+    .capitulo-capa {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .modulo-capa {
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    .padding-y-mobile-5 {
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
+    }
+
+    .padding-x-mobile-3 {
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    .capitulo-capa {
+        display: none;
+    }
+
+    .pt-md-0 {
+        padding-top: 0% !important;
+    }
+
+    .pt-md-5 {
+        padding-top: 3rem !important;
+    }
+
+    .w-sm-75 {
+        width: 75% !important;
+    }
+
+    .small-sm {
+        font-size: 0.6rem;
+    }
+
+    #creditos {
+        margin-top: 15%;
+        margin-bottom: 25%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .carousel-person {
+        height: 750px;
+    }
+}
+
+}
+@keyframes fadeInPopup {
     from { opacity: 0; }
     to { opacity: 1; }
   }
