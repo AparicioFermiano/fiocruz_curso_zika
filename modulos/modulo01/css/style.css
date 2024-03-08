@@ -1,5 +1,3 @@
-/* Criado por Aparicio Fermiano Junior
-https://github.com/AparicioFermiano */
 :root {
     --primary: #4BC2EF;
     --primary-hover: #369FCE;
@@ -27,49 +25,49 @@ https://github.com/AparicioFermiano */
 }
 
 @font-face {
-    font-family: 'Oswald Bold';
-    src: url('../fonts/Oswald/Oswald-Bold.woff2') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Oswald Medium';
-    src: url('../fonts/Oswald/Oswald-Medium.woff2') format('truetype');
-    font-weight:700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Oswald Regular';
-    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
-    font-weight:500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins Medium';
-    src: url('../fonts/Poppins/Poppins-Medium.woff2') format('truetype');
+    font-family: 'Montserrat Medium';
+    src: url('../fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
     font-weight:700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins Regular';
-    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('truetype');
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight:500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('../fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight:700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
     font-weight:500;
     font-style: normal;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin: 0% !important;
     color: var(--font-dark);
@@ -79,6 +77,13 @@ body {
 /* CSS para desativar a barra de rolagem horizontal durante a animação shake */
 body.shake-animation-active {
     overflow-x: hidden;
+}
+
+/* LINK */
+
+body a {
+    color: #A60311;
+    font-weight:bold;
 }
 
 
@@ -295,13 +300,13 @@ p {
 
 /* FONTES */
 
-.font-oswald,
-.font-oswald b {
-    font-family: 'Oswald', sans-serif;
+.font-Montserrat,
+.font-Montserrat b {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .capitulo-capa {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 15rem;
 }
@@ -310,15 +315,21 @@ p {
     font-size: 2rem;
 }
 
+.sub-titulo {
+    font-size: 1.3rem;
+}
+
+
+
 .titulo {
     font-size: 2.5rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 .tituloZ {
-    font-size: 7.5rem;
-    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
@@ -491,12 +502,7 @@ a.button {
     background-color: var(--aux);
 }
 
-/* LINK */
 
- a {
-    color: #A60311 !important;
-    font-weight:bold !important;
-}
 
 /* IMAGEM CICLO */
 
@@ -808,6 +814,34 @@ a.button {
     color: #FF4242 !important;
   }
   
+  /* Remova esta regra que oculta o botão de rádio padrão */
+.opcoes label input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+}
+.opcoes-padrao label input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+}
+
+/* Estiliza a bolinha de seleção padrão */
+.opcoes-padrao label input[type="radio"] + span:before {
+    content: ""; /* Remove o conteúdo do pseudo-elemento */
+    display: inline-block; /* Torna o pseudo-elemento um bloco inline */
+    width: 12px; /* Largura do pseudo-elemento */
+    height: 12px; /* Altura do pseudo-elemento */
+    border: 2px solid #FFFFFF; /* Cor da borda (branca por padrão) */
+    background-color: #FFFFFF;
+    border-radius: 50%; /* Transforma o pseudo-elemento em um círculo */
+    margin-right: 10px; /* Margem à direita para separar o pseudo-elemento do texto */
+}
+
+/* Estiliza a bolinha de seleção padrão quando marcada */
+.opcoes-padrao label input[type="radio"]:checked + span:before {
+    background-color: #FFFFFF; /* Cor de fundo (branca quando clicada) */
+    border-color: #D0BE75; /* Cor da borda (cor quando clicada) */
+}
+
+
+
   
   /* POP-UP */
   

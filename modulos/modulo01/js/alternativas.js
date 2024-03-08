@@ -1,4 +1,4 @@
-function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta) {
+function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta, exibirRespostaCorreta) {
     var jaRespondeu = document.getElementById(perguntaId).dataset.jaRespondeu;
     
     if (jaRespondeu === "true") {
@@ -24,7 +24,12 @@ function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta) {
         explicacaoElement.innerHTML = "<span class='bold'>Comentário:</span> " + "<br><br>" + explicacaoCorreta;
         opcaoSelecionada.parentNode.classList.add('opcao-correta');
     } else {
-        var textoExplicacao = "A resposta correta é a alternativa " + respostaCorreta.toUpperCase() + ".<br><br>";
+        var textoExplicacao = "";
+        if (exibirRespostaCorreta) {
+            textoExplicacao = "A resposta correta é a alternativa " + respostaCorreta.toUpperCase() + ".<br><br>";
+        } else {
+            textoExplicacao = "A questão está correta.<br><br>";
+        }
         textoExplicacao += "<span class='bold'>Comentário:</span> " + "<br><br>" + explicacaoCorreta;
         explicacaoElement.innerHTML = textoExplicacao;
         retorno.style.display = 'block';

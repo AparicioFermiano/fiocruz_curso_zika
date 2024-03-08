@@ -14,7 +14,7 @@ https://github.com/AparicioFermiano */
     display: None;
     display: flex;
     flex-direction: column;
-    background-color: var(--font-dark);
+    background-color: var(--primary-dark);
     color: var(--font-light);
     justify-content: space-between;
     transform: translateX(100%);
@@ -38,7 +38,7 @@ https://github.com/AparicioFermiano */
 
 .sidebar-item:hover,
 .sidebar-itema.active {
-    background-color: var(--primary-dark);
+    background-color: var(--secondary);
 }
 
 .sidebar-item a {

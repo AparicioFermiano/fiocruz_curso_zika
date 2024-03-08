@@ -47,22 +47,7 @@ body.shake-animation-active {
     transition: background-color 0.3s ease;
   }
   
-  .opcoes label span {
-    font-weight: 700;
-    color: black;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid var(--font-dark);
-    text-align: center;
-    line-height: 1; /* Use line-height 1 para garantir que o texto não cause distorção no círculo */
-    padding: 0.5em; /* Adiciona um preenchimento interno para garantir que o círculo tenha um tamanho mínimo */
-    margin-right: 16px;
-    background-color: white;
-    width: 2rem; /* Definindo o tamanho do círculo */
-    height: 2rem;
-}
+  
 
   
   .opcoes label:hover span {
