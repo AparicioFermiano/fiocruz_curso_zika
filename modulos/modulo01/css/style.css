@@ -324,6 +324,13 @@ p {
     line-height: 4rem;
 }
 
+.titulo-italico {
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0rem;
+    padding-bottom: 2rem;
+}
+
 .titulo-pergunta {
     font-size: 1.25rem;
     font-weight: 700;
