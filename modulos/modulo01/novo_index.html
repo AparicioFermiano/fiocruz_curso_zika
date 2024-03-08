@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Aparicio Fermiano dos Santos Junior">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sidenav.css">
-    <!-- https://github.com/AparicioFermiano -->
-    <title>Monkeypox: Uma Abordagem Geral para Profissionais de Saúde</title>
+
+    <title>Vírus Zika: Uma Abordagem Geral para Profissionais de Saúde</title>
 </head>
 
 <body>
@@ -120,17 +119,21 @@
         <!-- BOTOES CARROSEL -->
         <div class="d-flex justify-content-around px-4">
             <button type="button" class="btn-sidebar-icon" onclick="window.open('creditos.html','_self')">
-                <i class="bi bi-person-badge"></i>
+                <i class="bi bi-door-open-fill"></i>
             </button>
             <button type="button" class="btn-sidebar-icon" data-bs-toggle="modal" data-bs-target="#instrucao_navegacao">
-                <i class="bi bi-exclamation-circle"></i>
+                <i class="bi bi-file-earmark-person-fill"></i>
             </button>
+        </button>
+        <button type="button" class="btn-sidebar-icon" data-bs-toggle="modal" data-bs-target="#instrucao_navegacao">
+            <i class="bi bi-exclamation-circle"></i>
+        </button>
         </div>
     </div>
 
     <div id="capa" class="background-image container-fluid padding-container">
         <div class="row pt-mobile-5">
-            <div class="col-12 col-lg-4">
+            <div class="borrado capa-fluid col-12 col-lg-4">
                 <img src="./image/mosquito.png" alt="Logos" class="w-50 img-fluid">
                 <span class="mx-auto d-block sub-titulo">ABORDAGEM CLÍNICA DE</span>
                 <span class="tituloZ bold mx-auto d-block">ZIKA</span>
@@ -177,7 +180,7 @@
         </div>
     </div>
 
-    <div id="sobre" class="container-fluid p-5 bg-primary-dark-hover">
+    <div id="sobre" class="container-fluid p-5 bg-primary-dark-hover box-scrool">
         <p class="titulo-material text-light text-center">SOBRE O MATERIAL</p>
         <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -298,7 +301,7 @@
         </p>
         <div class="row justify-content-center ">
             <div class="col-12 col-lg-3 order-last order-lg-first d-flex align-items-center">
-                <img src="./image/mosquito_pais.svg" alt="Virus" class="d-block mx-auto w-100 w-lg-100 mx-2 pt-5"
+                <img src="./image/mosquito_pais.svg" alt="Virus" class="d-block mx-auto w-100 imagem-menor mx-2 pt-5"
                     data-animation="left-to-right">
             </div>
 
@@ -348,13 +351,13 @@
             <div class="col-12 col-lg-4 ">
 
                 <div class="padding-desk-5 padding-y-mobile-5">
-
                     <div class="d-flex flex-column">
                         <ul class="list-unstyled">
                             <li class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #AC4725; border: none;">
+                                    style="width: 30px; height: 30px; background-color: #AC4725; border: none;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Uganda (1947)">
                                     01
                                 </button>
                                 <span class="ms-2">Uganda (1947);</span>
@@ -362,7 +365,8 @@
                             <li class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #482EC7; border: none;">
+                                    style="width: 30px; height: 30px; background-color: #482EC7; border: none;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Nigéria (1954)">
                                     02
                                 </button>
                                 <span class="ms-2">Nigéria (1954);</span>
@@ -370,7 +374,8 @@
                             <li class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #A7D26D; border: none;">
+                                    style="width: 30px; height: 30px; background-color: #A7D26D; border: none;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Polinésia Francesa (2013)">
                                     03
                                 </button>
                                 <span class="ms-2">Polinésia Francesa (2013);</span>
@@ -378,15 +383,18 @@
                             <li class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #E88BBA; border: none;">
+                                    style="width: 30px; height: 30px; background-color: #E88BBA; border: none;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Chile (2014)">
                                     04
                                 </button>
                                 <span class="ms-2">Chile (2014);</span>
                             </li>
-                            <li class="d-flex mb-3">
+                            <li class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #FAA919; border: none;">
+                                    style="width: 30px; height: 30px; background-color: #FAA919; border: none;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="México, Paraguai, Guatemala, El Salvador, Colômbia, Panamá, Honduras, Ilha de Santiago, Cabo Verde e Venezuela (2015);">
                                     05
                                 </button>
                                 <span class="ms-2 text-justify">México, Paraguai, Guatemala, El Salvador, Colômbia,
@@ -395,7 +403,8 @@
                             <li class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #D4763B; border: none;">
+                                    style="width: 30px; height: 30px; background-color: #D4763B; border: none;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Rio Grande do Norte e Bahia (2015)">
                                     06
                                 </button>
                                 <span class="ms-2">Rio Grande do Norte e Bahia (2015)</span>
@@ -403,6 +412,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
             <div class="col-12 col-lg-8">
                 <img src="./image/mapa_interativo.png" class="img-fluid alt="" >
@@ -483,7 +493,7 @@
                                 Transmissão vetorial, decorrente da picada do mosquito
                             </button>
                         </h2>
-                        <div id="accordion_remedios_1" class="accordion-collapse collapse collapsed show"
+                        <div id="accordion_remedios_1" class="accordion-collapse collapse show"
                             data-bs-parent="#accordion_remedios">
                             <div class="accordion-body ">
                                 <p class="pb-2">
@@ -596,10 +606,10 @@
                     <button class="button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_03', this)"
                         type="button" role="tab" aria-selected="false">Parte 03</button>
                 </div>
-                <div class="bg-primary-dark rounded-4 text-light col-12 col-lg-12 p-3 text-justify">
+                <div class="bg-primary-dark rounded-4 text-light  p-3 text-justify">
                     <div class="tab-content py-5 px-5 div-modal-orientacao">
                         <div class="tab-pane fade show active" id="caso_01" role="tabpanel" tabindex="0">
-                            <p class="titulo-unidade display-6 col-12 col-lg-6 pb-4 pb-4">Transmissão vetorial,
+                            <p class="titulo-unidade display-6  pb-4 pb-4">Transmissão vetorial,
                                 decorrente da
                                 picada do mosquito</p>
                             <p>Por se tratar de uma doença febril, o diagnóstico diferencial é amplo e aconselha-se
@@ -738,7 +748,7 @@
                 clínico da doença, riscos da automedicação e sobre a necessidade de procurar o serviço de saúde.</p>
         </div>
 
-        <div class="bg-aux box-saiba-mais text-center padding-x-container pt-5">
+        <div class="bg-aux box-saiba-mais text-center padding-x-container py-5">
             <img src="./image/exclamation-triangle.svg" class=" " alt="Exclamação" data-animation="circle-saiba-mais">
             <div class="text-center">
                 <p class="pt-3">Atenção</p>
@@ -772,146 +782,179 @@
                     <br>
                     A responsabilidade social no combate ao vetor é obrigatoriedade de todos!
                 </p>
-
-            </div>
-            
-        </div>
-
-
-
-
-        <div class="animada-div row padding-x-container">
-            <div class="col-12 col-lg-6 text-center rounded-4">
-                <div class="div-animada bg-secondary text-light box-saiba-mais text-center rounded-4 p-3"
-                    data-animation="left-to-right">
-                    <div class="text-justify">
-                        <p class=" ">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
-                    </div>
-                </div>
-                
-                <div class="mt-3 bg-secondary text-light box-saiba-mais text-center rounded-4 p-3"
-                    data-animation="left-to-right">
-                    <div class="text-justify">
-                        <p class=" ">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
-                    </div>
-                </div>
-                <div class="mt-3 bg-secondary text-light box-saiba-mais text-center rounded-4 p-3"
-                    data-animation="left-to-right">
-                    <div class="text-justify">
-                        <p class=" ">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="fluxo" class="col-12 col-lg-6">
-                <div class=" bg-secondary text-light text-center rounded-4 p-3"
-                    data-animation="right-to-left">
-                    <div class="text-justify">
-                        <p class=" ">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
-                    </div>
-                </div>
-                <div class="mt-3 bg-secondary text-light text-center rounded-4 p-3"
-                    data-animation="right-to-left">
-                    <div class="text-justify">
-                        <p class=" ">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
-                    </div>
-                </div>
             </div>
         </div>
 
 
+        <!-- DIVS ANIMADAS
+        <div class="bg container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6" data-animation="left-to-right">
+                    <div class="pb-5">
+                        <div class="bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
+                            <div class="text-justify">
+                                <p class="">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+                            </div>
+                        </div>
+        
+                        <div class="mt-3 bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
+                            <div class="text-justify">
+                                <p class="">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
+                            <div class="text-justify">
+                                <p class="">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-lg-6" data-animation="right-to-left">
+                    <div class="d-block bg-secondary text-light text-center rounded-4 p-3" data-animation="right-to-left">
+                        <div class="text-justify">
+                            <p class="">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+                        </div>
+                    </div>
+                    <div class="d-block mt-3 bg-secondary text-light text-center rounded-4 p-3" data-animation="right-to-left">
+                        <div class="text-justify">
+                            <p class="">Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
 
-        <div id="vigilancia" class="text-justify bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
+        
 
-            <p class="titulo font-oswald medium text-justify padding-x-container">Vigilância em Saúde
-            </p>
-            <p class="padding-x-container">O sistema de vigilância epidemiológica no Brasil é organizado em uma rede de
-                vigilância em saúde. Em todos os níveis de atenção de saúde existe uma unidade operacional de vigilância
-                para receber a notificação, realizar a investigação de casos suspeitos, confirmar ou descartar os casos
-                e
-                acompanhar as coletividades ou os indivíduos afetados.
-            <p class="padding-x-container">
-                A vigilância epidemiológica é “um processo contínuo e sistemático de coleta, consolidação, disseminação
-                de
-                dados sobre eventos relacionados à saúde, visando o planejamento e a implementação de medidas de saúde
-                pública para a proteção da saúde da população, a prevenção e controle de riscos, agravos e doenças, bem
-                como
-                para a promoção da saúde”.
-            </p>
-            <p class="padding-x-container">
-                Os profissionais nos serviços de saúde devem estar preparados para desencadear ações que possam
-                prevenir,
-                proteger, controlar e dar uma resposta rápida para a saúde pública. Dessa forma é fundamental conhecer
-                os
-                marcos legais, o fluxo de informação e as atividades desenvolvidas na vigilância epidemiológica de seu
-                território.
-            </p>
-            <p class="padding-x-container">
-                As doenças e os agravos de notificação compulsória no Brasil foram regulamentados a partir de 1975 e
-                frequentes atualizações são realizadas para incluir outras doenças conhecidas, mas sem circulação, ou
-                com
-                circulação esporádica no território nacional. São exemplos de inclusão de novas doenças: a vigilância da
-                Febre de Chikungunya e a vigilância de óbitos relacionados a dengue.
-            </p>
-            <p class="padding-x-container">
-                No Brasil, a Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública
-                define
-                quais as doenças e agravos devem ser notificadas imediatamente, quais são as doenças que devem ser
-                notificadas compulsoriamente e qual a responsabilidade dos profissionais de saúde. Os critérios para
-                estruturar a lista das doenças e agravos de notificação compulsória estão relacionados a magnitude,
-                potencial de disseminação, transcendência, vulnerabilidade e disponibilidade de medidas de controle. Os
-                casos confirmados para ZIKV são de notificação compulsória.
-            </p>
-            <p class="padding-x-container">
-                A notificação é o ato de comunicação da suspeita de um caso, baseado na definição de caso estabelecida
-                para
-                uma determinada doença.
-            </p>
-            <p class="padding-x-container">
-                A notificação deve descrever a situação incluindo o tempo, a pessoa e o lugar – isto é, há quanto tempo
-                está
-                ocorrendo o evento, onde está acontecendo, quantas pessoas estão sendo atingidas. As notificações de
-                zika
-                devem ser registradas na Ficha de Notificação Individual/Conclusão e inseridas no Sinan Net.
-            </p>
-            <p class="padding-x-container">
-                Os casos de malformação congênita devem ser notificados e investigados conforme normas estabelecidas no
-                documento <span class="bold">Orientações integradas de vigilância e atenção à saúde no âmbito da
-                    Emergência
-                    de Saúde Pública de Importância Nacional: procedimentos para o monitoramento das alterações no
-                    crescimento e desenvolvimento a partir da gestação até a primeira infância, relacionadas à infecção
-                    pelo
-                    ZIKV e outras etiologias infeciosas dentro da capacidade operacional do SUS.</span>
-            </p>
-            <p class="padding-x-container">
-                Já os casos de manifestações neurológicas suspeitos de infecção prévia por dengue, zika e chikungunya
-                devem
-                ser informados por meio de instrumento específico, de acordo com o <b>Manual de vigilância sentinela de
-                    doenças neuroinvasivas por arbovírus.</b>
-            </p>
-            <p class="padding-x-container">
-                Os casos suspeitos notificados serão informados por profissionais de saúde, laboratórios ou serviços de
-                saúde e até mesmo pela imprensa ou por cidadãos comuns. Os serviços de vigilância epidemiológica irão
-                proceder à investigação a fim de confirmar ou descartar esses casos.
-            </p>
 
-            <div class="row padding-x-container py-5">
-                <div class="col-12 col-lg-6 bg-aux box-saiba-mais padding-container  text-center rounded-4">
-                    <img src="./image/exclamation-triangle.svg" class=" " alt="Exclamação"
-                        data-animation="circle-saiba-mais">
-                    <div class="text-center padding-x-container">
-                        <p class="pt-3">Atenção</p>
-                        <p class="titulo bold">Atenção!</p>
-                        <p class="text-justify">
-                            <a
-                                href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view">O
-                                Guia de Vigilância em Saúde</a> estabelece os fluxos de comunicação e notificação para
-                            infecção causada por ZIKV.
+
+
+
+
+
+        <div id="vigilancia"
+            class="flex-column padding-x-container text-justify bg-primary-light font-dark  py-5 overflow-hidden">
+            <div class="row pb-5">
+                <div class="d-flex col-12 col-lg-6 pe-lg-5">
+                    <span>
+                        <p>
+                            O sistema de vigilância epidemiológica no Brasil é organizado em uma rede de vigilância em
+                            saúde. Em
+                            todos os níveis de atenção de saúde existe uma unidade operacional de vigilância para
+                            receber a
+                            notificação, realizar a investigação de casos suspeitos, confirmar ou descartar os casos e
+                            acompanhar as coletividades ou os indivíduos afetados.
                         </p>
-                    </div>
+                        <p>
+                            A vigilância epidemiológica é “um processo contínuo e sistemático de coleta, consolidação,
+                            disseminação de dados sobre eventos relacionados à saúde, visando o planejamento e a
+                            implementação
+                            de medidas de saúde pública para a proteção da saúde da população, a prevenção e controle de
+                            riscos,
+                            agravos e doenças, bem como para a promoção da saúde”.
+                        </p>
+                        <p>
+                            Os profissionais nos serviços de saúde devem estar preparados para desencadear ações que
+                            possam
+                            prevenir, proteger, controlar e dar uma resposta rápida para a saúde pública. Dessa forma é
+                            fundamental conhecer os marcos legais, o fluxo de informação e as atividades desenvolvidas
+                            na
+                            vigilância epidemiológica de seu território.
+                        </p>
+                        <p>
+                            As doenças e os agravos de notificação compulsória no Brasil foram regulamentados a partir
+                            de
+                            1975 e
+                            frequentes atualizações são realizadas para incluir outras doenças conhecidas, mas sem
+                            circulação,
+                            ou com circulação esporádica no território nacional. São exemplos de inclusão de novas
+                            doenças:
+                            a
+                            vigilância da Febre de Chikungunya e a vigilância de óbitos relacionados a dengue.
+                        </p>
+                        <p>
+                            No Brasil, a Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de
+                            Saúde
+                            Pública define quais as doenças e agravos devem ser notificadas imediatamente, quais são as
+                            doenças
+                            que devem ser notificadas compulsoriamente e qual a responsabilidade dos profissionais de
+                            saúde.
+                            Os
+                            critérios para estruturar a lista das doenças e agravos de notificação compulsória estão
+                            relacionados a magnitude, potencial de disseminação, transcendência, vulnerabilidade e
+                            disponibilidade de medidas de controle. Os casos confirmados para ZIKV são de notificação
+                            compulsória.
+
+                    </span>
                 </div>
 
-                <div id="fluxo" class="col-12 col-lg-6 padding-x-container">
+                <div class="col-12 col-lg-6">
+                    <span>
+                        <p>
+                            A notificação é o ato de comunicação da suspeita de um caso, baseado na definição de caso
+                            estabelecida para uma determinada doença.
+                        <p>
+                        <p>
+                            A notificação deve descrever a situação incluindo o tempo, a pessoa e o lugar - isto é, há
+                            quanto
+                            tempo está ocorrendo o evento, onde está acontecendo, quantas pessoas estão sendo atingidas.
+                            As
+                            notificações de zika devem ser registradas na Ficha de Notificação Individual/Conclusão e
+                            inseridas
+                            no Sinan Net.
+                        </p>
+                        <p>
+                            Os casos de malformação congênita devem ser notificados e investigados conforme normas
+                            estabelecidas
+                            no documento <b>Orientações integradas de vigilância e atenção à saúde no âmbito da
+                                Emergência
+                                de Saúde
+                                Pública de Importância Nacional: procedimentos para o monitoramento das alterações no
+                                crescimento e
+                                desenvolvimento a partir da gestação até a primeira infância, relacionadas à infecção
+                                pelo
+                                ZIKV e
+                                outras etiologias infeciosas dentro da capacidade operacional do SUS.</b>
+                        </p>
+                        <p>
+                            Já os casos de manifestações neurológicas suspeitos de infecção prévia por dengue, zika e
+                            chikungunya devem ser informados por meio de instrumento específico, de acordo com o
+                            <b>Manual
+                                de
+                                vigilância sentinela de doenças neuroinvasivas por arbovírus.</b>
+                        </p>
+                        <p>
+                            Os casos suspeitos notificados serão informados por profissionais de saúde, laboratórios ou
+                            serviços
+                            de saúde e até mesmo pela imprensa ou por cidadãos comuns. Os serviços de vigilância
+                            epidemiológica
+                            irão proceder à investigação a fim de confirmar ou descartar esses casos.
+                        </p>
+
+                    </span>
+                </div>
+            </div>
+            <div class="container-fluid row d-flex">
+                <div class="col-12 col-lg-6 pe-lg-5">
+                    <div class=" bg-aux box-saiba-mais padding-container  text-center rounded-4 px-5">
+                        <img src="./image/exclamation-triangle.svg" class=" " alt="Exclamação"
+                            data-animation="circle-saiba-mais">
+                        <div class="text-center ">
+                            <p class="pt-3">Atenção</p>
+                            <p class="titulo bold">Atenção!</p>
+                            <p class="text-justify">
+                                <a
+                                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view">O
+                                    Guia de Vigilância em Saúde</a> estabelece os fluxos de comunicação e notificação
+                                para
+                                infecção causada por ZIKV.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="fluxo" class="col-12 col-lg-6 px-3">
                     <span class="titulo">Fluxo de notificação e investigação de casos</span>
                     <p><span class="text-justify">Os profissionais de saúde da Atenção Básica devem notificar doenças,
                             agravos e eventos que constam na Lista Nacional de Notificação Compulsória de Doenças,
@@ -931,11 +974,410 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="bg-aux box-saiba-mais padding-container">
+            <div class="text-center pb-3">
+                <img src="./image/exclamation-triangle.svg" class="" alt="Exclamação"
+                    data-animation="circle-saiba-mais">
+                <span class="d-flex flex-column">
+                    <p>Atenção</p>
+                    <p class="titulo">Atenção profissional de saúde!</p>
+                </span>
+            </div>
+            <div class="row  text-justify">
+                <div class="col-12 col-lg-6 text-justify px-5">
+                    <p>
+                        O profissional deve comunicar à Secretaria Municipal de Saúde (SMS) em até 24 horas no máximo.
+                    </p>
+                    <p>
+                        Caso a SMS ou a Secretaria Estadual de Saúde (SES) não disponha de estrutura para receber as
+                        notificações de emergências epidemiológicas, o profissional pode ligar gratuitamente para o
+                        Disque Notifica (0800-644-6645), que é um serviço de atendimento telefônico destinado aos
+                        profissionais de saúde.
+                    </p>
+                    <p>
+                        <b>O atendimento funciona ininterruptamente
+                            (24 HORAS/7 DIAS DA SEMANA/365 DIAS AO ANO).</b>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 px-5">
+                    <p>
+                        Essa notificação também poderá ser feita por meio do correio eletrônico (e-mail) do CIEVS
+                        nacional, o E-notifica (notifica@saude.gov.br).
+                        Quando um caso suspeito é identificado em uma unidade hospitalar, o profissional deve se
+                        reportar a uma unidade operacional responsável pelo desenvolvimento das atividades de vigilância
+                        epidemiológica no ambiente hospitalar. Tais unidades podem ser denominadas de Núcleos
+                        Hospitalares de Epidemiologia ou Setor de Vigilância em Saúde (hospitais universitários
+                        vinculados à Empresa Brasileira de Serviços Hospitalares/Ebserh).
+                        Nas unidades hospitalares em que não houver unidades operacionais, o Serviço de Controle de
+                        Infecções Hospitalares (SCIH) poderá ser responsável por essas atividades.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PERGUNTAS -->
+        <div class="container- padding-x-container text-justify bg-primary-light font-dark  py-5 overflow-hidden">
+            <span id="exercicios" class="titulo">Exercícios interativos</span>
+            <div id="pergunta1" class="font-dark overflow-hidden">
+                <div class="text-light py-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-5">
+                                <div class="row g-0">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-5">
+                                            <span class="titulo-pergunta">São consideradas formas de transmissão de
+                                                doença
+                                                causada por ZIKV:</span>
+                                            <div class="opcoes pt-3">
+                                                <label class="bordas"><input type="radio" name="q1" value="a">
+                                                    <span>a</span>
+                                                    Transmissão
+                                                    sexual, transmissão por contato pessoa-pessoa, vetorial</label>
+                                                <label><input type="radio" name="q1" value="b"> <span>b</span>
+                                                    Transmissão
+                                                    vetorial, transmissão pela saliva, transmissão através do consumo de
+                                                    alimentos contaminados</label>
+                                                <label><input type="radio" name="q1" value="c"> <span>c</span>
+                                                    Transmissão
+                                                    da mãe para o feto, transmissão sexual, transmissão através da
+                                                    picada de
+                                                    mosquito contaminado</label>
+                                                <label><input type="radio" name="q1" value="d"> <span>d</span>
+                                                    Transmissão
+                                                    sexual, transmissão vetorial, transmissão através do contato com
+                                                    água
+                                                    suja.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 mb-3 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta1', 'c', 'As três formas de transmissão mais estudadas são: A transmissão vetorial, decorrente da picada do mosquito, a transmissão sexual/interpessoal, que pode ser através do sexo (vaginal, anal, oral) de uma pessoa com ZIKV para seus parceiros, bem como pelo compartilhamento de brinquedos sexuais, e a transmissão vertical, que é passada da gestante ao feto, podendo ocorrer em diferentes idades gestacionais', true)">Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pergunta2" class="font-dark py-5 overflow-hidden">
+                <div class="text-light py-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-5">
+                                <div class="row g-0">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-5">
+                                            <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
+                                                de
+                                                ZIKV,
+                                                podem ser listados</span>
+                                            <div class="opcoes pt-3">
+                                                <label><input type="radio" name="q2" value="a"> <span>a</span> Febre
+                                                    alta,
+                                                    manchas vermelhas no corpo, tontura.</label>
+                                                <label><input type="radio" name="q2" value="b"> <span>b</span> Febre
+                                                    baixa,
+                                                    dores nas articulações, manchas vermelhas no corpo.</label>
+                                                <label><input type="radio" name="q2" value="c"> <span>c</span> Coceira,
+                                                    dor nas
+                                                    costas, dores no peito.</label>
+                                                <label><input type="radio" name="q2" value="d"> <span>d</span> Manchas
+                                                    vermelhas
+                                                    no corpo, febre alta, sangramento no nariz.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 mb-3 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta2', 'a', 'Os sintomas da zika incluem febre baixa, dor nos músculos e articulações, além de vermelhidão nos olhos e manchas vermelhas na pele. ', true)">Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CORRETA E INCORRETA -->
+            <div id="pergunta3" class="font-dark py-5 overflow-hidden">
+                <div class="text-light py-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-5">
+                                <div class="row g-0">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-5">
+                                            <span class="titulo-pergunta">O diagnóstico de infecção causada por ZIKV não
+                                                pode ser
+                                                realizado utilizando-se critérios epidemiológicos e indicação clínica, e
+                                                a
+                                                confirmação através de exames laboratoriais.</span>
+                                            <div class="opcoes pt-3-padrao d-flex py-5">
+                                                <label class="pe-5"><input type="radio" name="q2" value="a">
+                                                    <span></span>
+                                                    Correta</label>
+                                                <label><input type="radio" name="q2" value="b"> <span></span>
+                                                    Incorreta</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 mb-3 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta3',
+                                             'a',
+                                              'O diagnóstico do ZIKV é clínico, podendo ser utilizados critérios epidemiológicos. O resultado é confirmado por meio de exames laboratoriais de sorologia e biologia molecular. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS). ', false)">
+                                            Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="referencias" class="text-justify row container-fluid padding-x-container py-5">
+            <p class="titulo pb-3">Referências</p>
+            <div class="col-12 col-lg-6 pe-lg-5">
+                <span>
+                    ALAM, N. et al. Recent trends in ZIKV research: a step away from cure. Biomedicine &
+                    Pharmacotherapy, v. 91, p. 1.152-1.159, 2017. Disponível em: <https:
+                        //www.sciencedirect.com/science/article/abs/pii/S0753332217313215>. Acesso em: 2 ago. 2023.
+                        ALBUQUERQUE, M. F. P. M. et al. Epidemia de microcefalia e ZIKV: a construção do conhecimento em
+                        epidemiologia. Cadernos de Saúde Pública, v. 34(P), e00069018, 2018. Disponível em: <scielo.br
+                            /j/csp/a/qxpH3vtWSnHV5WfCBGGGfyd/?format=pdf&lang=pt>. Acesso em: 2 ago. 2023.
+                            ARGENTA, S. Estudo descobre a rota da chegada do ZIKV ao Brasil. Disponível em:
+                            https://portal.fiocruz.br/noticia/estudo-descobre-rota-da-chegada-do-virus-zika-ao-brasil.
+                            Acesso em: 12 ago. 2019.
+
+                            BARJAS-CASTRO, M. et al. Probable transfusion-transmitted Zika virus in Brazil. The Journal
+                            of AABB Transfusion, v. 56, n. 7, p. 1.684-1.688, 2016. Disponível em: <https:
+                                //onlinelibrary.wiley.com/doi/abs/10.1111/trf.13681>. Acesso em: 21 ago. 2023.
+                                BRASIL. Ministério da Saúde. Portaria n. 1.813, de 11 de novembro de 2015. Declara
+                                Emergência em Saúde Pública de Importância Nacional (ESPIN) por alteração do padrão de
+                                ocorrência de microcefalias no Brasil. Disponível em: <https:
+                                    //bvsms.saude.gov.br/bvs/saudelegis/gm/2015/prt1813_11_11_2015.html>. Acesso em: 2
+                                    ago. 2023.
+
+                                    BRASIL. Ministério da Saúde. Orientações integradas de vigilância e atenção à saúde
+                                    no âmbito da Emergência de Saúde Pública de Importância Nacional: procedimentos para
+                                    o monitoramento das alterações no crescimento e desenvolvimento a partir da gestação
+                                    até a primeira infância, relacionadas à infecção pelo vírus zika e outras etiologias
+                                    infeciosas dentro da capacidade operacional do SUS. 2017a. Disponível em:
+                                    https://bvsms.saude.gov.br/bvs/publicacoes/orientacoes_integradas_vigilancia_atencao_emergencia_saude_publica.pdf.
+                                    Acesso em: 23 ago. 2023.
+
+                                    BRASIL. Ministério da Saúde. Manual de vigilância sentinela de doenças
+                                    neuroinvasivas por arbovírus. Brasília: Ministério da Saúde, 2017b. Disponível em:
+                                    <https:
+                                        //bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_sentinela_doencas_arbovirus.pdf>
+                                        . Acesso em: 23 ago. 2023.
+
+                                        BRASIL. Ministério da Saúde declara fim da Emergência Nacional para zika e
+                                        microcefalia. 2022. Disponível em: <https:
+                                            //www.gov.br/saude/pt-br/assuntos/noticias/2017/maio/ministerio-da-saude-declara-fim-da-emergencia-nacional-para-zika-e-microcefalia>
+                                            . Acesso em: 7 ago. 2023.
+
+                                            BRASIL. Série histórica casos prováveis de zika (2015-2023). Brasília:
+                                            Ministério da Saúde, 2023a. Disponível em:
+                                            https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica/serie-historica-casos-provaveis-de-zika-2015-2023/view.
+                                            Acesso em: 19 ago. 2023.
+
+                                            BRASIL. Série histórica casos óbitos zika (2015-2023). Brasília: Ministério
+                                            da Saúde, 2023b. Disponível em:
+                                            https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica/serie-historica-casos-obitos-zika-2015-2023/view.
+                                            Acesso em: 19 ago. 2023.
+
+                                            BRASIL. Guia de Vigilância em Saúde. 6. ed. Brasília: Ministério da Saúde,
+                                            2023c. Disponível em:
+                                            https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view.
+                                            Acesso em: 28 dez. 2023.
+
+                                            ITT, W. J. Adverse outcomes of pregnancy associated Zika virus infection.
+                                            Seminars in Perinatology, v. 42, n. 3, p. 155-167, 2018.
+                                            CAMPOS, G. S.; BANDEIRA, A. C.; SARDI, S. I. Zika virus outbreak, Bahia,
+                                            Brazil. Emerging Infectious Disease, v. 21, n. 10, p. 1.885-1.886, 2015.
+                                            Disponível em: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4593454/. Acesso
+                                            em: 19 ago. 2023.
+
+                                            CARDOSO, C. W. et al. Outbreak of exanthematous illness associated with
+                                            zika, chikungunya, and dengue viruses, Salvador, Brazil. Emerging Infectious
+                                            Disease, v. 21, n. 12, p. 2.274-2.276, 2015. Disponível em: <http:
+                                                //dx.doi.org/10.3201/eid2112.151167>. Acesso em: 19 ago. 2023.
+
+                                                CENTERS FOR DISEASE CONTROL AND PREVENTION (CDC). About Zika-prevention
+                                                and transmission. 2019. Disponível em:
+                                                https://www.cdc.gov/zika/prevention/index.html. Acesso em: 19 ago. 2023.
+
+                                                CENTERS OF DISEASE CONTROL AND PREVENTION (CDC). Areas with risk of
+                                                Zika. Disponível em:
+                                                https://wwwnc.cdc.gov/travel/files/zika-areas-of-risk.pdf. Acesso em: 5
+                                                dez. 2023.
+
+                                                COUTINHO, M. et al. Early maternal Zika infection predicts severe
+                                                neonatal neurological damage: results from the prospective Natural
+                                                History of ZIKA Virus Infection in Gestation (NATZIG) cohort study.
+                                                British Journal of Obstetrics & Gynaecology, 1 jun. 2020. DOI:
+                                                10.22541/au.159103608.85557750. Disponível em:
+                                                https://www.authorea.com/users/328445/articles/455724-early-maternal-zika-infection-predicts-severe-neonatal-neurological-damage-results-from-the-prospective-natural-history-of-zika-virus-infection-in-gestation-natzig-cohort-study.
+                                                Acesso em: 15 ago. 2023.
+
+                                                DIALLO, D. et al. Zika virus emergence in mosquitoes in southeastern
+                                                Senegal, 2011. PLoS One, v. 9, n. 10, e109442, 2014. Disponível em:
+                                                https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0109442&type=printable
+                                                . Acesso em: 5 dez. 2023.
+
+                                                DICK, G. W.; KITCHEN, S. K.; HADDOW, A. J. Zika virus (I): isolations
+                                                and serological specificity. Royal Society of Tropical Medicine and
+                                                Hygiene, v. 46, n. 5, p. 506-524, 1952. Disponível em: <http:
+                                                    //dx.doi.org/10.1016/0035-9203(52)90042-4>. Acesso em: 19 ago. 2023.
+
+                                                    DUFFY, M. R. et al. Zika virus outbreak on Yap Island, Federated
+                                                    States of Micronesia. The New England Journal of Medicine, v. 360,
+                                                    n. 24, p. 2.536-2.543, 2009. Disponível em: <http:
+                                                        //dx.doi.org/10.1056/NEJMoa0805715>. Acesso em: 19 ago. 2023.
+
+                                                        DUPONT-ROUZEYROL, M. et al. Co-infection with zika and dengue
+                                                        viruses in 2 patients, New Caledonia, 2014. Emerging Infectious
+                                                        Diseases, v. 21, n. 2, p. 381-382, 2015. Disponível em: <http:
+                                                            //dx.doi.org/10.3201/eid2102.141553>. Acesso em: 19 ago.
+                                                            2023.
+
+                                                            GÖERTZ, G. P. et al. Functional RNA during Zika virus
+                                                            infection. Virus Research, n. 254, p. 41-53, 2018. DOI:
+                                                            10.1016/j.virusres.2017.08.015. Epub 2017 Aug 31. PMID:
+                                                            28864425.
+
+                                                            GOVERO, J. et al. Zika virus infection damages the testes in
+                                                            mice. Nature, v. 540, n. 7.633, p. 438-442, 2016. Disponível
+                                                            em: https://pubmed.ncbi.nlm.nih.gov/27798603/. Acesso em: 5
+                                                            dez. 2023.
+                </span>
+            </div>
+            <div class="col-12 col-lg-6">
+                <span>
+                    GRARD, G. et al. Zika virus in Gabon (Central Africa) – 2007: a new threat from Aedes albopictus?
+                    PLoS Neglected Tropical Diseases, v. 8, n. 2, e2681, 2014. Disponível em: <http:
+                        //dx.doi.org/10.1371/journal.pntd.0002681>. Acesso em: 19 ago. 2023.
+
+                        HAMEL, R. et al. Biology of Zika virus infection in human skin cells. Journal of Virology, v.
+                        89, n. 17, p. 8.880-8.896, 2015. Disponível em: <http: //dx.doi.org/10.1128/JVI.00354-15>.
+                            Acesso em: 19 ago. 2023.
+
+                            HEUKELBACH J. et al. Zika virus outbreak in Brazil. The Journal of Infection in Developing
+                            Countries, v. 10, n. 2, p. 116-120, 2016.
+                            IOOS, S. et al. Current Zika virus epidemiology and recent epidemics. Médecine et Maladies
+                            Infectieuses, v. 44, n. 7, p. 302-307, 2014. Disponível em: <http:
+                                //dx.doi.org/10.1016/j.medmal.2014.04.008>. Acesso em: 19 ago. 2023.
+
+                                KRAUER, F. et al. Zika virus infection as a cause of congenital brain abnormalities and
+                                Guillain-Barré syndrome: systematic review. PLoS Medicine, v. 14, n. 1, e1002203, 2017.
+
+                                LEDERMANN, J. P. et al. Aedes hensilli as a potential vector of Chikungunya and Zika
+                                viruses. PLOS Neglected Tropical Disease, v. 8, n. 10, e3188, 2014. Disponível em:
+                                https://pubmed.ncbi.nlm.nih.gov/25299181/. Acesso em: 5 dez. 2023.
+
+                                LI C. et al. Zika virus disrupts neural progenitor development and leads to microcephaly
+                                in mice. Cell Stem Cell, v. 19, n. 1, p. 120-126, 2016. DOI: 10.1016/j.stem.2016.04.017.
+                                Epub 2016 May 11. PMID: 27179424. Disponível em:
+                                https://pubmed.ncbi.nlm.nih.gov/27179424/. Acesso em: 5 dez. 2023.
+                                MACNAMARA, F. N. Zika virus: a report on three cases of human infection during an
+                                epidemic of jaundice in Nigeria. Royal Society of Tropical Medicine and Hygiene, v. 48,
+                                n. 2, p. 139-145, 1954. Disponível em:
+                                https://www.sciencedirect.com/science/article/abs/pii/0035920354900061. Acesso em: 5
+                                dez. 2023.
+                                MAGNUS, M. M. et al. Risk of Zika virus transmission by blood donations in Brazil.
+                                Hematology, Transfusion and Cell Therapy, v. 40, n. 3, p. 250-254, 2018. Disponível em:
+                                <https: //www.ncbi.nlm.nih.gov/pmc/articles/PMC6098187 />. Acesso em: 21 ago. 2023.
+
+                                MARCONDES, C. B.; XIMENES, M. F. F. M. Zika virus in Brazil and the danger of
+                                infestation by Aedes (Stegomyia) mosquitoes. Revista da Sociedade Brasileira de Medicina
+                                Tropical, v. 49, n. 1, 2015. Disponível em: <http:
+                                    //dx.doi.org/10.1590/0037-8682-0220-2015>. Acesso em: 29 ago. 2023.
+                                    MINER, J. J.; DIAMOND, M. S. Review Zika virus pathogenesis and tissue tropism. Cell
+                                    Host Microbe, v. 21, p. 134-142, 2017. Disponível em:
+                                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5328190/. Acesso em: 5 dez. 2023.
+
+                                    MUSSO, D.; NILLES, E. J.; CAO-LORMEAU, V. M. Rapid spread of emerging Zika virus in
+                                    the Pacific area. Clinical Microbiology and Infection, v. 20, n. 10, p. O595-O596,
+                                    2014. Disponível em: http://dx.doi.org/10.1111/1469-0691.12707. Acesso em: 15 ago.
+                                    2023.
+
+                                    MUSSO, D. et al. Potential for Zika virus transmission through blood transfusion
+                                    demonstrated during an outbreak in French Polynesia, November 2013 to February 2014.
+                                    Eurosurveillance, v. 19, n. 14, 20761, 2014. Disponível em:
+                                    http://dx.doi.org/10.2807/1560-7917.ES2014.19.14.20761. Acesso em: 15 ago. 2023.
+                                    MUSSO, D. et al. Potential sexual transmission of Zika virus. Emerging Infectious
+                                    Disease, v. 21, n. 2, p. 359-361, 2015. Disponível em:
+                                    http://dx.doi.org/10.3201/eid2102.141363. Acesso em: 15 ago. 2023.
+
+                                    NITHIYANANTHAM, S. F.; BADAWI, A. Maternal infection with Zika virus and prevalence
+                                    of congenital disorders in infants: systematic review and meta-analysis. Canadian
+                                    Journal of Public Health, v. 110, n. 5, p. 638-648, 2019.
+
+                                    NOGUEIRA, M. L. et al. Zika virus infection and solid organ transplantation: a new
+                                    challenge. American Journal of Transplant, v. 17, p. 791-795, 2017.
+                                    NOOR, R. et al. Zika virus: epidemiological study and its association with public
+                                    health risk. Journal of Infection and Public Health, v. 11, n. 5, p. 611-616, 2018.
+                                    PAN AMERICAN HEALTH ORGANIZATION (PAHO). Tool for diagnosis and care of patients
+                                    with suspected arboviral disease. Washington, DC: PAHO, 2017. Disponível em:
+                                    https://iris.paho.org/handle/10665.2/33895. Acesso em: 19 ago. 2023.
+
+                                    SANCHEZ CLEMENTE, N. et al. Zika virus infection in pregnancy and adverse fetal
+                                    outcomes in São Paulo State, Brazil: a prospective cohort study. Scientific Reports,
+                                    v. 10, n. 1, 12673, 2020. DOI: 10.1038/s41598-020-69235-0. Disponível em:
+                                    https://pubmed.ncbi.nlm.nih.gov/32728054/. Acesso em: 29 ago. 2023.
+                                    SINGH, R. et al. Zika vírus: emergence, evolution, pathology, diagnosis and control:
+                                    current global scenario and future perspectives – a comprehensive review. The
+                                    Veterinary Quarterly, v. 36, n. 3, p. 1-26, 2016. Disponível em:
+                                    http://www.tandfonline.com/doi/full/10.1080/01652176.2016.1188333. Acesso em: 28
+                                    dez. 2023.
+                                    SLAVOV, S. N. et al. Zika virus RNA detection in asymptomatic blood donors during an
+                                    outbreak in the northeast region of São Paulo State, Brazil, 2016. Transfusion, v.
+                                    57, n. 12, p. 2.897-2.901, 2017.
+
+                                    TANG, H. et al. Zika virus infects human cortical neural progenitors and attenuates
+                                    their growth. Cell Stem Cell, v. 18, n. 5, p. 587-590, 2016.
+                                    WORLD HEALTH ORGANIZATION (WHO). WHO guidelines for the prevention of sexual
+                                    transmission of Zika virus. Geneva: World Health Organization, 2020. Disponível em:
+                                    <https: //apps.who.int/iris/bitstream/handle/10665/332466/9789241550482-eng.pdf>.
+                                        Acesso em: 21 ago. 2023.
+
+                                        WORLD HEALTH ORGANIZATION (WHO). Zika virus. 2022. Disponível em: <https:
+                                            //www.who.int/news-room/fact-sheets/detail/zika-virus?gclid=Cj0KCQjwuZGnBhD1ARIsACxbAVhT5D_hX0YAQ6Mj-thA5i_nwin6MG23LbzWg9FQfTcOVj334UwUPB8aAkA3EALw_wcB>
+                                            . Acesso em: 15 ago. 2023.
+                                            YIN, X.; ZHONG, X.; PAN, S. Vertical transmission of dengue infection: the
+                                            first putative case reported in China. Revista do Instituto de Medicina
+                                            Tropical de São Paulo, v. 58, p. 90, 2016. Disponível em:
+                                            https://www.scielo.br/j/rimtsp/a/HWWDhycYdNFpcrL5HvfG8QS/?lang=en. Acesso
+                                            em: 7 ago. 2023.
+
+                </span>
+            </div>
+        </div>
         <script src="./se_unasus_pack.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/index.min.js"></script>
         <script src="./js/animacao.min.js"></script>
         <script src="./js/alternativas.js"></script>
+        <script src="./js/tooltip.js"></script>
         <!-- <script>
         let lib = unasus.pack;
         lib.initialize();
