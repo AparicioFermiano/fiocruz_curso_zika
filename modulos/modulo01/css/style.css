@@ -886,6 +886,10 @@ a.button {
     width: 100%;
 }
 
+.carousel-indicators .active {
+    background-color: var(--secondary);
+}
+
 
 @media (max-width: 1306px) {
     .carousel-indicators {

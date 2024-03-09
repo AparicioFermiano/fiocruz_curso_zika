@@ -76,7 +76,7 @@ https://github.com/AparicioFermiano */
 }
 
 .btn-sidebar-icon:hover {
-    color: var(--primary-dark);
+    color: var(--secondary-hover);
 }
 
 .btn-sidebar {
