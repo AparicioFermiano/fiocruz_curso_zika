@@ -322,6 +322,24 @@ p {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 4rem;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-titulo-capa {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 0 auto;
+    line-height: 2.8rem;
+}
+
+.sub-titulo-dois {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin: 0 auto;
 }
 
 .titulo-italico {
@@ -345,20 +363,21 @@ p {
 }
 
 .tituloZ {
-    font-size: 5.6rem;
+    font-size: 5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 6rem;
 }
 
 .titulo-unidade {
-    font-size: 1.563rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1rem;
 }
 
 .titulo-material {
-    font-size: 3.75rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 300;
 }
 
 .padding-custom {
@@ -483,17 +502,23 @@ a.button {
 
 /* MODAL  */
 
+kbd {
+    color: var(--font-dark);
+    background-color: #ffffff;
+    
+}
+
 .modal-conteudo {
-    background-color: var(--primary);
+    background-color: var(--aux);
     padding: 2rem;
-    border-radius: 0 2rem 0 2rem;
+    border-radius: 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     margin: 1.4rem !important;
 }
 
 .div-modal-orientacao {
-    width: 109.75rem; /* Definindo a largura em pixels */
-    height: 37.75rem; /* Definindo a altura em pixels */
+    width: 108rem; /* Definindo a largura em pixels */
+    height: 35rem; /* Definindo a altura em pixels */
     max-width: 100%; /* Garante que a largura não exceda a largura do contêiner pai */
     max-height: 100%; /* Garante que a altura não exceda a altura do contêiner pai */
     overflow: auto; /* Adiciona barras de rolagem quando necessário */
@@ -743,140 +768,6 @@ a.button {
     from { transform: scale(0.9); }
     to { transform: scale(1); }
   }
-  
- 
-
-  .opcoes label {
-    color: var(--font-light);
-    display: flex; /* Adiciona flexbox */
-    align-items: center; /* Alinha os itens verticalmente */
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-   
-  }
-  
-  .opcoes label:hover {
-    color: var(--aux-hover);
-    display: flex; /* Adiciona flexbox */
-    align-items: center; /* Alinha os itens verticalmente */
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .opcoes label span {
-    font-weight: 700;
-    color: black;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid var(--font-dark);
-    text-align: center;
-    line-height: 1; /* Use line-height 1 para garantir que o texto não cause distorção no círculo */
-    padding: 0.5em; /* Adiciona um preenchimento interno para garantir que o círculo tenha um tamanho mínimo */
-    margin-right: 16px;
-    background-color: white;
-    width: 2rem; /* Definindo o tamanho do círculo */
-    height: 2rem;
-}
-
-  
-  .opcoes label:hover span {
-    background-color: var(--aux-hover); /* Cor mais escura ao passar o mouse para a letra */
-    color: var(--font-dark); /* Texto branco para a letra ao passar o mouse */
-  }
-  
-  .opcoes label input[type="radio"] {
-    display: none; /* Oculta o botão de rádio padrão */
-  }
-  
-  .opcoes label input[type="radio"]:checked + span {
-    background-color: var(--aux);
-    color: var(--font-dark);
-  }
-  
-  
-  .retorno {
-    display: none;
-  }
-  
-  .explicacao {
-    color: var(--font-light);
-  }
-  
-  .opcao-correta {
-    color: #4DAD33 !important;
-  }
-  
-  .opcao-incorreta {
-    color: #FF4242 !important;
-  }
-
-  .opcoes label.clicked {
-    border: solid; /* Cor e largura da borda quando a questão é clicada */
-}
-
-.div-perguntas {
-    min-width: 111.25rem;
-    max-width: 1111.25rem;
-    max-height: 34.3rem;
-    min-height: 34.3rem;
-    overflow-y: auto;
-}
-  
-  /* Remova esta regra que oculta o botão de rádio padrão */
-.opcoes label input[type="radio"] {
-    display: none; /* Oculta o botão de rádio padrão */
-}
-.opcoes-padrao label input[type="radio"] {
-    display: none; /* Oculta o botão de rádio padrão */
-}
-
-/* Estiliza a bolinha de seleção padrão */
-.opcoes-padrao label input[type="radio"] + span:before {
-    content: ""; /* Remove o conteúdo do pseudo-elemento */
-    display: inline-block; /* Torna o pseudo-elemento um bloco inline */
-    width: 12px; /* Largura do pseudo-elemento */
-    height: 12px; /* Altura do pseudo-elemento */
-    border: 2px solid #FFFFFF; /* Cor da borda (branca por padrão) */
-    background-color: #FFFFFF;
-    border-radius: 50%; /* Transforma o pseudo-elemento em um círculo */
-    margin-right: 10px; /* Margem à direita para separar o pseudo-elemento do texto */
-}
-
-/* Estiliza a bolinha de seleção padrão quando marcada */
-.opcoes-padrao label input[type="radio"]:checked + span:before {
-    background-color: #FFFFFF; /* Cor de fundo (branca quando clicada) */
-    border-color: #D0BE75; /* Cor da borda (cor quando clicada) */
-}
-
-@keyframes shake {
-    10%, 90% {
-        transform: translateX(-1px);
-    }
-    
-    20%, 80% {
-        transform: translateX(2px);
-    }
-
-    30%, 50%, 70% {
-        transform: translateX(-4px);
-    }
-
-    40%, 60% {
-        transform: translateX(4px);
-    }
-}
-
-.shake-animation {
-    animation: shake 0.5s ease;
-}
 
 
 .carousel-person {
@@ -890,11 +781,56 @@ a.button {
     background-color: var(--secondary);
 }
 
+@media (max-width: 767px) {
+    .sub-titulo {
+        width: 100%; /* Define a largura como 100% em telas com largura máxima de 767px (dispositivos móveis) */
+    }
+}
+
+@media (max-width: 425px) {
+    .sub-titulo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .titulo-unidade {
+        font-size: 1rem;
+    }
+}
+
 
 @media (max-width: 1306px) {
     .carousel-indicators {
-        display: none;
+        align-items: baseline;
+        
     }
+    
+
+}
+
+@media (max-width: 768px) {
+    .carousel-control-next-icon {
+        display: none;
+        
+    }
+
+    .carousel-control-prev-icon {
+        display: none;
+        
+    }
+
+}
+
+@media (max-width: 410px) {
+    .carousel-indicators {
+        display: flex;
+        
+    }
+    
+
 }
 
 @media (max-width: 991px) {
@@ -910,19 +846,41 @@ a.button {
 }
 
 @media (max-width: 991px) {
-    .borrado {
-        border-radius: 2rem;
-        position: relative;
-        background-color: #d9d4913c; /* cor de fundo branca com transparência */
-        backdrop-filter: blur(4px); /* efeito de blur */
-        padding: 20px;
+    .background-image {
+    backdrop-filter: blur(4px); /* efeito de blur */
     }
 }
 
+.background-image {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 5%, rgba(0, 0, 0, 0) 60%), url(../image/fundo_capa.png);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @media (min-width: 992px) and (max-width: 1547px) {
-    .borrado {
+    .container-capa {
         flex: 0 0 50%; /* Definindo 50% de largura em telas grandes */
         max-width: 50%; /* Definindo 50% de largura em telas grandes */
     }
 }
-  
+
+@media (max-width: 710px){
+    .btn-cust {
+        width: auto;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 614px){
+    .btn-cust {
+        width: auto;
+        height: 3rem;
+        font-size: 0.8rem;
+        font-weight: bolder;
+    }
+}

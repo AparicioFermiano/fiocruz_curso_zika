@@ -27,8 +27,10 @@ function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta, exibi
         var textoExplicacao = "";
         if (exibirRespostaCorreta) {
             textoExplicacao = "A resposta correta é a alternativa " + respostaCorreta.toUpperCase() + ".<br><br>";
+            opcaoSelecionada.parentNode.classList.add('resposta-correta');
         } else {
             textoExplicacao = "A questão está correta.<br><br>";
+            opcaoSelecionada.parentNode.classList.add('resposta-incorreta');
         }
         textoExplicacao += "<span class='bold'>Comentário:</span> " + "<br><br>" + explicacaoCorreta;
         explicacaoElement.innerHTML = textoExplicacao;

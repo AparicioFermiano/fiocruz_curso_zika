@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sidenav.css">
+    <link rel="stylesheet" href="./css/perguntas.css">
 
     <title>Vírus Zika: Uma Abordagem Geral para Profissionais de Saúde</title>
 </head>
@@ -28,7 +29,7 @@
             <div class="sidebar-item">
                 <a href="#" class="d-flex">
                     <div class="sidebar-item-icon">
-                        <i class="bi bi-house"></i>
+                        <i class="bi bi-house-fill"></i>
                     </div>
                     <div class="sidebar-item-title">
                         Início
@@ -131,13 +132,13 @@
         </div>
     </div>
 
-    <div id="capa" class="background-image container-fluid padding-container">
+    <div id="capa" class="borrado background-image container-fluid padding-container">
         <div class="row pt-mobile-5">
-            <div class="borrado capa-fluid col-12 col-lg-4">
+            <div class="container-capa capa-fluid col-12 col-lg-4">
                 <img src="./image/mosquito.png" alt="Logos" class="w-50 img-fluid">
-                <span class="mx-auto d-block sub-titulo">ABORDAGEM CLÍNICA DE</span>
-                <span class="tituloZ bold mx-auto d-block">ZIKA</span>
-                <span class="mx-auto d-block sub-titulo">NA ATENÇÃO PRIMÁRIA À SAÚDE</span>
+                <span class="mx-auto d-block sub-titulo-capa">ABORDAGEM CLÍNICA DE</span>
+                <span class="tituloZ mx-auto d-block">ZIKA</span>
+                <span class="mx-auto d-block sub-titulo-capa">NA ATENÇÃO PRIMÁRIA À SAÚDE</span>
                 <span class="mx-auto d-block ">Aspectos epidemiológicos, promoção à saúde e prevenção de
                     infecção por vírus zika</span><br>
                 <div class="d-flex justify-content-between mb-3">
@@ -197,7 +198,7 @@
                 <div class="carousel-item active">
                     <div class="">
                         <div class="row justify-content-center text-justify">
-                            <div class="col-12 col-md-6  text-light pt-5">
+                            <div class="col-12 col-lg-6  text-light pt-5">
                                 <div class="pb-3 d-flex justify-content-start">
                                     <span class="titulo  my-auto mx-2">SOBRE O CURSO</span>
                                 </div>
@@ -266,7 +267,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Nova aba adicionada -->
+                
                 <div class="carousel-item">
                     <div class="">
                         <div class="row justify-content-center">
@@ -296,12 +297,12 @@
 
     <div id="definicao" class="container-fluid padding-x-container py-5">
         <p class="titulo-unidade font-dark text-center">UNIDADE</p>
-        <p class="sub-titulo text-center pb-5">ASPECTOS EPIDEMIOLÓGICOS, PROMOÇÃO À SAÚDE E PREVENÇÃO DE INFECÇÃO POR
+        <p class="sub-titulo d-flex pb-5">ASPECTOS EPIDEMIOLÓGICOS, PROMOÇÃO À SAÚDE E PREVENÇÃO DE INFECÇÃO POR
             VÍRUS ZIKA
         </p>
         <div class="row justify-content-center ">
             <div class="col-12 col-lg-3 order-last order-lg-first d-flex align-items-center">
-                <img src="./image/mosquito_pais.svg" alt="Virus" class="d-block mx-auto w-100 imagem-menor mx-2 pt-5"
+                <img src="./image/mosquito_pais.svg" alt="Virus" class="d-block mx-auto w-100 imagem-menor mx-2 pt-lg-5"
                     data-animation="left-to-right">
             </div>
 
@@ -311,7 +312,7 @@
                 </p>
                 <div class="text-justify">
                     <p class="py-2">O primeiro isolamento do vírus Zika ocorreu em 1947, em sangue de macaco do gênero
-                        Rhesus e em mosquitos da espécie Aedes (Stegomyia) africanus na floresta de Zika, Uganda.
+                        Rhesus e em mosquitos da espécie Aedes (Stegomyia) africanus na floresta de Zika, Uganda.
                         Posteriormente, em 1954, foram identificados três casos de infecção em humanos durante uma
                         epidemia na Nigéria. O vírus continuou dispersando-se, de forma esporádica para outras regiões,
                         sendo evidenciados alguns surtos em diferentes países da África, da Ásia e Ilhas do Pacífico.
@@ -321,7 +322,7 @@
                         por uma grande epidemia na Polinésia Francesa, em 2013-2014. Subsequentemente, o vírus
                         dispersou-se para outras ilhas do Pacífico.
                     </p>
-                    <p class="py-2">Desde 2014, casos de circulação do vírus Zika foram detectados no continente
+                    <p class="py-lg-">Desde 2014, casos de circulação do vírus Zika foram detectados no continente
                         Americano. Em fevereiro desse mesmo ano, as autoridades de saúde pública do Chile confirmaram o
                         primeiro caso de transmissão indígena do vírus na Ilha de Easter; posteriormente, outros casos
                         foram reportados. Mais recentemente, desde outubro de 2015, casos de infecção pelo vírus Zika
@@ -352,79 +353,79 @@
 
                 <div class="padding-desk-5 padding-y-mobile-5">
                     <div class="d-flex flex-column">
-                        <ul class="list-unstyled">
-                            <li class="d-flex align-items-center mb-4">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
                                     style="width: 30px; height: 30px; background-color: #AC4725; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Uganda (1947)">
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1200,-305" title="Uganda (1947)">
                                     01
                                 </button>
                                 <span class="ms-2">Uganda (1947);</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-4">
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
                                     style="width: 30px; height: 30px; background-color: #482EC7; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Nigéria (1954)">
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1130,-230" title="Nigéria (1954)">
                                     02
                                 </button>
                                 <span class="ms-2">Nigéria (1954);</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-4">
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
                                     style="width: 30px; height: 30px; background-color: #A7D26D; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Polinésia Francesa (2013)">
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1659,-259" title="Polinésia Francesa (2013)">
                                     03
                                 </button>
                                 <span class="ms-2">Polinésia Francesa (2013);</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-4">
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
                                     style="width: 30px; height: 30px; background-color: #E88BBA; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Chile (2014)">
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="900,-209" title="Chile (2014)">
                                     04
                                 </button>
                                 <span class="ms-2">Chile (2014);</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-4">
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
                                     style="width: 30px; height: 30px; background-color: #FAA919; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="850,20"
                                     title="México, Paraguai, Guatemala, El Salvador, Colômbia, Panamá, Honduras, Ilha de Santiago, Cabo Verde e Venezuela (2015);">
                                     05
                                 </button>
                                 <span class="ms-2 text-justify">México, Paraguai, Guatemala, El Salvador, Colômbia,
                                     Panamá, Honduras, Ilha de Santiago, Cabo Verde e Venezuela (2015);</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-4">
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
                                 <button type="button"
                                     class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
                                     style="width: 30px; height: 30px; background-color: #D4763B; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Rio Grande do Norte e Bahia (2015)">
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1000,-10" title="Rio Grande do Norte e Bahia (2015)">
                                     06
                                 </button>
                                 <span class="ms-2">Rio Grande do Norte e Bahia (2015)</span>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
             <div class="col-12 col-lg-8">
-                <img src="./image/mapa_interativo.png" class="img-fluid alt="" >
+                <img src="./image/mapa_interativo.png" class="img-fluid">
             </div>
         </div>
         <div class=" container text-justify p-3">
                 <p class="py-2 text-center">Fonte: Universidade de Lancaster, Journal of General Virology</p>
             </div>
 
-
-            <div class="col-12 col-lg-12 ">
-                <p class="text-justify">Até aquele momento, os efeitos do vírus à saúde não eram bem conhecidos.
+        <div class="row text-justify">
+            <div class="col-12 col-lg-6 pe-lg-5">
+                <p class="">Até aquele momento, os efeitos do vírus à saúde não eram bem conhecidos.
                     No segundo semestre de 2015, alguns estados do Nordeste do Brasil, sobretudo Pernambuco, notificaram
                     ao
                     Ministério da Saúde o aumento do número de casos de microcefalia neonatal. Com o aumento expressivo
@@ -443,8 +444,10 @@
                     estudos
                     clínicos e laboratoriais e análise de revisões sistemáticas, possibilitaram comprovar que a infecção
                     pelo vírus Zika (ZIKV) em gestantes causava microcefalia e outras malformações congênitas.
-                    <br>
-                    <br>
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="">
                     A resposta a essa emergência no Brasil ocorreu em diversas frentes básicas, envolvendo os setores de
                     saúde, educação e desenvolvimento social, entre outros. Houve mobilização e combate ao vetor,
                     centrados
@@ -461,6 +464,8 @@
                 </p>
             </div>
         </div>
+    </div>
+
 
         <div class="bg-aux box-saiba-mais padding-container text-center">
             <img src="./image/exclamation-circle.svg" class=" " alt="Exclamação" data-animation="circle-saiba-mais">
@@ -478,9 +483,11 @@
             </div>
         </div>
 
-        <div id="transmissao"
-            class="container-fluid padding-x-container pt-5 bg-primary-light font-dark  pt-2 overflow-hidden">
-            <p class="row titulo font-oswald medium text-justify ">Modos de transmissão de infecção
+        <div id="transmissao" class="container-fluid padding-x-container py-5 bg-primary-light font-dark">
+            <p class="titulo medium text-justify ">Modos de transmissão de infecção
+                causada por ZIKV
+            </p>
+            <p class="sub-titulo-dois text-justify ">Modos de transmissão de infecção
                 causada por ZIKV
             </p>
             <div class="row justify-content-center ">
@@ -599,11 +606,11 @@
                 <p>Clique nos botões para interagir
                 </p>
                 <div class="d-flex col-6 py-4" role="tablist">
-                    <button class="button btn-col-4 btn-aux w-100" onclick="selecionarCaso('caso_01', this)"
+                    <button class="btn-cust button btn-col-4 btn-aux w-100" onclick="selecionarCaso('caso_01', this)"
                         type="button" role="tab" aria-selected="true">Parte 01</button>
-                    <button class="button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_02', this)"
+                    <button class="btn-cust button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_02', this)"
                         type="button" role="tab" aria-selected="false">Parte 02</button>
-                    <button class="button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_03', this)"
+                    <button class="btn-cust button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_03', this)"
                         type="button" role="tab" aria-selected="false">Parte 03</button>
                 </div>
                 <div class="bg-primary-dark rounded-4 text-light  p-3 text-justify">
@@ -956,7 +963,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="fluxo" class="col-12 col-lg-6 px-3">
+                <div id="fluxo" class="col-12 col-lg-6 px-3 pt-lg-0 pt-sm-5">
                     <span class="titulo">Fluxo de notificação e investigação de casos</span>
                     <p><span class="text-justify">Os profissionais de saúde da Atenção Básica devem notificar doenças,
                             agravos e eventos que constam na Lista Nacional de Notificação Compulsória de Doenças,
@@ -1029,10 +1036,10 @@
                 <div class="text-light py-5 overflow-hidden">
                     <div class="row">
                         <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-5">
+                            <div class="bg-primary-dark rounded-4 p-lg-5">
                                 <div class="row g-0">
                                     <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-5">
+                                        <div class="container-fluid pergunta pe-lg-5-5">
                                             <span class="titulo-pergunta">São consideradas formas de transmissão de
                                                 doença
                                                 causada por ZIKV:</span>
@@ -1059,10 +1066,10 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <button class="button w-50 mb-3 btn-aux-responder"
+                                        <button class="button w-50 m-5 btn-aux-responder"
                                             onclick="verificarResposta('pergunta1', 'c', 'As três formas de transmissão mais estudadas são: A transmissão vetorial, decorrente da picada do mosquito, a transmissão sexual/interpessoal, que pode ser através do sexo (vaginal, anal, oral) de uma pessoa com ZIKV para seus parceiros, bem como pelo compartilhamento de brinquedos sexuais, e a transmissão vertical, que é passada da gestante ao feto, podendo ocorrer em diferentes idades gestacionais', true)">Responder</button>
                                         <div class="retorno">
-                                            <p class="explicacao"></p>
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1072,14 +1079,14 @@
                 </div>
             </div>
 
-            <div id="pergunta2" class="font-dark py-5 overflow-hidden">
-                <div class="text-light py-5 overflow-hidden">
+            <div id="pergunta2" class="font-dark">
+                <div class="text-light pb-5 overflow-hidden">
                     <div class="row">
                         <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-5">
+                            <div class="bg-primary-dark rounded-4 p-lg-5">
                                 <div class="row g-0">
                                     <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-5">
+                                        <div class="container-fluid pergunta pe-lg-5">
                                             <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
                                                 de
                                                 ZIKV,
@@ -1101,10 +1108,10 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <button class="button w-50 mb-3 btn-aux-responder"
+                                        <button class="button w-50 m-5 btn-aux-responder"
                                             onclick="verificarResposta('pergunta2', 'a', 'Os sintomas da zika incluem febre baixa, dor nos músculos e articulações, além de vermelhidão nos olhos e manchas vermelhas na pele. ', true)">Responder</button>
                                         <div class="retorno">
-                                            <p class="explicacao"></p>
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1115,14 +1122,14 @@
             </div>
 
             <!-- CORRETA E INCORRETA -->
-            <div id="pergunta3" class="font-dark py-5 overflow-hidden">
-                <div class="text-light py-5 overflow-hidden">
+            <div id="pergunta3" class="font-dark">
+                <div class="text-light pb- overflow-hidden">
                     <div class="row">
                         <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-5">
+                            <div class="bg-primary-dark rounded-4 p-lg-5">
                                 <div class="row g-0">
                                     <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-5">
+                                        <div class="container-fluid pergunta pe-lg-5">
                                             <span class="titulo-pergunta">O diagnóstico de infecção causada por ZIKV não
                                                 pode ser
                                                 realizado utilizando-se critérios epidemiológicos e indicação clínica, e
@@ -1138,13 +1145,13 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <button class="button w-50 mb-3 btn-aux-responder"
+                                        <button class="button w-50 m-5 btn-aux-responder"
                                             onclick="verificarResposta('pergunta3',
                                              'a',
                                               'O diagnóstico do ZIKV é clínico, podendo ser utilizados critérios epidemiológicos. O resultado é confirmado por meio de exames laboratoriais de sorologia e biologia molecular. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS). ', false)">
                                             Responder</button>
                                         <div class="retorno">
-                                            <p class="explicacao"></p>
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1168,7 +1175,8 @@
                             ARGENTA, S. Estudo descobre a rota da chegada do ZIKV ao Brasil. Disponível em:
                             https://portal.fiocruz.br/noticia/estudo-descobre-rota-da-chegada-do-virus-zika-ao-brasil.
                             Acesso em: 12 ago. 2019.
-
+                            <br>
+                            <br>
                             BARJAS-CASTRO, M. et al. Probable transfusion-transmitted Zika virus in Brazil. The Journal
                             of AABB Transfusion, v. 56, n. 7, p. 1.684-1.688, 2016. Disponível em: <https:
                                 //onlinelibrary.wiley.com/doi/abs/10.1111/trf.13681>. Acesso em: 21 ago. 2023.
@@ -1177,7 +1185,8 @@
                                 ocorrência de microcefalias no Brasil. Disponível em: <https:
                                     //bvsms.saude.gov.br/bvs/saudelegis/gm/2015/prt1813_11_11_2015.html>. Acesso em: 2
                                     ago. 2023.
-
+                                    <br>
+                                    <br>
                                     BRASIL. Ministério da Saúde. Orientações integradas de vigilância e atenção à saúde
                                     no âmbito da Emergência de Saúde Pública de Importância Nacional: procedimentos para
                                     o monitoramento das alterações no crescimento e desenvolvimento a partir da gestação
@@ -1185,54 +1194,64 @@
                                     infeciosas dentro da capacidade operacional do SUS. 2017a. Disponível em:
                                     https://bvsms.saude.gov.br/bvs/publicacoes/orientacoes_integradas_vigilancia_atencao_emergencia_saude_publica.pdf.
                                     Acesso em: 23 ago. 2023.
-
+                                    <br>
+                                    <br>
                                     BRASIL. Ministério da Saúde. Manual de vigilância sentinela de doenças
                                     neuroinvasivas por arbovírus. Brasília: Ministério da Saúde, 2017b. Disponível em:
                                     <https:
                                         //bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_sentinela_doencas_arbovirus.pdf>
                                         . Acesso em: 23 ago. 2023.
-
+                                        <br>
+                                        <br>
                                         BRASIL. Ministério da Saúde declara fim da Emergência Nacional para zika e
                                         microcefalia. 2022. Disponível em: <https:
                                             //www.gov.br/saude/pt-br/assuntos/noticias/2017/maio/ministerio-da-saude-declara-fim-da-emergencia-nacional-para-zika-e-microcefalia>
                                             . Acesso em: 7 ago. 2023.
-
+                                            <br>
+                                            <br>
                                             BRASIL. Série histórica casos prováveis de zika (2015-2023). Brasília:
                                             Ministério da Saúde, 2023a. Disponível em:
                                             https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica/serie-historica-casos-provaveis-de-zika-2015-2023/view.
                                             Acesso em: 19 ago. 2023.
-
+                                            <br>
+                                            <br>
                                             BRASIL. Série histórica casos óbitos zika (2015-2023). Brasília: Ministério
                                             da Saúde, 2023b. Disponível em:
                                             https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica/serie-historica-casos-obitos-zika-2015-2023/view.
                                             Acesso em: 19 ago. 2023.
-
+                                            <br>
+                                            <br>
                                             BRASIL. Guia de Vigilância em Saúde. 6. ed. Brasília: Ministério da Saúde,
                                             2023c. Disponível em:
                                             https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view.
                                             Acesso em: 28 dez. 2023.
-
+                                            <br>
+                                            <br>
                                             ITT, W. J. Adverse outcomes of pregnancy associated Zika virus infection.
                                             Seminars in Perinatology, v. 42, n. 3, p. 155-167, 2018.
                                             CAMPOS, G. S.; BANDEIRA, A. C.; SARDI, S. I. Zika virus outbreak, Bahia,
                                             Brazil. Emerging Infectious Disease, v. 21, n. 10, p. 1.885-1.886, 2015.
                                             Disponível em: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4593454/. Acesso
                                             em: 19 ago. 2023.
-
+                                            <br>
+                                            <br>
                                             CARDOSO, C. W. et al. Outbreak of exanthematous illness associated with
                                             zika, chikungunya, and dengue viruses, Salvador, Brazil. Emerging Infectious
                                             Disease, v. 21, n. 12, p. 2.274-2.276, 2015. Disponível em: <http:
                                                 //dx.doi.org/10.3201/eid2112.151167>. Acesso em: 19 ago. 2023.
-
+                                                <br>
+                                                <br>
                                                 CENTERS FOR DISEASE CONTROL AND PREVENTION (CDC). About Zika-prevention
                                                 and transmission. 2019. Disponível em:
                                                 https://www.cdc.gov/zika/prevention/index.html. Acesso em: 19 ago. 2023.
-
+                                                <br>
+                                                <br>
                                                 CENTERS OF DISEASE CONTROL AND PREVENTION (CDC). Areas with risk of
                                                 Zika. Disponível em:
                                                 https://wwwnc.cdc.gov/travel/files/zika-areas-of-risk.pdf. Acesso em: 5
                                                 dez. 2023.
-
+                                                <br>
+                                                <br>
                                                 COUTINHO, M. et al. Early maternal Zika infection predicts severe
                                                 neonatal neurological damage: results from the prospective Natural
                                                 History of ZIKA Virus Infection in Gestation (NATZIG) cohort study.
@@ -1240,62 +1259,74 @@
                                                 10.22541/au.159103608.85557750. Disponível em:
                                                 https://www.authorea.com/users/328445/articles/455724-early-maternal-zika-infection-predicts-severe-neonatal-neurological-damage-results-from-the-prospective-natural-history-of-zika-virus-infection-in-gestation-natzig-cohort-study.
                                                 Acesso em: 15 ago. 2023.
-
+                                                <br>
+                                                <br>
                                                 DIALLO, D. et al. Zika virus emergence in mosquitoes in southeastern
                                                 Senegal, 2011. PLoS One, v. 9, n. 10, e109442, 2014. Disponível em:
                                                 https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0109442&type=printable
                                                 . Acesso em: 5 dez. 2023.
-
+                                                <br>
+                                                <br>
                                                 DICK, G. W.; KITCHEN, S. K.; HADDOW, A. J. Zika virus (I): isolations
                                                 and serological specificity. Royal Society of Tropical Medicine and
                                                 Hygiene, v. 46, n. 5, p. 506-524, 1952. Disponível em: <http:
                                                     //dx.doi.org/10.1016/0035-9203(52)90042-4>. Acesso em: 19 ago. 2023.
-
+                                                    <br>
+                                                    <br>
                                                     DUFFY, M. R. et al. Zika virus outbreak on Yap Island, Federated
                                                     States of Micronesia. The New England Journal of Medicine, v. 360,
                                                     n. 24, p. 2.536-2.543, 2009. Disponível em: <http:
                                                         //dx.doi.org/10.1056/NEJMoa0805715>. Acesso em: 19 ago. 2023.
-
+                                                        <br>
+                                                        <br>
                                                         DUPONT-ROUZEYROL, M. et al. Co-infection with zika and dengue
                                                         viruses in 2 patients, New Caledonia, 2014. Emerging Infectious
                                                         Diseases, v. 21, n. 2, p. 381-382, 2015. Disponível em: <http:
                                                             //dx.doi.org/10.3201/eid2102.141553>. Acesso em: 19 ago.
                                                             2023.
-
+                                                            <br>
+                                                            <br>
                                                             GÖERTZ, G. P. et al. Functional RNA during Zika virus
                                                             infection. Virus Research, n. 254, p. 41-53, 2018. DOI:
                                                             10.1016/j.virusres.2017.08.015. Epub 2017 Aug 31. PMID:
                                                             28864425.
-
-                                                            GOVERO, J. et al. Zika virus infection damages the testes in
-                                                            mice. Nature, v. 540, n. 7.633, p. 438-442, 2016. Disponível
-                                                            em: https://pubmed.ncbi.nlm.nih.gov/27798603/. Acesso em: 5
-                                                            dez. 2023.
                 </span>
             </div>
             <div class="col-12 col-lg-6">
                 <span>
+        
+                    GOVERO, J. et al. Zika virus infection damages the testes in
+                    mice. Nature, v. 540, n. 7.633, p. 438-442, 2016. Disponível
+                    em: https://pubmed.ncbi.nlm.nih.gov/27798603/. Acesso em: 5
+                    <br>
+                    <br>
+                    dez. 2023.
                     GRARD, G. et al. Zika virus in Gabon (Central Africa) – 2007: a new threat from Aedes albopictus?
                     PLoS Neglected Tropical Diseases, v. 8, n. 2, e2681, 2014. Disponível em: <http:
                         //dx.doi.org/10.1371/journal.pntd.0002681>. Acesso em: 19 ago. 2023.
-
+                        <br>
+                        <br>
                         HAMEL, R. et al. Biology of Zika virus infection in human skin cells. Journal of Virology, v.
                         89, n. 17, p. 8.880-8.896, 2015. Disponível em: <http: //dx.doi.org/10.1128/JVI.00354-15>.
                             Acesso em: 19 ago. 2023.
-
+                            <br>
+                            <br>
                             HEUKELBACH J. et al. Zika virus outbreak in Brazil. The Journal of Infection in Developing
                             Countries, v. 10, n. 2, p. 116-120, 2016.
                             IOOS, S. et al. Current Zika virus epidemiology and recent epidemics. Médecine et Maladies
                             Infectieuses, v. 44, n. 7, p. 302-307, 2014. Disponível em: <http:
                                 //dx.doi.org/10.1016/j.medmal.2014.04.008>. Acesso em: 19 ago. 2023.
-
+                                <br>
+                                <br>
                                 KRAUER, F. et al. Zika virus infection as a cause of congenital brain abnormalities and
                                 Guillain-Barré syndrome: systematic review. PLoS Medicine, v. 14, n. 1, e1002203, 2017.
-
+                                <br>
+                                <br>
                                 LEDERMANN, J. P. et al. Aedes hensilli as a potential vector of Chikungunya and Zika
                                 viruses. PLOS Neglected Tropical Disease, v. 8, n. 10, e3188, 2014. Disponível em:
                                 https://pubmed.ncbi.nlm.nih.gov/25299181/. Acesso em: 5 dez. 2023.
-
+                                <br>
+                                <br>
                                 LI C. et al. Zika virus disrupts neural progenitor development and leads to microcephaly
                                 in mice. Cell Stem Cell, v. 19, n. 1, p. 120-126, 2016. DOI: 10.1016/j.stem.2016.04.017.
                                 Epub 2016 May 11. PMID: 27179424. Disponível em:
@@ -1308,20 +1339,23 @@
                                 MAGNUS, M. M. et al. Risk of Zika virus transmission by blood donations in Brazil.
                                 Hematology, Transfusion and Cell Therapy, v. 40, n. 3, p. 250-254, 2018. Disponível em:
                                 <https: //www.ncbi.nlm.nih.gov/pmc/articles/PMC6098187 />. Acesso em: 21 ago. 2023.
-
+                                <br>
+                                <br>
                                 MARCONDES, C. B.; XIMENES, M. F. F. M. Zika virus in Brazil and the danger of
                                 infestation by Aedes (Stegomyia) mosquitoes. Revista da Sociedade Brasileira de Medicina
-                                Tropical, v. 49, n. 1, 2015. Disponível em: <http:
-                                    //dx.doi.org/10.1590/0037-8682-0220-2015>. Acesso em: 29 ago. 2023.
+                                Tropical, v. 49, n. 1, 2015. Disponível em: <http: //dx.doi.org/10.1590/0037-8682-0220-2015>.
+                                    Acesso em: 29 ago. 2023.
                                     MINER, J. J.; DIAMOND, M. S. Review Zika virus pathogenesis and tissue tropism. Cell
                                     Host Microbe, v. 21, p. 134-142, 2017. Disponível em:
                                     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5328190/. Acesso em: 5 dez. 2023.
-
+                                    <br>
+                                    <br>
                                     MUSSO, D.; NILLES, E. J.; CAO-LORMEAU, V. M. Rapid spread of emerging Zika virus in
                                     the Pacific area. Clinical Microbiology and Infection, v. 20, n. 10, p. O595-O596,
                                     2014. Disponível em: http://dx.doi.org/10.1111/1469-0691.12707. Acesso em: 15 ago.
                                     2023.
-
+                                    <br>
+                                    <br>
                                     MUSSO, D. et al. Potential for Zika virus transmission through blood transfusion
                                     demonstrated during an outbreak in French Polynesia, November 2013 to February 2014.
                                     Eurosurveillance, v. 19, n. 14, 20761, 2014. Disponível em:
@@ -1329,11 +1363,13 @@
                                     MUSSO, D. et al. Potential sexual transmission of Zika virus. Emerging Infectious
                                     Disease, v. 21, n. 2, p. 359-361, 2015. Disponível em:
                                     http://dx.doi.org/10.3201/eid2102.141363. Acesso em: 15 ago. 2023.
-
+                                    <br>
+                                    <br>
                                     NITHIYANANTHAM, S. F.; BADAWI, A. Maternal infection with Zika virus and prevalence
                                     of congenital disorders in infants: systematic review and meta-analysis. Canadian
                                     Journal of Public Health, v. 110, n. 5, p. 638-648, 2019.
-
+                                    <br>
+                                    <br>
                                     NOGUEIRA, M. L. et al. Zika virus infection and solid organ transplantation: a new
                                     challenge. American Journal of Transplant, v. 17, p. 791-795, 2017.
                                     NOOR, R. et al. Zika virus: epidemiological study and its association with public
@@ -1341,7 +1377,8 @@
                                     PAN AMERICAN HEALTH ORGANIZATION (PAHO). Tool for diagnosis and care of patients
                                     with suspected arboviral disease. Washington, DC: PAHO, 2017. Disponível em:
                                     https://iris.paho.org/handle/10665.2/33895. Acesso em: 19 ago. 2023.
-
+                                    <br>
+                                    <br>
                                     SANCHEZ CLEMENTE, N. et al. Zika virus infection in pregnancy and adverse fetal
                                     outcomes in São Paulo State, Brazil: a prospective cohort study. Scientific Reports,
                                     v. 10, n. 1, 12673, 2020. DOI: 10.1038/s41598-020-69235-0. Disponível em:
@@ -1354,14 +1391,16 @@
                                     SLAVOV, S. N. et al. Zika virus RNA detection in asymptomatic blood donors during an
                                     outbreak in the northeast region of São Paulo State, Brazil, 2016. Transfusion, v.
                                     57, n. 12, p. 2.897-2.901, 2017.
-
+                                    <br>
+                                    <br>
                                     TANG, H. et al. Zika virus infects human cortical neural progenitors and attenuates
                                     their growth. Cell Stem Cell, v. 18, n. 5, p. 587-590, 2016.
                                     WORLD HEALTH ORGANIZATION (WHO). WHO guidelines for the prevention of sexual
                                     transmission of Zika virus. Geneva: World Health Organization, 2020. Disponível em:
                                     <https: //apps.who.int/iris/bitstream/handle/10665/332466/9789241550482-eng.pdf>.
                                         Acesso em: 21 ago. 2023.
-
+                                        <br>
+                                        <br>
                                         WORLD HEALTH ORGANIZATION (WHO). Zika virus. 2022. Disponível em: <https:
                                             //www.who.int/news-room/fact-sheets/detail/zika-virus?gclid=Cj0KCQjwuZGnBhD1ARIsACxbAVhT5D_hX0YAQ6Mj-thA5i_nwin6MG23LbzWg9FQfTcOVj334UwUPB8aAkA3EALw_wcB>
                                             . Acesso em: 15 ago. 2023.
@@ -1370,7 +1409,7 @@
                                             Tropical de São Paulo, v. 58, p. 90, 2016. Disponível em:
                                             https://www.scielo.br/j/rimtsp/a/HWWDhycYdNFpcrL5HvfG8QS/?lang=en. Acesso
                                             em: 7 ago. 2023.
-
+        
                 </span>
             </div>
         </div>
