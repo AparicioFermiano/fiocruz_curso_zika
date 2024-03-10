@@ -119,6 +119,14 @@ p {
     background-repeat: no-repeat;
 }
 
+.mosquito {
+    width: 50%;
+}
+
+.logo {
+    width: 50%;
+    padding-top: 5rem;
+}
 
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
@@ -313,6 +321,9 @@ p {
     font-weight: 900;
     font-size: 15rem;
 }
+
+
+
 
 .titulo-capa {
     font-size: 2rem;
@@ -598,11 +609,47 @@ kbd {
 }
 
 
+.background-image {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 5%, rgba(0, 0, 0, 0) 60%), url(../image/fundo_capa.png);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-  
-  /* ANIMAÇÃO DA CAIXA DE PERGUNTA */
-  
- 
+/* Estilo para o fundo borrado com desfoque */
+.borrado::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Ajuste conforme necessário para cobrir as bordas */
+    left: -10px; /* Ajuste conforme necessário para cobrir as bordas */
+    right: -10px; /* Ajuste conforme necessário para cobrir as bordas */
+    bottom: -10px; /* Ajuste conforme necessário para cobrir as bordas */
+    background-image: inherit;
+    filter: blur(10px); /* Ajuste o valor de desfoque conforme necessário */
+    z-index: -1;
+}
+
+
+
+
+/* Estilo para o fundo borrado */
+.borrado {
+    position: relative;
+}
+
+.carousel-person {
+    height: 600px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
+    max-height: 600px; /* Define a altura máxima para cada item do carrossel */
+    width: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: var(--secondary);
+}
 
 @media (min-width: 992px) {
     
@@ -621,6 +668,8 @@ kbd {
     .padding-desk-3 {
         padding: 3% !important;
     }
+
+   
 }
 
 @media (max-width: 992px) {
@@ -662,6 +711,7 @@ kbd {
     .titulo {
         font-size: 2rem;
         font-weight: 400;
+        line-height: 2.5rem;
     }
 
 
@@ -769,27 +819,17 @@ kbd {
     to { transform: scale(1); }
   }
 
-
-.carousel-person {
-    height: 600px;
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
-    max-height: 600px; /* Define a altura máxima para cada item do carrossel */
-    width: 100%;
-}
-
-.carousel-indicators .active {
-    background-color: var(--secondary);
-}
-
 @media (max-width: 767px) {
     .sub-titulo {
         width: 100%; /* Define a largura como 100% em telas com largura máxima de 767px (dispositivos móveis) */
+        font-size: 2rem;
     }
 }
 
+
 @media (max-width: 425px) {
     .sub-titulo {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 2.3rem;
     }
@@ -801,6 +841,12 @@ kbd {
     }
 }
 
+@media (max-width: 282px) {
+    .titulo-unidade {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
 
 @media (max-width: 1306px) {
     .carousel-indicators {
@@ -850,17 +896,6 @@ kbd {
     backdrop-filter: blur(4px); /* efeito de blur */
     }
 }
-
-.background-image {
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 5%, rgba(0, 0, 0, 0) 60%), url(../image/fundo_capa.png);
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 @media (min-width: 992px) and (max-width: 1547px) {
     .container-capa {
         flex: 0 0 50%; /* Definindo 50% de largura em telas grandes */
@@ -884,3 +919,127 @@ kbd {
         font-weight: bolder;
     }
 }
+
+/* Aplica o desfoque apenas quando a largura da tela for menor ou igual a 991px */
+@media (max-width: 991px) {
+    .borrado::before {
+        filter: blur(3px); /* Ajuste o valor de desfoque conforme necessário */
+    }
+}
+
+@media (max-width: 477px) {
+    .titulo-italico {
+        line-height: 2rem;
+        
+    }
+    
+}
+
+@media (max-width: 283px) {
+    .titulo-pergunta {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    label  {
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (max-width: 998px) {
+    .mosquito {
+        width: 40%;
+    }
+
+    .logo {
+        width: 100%;
+        padding-bottom: 1rem;
+        padding-top: 2.2rem;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .mosquito {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .botao-capa {
+        margin-top: 2.5rem;
+    }
+    
+}
+
+
+
+@media (max-width: 989px) {
+    .texto-capa {
+        width: 70% !important;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+    #sobre.pt-sm-5 {
+        padding-top: 3rem !important; /* Você pode ajustar o valor conforme necessário */
+    }
+}
+
+@media (max-width: 575px) {
+    .retorno .explicacao {
+        padding: 1.25rem !important; /* Mantém o padding mesmo em telas menores */
+    }
+}
+
+@media (max-width: 425px) {
+    .opcoes label {
+        display: flex;
+        flex-direction: column; /* Inverte a direção da coluna */
+        align-items: flex-start !important; /* Alinha os itens no início (no topo) */
+    }
+    
+    .opcoes label span {
+        margin-bottom: 0.5rem; /* Adiciona um espaçamento entre a bolinha e o texto */
+    }
+}
+
+@media (max-width: 742px) {
+   .titulo-pergunta {
+    line-height: 1.5rem;
+    padding: 2rem !important;
+   }
+}
+
+@media (max-width: 425px) {
+    .sub-titulo-capa {
+     font-size: 2rem;
+    }
+
+    .tituloZ {
+        font-size: 4.30rem;
+       }
+ }
+
+ @media (max-width:  320px) {
+    .sub-titulo-capa {
+     font-size: 1.8rem;
+    }
+
+    .tituloZ {
+        font-size: 3.30rem;
+        line-height: 4rem;
+       }
+
+       .texto-capa {
+        width: 100% !important;
+       }
+
+      
+ }
+ 

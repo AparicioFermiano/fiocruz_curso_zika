@@ -65,8 +65,14 @@
     color: #FF4242 !important;
   }
 
-  .opcoes label.clicked {
-    border: solid; /* Cor e largura da borda quando a questão é clicada */
+  .opcoes label {
+    border: 3px solid transparent; /* Adiciona uma borda transparente por padrão */
+    /* Adicione uma margem para compensar a largura da borda */
+    margin-right: 16px;
+}
+
+.opcoes label.clicked {
+    border-color: var(--aux); /* Muda a cor da borda apenas quando clicado */
 }
 
 .div-perguntas {
@@ -98,14 +104,21 @@
 }
 
 /* Estiliza a bolinha de seleção padrão quando marcada */
-.opcoes-padrao label input[type="radio"]:checked + span:before {
+.opcoes-padrao label input[type="radio"]:checked + span:before.opcao-correta.opcao-incorreta {
     background-color: #FFFFFF; /* Cor de fundo (branca quando clicada) */
     border: solid 1px #D0BE75;
 }
 
-.opcoes-padrao label.resposta-correta input[type="radio"]:checked + span:before {
-    background-color: green; /* Cor de fundo verde para resposta correta */
-    border-color: green; /* Cor da borda verde para resposta correta */
+.shake-animation {
+  animation: shake 0.5s ease;
+}
+
+.opcoes label.opcao-correta span {
+background-color: #4DAD33 !important; /* Altera o fundo da bolinha para verde quando a resposta está correta */
+}
+
+.opcoes label.opcao-incorreta span {
+background-color: #FF4242 !important; /* Altera o fundo da bolinha para vermelho quando a resposta está incorreta */
 }
 
 @keyframes shake {
@@ -126,6 +139,5 @@
     }
 }
 
-.shake-animation {
-    animation: shake 0.5s ease;
-}
+
+

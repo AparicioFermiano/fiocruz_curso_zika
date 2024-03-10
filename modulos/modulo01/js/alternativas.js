@@ -1,3 +1,23 @@
+// Adicionar a classe 'clicked' ao <label> quando clicado
+function adicionarEventoClique() {
+    document.querySelectorAll('.opcoes label').forEach(function(label) {
+        label.addEventListener('click', function() {
+            // Remover a classe 'clicked' de todos os <label>
+            document.querySelectorAll('.opcoes label').forEach(function(label) {
+                label.classList.remove('clicked');
+            });
+            // Adicionar a classe 'clicked' apenas ao <label> clicado
+            this.classList.add('clicked');
+        });
+    });
+}
+
+// Adicionar evento de clique e hover após o carregamento da página
+window.onload = function() {
+    adicionarEventoClique();
+};
+
+// Função para desabilitar seleção de opções e eventos de clique e hover após uma resposta
 function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta, exibirRespostaCorreta) {
     var jaRespondeu = document.getElementById(perguntaId).dataset.jaRespondeu;
     
@@ -52,39 +72,16 @@ function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta, exibi
     }
 
     document.getElementById(perguntaId).dataset.jaRespondeu = "true";
+
+    // Desabilitar seleção das opções após uma resposta ser selecionada
+    document.querySelectorAll('#' + perguntaId + ' input[type="radio"]').forEach(function(opcao) {
+        opcao.disabled = true;
+    });
+
+    // Desativar eventos de clique e hover nas opções de seleção
+    document.querySelectorAll('#' + perguntaId + ' .opcoes label').forEach(function(label) {
+        label.removeEventListener('click', adicionarEventoClique);
+        label.style.pointerEvents = 'none'; // Desativa o clique
+        label.style.cursor = 'default'; // Muda o cursor para o padrão
+    });
 }
-
-function selecionarCaso(id, button) {
-    // Oculta todos os casos
-    document.querySelectorAll('.tab-pane').forEach(tab => {
-        tab.classList.remove('show', 'active');
-    });
-
-    // Remove a classe 'clicado' de todos os botões
-    document.querySelectorAll('.button.btn-aux').forEach(btn => {
-        btn.classList.remove('clicado');
-    });
-
-    // Exibe o caso selecionado
-    document.getElementById(id).classList.add('show', 'active');
-
-    // Ativa o botão clicado
-    button.classList.add('clicado');
-}
-
-window.onload = function() {
-    // Adiciona a classe "clicado" ao botão "Parte 01" quando a página carregar
-    document.querySelector('.btn-aux:first-child').classList.add('clicado');
-};
-
-// Adicionar a classe 'clicked' ao <label> quando clicado
-document.querySelectorAll('.opcoes label').forEach(function(label) {
-    label.addEventListener('click', function() {
-        // Remover a classe 'clicked' de todos os <label>
-        document.querySelectorAll('.opcoes label').forEach(function(label) {
-            label.classList.remove('clicked');
-        });
-        // Adicionar a classe 'clicked' apenas ao <label> clicado
-        this.classList.add('clicked');
-    });
-});
