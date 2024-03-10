@@ -330,7 +330,7 @@ p {
 }
 
 .sub-titulo {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
     line-height: 4rem;
     width: 75%;
@@ -371,12 +371,21 @@ p {
     font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    line-height: rem;
+}
+
+.titulo-quebra {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+    
 }
 
 .tituloZ {
     font-size: 5rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 6rem;
 }
 
@@ -397,7 +406,7 @@ p {
 
 b,
 .bold {
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .medium {
@@ -519,12 +528,14 @@ kbd {
     
 }
 
+
 .modal-conteudo {
     background-color: var(--aux);
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     margin: 1.4rem !important;
+    
 }
 
 .div-modal-orientacao {
@@ -848,6 +859,12 @@ kbd {
     }
 }
 
+@media (max-width: 575px) {
+    .box-cust {
+       margin-bottom: 2rem !important;
+    }
+}
+
 @media (max-width: 1306px) {
     .carousel-indicators {
         align-items: baseline;
@@ -935,11 +952,12 @@ kbd {
     
 }
 
-@media (max-width: 283px) {
+@media (max-width: 318px) {
     .titulo-pergunta {
         font-size: 1rem;
         line-height: 1.5rem;
         padding-top: 3rem;
+        text-align: justify;
     }
 
     label  {
@@ -1012,13 +1030,12 @@ kbd {
 @media (max-width: 742px) {
    .titulo-pergunta {
     line-height: 1.5rem;
-    padding: 2rem !important;
    }
 }
 
 @media (max-width: 425px) {
-    .sub-titulo-capa {
-     font-size: 2rem;
+    .texto-capa {
+     width: 100% !important;
     }
 
     .tituloZ {
@@ -1027,13 +1044,17 @@ kbd {
  }
 
  @media (max-width:  320px) {
+
+body {
+    font-size: 16px;
+}
     .sub-titulo-capa {
      font-size: 1.8rem;
     }
 
     .tituloZ {
         font-size: 3.30rem;
-        line-height: 4rem;
+        line-height: 3rem;
        }
 
        .texto-capa {
@@ -1048,3 +1069,14 @@ kbd {
     opacity: 0.5; /* Altere o valor conforme necessário */
 
  }
+
+
+ .div-animada {
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
