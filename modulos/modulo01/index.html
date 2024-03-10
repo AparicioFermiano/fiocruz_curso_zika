@@ -346,75 +346,48 @@
                 <span class="titulo">A propagação do vírus Zika</span><br>
                 <small class="desativado">Clique nos botões numerados para interagir:</small>
             </div>
-            <div class="col-12 col-lg-4 ">
+            <div class="col-12">
 
-                <div class="padding-desk-5 padding-y-mobile-5">
-                    <div class="d-flex flex-column">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-4">
-                                <button type="button"
-                                    class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #AC4725; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1200,-305" title="Uganda (1947)">
-                                    01
-                                </button>
-                                <span class="ms-2">Uganda (1947);</span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <button type="button"
-                                    class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #482EC7; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1130,-230" title="Nigéria (1954)">
-                                    02
-                                </button>
-                                <span class="ms-2">Nigéria (1954);</span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <button type="button"
-                                    class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #A7D26D; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1659,-259" title="Polinésia Francesa (2013)">
-                                    03
-                                </button>
-                                <span class="ms-2">Polinésia Francesa (2013);</span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <button type="button"
-                                    class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #E88BBA; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="900,-209" title="Chile (2014)">
-                                    04
-                                </button>
-                                <span class="ms-2">Chile (2014);</span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <button type="button"
-                                    class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #FAA919; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="850,20"
-                                    title="México, Paraguai, Guatemala, El Salvador, Colômbia, Panamá, Honduras, Ilha de Santiago, Cabo Verde e Venezuela (2015);">
-                                    05
-                                </button>
-                                <span class="ms-2 text-justify">México, Paraguai, Guatemala, El Salvador, Colômbia,
-                                    Panamá, Honduras, Ilha de Santiago, Cabo Verde e Venezuela (2015);</span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <button type="button"
-                                    class="btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center"
-                                    style="width: 30px; height: 30px; background-color: #D4763B; border: none;"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-offset="1000,-10" title="Rio Grande do Norte e Bahia (2015)">
-                                    06
-                                </button>
-                                <span class="ms-2">Rio Grande do Norte e Bahia (2015)</span>
-                            </div>
+                <div class="p-lg-3 padding-y-mobile-5">
+                    <div class="d-flex" id="buttons-container">
+                        <div class="d-flex align-items-center mb-4">
+                            <button type="button" class="btn-mapa btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center" style="background-color: #AC4725;" onclick="changeImage('01')">
+                                01
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <button type="button" class="btn-mapa btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center" style="background-color: #482EC7;" onclick="changeImage('02')">
+                                02
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <button type="button" class="btn-mapa btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center" style="background-color: #A7D26D;" onclick="changeImage('03')">
+                                03
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <button type="button" class="btn-mapa btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center" style="background-color: #E88BBA;" onclick="changeImage('04')">
+                                04
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <button type="button" class="btn-mapa btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center" style="background-color: #FAA919;" onclick="changeImage('05')">
+                                05
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <button type="button" class="btn-mapa btn btn-primary rounded-circle d-inline-flex justify-content-center align-items-center" style="background-color: #D4763B;" onclick="changeImage('06')">
+                                06
+                            </button>
                         </div>
                     </div>
                 </div>
-
+                
+                <div class="col-12 col-6">
+                    <img id="mapaInterativo" src="./image/mapa_interativo.svg" class="mapa">
+                </div>
             </div>
-            <div class="col-12 col-lg-8">
-                <img src="./image/mapa_interativo.png" class="img-fluid">
-            </div>
+            
         </div>
         <div class=" container text-justify p-3">
                 <p class="py-2 text-center">Fonte: Universidade de Lancaster, Journal of General Virology</p>
@@ -603,7 +576,7 @@
                 <p>Clique nos botões para interagir
                 </p>
                 <div class="d-flex col-6 py-4" role="tablist">
-                    <button class="btn-cust button btn-col-4 btn-aux w-100" onclick="selecionarCaso('caso_01', this)"
+                    <button class="btn-cust button btn-col-4 btn-aux w-100 clicado" onclick="selecionarCaso('caso_01', this)"
                         type="button" role="tab" aria-selected="true">Parte 01</button>
                     <button class="btn-cust button btn-col-4 btn-aux ms-4 w-100" onclick="selecionarCaso('caso_02', this)"
                         type="button" role="tab" aria-selected="false">Parte 02</button>
@@ -752,11 +725,13 @@
                 clínico da doença, riscos da automedicação e sobre a necessidade de procurar o serviço de saúde.</p>
         </div>
 
-        <div class="bg-aux box-saiba-mais text-center padding-x-container py-5">
+        <div class="bg-aux box-saiba-mais padding-x-container py-5">
             <img src="./image/exclamation-triangle.svg" class=" " alt="Exclamação" data-animation="circle-saiba-mais">
-            <div class="text-center">
-                <p class="pt-3">Atenção</p>
-                <p class="titulo ">Atenção profissional de saúde!</p>
+            <span class="pt-3">Atenção</span>
+            <p class="titulo ">Atenção profissional de saúde!</p><br>
+            <div class="row">
+            <div class="pe-lg-5 col-12 col-lg-6 text-center">
+               
                 <p class="text-justify">
                     Cada um de nós devemos assumir o papel de porta-voz para difusão de conhecimentos sobre zika,
                     dengue,
@@ -770,6 +745,11 @@
                     apresente. De igual importância, é o seu papel como difusora de conhecimentos sobre a doença.
                     <br>
                     <br>
+                    
+                </p>
+            </div>
+            <div class="pb-5 col-12 col-lg-6 text-justify"> 
+                <span>
                     Uma das maneiras mais eficazes para o combate tanto para dengue, como chikunguya e a zika, está
                     diretamente relacionada à participação da população no combate ao vetor e ações diárias que podem
                     ser
@@ -785,49 +765,62 @@
                     <br>
                     <br>
                     A responsabilidade social no combate ao vetor é obrigatoriedade de todos!
-                </p>
+                </span>
             </div>
+        </div>
             <!-- DIVS ANIMADAS -->
-        <div class="text-center container-fluid overflow-hidden">
-            <div class="row">
-                <div class="col-12 col-lg-6" data-animation="left-to-right">
-                    <div class="pb-5">
-                        <div class="bg-secondary text-light box-saiba-mais rounded-4 p-3">
-                            <div class="div-animada">
-                                <p>Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+            <div class="d-flex justify-content-around">
+                <div class="container-fluid overflow-hidden">
+                    <div class="row">
+                        <div class="pe-lg-5 col-lg-6 d-flex flex-column" data-animation="left-to-right">
+                            <div class="pb-lg-5">
+                                <div class="div-animada bg-secondary text-light box-saiba-mais rounded-4 p-3">
+                                    <div class="div-animada-conteudo">
+                                        <p>Não deixe água parada que possa ser fonte de criadouros em sua casa.</p>
+                                    </div>
+                                </div>
+            
+                                <div class="mt-3 div-animada bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
+                                    <div class="div-animada-conteudo">
+                                        <p>Verifique vasos de plantas com excesso de água.</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 div-animada bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
+                                    <div class="div-animada-conteudo">
+                                        <p>Em caso de ocorrência de sintomas de infecção por ZIKV, procure a unidade básica de saúde
+                                            mais próxima.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-        
-                        <div class="mt-3 bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
-                            <div class="div-animada">
-                                <p>Verifique vasos de plantas com excesso de água.</p>
+            
+                        <div class="col-lg-6" data-animation="right-to-left">
+                            <div class="div-animada bg-secondary text-light rounded-4 p-3" data-animation="right-to-left">
+                                <div class="div-animada-conteudo">
+                                    <p>Verifique as redondezas de sua moradia, em caso de presença de focos, comunique a vigilância
+                                        ambiental/ epidemiológica de sua localidade.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mt-3 bg-secondary text-light box-saiba-mais text-center rounded-4 p-3">
-                            <div class="div-animada">
-                                <p>Em caso de ocorrência de sintomas de infecção por ZIKV, procure a unidade básica de saúde mais próxima.
-                                </p>
+                            <div class="div-animada mt-3 bg-secondary text-light rounded-4 p-3" data-animation="right-to-left">
+                                <div class="div-animada-conteudo">
+                                    <p>Fique atento aos casos de infecção por ZIKV em seu território.
+                                    </p>
+                                </div>
                             </div>
+
+                            <div class="div-animada mt-3 bg-secondary text-light rounded-4 p-3" data-animation="right-to-left">
+                                <div class="div-animada-conteudo">
+                                    <p>Fique atento aos casos de infecção por ZIKV em seu território.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-        
-                <div class="col-12 col-lg-6" data-animation="right-to-left">
-                    <div class="d-block bg-secondary text-light text-center rounded-4 p-3" data-animation="right-to-left">
-                        <div class="div-animada">
-                            <p>Verifique as redondezas de sua moradia, em caso de presença de focos, comunique a vigilância ambiental/ epidemiológica de sua localidade.</p>
-                        </div>
-                    </div>
-                    <div class="d-block mt-3 bg-secondary text-light text-center rounded-4 p-3" data-animation="right-to-left">
-                        <div class="div-animada">
-                            <p>Fique atento aos casos de infecção por ZIKV em seu território.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            </div>            
             </div>
-        </div>
-        </div>
         
         <div id="vigilancia" class="padding-x-container text-justify bg-primary-light font-dark py-5 overflow-hidden">
             <p class="titulo">Vigilância em Saúde</p>
@@ -873,10 +866,10 @@
             </div>
         </div>
         
-        <div class="row py-5 bg-primary-light">
-            <div class="col-12 col-lg-6 pe-lg-5 padding-x-container text-justify font-dark">
-                <div class="bg-aux box-saiba-mais padding-container text-center rounded-4 px-lg-5">
-                    <img src="./image/exclamation-triangle.svg" class="" alt="Exclamação" data-animation="circle-saiba-mais">
+        <div class="row p-lg-5 bg-primary-light">
+            <div class="col-12 col-lg-6 pe-lg-5 text-justify font-dark">
+                <div class="container-fluid bg-aux box-saiba-mais-float p-5 text-center px-lg-5">
+                    <img src="./image/exclamation-triangle.svg" class="active" alt="Exclamação" data-animation="circle-saiba-mais">
                     <div class="text-center">
                         <p class="pt-3">Atenção</p>
                         <p class="titulo">Atenção!</p>
@@ -886,7 +879,7 @@
                     </div>
                 </div>
             </div>
-            <div id="fluxo" class="col-lg-6 pe-lg-5 p-5 p-lg-0">
+            <div id="fluxo" class="container-fluid col-lg-6 pe-lg-5 pt-lg-0 pb-sm-5">
                 <span class="titulo-quebra">Fluxo de notificação e investigação de casos</span><br><br>
                 <span class="text-justify">Os profissionais de saúde da Atenção Básica devem notificar doenças, agravos e eventos que constam na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública.
                     <br>
@@ -1322,7 +1315,7 @@
         <script src="./js/index.min.js"></script>
         <script src="./js/animacao.min.js"></script>
         <script src="./js/alternativas.js"></script>
-        <script src="./js/tooltip.js"></script>
+        <script src="./js/imagem-interativa.js"></script>
         <!-- <script>
         let lib = unasus.pack;
         lib.initialize();
