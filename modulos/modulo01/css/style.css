@@ -656,7 +656,9 @@ kbd {
 }
 
 
-
+.img-ciclo {
+    padding-left: 3rem;
+}
 
 /* Estilo para o fundo borrado */
 .borrado {
@@ -1119,4 +1121,14 @@ body {
     .btn-mapa {
         margin-left: 0.5rem;
     }
+}
+
+@media (max-width: 375px) {
+    .cust {
+        padding-left: 0 !important;
+    }
+}
+
+.cust {
+    padding-left: 3rem;
 }
