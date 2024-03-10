@@ -655,11 +655,6 @@ kbd {
     z-index: -1;
 }
 
-
-.img-ciclo {
-    padding-left: 3rem;
-}
-
 /* Estilo para o fundo borrado */
 .borrado {
     position: relative;
@@ -1123,7 +1118,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 991px) {
     .cust {
         padding-left: 0 !important;
     }
