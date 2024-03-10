@@ -1,0 +1,165 @@
+/* CSS para desativar a barra de rolagem horizontal durante a animação shake */
+body.shake-animation-active {
+  overflow-x: hidden;
+}
+
+:root {
+  
+  
+    --primary-dark: #403C01;
+    --primary-dark-hover: #403C01;
+    --aux: #D9D491;
+    --aux-hover: #afab76;
+    --font-dark: #212121;
+    --font-light: #FFFEF0;
+  
+  }
+  
+  
+  .bg-primary-dark {
+    background-color: var(--primary-dark) !important;
+  }
+  
+  /* CAIXA DE PERGUNTA */
+  
+  
+  
+  
+  .opcoes label {
+    color: var(--font-light);
+    display: flex; /* Adiciona flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .opcoes label:hover {
+    color: var(--aux-hover);
+    display: flex; /* Adiciona flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  
+  .opcoes label:hover span {
+    background-color: var(--aux-hover); /* Cor mais escura ao passar o mouse para a letra */
+    color: var(--font-dark); /* Texto branco para a letra ao passar o mouse */
+  }
+  
+  .opcoes label input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+  }
+  
+  .opcoes label input[type="radio"]:checked + span {
+    background-color: var(--aux-hover);
+    color: var(--font-dark);
+  }
+  
+  
+  .retorno {
+    display: none;
+  }
+  
+  .explicacao {
+    color: var(--font-light);
+    padding: 2rem;
+  }
+  
+  .opcao-correta {
+    color: #4DAD33 !important;
+  }
+  
+  .opcao-incorreta {
+    color: #FF4242 !important;
+  }
+  
+  
+  /* POP-UP */
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 20px; /* Alterado para 20px do topo */
+    left: 50%;
+    transform: translateX(-50%); /* Mantém o popup centralizado horizontalmente */
+    z-index: 9999;
+    padding: 1px;
+    animation: fadeInPopup 0.5s ease;
+    border-radius: 0 2rem 0 2rem;
+  }
+  
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 0 2rem 0 2rem;
+    animation: scalePopup 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-clip: padding-box;
+    border: thin solid
+  }
+  
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro com 50% de opacidade */
+    z-index: 9998; /* Certifica-se de que o overlay esteja atrás do pop-up */
+    display: none; /* Inicialmente oculto */
+  }
+  
+  .pop-text {
+    font-weight: 600;
+  }
+  
+  /* ANIMAÇÃO DA CAIXA DE PERGUNTA */
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes fadeInPopup {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes scalePopup {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+  }
+  
+  .shake-animation {
+    animation: shake 1s ease;
+  }
+  
+  @media (min-width: 1200px) {
+        #tempo.container {
+            width: 1604px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        #tempo.container {
+            width: 480px;
+        }
+    }

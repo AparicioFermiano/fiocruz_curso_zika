@@ -591,16 +591,10 @@ kbd {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.box-saiba-mais-float {
-    background-color: var(--aux);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     border-radius: 1rem;
 }
+
+
 
 .video-wrapper {
     position: relative;
@@ -707,6 +701,7 @@ kbd {
     padding: 1.2rem;
     margin-left: 1rem;
 }
+
 
 @media (min-width: 992px) {
     
@@ -891,12 +886,6 @@ kbd {
     .titulo-unidade {
         font-size: 1rem;
         line-height: 1.5rem;
-    }
-}
-@media (max-width: 991px) {
-    .box-saiba-mais-float {
-      border-radius: 0%;
-      margin-bottom: 3rem;
     }
 }
 
@@ -1118,5 +1107,11 @@ body {
 @media (max-width: 375px) {
     .btn-mapa {
         margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .box-saiba-mais-float {
+     margin-bottom: 1rem !important;
     }
 }
