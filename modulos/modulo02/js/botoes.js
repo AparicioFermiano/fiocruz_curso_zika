@@ -24,3 +24,15 @@ document.querySelectorAll('.opcoes label').forEach(function(label) {
         this.classList.add('clicked');
     });
 });
+// REMOVE BACKDROP DO FUNDO QUANDO MODAL É ATIVADO
+document.addEventListener('DOMContentLoaded', function () {
+    var modal = new bootstrap.Modal(document.getElementById('instrucao_navegacao'));
+
+    modal._element.addEventListener('show.bs.modal', function () {
+        document.querySelector('.background-image').classList.add('remove-backdrop');
+    });
+
+    modal._element.addEventListener('hidden.bs.modal', function () {
+        document.querySelector('.background-image').classList.remove('remove-backdrop');
+    });
+});

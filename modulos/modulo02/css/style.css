@@ -591,10 +591,16 @@ kbd {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 1rem;
 }
 
-
+.box-saiba-mais-float {
+    background-color: var(--aux);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
 
 .video-wrapper {
     position: relative;
@@ -649,9 +655,6 @@ kbd {
     z-index: -1;
 }
 
-
-
-
 /* Estilo para o fundo borrado */
 .borrado {
     position: relative;
@@ -667,7 +670,6 @@ kbd {
 .carousel-indicators .active {
     background-color: var(--secondary);
 }
-
 
 .mapa {
     width: 70%; /* Alterando a largura para ocupar 100% da largura da coluna */
@@ -701,7 +703,6 @@ kbd {
     padding: 1.2rem;
     margin-left: 1rem;
 }
-
 
 @media (min-width: 992px) {
     
@@ -774,9 +775,7 @@ kbd {
 
 
 @media (max-width: 767px) {
-
- 
-    
+   
     .pt-mobile-5 {
         padding-top: 5%;
     }
@@ -888,6 +887,12 @@ kbd {
         line-height: 1.5rem;
     }
 }
+@media (max-width: 991px) {
+    .box-saiba-mais-float {
+      border-radius: 0%;
+      margin-bottom: 3rem;
+    }
+}
 
 @media (max-width: 575px) {
     .box-cust {
@@ -909,11 +914,14 @@ kbd {
     }
 }
 
+
+
 @media (max-width: 991px) {
     .imagem-menor {
         max-width: 190px; /* Defina o tamanho máximo que você deseja para a imagem */
     }
 }
+
 
 @media (min-width: 796px) {
     .d-flex.col-6.py-4 button {
@@ -923,9 +931,14 @@ kbd {
 
 @media (max-width: 991px) {
     .background-image {
-    backdrop-filter: blur(4px); /* efeito de blur */
+        backdrop-filter: blur(4px); /* efeito de blur */
+    }
+    .remove-backdrop {
+        backdrop-filter: none !important; /* remove o efeito de backdrop-filter */
     }
 }
+
+
 @media (min-width: 992px) and (max-width: 1547px) {
     .container-capa {
         flex: 0 0 50%; /* Definindo 50% de largura em telas grandes */
@@ -1109,10 +1122,15 @@ body {
 }
 
 @media (max-width: 991px) {
-    .box-saiba-mais-float {
-     margin-bottom: 1rem !important;
+    .cust {
+        padding-left: 0 !important;
     }
 }
+
+.cust {
+    padding-left: 3rem;
+}
+
 
 /* MODULO 2 */
 .img-centro {
