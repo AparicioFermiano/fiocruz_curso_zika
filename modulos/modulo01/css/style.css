@@ -124,7 +124,8 @@ p {
 }
 
 .mosquito {
-    min-width: 300px;
+    max-width: 300px;
+    min-height: auto;
 }
 
 
@@ -640,19 +641,6 @@ kbd {
     background-repeat: no-repeat;
 }
 
-/* Estilo para o fundo borrado com desfoque */
-.borrado::before {
-    content: '';
-    position: absolute;
-    top: -10px; /* Ajuste conforme necessário para cobrir as bordas */
-    left: -10px; /* Ajuste conforme necessário para cobrir as bordas */
-    right: -10px; /* Ajuste conforme necessário para cobrir as bordas */
-    bottom: -10px; /* Ajuste conforme necessário para cobrir as bordas */
-    background-image: inherit;
-    filter: blur(10px); /* Ajuste o valor de desfoque conforme necessário */
-    z-index: -1;
-}
-
 .carousel-person {
     height: 600px;
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
@@ -851,8 +839,9 @@ kbd {
         font-size: 2.25rem;
     }
     .titulo {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: start;
     }
     
     .titulo-quebra {
@@ -861,7 +850,7 @@ kbd {
     }
 
     .titulo-material {
-        font-size: 2.62rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
     }
     
@@ -936,10 +925,7 @@ kbd {
 
 @media (max-width: 1200px) {
     .background-image {
-        backdrop-filter: blur(4px); /* efeito de blur */
-    }
-    .remove-backdrop {
-        backdrop-filter: none !important; /* remove o efeito de backdrop-filter */
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0) 100%), url(../image/fundo_capa.png);
     }
 }
 
