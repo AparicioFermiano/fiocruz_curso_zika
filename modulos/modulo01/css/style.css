@@ -364,7 +364,7 @@ p {
 .titulo-pergunta {
     font-size: 1.25rem;
     font-weight: 700;
-    line-height: 4rem;
+    line-height: 1.5rem;
 }
 
 
@@ -976,12 +976,6 @@ kbd {
 }
 
 @media (max-width: 320px) {
-    .titulo-pergunta {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding-top: 3rem;
-        text-align: justify;
-    }
 
     label  {
         font-size: 1rem;
@@ -1030,12 +1024,6 @@ kbd {
     .opcoes label span {
         margin-bottom: 0.5rem; /* Adiciona um espaçamento entre a bolinha e o texto */
     }
-}
-
-@media (max-width: 576px) {
-   .titulo-pergunta {
-    line-height: 1.5rem;
-   }
 }
 
 @media (max-width: 425px) {
