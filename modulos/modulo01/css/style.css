@@ -124,13 +124,10 @@ p {
 }
 
 .mosquito {
-    width: 50%;
+    min-width: 300px;
 }
 
-.logo {
-    width: 50%;
-    padding-top: 5rem;
-}
+
 
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
@@ -339,6 +336,7 @@ p {
     width: 75%;
     text-align: center;
     margin: 0 auto;
+    line-height: 2.5rem;
 }
 
 .sub-titulo-capa {
@@ -393,7 +391,7 @@ p {
 }
 
 .titulo-unidade {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1rem;
 }
@@ -655,11 +653,6 @@ kbd {
     z-index: -1;
 }
 
-/* Estilo para o fundo borrado */
-.borrado {
-    position: relative;
-}
-
 .carousel-person {
     height: 600px;
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
@@ -759,13 +752,6 @@ kbd {
         padding-left: 2rem;
     }
 
-    .titulo {
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 2.5rem;
-    }
-
-
     #creditos {
         margin-top: 8%;
         margin-bottom: 15%;
@@ -860,33 +846,52 @@ kbd {
     to { transform: scale(1); }
   }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .sub-titulo-capa {
+        font-size: 2.25rem;
+    }
+    .titulo {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+    
+    .titulo-quebra {
+        font-size: 2.25rem;
+        line-height: 2rem;
+    }
+
+    .titulo-material {
+        font-size: 2.62rem;
+        line-height: 2.5rem;
+    }
+    
+    .tituloZ {
+        font-size: 4.75rem;
+       }
+ 
+       .sub-titulo {
+        font-size: 1.37rem;
+        line-height: 2rem;
+    }
+
+    .titulo-unidade {
+        font-size: 0.62rem;
+    }
+    .sub-titulo-dois {
+        font-size: 1rem;
+        line-height: 1.62rem;
+    }
     .sub-titulo {
-        width: 100%; /* Define a largura como 100% em telas com largura máxima de 767px (dispositivos móveis) */
-        font-size: 2rem;
+        width: 100%;
     }
 }
 
 @media (max-width: 425px) {
-    .sub-titulo {
-        font-size: 1rem;
-        font-weight: 700;
-        line-height: 2.3rem;
+    .div-animada {
+        height: auto; /* Altura fixa */
     }
 }
 
-@media (max-width: 425px) {
-    .titulo-unidade {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 282px) {
-    .titulo-unidade {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-}
 @media (max-width: 991px) {
     .box-saiba-mais-float {
       border-radius: 0%;
@@ -901,24 +906,24 @@ kbd {
 }
 
 
+@media (max-width: 1440px) {
 
-@media (max-width: 768px) {
-    .carousel-control-next-icon {
+    .carousel-indicators {
         display: none;
-        
     }
 
-    .carousel-control-prev-icon {
-        display: none;
-        
-    }
 }
+
 
 
 
 @media (max-width: 991px) {
     .imagem-menor {
         max-width: 190px; /* Defina o tamanho máximo que você deseja para a imagem */
+    }
+    .carousel-control-prev,
+    .carousel-control-next{
+        display: none;
     }
 }
 
@@ -929,7 +934,7 @@ kbd {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .background-image {
         backdrop-filter: blur(4px); /* efeito de blur */
     }
@@ -963,13 +968,6 @@ kbd {
     }
 }
 
-/* Aplica o desfoque apenas quando a largura da tela for menor ou igual a 991px */
-@media (max-width: 991px) {
-    .borrado::before {
-        filter: blur(3px); /* Ajuste o valor de desfoque conforme necessário */
-    }
-}
-
 @media (max-width: 477px) {
     .titulo-italico {
         line-height: 2rem;
@@ -977,7 +975,7 @@ kbd {
     }
 }
 
-@media (max-width: 318px) {
+@media (max-width: 320px) {
     .titulo-pergunta {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -988,26 +986,11 @@ kbd {
     label  {
         font-size: 1rem;
     }
-}
-
-
-@media (max-width: 998px) {
+ 
     .mosquito {
-        width: 40%;
+        min-width: 250px;
     }
 
-    .logo {
-        width: 100%;
-        padding-bottom: 1rem;
-        padding-top: 2.2rem;
-    }
-    
-}
-
-@media (max-width: 425px) {
-    .mosquito {
-        width: 70%;
-    }
 }
 
 @media (max-width: 575px) {
@@ -1049,7 +1032,7 @@ kbd {
     }
 }
 
-@media (max-width: 742px) {
+@media (max-width: 576px) {
    .titulo-pergunta {
     line-height: 1.5rem;
    }
@@ -1059,26 +1042,11 @@ kbd {
     .texto-capa {
      width: 100% !important;
     }
-
-    .tituloZ {
-        font-size: 4.30rem;
-       }
- }
-
- @media (max-width:  320px) {
-
-body {
-    font-size: 16px;
 }
+ @media (max-width:  320px) {
     .sub-titulo-capa {
      font-size: 1.8rem;
     }
-
-    .tituloZ {
-        font-size: 3.30rem;
-        line-height: 3rem;
-       }
-
        .texto-capa {
         width: 100% !important;
        } 
@@ -1092,6 +1060,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
     .div-animada {
         width: calc(100% - 1rem); /* Largura total da coluna com 1rem de espaço entre elas */
     }

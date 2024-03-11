@@ -66,9 +66,8 @@
   }
 
   .opcoes label {
-    border: 3px solid transparent; /* Adiciona uma borda transparente por padrão */
+    border: 2px solid transparent; /* Adiciona uma borda transparente por padrão */
     /* Adicione uma margem para compensar a largura da borda */
-    margin-right: 16px;
 }
 
 .opcoes label.clicked {
