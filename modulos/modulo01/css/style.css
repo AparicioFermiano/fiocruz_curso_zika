@@ -671,7 +671,6 @@ kbd {
     background-color: var(--secondary);
 }
 
-
 .mapa {
     width: 70%; /* Alterando a largura para ocupar 100% da largura da coluna */
     height: auto;
@@ -776,9 +775,7 @@ kbd {
 
 
 @media (max-width: 767px) {
-
- 
-    
+   
     .pt-mobile-5 {
         padding-top: 5%;
     }
@@ -934,9 +931,14 @@ kbd {
 
 @media (max-width: 991px) {
     .background-image {
-    backdrop-filter: blur(4px); /* efeito de blur */
+        backdrop-filter: blur(4px); /* efeito de blur */
+    }
+    .remove-backdrop {
+        backdrop-filter: none !important; /* remove o efeito de backdrop-filter */
     }
 }
+
+
 @media (min-width: 992px) and (max-width: 1547px) {
     .container-capa {
         flex: 0 0 50%; /* Definindo 50% de largura em telas grandes */

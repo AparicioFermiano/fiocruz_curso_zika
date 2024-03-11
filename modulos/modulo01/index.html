@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/sidenav.css">
     <link rel="stylesheet" href="./css/perguntas.css">
 
@@ -149,26 +149,31 @@
                 </div>
                 <a class="mt-sm-5 mt-lg-0 button btn-secondary botao-capa" href="#sobre">Iniciar</a>
                 <!-- Modal -->
-                <div class="modal fade" id="instrucao_navegacao" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content modal-conteudo">
-                            <div class="mx-auto border-0">
-                                <button type="button" class="btn-close bg-light rounded-circle p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal fade" id="instrucao_navegacao" tabindex="-1" aria-hidden="true" 
+    
+                data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-conteudo">
+                        <div class="mx-auto border-0">
+                            <button type="button" class="btn-close bg-light rounded-circle p-3" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="pt-3 text-justify">
+                            <p class="py-2 bold text-center">Instruções para navegação
+                            </p>
+                            <p>Você pode ajustar a visualização do material de acordo com o nível de zoom do seu navegador,
+                                pressione:
+                            </p>
+                            <div class="text-center">
+                                <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                                <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
                             </div>
-                            <div class="pt-3 text-justify">
-                                <p class="py-2 bold text-center">Instruções para navegação
-                                </p>
-                                <p>Você pode ajustar a visualização do material de acordo com o nível de zoom do seu navegador, pressione:
-                                </p>
-                                <div class="text-center">
-                                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
-                                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
-                                </div>
-                                <p>Você também pode acessar o ícone no canto superior direito do material para navegar de forma livre através do menu.</p>
-                            </div>
+                            <p>Você também pode acessar o ícone no canto superior direito do material para navegar de forma
+                                livre através do menu.</p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <div class="justify-content-center">
                 <div class="d-flex flex-column position-relative">
@@ -186,18 +191,22 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                     class="active circle" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="circle"
+                    aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="circle"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="circle"
-                    aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="circle"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="circle"
                     aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="circle"
+                    aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="">
                         <div class="row justify-content-center text-justify">
-                            <div class="col-12 col-lg-6  text-light pt-5">
-                                <div class="pb-3 d-flex justify-content-start">
+                            <div class="col-12 col-lg-6  text-light pt-md-0 pt-lg-5">
+                                <div class="pb-md-0 pb-lg-5 d-flex justify-content-start">
                                     <span class="titulo  my-auto mx-2">SOBRE O CURSO</span>
                                 </div>
                                 <p class="d-flex align-items-center">Este curso foi elaborado justamente para
@@ -207,11 +216,22 @@
                                     objetiva e a certificação on-line. Na biblioteca, estão disponibilizados livros e
                                     vídeos com conteúdo referente ao tema; utilize-os caso sinta necessidade de
                                     aprofundar seus conhecimentos.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+                                <p class="d-flex align-items-center">
                                     O curso é uma iniciativa das seguintes instituições: Universidade Aberta do Sistema
                                     Único de Saúde (UNA-SUS), Fiocruz-Mato Grosso do Sul, Secretaria de Gestão do
                                     Trabalho e da Educação na Saúde (SGTES), Secretaria de Atenção à Saúde (SAS),
                                     Secretaria de Vigilância em Saúde e Ambiente (SVSA) e Universidade Federal de Mato
-                                    Grosso do Sul (UFMS).</p>
+                                    Grosso do Sul (UFMS).
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -219,15 +239,15 @@
                 <div class="carousel-item">
                     <div class="">
                         <div class="row justify-content-center text-justify">
-                            <div class="col-12 col-md-6 py-5 text-light">
+                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
                                 <div class="d-flex justify-content-start">
                                     <span class="titulo-capa  my-auto mx-2">OBJETIVOS DO CURSO</span>
                                 </div>
-                                <ul class="py-5">
+                                <ul class="py-md-0 py-lg-5">
                                     <li>Orientar os profissionais de saúde com as melhores evidências possíveis sobre o
                                         histórico e as características gerais da doença: vetor, formas de transmissão,
                                         características do vírus e período de incubação;
-                                        ;</li>
+                                    </li>
                                     <li>Orientar quanto aos meios de proteção individual e coletiva;</li>
                                     <li>Sensibilizar e instrumentalizar o profissional para identificação de quadro
                                         clínico sugestivo de infecção pelo ZIKV (dengue e chikungunya) e realização do
@@ -244,9 +264,8 @@
                 <div class="carousel-item">
                     <div class="">
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 py-5 text-light">
-
-                                <ul class="py-5">
+                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+                                <ul class="py-lg-5 py-0">
                                     <li>Qualificar o tratamento do paciente com ZIKV;</li>
                                     <li>Promover a identificação dos quadros de ZIKV que demandam assistência
                                         hospitalar;</li>
@@ -255,6 +274,17 @@
                                         diagnóstico da síndrome congênita relacionada ao ZIKV;</li>
                                     <li>Promover conhecimentos sobre a realização adequada da notificação, bem como
                                         atuar nas ações de vigilância em saúde;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+
+                                <ul class="py-lg-5 py-0">
                                     <li>Estimular a atuação do profissional de saúde como agente sentinela no
                                         diagnóstico oportuno de possíveis complicações;</li>
                                     <li> Estimular o profissional de saúde a atuar como agente disseminador de
@@ -265,7 +295,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="carousel-item">
                     <div class="">
                         <div class="row justify-content-center">
