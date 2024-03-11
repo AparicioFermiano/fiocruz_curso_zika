@@ -921,9 +921,10 @@ kbd {
 
 @media (max-width: 991px) {
     .imagem-menor {
-        max-width: 300px; /* Defina o tamanho máximo que você deseja para a imagem */
+        max-width: 190px; /* Defina o tamanho máximo que você deseja para a imagem */
     }
 }
+
 
 @media (min-width: 796px) {
     .d-flex.col-6.py-4 button {

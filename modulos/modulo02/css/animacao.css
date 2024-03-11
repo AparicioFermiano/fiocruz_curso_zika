@@ -203,3 +203,58 @@
         opacity: 0;
     }
 }
+
+.card {
+    height: var(--card-size);
+    perspective: 1000px;
+    border: none;
+    position: relative;
+    justify-content: center;
+    align-items: center
+}
+
+.card-back,.card-front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 10px rgba(0,0,0,.25)
+}
+
+.card-front {
+    transform: rotateY(0);
+    overflow: hidden;
+    justify-content: center;
+    overflow: auto
+}
+
+.card-back {
+    transform: rotateY(180deg)
+}
+
+.card.not-flipped .card-front {
+    transform: rotateY(0)
+}
+
+.card.not-flipped .card-back {
+    transform: rotateY(180deg)
+}
+
+.card.is-flipped .card-front {
+    transform: rotateY(-180deg)
+}
+
+.card.is-flipped .card-back {
+    transform: rotateY(0)
+}
+
+.card .card-scroll {
+    overflow-y: scroll
+}

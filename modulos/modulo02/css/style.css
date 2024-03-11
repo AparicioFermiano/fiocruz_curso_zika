@@ -909,11 +909,9 @@ kbd {
     }
 }
 
-
-
 @media (max-width: 991px) {
     .imagem-menor {
-        max-width: 300px; /* Defina o tamanho máximo que você deseja para a imagem */
+        max-width: 190px; /* Defina o tamanho máximo que você deseja para a imagem */
     }
 }
 
@@ -1114,4 +1112,15 @@ body {
     .box-saiba-mais-float {
      margin-bottom: 1rem !important;
     }
+}
+
+/* MODULO 2 */
+.img-centro {
+    margin: 0 auto;
+    height: auto;
+}
+
+.img-dor {
+    width: 600px;  
+    height: auto;
 }
