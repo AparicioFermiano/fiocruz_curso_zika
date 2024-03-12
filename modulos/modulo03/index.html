@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/botoes.css">
     <link rel="stylesheet" href="./css/sidenav.css">
     <link rel="stylesheet" href="./css/perguntas.css">
@@ -139,53 +139,62 @@
                 <img src="./image/mosquito.png" alt="Mosquito" class="pb-lg-0 pb-sm-5 mosquito img-fluid">
                 <span class="mx-auto d-block sub-titulo-capa">ABORDAGEM CLÍNICA DE</span>
                 <span class="tituloZ mx-auto d-block">ZIKA</span>
-                <span class="mx-auto d-block sub-titulo-capa"><p>NA ATENÇÃO PRIMÁRIA À SAÚDE</p></span>
-                <span class="texto-capa mx-auto d-block "><p>Aspectos epidemiológicos, promoção à saúde e prevenção de
-                    infecção por vírus zika</p></span>
-                
-                    <div class="row">
-                        <div class="col-12 d-flex justify-content-between mb-4">
-                            <button class="button btn-col-2 btn-outline" onclick="window.open('creditos.html', '_self')">Créditos</button>
-                            <button class="button btn-col-2 btn-outline" data-bs-toggle="modal" data-bs-target="#instrucao_navegacao">Instruções</button>
-                        </div>
-                        <div class="col-12">
-                            <button class="button btn-col-2 btn-secondary w-100" onclick="window.location.href='#sobre'">Iniciar</button>
-                        </div>
-                    </div>
-              
+                <span class="mx-auto d-block sub-titulo-capa">
+                    <p>NA ATENÇÃO PRIMÁRIA À SAÚDE</p>
+                </span>
+                <span class="texto-capa mx-auto d-block ">
+                    <p>Aspectos epidemiológicos, promoção à saúde e prevenção de
+                        infecção por vírus zika</p>
+                </span>
 
-                
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between mb-4">
+                        <button class="button btn-col-2 btn-outline"
+                            onclick="window.open('creditos.html', '_self')">Créditos</button>
+                        <button class="button btn-col-2 btn-outline" data-bs-toggle="modal"
+                            data-bs-target="#instrucao_navegacao">Instruções</button>
+                    </div>
+                    <div class="col-12">
+                        <button class="button btn-col-2 btn-secondary w-100"
+                            onclick="window.location.href='#sobre'">Iniciar</button>
+                    </div>
+                </div>
+
+
+
 
                 <!-- Modal -->
-                <div class="modal fade" id="instrucao_navegacao" tabindex="-1" aria-hidden="true" 
-    
-                data-bs-keyboard="false">   
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content modal-conteudo">
-                        <div class="mx-auto border-0">
-                            <button type="button" class="btn-close bg-light rounded-circle p-3" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="pt-3 text-justify">
-                            <p class="py-2 bold text-center">Instruções para navegação
-                            </p>
-                            <p>Você pode ajustar a visualização do material de acordo com o nível de zoom do seu navegador,
-                                pressione:
-                            </p>
-                            <div class="text-center">
-                                <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
-                                <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                <div class="modal fade" id="instrucao_navegacao" tabindex="-1" aria-hidden="true"
+                    data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content modal-conteudo">
+                            <div class="mx-auto border-0">
+                                <button type="button" class="btn-close bg-light rounded-circle p-3"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <p>Você também pode acessar o ícone no canto superior direito do material para navegar de forma
-                                livre através do menu.</p>
+                            <div class="pt-3 text-justify">
+                                <p class="py-2 bold text-center">Instruções para navegação
+                                </p>
+                                <p>Você pode ajustar a visualização do material de acordo com o nível de zoom do seu
+                                    navegador,
+                                    pressione:
+                                </p>
+                                <div class="text-center">
+                                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                                </div>
+                                <p>Você também pode acessar o ícone no canto superior direito do material para navegar
+                                    de forma
+                                    livre através do menu.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
             <div class="justify-content-center">
                 <div class="d-flex flex-column position-relative">
-                    <img src="./image/logos_capa.svg" alt="Logos" class="w-100 w-lg-50 logo mx-auto py-4 py-lg-0 pt-lg-5 logos">
+                    <img src="./image/logos_capa.svg" alt="Logos"
+                        class="w-100 w-lg-50 logo mx-auto py-4 py-lg-0 pt-lg-5 logos">
                 </div>
             </div>
         </div>
@@ -194,141 +203,243 @@
     <div id="sobre" class="container-fluid pt-5 bg-primary-dark-hover box-scrool">
         <p class="titulo-material text-light text-center">SOBRE O MATERIAL</p>
         <div class="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    class="active circle" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="circle"
-                    aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="circle"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="circle"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="">
-                        <div class="row justify-content-center text-justify">
-                            <div class="col-12 col-lg-6  text-light pt-md-0">
-                                <div class="pb-md-0 d-flex justify-content-start">
-                                    <span class="titulo  my-auto mx-2"><p>SOBRE O CURSO</p></span>
-                                </div>
-                                    <p>Este curso foi elaborado justamente para ampliar os conhecimentos referentes à zika, tendo caráter autoinstrucional, para que os profissionais de saúde podem acessá-lo conforme sua disponibilidade. O módulo tem 45 horas e é dividido em quatro unidades de ensino. No final, há uma avaliação objetiva e a certificação on-line. Na biblioteca, estão disponibilizados livros e vídeos com conteúdo referente ao tema; utilize-os caso sinta necessidade de aprofundar seus conhecimentos.
+            <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="circle" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="circle" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        class="circle" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-lg-6  text-light pt-md-0">
+                                    <div class="pb-md-0 d-flex justify-content-start">
+                                        <span class="titulo  my-auto mx-2">
+                                            <p>SOBRE O CURSO</p>
+                                        </span>
+                                    </div>
+                                    <p>Este curso foi elaborado justamente para ampliar os conhecimentos referentes à
+                                        zika, tendo caráter autoinstrucional, para que os profissionais de saúde podem
+                                        acessá-lo conforme sua disponibilidade. O módulo tem 45 horas e é dividido em
+                                        quatro unidades de ensino. No final, há uma avaliação objetiva e a certificação
+                                        on-line. Na biblioteca, estão disponibilizados livros e vídeos com conteúdo
+                                        referente ao tema; utilize-os caso sinta necessidade de aprofundar seus
+                                        conhecimentos.
                                     </p>
-                                    <p>O curso é uma iniciativa das seguintes instituições: Universidade Aberta do Sistema Único de Saúde (UNA-SUS), Fiocruz-Mato Grosso do Sul, Secretaria de Gestão do Trabalho e da Educação na Saúde (SGTES), Secretaria de Atenção à Saúde (SAS), Secretaria de Vigilância em Saúde e Ambiente (SVSA) e Universidade Federal de Mato Grosso do Sul (UFMS).
+                                    <p>O curso é uma iniciativa das seguintes instituições: Universidade Aberta do
+                                        Sistema Único de Saúde (UNA-SUS), Fiocruz-Mato Grosso do Sul, Secretaria de
+                                        Gestão do Trabalho e da Educação na Saúde (SGTES), Secretaria de Atenção à Saúde
+                                        (SAS), Secretaria de Vigilância em Saúde e Ambiente (SVSA) e Universidade
+                                        Federal de Mato Grosso do Sul (UFMS).
                                     </p>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="">
-                        <div class="row justify-content-center text-justify">
-                            <div class="col-12 col-md-6 pt-md-0 text-light">
-                                <div class="d-flex justify-content-start">
-                                    <span class="titulo-capa  my-auto mx-2">OBJETIVOS DO CURSO</span>
+                                    </span>
                                 </div>
-                                <ul class="py-md-0 py-lg-">
-                                    <li>Orientar os profissionais de saúde com as melhores evidências possíveis sobre o
-                                        histórico e as características gerais da doença: vetor, formas de transmissão,
-                                        características do vírus e período de incubação;
-                                    </li>
-                                    <li>Orientar quanto aos meios de proteção individual e coletiva;</li>
-                                    <li>Sensibilizar e instrumentalizar o profissional para identificação de quadro
-                                        clínico sugestivo de infecção pelo ZIKV (dengue e chikungunya) e realização do
-                                        cuidado adequado de pacientes com quadro suspeito;</li>
-                                    <li>Compreender o agente etiológico e suas características gerais;</li>
-                                    <li>Apresentar critérios para indicação e interpretação de exames laboratoriais e
-                                        por imagens referentes à doença;
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 pt-md-0 text-light">
-                                <ul class="py-lg- py-0">
-                                    <li>Qualificar o tratamento do paciente com ZIKV;</li>
-                                    <li>Promover a identificação dos quadros de ZIKV que demandam assistência
-                                        hospitalar;</li>
-                                    <li>Qualificar a abordagem às gestantes e lactantes com suspeita ou confirmação de
-                                        infecção pelo ZIKV, bem como os bebês, independentemente de suspeita ou
-                                        diagnóstico da síndrome congênita relacionada ao ZIKV;</li>
-                                    <li>Promover conhecimentos sobre a realização adequada da notificação, bem como
-                                        atuar nas ações de vigilância em saúde;</li>
-                                    <li>stimular a atuação do profissional de saúde como agente sentinela no diagnóstico oportuno de possíveis complicações;</li>
-                                    <li>Estimular o profissional de saúde a atuar como agente disseminador de informação e de atuação na educação permanente de toda a equipe de trabalho.                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="">
-                        <div class="row justify-content-center text-justify">
-                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
-                                <div class="d-flex justify-content-start">
-                                    <span class="titulo-capa  my-auto mx-2">CARGA HORÁRIA DE ESTUDO</span>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-md-6 pt-md-0 text-light">
+                                    <div class="d-flex justify-content-start">
+                                        <span class="titulo-capa  my-auto mx-2">OBJETIVOS DO CURSO</span>
+                                    </div>
+                                    <ul class="py-md-0 py-lg-">
+                                        <li>Orientar os profissionais de saúde com as melhores evidências possíveis
+                                            sobre o
+                                            histórico e as características gerais da doença: vetor, formas de
+                                            transmissão,
+                                            características do vírus e período de incubação;
+                                        </li>
+                                        <li>Orientar quanto aos meios de proteção individual e coletiva;</li>
+                                        <li>Sensibilizar e instrumentalizar o profissional para identificação de quadro
+                                            clínico sugestivo de infecção pelo ZIKV (dengue e chikungunya) e realização
+                                            do
+                                            cuidado adequado de pacientes com quadro suspeito;</li>
+                                        <li>Compreender o agente etiológico e suas características gerais;</li>
+                                        <li>Apresentar critérios para indicação e interpretação de exames laboratoriais
+                                            e
+                                            por imagens referentes à doença;
+                                        </li>
+                                    </ul>
                                 </div>
-                                <p>45 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-6 pt-md-0 text-light">
+                                    <ul class="py-lg- py-0">
+                                        <li>Qualificar o tratamento do paciente com ZIKV;</li>
+                                        <li>Promover a identificação dos quadros de ZIKV que demandam assistência
+                                            hospitalar;</li>
+                                        <li>Qualificar a abordagem às gestantes e lactantes com suspeita ou confirmação
+                                            de
+                                            infecção pelo ZIKV, bem como os bebês, independentemente de suspeita ou
+                                            diagnóstico da síndrome congênita relacionada ao ZIKV;</li>
+                                        <li>Promover conhecimentos sobre a realização adequada da notificação, bem como
+                                            atuar nas ações de vigilância em saúde;</li>
+                                        <li>stimular a atuação do profissional de saúde como agente sentinela no
+                                            diagnóstico oportuno de possíveis complicações;</li>
+                                        <li>Estimular o profissional de saúde a atuar como agente disseminador de
+                                            informação e de atuação na educação permanente de toda a equipe de trabalho.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+                                    <div class="d-flex justify-content-start">
+                                        <span class="titulo-capa  my-auto mx-2">CARGA HORÁRIA DE ESTUDO</span>
+                                    </div>
+                                    <p>45 horas</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
     </div>
 
     <div id="definicao" class="container-fluid padding-x-container py-5">
         <p class="titulo-unidade font-dark text-center">UNIDADE</p>
-        <p class="sub-titulo pb-5">QUADRO CLÍNICO E ABORDAGEM A PESSOAS INFECTADAS COM VÍRUS ZIKA - ZIKV</p>
+        <p class="sub-titulo pb-5">OS CUIDADOS COM A GESTANTE COM SUSPEITA OU CONFIRMAÇÃO DE INFECÇÃO POR VÍRUS ZIKA E
+            DO RECÉM-NASCIDO COM SÍNDROME CONGÊNITA RELACIONADA AO VÍRUS ZIKA</p>
 
-        <div id="distribuicao" class="">
-            <p class="titulo font-dark text-start pt-3">Quadro clínico e sintomas</p>
-            <div class="text-justify">
-                <p class="py-2">Muitas pessoas infectadas por ZIKV não desenvolvem sintomas (cerca de 80% dos casos).
-                    Entre aqueles que desenvolvem, estes geralmente começam entre 3-14 após a infecção. Os sintomas
-                    geralmente são leves e podem incluir irritações na pele, febre, conjuntivite, dores musculares e
-                    articulares, mal-estar e dores de cabeça. Esses sintomas podem persistir por 2 a 7 dias.
-                </p>
-                <p class="py-2">Em 2007, o vírus Zika emergiu pela primeira vez fora da África e da Ásia causando
-                    uma epidemia na Ilha de Yap (Micronésia) que infectou aproximadamente 70% dos moradores, seguida
-                    por uma grande epidemia na Polinésia Francesa, em 2013-2014. Subsequentemente, o vírus
-                    dispersou-se para outras ilhas do Pacífico.
-                </p>
-                <p class="py-lg-">Desde 2014, casos de circulação do vírus Zika foram detectados no continente
-                    Americano. Em fevereiro desse mesmo ano, as autoridades de saúde pública do Chile confirmaram o
-                    primeiro caso de transmissão indígena do vírus na Ilha de Easter; posteriormente, outros casos
-                    foram reportados. Mais recentemente, desde outubro de 2015, casos de infecção pelo vírus Zika
-                    foram confirmados no México, Paraguai, Guatemala, El Salvador, Colômbia, Panamá, Honduras, Ilha
-                    de Santiago, Cabo Verde e na Venezuela.
+        <div id="vigilancia" class="padding-x-container text-justify font-dark py-5 overflow-hidden">
+            <div class="row">
+                <div class="col-12 col-lg-6 pe-lg-5">
+                    <p>
+                        A gestante com exantema deve ser acompanhada no pré-natal de baixo risco, entretanto se a
+                        estratificação do risco obstétrico indicar necessidade, esta será acompanhada no pré-natal de
+                        alto risco.
+                    </p>
+                    É fundamental informar à gestante e sua família que a confirmação de infecção pelo Zika Vírus (ZIKV)
+                    durante a gestação não é sinônimo de presença de microcefalia.
+                    <p>
+                        Entretanto, na constatação de comprometimento fetal, a conduta durante a gravidez não é
+                        alterada, todavia, é de suma importância o auxílio à família na programação do nascimento e na
+                        organização futura para o cuidado da criança. Nesse cenário, a equipe de saúde precisa estar
+                        sensibilizada para acolher a gestante e suas angústias, dúvidas e medos, por meio de uma escuta
+                        qualificada, sem julgamento nem preconceitos, que permita à mulher falar de sua intimidade com
+                        segurança.
+                    </p>
+                    <p>
+                        A Síndrome Congênita Associada à infecção pelo vírus zika (SCZ), compreende um conjunto de
+                        anomalias congênitas que podem incluir alterações visuais, auditivas e neuropsicomotoras que
+                        ocorrem em indivíduos (embriões ou fetos) expostos à infecção pelo ZIKV durante a gestação.</p>
+                </div>
 
-                </p><br><br>
-                <span class="text-center">
-                    <p>Clique nos pontos vermelhos para interagir</p>
-                </span>
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto">
-                            <img class="img-fluid" src="./image/humann-body 1.svg" alt="Corpo humano">
+                <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center">
+                    <img class="img-fluid img-dor" src="image/mulher_gravida.svg" alt="Mulher gravida">
+                    <p class="">Fonte: Kuadkitkan,A. et al., 2020. Disponível em:
+                        https://www.sciencedirect.com/science/article/pii/S1876034119303120.</p>
+                </div>
+                <p class="pt-lg-5">A confirmação de microcefalia relacionada ao ZIKV durante a gestação dá-se pelos
+                    seguintes critérios:</p>
+            </div>
+            <div class="accordion pt-md-5" id="accordion_remedios">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_1" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Caso confirmado de feto com alterações pós-infecciosas no Sistema Nervoso Central (SNC)
+                            relacionadas ao ZIKV:
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_1" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body ">
+                            <p class="pb-2">
+                                Feto com alterações no SNC características de infecção congênita identificada por
+                                ultrassonografia E relato de exantema na mãe durante gestação E excluídas outras
+                                possíveis causas, infecciosas e não infecciosas.
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_2" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Caso confirmado de feto com microcefalia pós-infecciosa relacionada ao ZIKV:
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_2" class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body ">
+                            <p class="pb-1">
+                                Feto com microcefalia identificada por ultrassonografia, apresentando alterações no
+                                sistema nervoso central características de infecção congênita E relato de exantema na
+                                mãe durante gestação E excluídas outras possíveis causas, infecciosas e não infecciosas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_3" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Microcefalia grave
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_3" class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body ">
+                            <p class="pb-1">
+                                Recém-nascidos com perímetro cefálico inferior a três desvios-padrão, ou seja, mais de
+                                três desvios-padrão abaixo da média para idade gestacional e sexo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion_remedios_4" aria-expanded="false"
+                            aria-controls="accordion_remedios">
+                            Microcefalia grave
+                        </button>
+                    </h2>
+                    <div id="accordion_remedios_4" class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_remedios">
+                        <div class="accordion-body ">
+                            <p class="pb-1">
+                                Aborto espontâneo de gestante com relato de exantema durante a gestação, sem outras
+                                causas identificadas, com identificação do ZIKV em tecido fetal/embrionário ou na mãe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="pt-2">Sugestão de disponibilização do vídeo do Discovery, disponível em: <a
+                        href="https://www.youtube.com/watch?v=wuhINzMJjyQ">https://www.youtube.com/watch?v=wuhINzMJjyQ</a>
+                </p>
             </div>
         </div>
 
@@ -587,534 +698,454 @@
     </div>
 
     <div id="vigilancia" class="padding-x-container text-justify bg-primary-dark text-light py-5 overflow-hidden">
-        <div class="row">
-            <div class="col-12 col-lg-6 pe-lg-5">
-                <p>
-                <p class="titulo">ZIKV e Síndrome de Guillain-Barré - SG</p>
-                Durante a Emergência em Saúde Pública pelo vírus zika no Brasil, em 2015-2016, e anteriormente na
-                epidemia na Polinésia Francesa, em 2014, houve o aumento na incidência de pessoas com a Síndrome de
-                Guillain-Barré - SGB. Assim, formularam-se hipóteses sobre a relação direta entre essas duas condições e
-                estimulou-se melhor coleta de informações epidemiológicas, mas ainda não foi estabelecida uma relação
-                causal direta entre ZIKV e SGB.
-                <br><br>
-                É sabido que fatores podem contribuir para o aumento de casos de SGB. A infecção prévia por dengue ou
-                fatores genéticos presentes nas pessoas podem estar associados, uma vez que esta síndrome ocorre após
-                infecções, geralmente virais, tendo como agentes causais os vírus citomegalovírus, Epstein-Barr e HIV.
-                </p>
+        <p class="titulo">ZIKA VÍRUS E MICROCEFALIA I EP.: 61</p>
+        <p>Dr. Eduardo Jucá explica sobre a ocorrência de microcefalia na epidemia de 2015, discorrendo sobre os achados
+            clínicos em crianças com microcefalia, cujas mães foram infectadas pelo ZIKV na gestação.</p>
+        <p class="text-center">Clique no cartão para ver o vídeo.</p>
+        <button class="card bg-primary-dark w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
+            <div class="row card-front padding-x-container pt-3 bg-primary-light w-100 h-100 rounded-4"
+                style="background-image: url(image/video_1.svg); background-repeat: no-repeat; background-size: cover;">
+
+            </div>
+            <div class="card-back d-flex flex-column padding-x-container py-3 bg-primary-light w-100 rounded-4">
+                <div class="my-auto ajuste-video">
+                    <div class="video-wrapper">
+                        <video controls="">
+                            <source src="./video/manifestacao_720p.mp4" type="video/mp4">
+                            Seu navegador não suporta a tag de vídeo.
+                        </video>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <small class="text-center my-auto">Clique nesta caixa para interagir!</small>
+                    <i class="bi bi-arrow-repeat titulo d-block my-auto ml-auto"></i>
+                </div>
+            </div>
+        </button>
+    </div>
+
+
+    <div id="estrategias" class="container-fluid p-sm-5">
+        <p class="titulo text-start">NOTIFICAÇÃO
+        </p>
+        <p>
+            Em suspeição ou confirmação de microcefalia e demais alterações no SNC causadas por ZIKV, é necessária a notificação imediata no Registro de Eventos em Saúde Pública (RESP-Microcefalia).
+
+        </p>
+        <p>
+            Ainda, a notificação do caso suspeito ou confirmado de SCZ no RESP não exclui a necessidade de notificação das anomalias congênitas presentes no recém-nascido também na declaração de nascido vivo, que alimenta o Sistema de Informações sobre Nascidos Vivos (Sinasc).
+
+        </p>
+        <p>
+            Abaixo são sumariadas as indicações de notificação de casos suspeitos e confirmados de SCZ.
+        </p>
+        
+        <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-75 rounded-4">
+            <div class="text-start d-flex">
+              <div class="me-3">
+                <img src="image/relatorio-medico 1.svg" alt="Relatorio medico" class="active" data-animation="left-to-right">
+              </div>
+              <div>
+                <p class="titulo">Momento da identificação do caso</p>
+                <p><b>RESP</b></p>
+                <p><b>Pré-natal:</b> Feto, Aborto e Óbito fetal/natimorto</p>
+                <p><b>Ao Nascer:</b> Recém-nascido com microcefalia (PC < -2 desvios-padrão para IG e sexo) e/ou outras anomalias congênitas</p>
+                <p><b>Na puericultura:</b> Recém-nascido e Criança</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-75 rounded-4">
+            <div class="text-start d-flex">
+              <div class="me-3">
+                <img src="image/recem-nascido 1.svg" alt="Relatorio medico" class="active" data-animation="left-to-right">
+              </div>
+              <div>
+                <p><b>Declaração de nascido vivo (Sinasc)</b></p>
+                <p><b>Pré-natal:</b> --</p>
+                <p><b>Ao Nascer:</b> Recém-nascido com microcefalia grave (PC < - 3 desvios- padrão p/IG e sexo) e/ou outras anomalias congênitas</p>
+                <p><b>Na puericultura:</b> --</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-75 rounded-4">
+            <div class="text-start d-flex">
+              <div class="me-3">
+                <img src="image/certidao-de-obito 1.svg" alt="Relatorio medico" class="active" data-animation="left-to-right">
+              </div>
+              <div>
+                <p><b>Declaração de óbito (SIM)</b></p>
+                <p><b>Pré-natal:</b>--</p>
+                <p><b>Ao Nascer:</b> Natimorto, Óbito</p>
+                <p><b>Na puericultura:</b> Óbito</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-75 rounded-4">
+            <div class="text-start d-flex">
+              <div class="me-3">
+                <img src="image/cadastro 1.svg" alt="Relatorio medico" class="active" data-animation="left-to-right">
+              </div>
+              <div>
+                <p><b>Ficha de notificação no Sinan</b></p>
+                <p><b>Pré-natal:</b>Gestante com suspeita ou confirmação de infecção pelo ZIKV</p>
+                <p><b>Ao Nascer:</b>Gestante com suspeita ou confirmação de infecção pelo ZIKV</p>
+                <p><b>Na puericultura:</b>Mãe com suspeita ou confirmação de infecção pelo ZIKV durante a gestação, · RN ou criança com suspeita ou confirmação de infecção pelo ZIKV</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    
+   
+
+        <div class="p-5">
+            <div class="d-flex align-items-center">
+              
+                <img src="image/circle.svg" alt="Relatorio medico">
+              
+              <div>
+                    <p class="sub-titulo-italico mt-0 mt-sm-3 ml-0 p-0 p-3">Assintomático</p>
+                    <p class="pt-5">O RN deverá ser reavaliado entre o terceiro e o quinto dias de vida (5º dia de saúde integral), quando deverá ser examinado, com pesquisa dos sinais de alerta. Na Caderneta de Saúde da Criança, deverá ser conferida a vacinação contra tuberculose (BCG) e hepatite B, verificando-se as anotações sobre os dados do nascimento e a realização dos testes de triagem neonatal.</p>
+                    <ul><li>
+                        Como a apresentação clínica da infecção congênita pelo ZIKV pode apresentar-se multivariada e com base em outras infecções congênitas nas quais o comprometimento
+multissistêmico e as alterações sensoriais e cognitivas podem estar presentes mesmo na ausência de alterações dismórficas, os RN expostos, ainda que assintomáticos, deverão realizar exames laboratoriais, ultrassonografia transfontanelar (USTF) e ser investigados para verificação de comprometimento auditivo e visual.
+                    </li></ul>
+              </div>
+            </div>
+        </div>
+        <div class="w-lg-75 mx-auto my-md-0 my-2 accordion pt-md-5" id="accordion_remedios">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_1" aria-expanded="false" aria-controls="accordion_remedios">
+                        Transmissão vetorial, decorrente da picada do mosquito
+                    </button>
+                </h2>
+                <div id="accordion_remedios_1" class="accordion-collapse collapse show"
+                    data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-2">
+                            O ZIKV é normalmente transmitido ao homem pela picada de mosquitos do gênero Aedes,
+                            dentre eles A. africanus, A. apicoargenteus, A. vitattus, A. furcifer, A.
+                            luteocephalus,
+                            A. hensilli e A. aegypti. A espécie A. hensilii foi a predominante na Ilha de Yap
+                            durante a epidemia de 2007. Nas Américas, o principal vetor é o A. aegypti. Esta
+                            espécie
+                            de mosquito também é responsável pela transmissão da dengue e da chikungunya no
+                            Brasil.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center">
-                <img class="img-fluid img-dor" src="image/sindrome-guillan-barre 1.svg" alt="sindrome guillan-barre">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_2" aria-expanded="false" aria-controls="accordion_remedios">
+                        Transmissão sexual
+                    </button>
+                </h2>
+                <div id="accordion_remedios_2" class="accordion-collapse collapse" data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-1">
+                            O ZIKV pode ser transmitido através do sexo (vaginal, anal, oral) de uma pessoa com
+                            zika
+                            para seus parceiros, bem como pelo compartilhamento de brinquedos sexuais. Em
+                            localidades de elevada frequência do mosquito vetor, há dificuldade de se
+                            estabelecer o
+                            risco atribuível à transmissão primária pela via sexual.
+                            <br>
+                            <br>
+                            De acordo com a Organização Mundial da Saúde (OMS), que publicou documento contendo
+                            orientações para a prevenção da transmissão sexual pelo ZIKV (primeiramente
+                            publicado em
+                            2016, com as evidências disponíveis, e atualizado em 2020), com base nas evidências
+                            científicas mais atualizadas, a transmissão sexual do ZIKV é muito mais provável de
+                            homens para mulheres do que de mulheres para homens; já a transmissão pelo mesmo
+                            sexo,
+                            de homem para homem, só foi documentada uma vez. Ainda segundo a OMS, o material
+                            genético do vírus no sêmen é eliminado por volta de cinquenta dias na grande maioria
+                            dos
+                            casos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_3" aria-expanded="false" aria-controls="accordion_remedios">
+                        Transmissão vertical
+                    </button>
+                </h2>
+                <div id="accordion_remedios_3" class="accordion-collapse collapse" data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-1">
+                            A transmissão vertical para ZIKV é aquela que é passada da gestante ao feto, podendo
+                            ocorrer em diferentes idades gestacionais, resultando em um amplo espectro de
+                            malformações no feto, independentemente da presença ou da ausência de sintomas na
+                            mãe.
+                            De acordo com o Ministério da Saúde do Brasil, aproximadamente 26% das mães
+                            infectadas
+                            transmitem o ZIKV aos fetos; no entanto, o risco de desenvolver defeitos congênitos,
+                            incluindo anormalidades neurológicas como a microcefalia, é maior entre as mulheres
+                            infectadas durante o primeiro trimestre. Por isso, um cuidado especial deve ser dado
+                            às
+                            mulheres grávidas com sintomas de zika. Uma anamnese detalhada e a realização de
+                            diagnóstico laboratorial são essenciais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-2">Sugestão de disponibilização do vídeo do Discovery, disponível em: <a
+                    href="https://www.youtube.com/watch?v=wuhINzMJjyQ">https://www.youtube.com/watch?v=wuhINzMJjyQ</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="exercicios" class="text-justify bg-primary-light font-dark  py-5 overflow-hidden">
+        <span class="titulo">Exercícios interativos</span>
+        <div id="pergunta1" class="font-dark overflow-hidden">
+            <div class="text-light py-5 overflow-hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                            <div class="row g-0">
+                                <div class="col-12 col-lg-6">
+                                    <div class="container-fluid pergunta pe-lg-5-5 text-start">
+                                        <span class="titulo-pergunta">São consideradas formas de transmissão de
+                                            doença
+                                            causada por ZIKV:</span>
+                                        <div class="opcoes pt-3">
+                                            <label class="bordas"><input type="radio" name="q1" value="a">
+                                                <span>a</span>
+                                                Paciente pertence ao grupo A.</label>
+                                            <label><input type="radio" name="q1" value="b"> <span>b</span>
+                                                Paciente pertence ao grupo B.</label>
+                                            <label><input type="radio" name="q1" value="c"> <span>c</span>
+                                                Não há necessidade de se fazer essa classificação por não se tratar
+                                                de dengue.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <button class="button w-50 m-5 btn-aux-responder"
+                                        onclick="verificarResposta('pergunta1', 'b', 'O paciente não tem sinais de alarme, contudo por se tratar de idoso e com comorbidades recebe a classificação do grupo B.', true)">Responder</button>
+                                    <div class="retorno">
+                                        <p class="explicacao py-lg-0 p-sm-5"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pergunta2" class="font-dark">
+            <div class="text-light pb-5 overflow-hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                            <div class="row g-0">
+                                <div class="col-12 col-lg-6">
+                                    <div class="container-fluid pergunta pe-lg-5 text-start">
+                                        <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
+                                            de
+                                            ZIKV,
+                                            podem ser listados</span>
+                                        <div class="opcoes pt-3">
+                                            <label><input type="radio" name="q2" value="a"> <span>a</span> Febre
+                                                alta,
+                                                manchas vermelhas no corpo, tontura.</label>
+                                            <label><input type="radio" name="q2" value="b"> <span>b</span> Febre
+                                                baixa,
+                                                dores nas articulações, manchas vermelhas no corpo.</label>
+                                            <label><input type="radio" name="q2" value="c"> <span>c</span> Coceira,
+                                                dor nas
+                                                costas, dores no peito.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <button class="button w-50 m-5 btn-aux-responder"
+                                        onclick="verificarResposta('pergunta2', 'b', 'O quadro clínico é caracterizado por febre de início súbito e surgimento de intensa poliartralgia, geralmente acompanhada de dores nas costas, cefaleia e fadiga, com duração média de sete dias. A febre pode ser contínua, intermitente, ou bifásica; porém a queda de temperatura não é associada à piora dos sintomas como na dengue. Ocasionalmente, pode ser associada a uma bradicardia relativa. A poliartralgia tem sido descrita em mais de 90% dos pacientes com chikungunya na fase aguda. A dor articular normalmente é poliarticular, simétrica, mas pode haver assimetria. Acomete grandes e pequenas articulações e abrange com maior frequência as regiões mais distais. Pode haver edema, e este, quando presente, normalmente está associado à tenossinovite. Na fase aguda também tem sido observado dor ligamentar. A mialgia quando presente é, em geral, de leve a moderada intensidade.', true)">Responder</button>
+                                    <div class="retorno">
+                                        <p class="explicacao py-lg-0 p-sm-5"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pergunta3" class="font-dark">
+            <div class="text-light pb-5 overflow-hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                            <div class="row g-0">
+                                <div class="col-12 col-lg-6">
+                                    <div class="container-fluid pergunta pe-lg-5 text-start">
+                                        <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
+                                            de
+                                            ZIKV,
+                                            podem ser listados</span>
+                                        <div class="opcoes pt-3">
+                                            <label><input type="radio" name="q3" value="a"> <span>a</span> Febre
+                                                Hemograma completo.</label>
+                                            <label><input type="radio" name="q3" value="b"> <span>b</span> Febre
+                                                Hemograma completo e RT-PCR.</label>
+                                            <label><input type="radio" name="q3" value="c"> <span>c</span> Coceira,
+                                                Hemograma completo, transaminases.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <button class="button w-50 m-5 btn-aux-responder"
+                                        onclick="verificarResposta('pergunta3', 'b', 'Deve-se solicitar o RT-PCR até o 5º dia para confirmar o quadro de provável zika. Contudo devido a restrição de kits para realização do exame RT-PCR, o protocolo recomenda somente a realização deste exame em gestantes e recém-nascidos com quadro suspeito de síndrome congênita relacionada ao vírus Zika.', true)">Responder</button>
+                                    <div class="retorno">
+                                        <p class="explicacao py-lg-0 p-sm-5"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pergunta4" class="font-dark">
+            <div class="text-light pb-5 overflow-hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                            <div class="row g-0">
+                                <div class="col-12 col-lg-6">
+                                    <div class="container-fluid pergunta pe-lg-5 text-start">
+                                        <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
+                                            de
+                                            ZIKV,
+                                            podem ser listados</span>
+                                        <div class="opcoes pt-3">
+                                            <label><input type="radio" name="q4" value="a"> <span>a</span>
+                                                Hidratação oral, suspensão do AAS e prescrição de
+                                                anti-inflamatórios.</label>
+                                            <label><input type="radio" name="q4" value="b"> <span>b</span> Suspensão
+                                                do AAS e prescrição de paracetamol ou dipirona.</label>
+                                            <label><input type="radio" name="q4" value="c"> <span>c</span>
+                                                Hidratação, suspensão do AAS e prescrição de paracetamol ou
+                                                dipirona.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <button class="button w-50 m-5 btn-aux-responder"
+                                        onclick="verificarResposta('pergunta4', 'c', 'Deve-se iniciar hidratação oral, suspender o AAS, prescrever dipirona ou paracetamol e orientar o paciente em relação aos sinais de alarme. Reveja o fluxograma.', true)">Responder</button>
+                                    <div class="retorno">
+                                        <p class="explicacao py-lg-0 p-sm-5"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="vigilancia" class="padding-x-container text-justify bg-primary-light text-dark py-5 overflow-hidden">
-        <div class="row">
-            <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center">
-                <img class="img-fluid" src="image/microcefalia 1.svg" alt="sindrome guillan-barre">
-            </div>
-            <div class="col-12 col-lg-6">
-                <p>
-                <p class="titulo">ZIKV e Síndrome de Guillain-Barré - SG</p>
-                Durante a Emergência em Saúde Pública pelo vírus zika no Brasil, em 2015-2016, e anteriormente na
-                epidemia na Polinésia Francesa, em 2014, houve o aumento na incidência de pessoas com a Síndrome de
-                Guillain-Barré - SGB. Assim, formularam-se hipóteses sobre a relação direta entre essas duas condições e
-                estimulou-se melhor coleta de informações epidemiológicas, mas ainda não foi estabelecida uma relação
-                causal direta entre ZIKV e SGB.
-                <br><br>
-                É sabido que fatores podem contribuir para o aumento de casos de SGB. A infecção prévia por dengue ou
-                fatores genéticos presentes nas pessoas podem estar associados, uma vez que esta síndrome ocorre após
-                infecções, geralmente virais, tendo como agentes causais os vírus citomegalovírus, Epstein-Barr e HIV.
-                </p>
-            </div>
-        </div>
-        <br>
-        <span>
-            <p>Disponível em: <a
-                    href="https://www.scmp.com/news/asia/southeast-asia/article/2024006/thailand-confirms-2-cases-zika-linked-microcephaly-first">https://www.scmp.com/news/asia/southeast-asia/article/2024006/thailand-confirms-2-cases-zika-linked-microcephaly-first</a>
+    <div class="container-fluid bg-aux box-saiba-mais-float text-center padding-x-container py-5">
+        <img src="./image/exclamation-triangle.svg" class="active" alt="Exclamação" data-animation="circle-saiba-mais">
+        <div class="text-center">
+            <p class="pt-3">Atenção</p>
+            <p class="titulo">Atenção!</p>
+            <p class="text-justify">
+                <a
+                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view">O
+                    Guia de Vigilância em Saúde</a> estabelece os fluxos de comunicação e notificação para infecção
+                causada por ZIKV.
             </p>
-        </span>
-        <br><br>
-        <span>
-            <p>
-                Fetos, recém-nascidos (RNs) e crianças com a SCZ podem apresentar outras manifestações clínicas e
-                neurológicas, tais como: retardo do crescimento intrauterino; convulsões; atraso no
-                neurodesenvolvimento, a exemplo de problemas de fala ou de outras fases do desenvolvimento, tais como a
-                aquisição da capacidade de sentar, de permanecer em pé e de andar; deficiência intelectual, representada
-                pela habilidade reduzida de aprender e exercer atividades do dia a dia; problemas motores e de
-                equilíbrio; dificuldades para se alimentar, assim como para engolir; deficiência auditiva; problemas de
-                visão; além de distúrbios endócrinos.
-            </p>
-        </span>
-        <br><br>
-        <div id="estrategias" class="">
-            <p class="titulo text-">Orientações básicas sobre planejamento reprodutivo em localidades de ocorrência de
-                ZIKV
-            </p>
-            <p>
-                Orientar a população no sentido de ajudá-la a planejar sua vida reprodutiva é uma das atribuições dos
-                profissionais da Atenção Básica (AB). Deve-se levar em consideração os desejos e necessidades de cada
-                pessoa, respeitando o direito de cada indivíduo na decisão de gerar uma nova vida. Para que isso ocorra,
-                os profissionais que atuam nas equipes de saúde devem ter, além de conhecimentos, a habilidade de tecer
-                vínculos a fim de auxiliar as pessoas em suas
-                decisões. É importante ainda facilitar o acesso das pessoas aos métodos contraceptivos disponibilizados
-                na rede de atenção à saúde. A situação que vivemos hoje exige uma mudança da postura da atuação dos
-                profissionais de saúde.
-                <br><br>
-                A decisão de engravidar ou não depende somente da pessoa ou do casal. Cabe ao profissional apenas
-                esclarecer sobre a situação da existência do risco e, sobretudo, discutir as medidas de proteção
-                individual e coletiva para evitar o contato com o vetor e estimular a realização do pré-natal.
-                <br><br>
-                É importante ser proativo no desenvolvimento do trabalho, realizar planejamento das ações de saúde,
-                utilizando os dados registrados nas unidades de saúde, a fim de convidar as mulheres em idade fértil
-                para atividades de orientação em relação à concepção, à contracepção, à importância de se iniciar o
-                pré-natal tão logo a pessoa suspeite de uma possível gravidez.
-            </p>
-            <br><br>
-            <div id="estrategias" class="text-center">
-                <p class="titulo text-">Relato de caso clínico</p>
-                <p>
-                    Clique no cartão para interagir
-                </p>
-            </div>
-            <!-- CARD -->
-            <button class="card bg-primary-light w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
-                <div class="card-front d-flex flex-column py-3 bg-primary-dark w-100" style="background-image: url(image/front-view-old-man-sitting-bench\ 1.svg);">
-                    <div class="d-flex justify-content-end align-items-end flex-grow-1">
-                        <i class="pe-4 bi bi-arrow-repeat titulo"></i>
-                    </div>
-                </div>
-                <div class=" container-fluid card-back d-flex flex-column p-sm-0 p-sm-5 pt-5 bg-primary-dark w-100">
-                    <p class="text-card text-start"><i>Francisco, 72 anos, morador de Cizânia, que é uma localidade com alto índice
-                        de casos de dengue, ZIKV e chikungunya, procurou o serviço de saúde próximo à sua residência.
-                        O Senhor Francisco informa que está há dois dias com febre moderada (38,5°C), acompanhada de
-                        cefaleia, mialgia, conjuntivite, e hoje apresenta sinais e sintomas que caracterizam exantema
-                        maculopapular, pruriginoso.
-                        O Senhor Francisco refere que até as palmas das mãos estão com vermelhidão e prurido. Nega
-                        sangramento e tem como comorbidade hipertensão arterial.</i>
-                    </p>
-                    <p class="text-start">
-                        <b><i>Informa que está preocupado, pois sua neta está grávida.</i></b>
-                    </p>
-                    <p class="text-start">
-                        <i>As medicações utilizadas para tratamento da hipertensão arterial são: Losartam, AAS,
-                        anti-inflamatórios (lombalgia).</i>
-                    </p>
-                    <p class="text-start"> 
-                        <i>Exame físico. Orientado, hidratado, anictérico.
-                        Ausculta cardíaca: ritmo cardíaco regular em dois tempos, sem sopros. Pulmões limpos. Abdome sem
-                        visceromegalias, indolor à palpação profunda e superficial.</i>
-                    </p>
-                    <p class="text-start">
-                        <i>Presença de exantema maculopapular em todo o corpo e palmas das mãos.</i>
-                    </p>
-                </div>
-            </button>
-            <P class="pt-5">Diante de um paciente com os sintomas apresentados em território com tríplice carga de arboviroses, deve-se aplicar o fluxograma para classificação de dengue, disponibilizado pelo Ministério da Saúde.</P>
         </div>
-
-        <div id="exercicios" class="text-justify bg-primary-light font-dark  py-5 overflow-hidden">
-            <span class="titulo">Exercícios interativos</span>
-            <div id="pergunta1" class="font-dark overflow-hidden">
-                <div class="text-light py-5 overflow-hidden">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
-                                <div class="row g-0">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-lg-5-5 text-start">
-                                            <span class="titulo-pergunta">São consideradas formas de transmissão de
-                                                doença
-                                                causada por ZIKV:</span>
-                                            <div class="opcoes pt-3">
-                                                <label class="bordas"><input type="radio" name="q1" value="a">
-                                                    <span>a</span>
-                                                    Paciente pertence ao grupo A.</label>
-                                                <label><input type="radio" name="q1" value="b"> <span>b</span>
-                                                    Paciente pertence ao grupo B.</label>
-                                                <label><input type="radio" name="q1" value="c"> <span>c</span>
-                                                    Não há necessidade de se fazer essa classificação por não se tratar de dengue.</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <button class="button w-50 m-5 btn-aux-responder"
-                                            onclick="verificarResposta('pergunta1', 'b', 'O paciente não tem sinais de alarme, contudo por se tratar de idoso e com comorbidades recebe a classificação do grupo B.', true)">Responder</button>
-                                        <div class="retorno">
-                                            <p class="explicacao py-lg-0 p-sm-5"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="pergunta2" class="font-dark">
-                <div class="text-light pb-5 overflow-hidden">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
-                                <div class="row g-0">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-lg-5 text-start">
-                                            <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
-                                                de
-                                                ZIKV,
-                                                podem ser listados</span>
-                                            <div class="opcoes pt-3">
-                                                <label><input type="radio" name="q2" value="a"> <span>a</span> Febre
-                                                    alta,
-                                                    manchas vermelhas no corpo, tontura.</label>
-                                                <label><input type="radio" name="q2" value="b"> <span>b</span> Febre
-                                                    baixa,
-                                                    dores nas articulações, manchas vermelhas no corpo.</label>
-                                                <label><input type="radio" name="q2" value="c"> <span>c</span> Coceira,
-                                                    dor nas
-                                                    costas, dores no peito.</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <button class="button w-50 m-5 btn-aux-responder"
-                                            onclick="verificarResposta('pergunta2', 'b', 'O quadro clínico é caracterizado por febre de início súbito e surgimento de intensa poliartralgia, geralmente acompanhada de dores nas costas, cefaleia e fadiga, com duração média de sete dias. A febre pode ser contínua, intermitente, ou bifásica; porém a queda de temperatura não é associada à piora dos sintomas como na dengue. Ocasionalmente, pode ser associada a uma bradicardia relativa. A poliartralgia tem sido descrita em mais de 90% dos pacientes com chikungunya na fase aguda. A dor articular normalmente é poliarticular, simétrica, mas pode haver assimetria. Acomete grandes e pequenas articulações e abrange com maior frequência as regiões mais distais. Pode haver edema, e este, quando presente, normalmente está associado à tenossinovite. Na fase aguda também tem sido observado dor ligamentar. A mialgia quando presente é, em geral, de leve a moderada intensidade.', true)">Responder</button>
-                                        <div class="retorno">
-                                            <p class="explicacao py-lg-0 p-sm-5"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="pergunta3" class="font-dark">
-                <div class="text-light pb-5 overflow-hidden">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
-                                <div class="row g-0">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-lg-5 text-start">
-                                            <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
-                                                de
-                                                ZIKV,
-                                                podem ser listados</span>
-                                            <div class="opcoes pt-3">
-                                                <label><input type="radio" name="q3" value="a"> <span>a</span> Febre
-                                                    Hemograma completo.</label>
-                                                <label><input type="radio" name="q3" value="b"> <span>b</span> Febre
-                                                    Hemograma completo e RT-PCR.</label>
-                                                <label><input type="radio" name="q3" value="c"> <span>c</span> Coceira,
-                                                    Hemograma completo, transaminases.</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <button class="button w-50 m-5 btn-aux-responder"
-                                            onclick="verificarResposta('pergunta3', 'b', 'Deve-se solicitar o RT-PCR até o 5º dia para confirmar o quadro de provável zika. Contudo devido a restrição de kits para realização do exame RT-PCR, o protocolo recomenda somente a realização deste exame em gestantes e recém-nascidos com quadro suspeito de síndrome congênita relacionada ao vírus Zika.', true)">Responder</button>
-                                        <div class="retorno">
-                                            <p class="explicacao py-lg-0 p-sm-5"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="pergunta4" class="font-dark">
-                <div class="text-light pb-5 overflow-hidden">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
-                                <div class="row g-0">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="container-fluid pergunta pe-lg-5 text-start">
-                                            <span class="titulo-pergunta">Dentre os sintomas ocasionados pela infecção
-                                                de
-                                                ZIKV,
-                                                podem ser listados</span>
-                                            <div class="opcoes pt-3">
-                                                <label><input type="radio" name="q4" value="a"> <span>a</span> Hidratação oral, suspensão do AAS e prescrição de anti-inflamatórios.</label>
-                                                <label><input type="radio" name="q4" value="b"> <span>b</span> Suspensão do AAS e prescrição de paracetamol ou dipirona.</label>
-                                                <label><input type="radio" name="q4" value="c"> <span>c</span> Hidratação, suspensão do AAS e prescrição de paracetamol ou dipirona.</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <button class="button w-50 m-5 btn-aux-responder"
-                                            onclick="verificarResposta('pergunta4', 'c', 'Deve-se iniciar hidratação oral, suspender o AAS, prescrever dipirona ou paracetamol e orientar o paciente em relação aos sinais de alarme. Reveja o fluxograma.', true)">Responder</button>
-                                        <div class="retorno">
-                                            <p class="explicacao py-lg-0 p-sm-5"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid bg-aux box-saiba-mais-float text-center padding-x-container py-5">
-            <img src="./image/exclamation-triangle.svg" class="active" alt="Exclamação" data-animation="circle-saiba-mais">
-            <div class="text-center">
-                <p class="pt-3">Atenção</p>
-                <p class="titulo">Atenção!</p>
-                <p class="text-justify">
-                    <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view">O Guia de Vigilância em Saúde</a> estabelece os fluxos de comunicação e notificação para infecção causada por ZIKV.
-                </p>
-            </div>
-        </div>
+    </div>
+    <div class="row">
         <div id="referencias" class="text-justify row container-fluid py-5">
             <p class="titulo pb-3">Referências</p>
             <div class="col-12 col-lg-6 pe-lg-5 ">
-                <span>
-                    ALAM, N. et al. Recent trends in ZIKV research: a step away from cure. Biomedicine &amp;
-                    Pharmacotherapy, v. 91, p. 1.152-1.159, 2017. Disponível em: <https: www.sciencedirect.com="" science="" article="" abs="" pii="" s0753332217313215="">. Acesso em: 2 ago. 2023.
-                        ALBUQUERQUE, M. F. P. M. et al. Epidemia de microcefalia e ZIKV: a construção do conhecimento em
-                        epidemiologia. Cadernos de Saúde Pública, v. 34(P), e00069018, 2018. Disponível em: <scielo.br j="" csp="" a="" qxph3vtwsnhv5wfcbgggfyd="" ?format="pdf&amp;lang=pt">. Acesso em: 2 ago. 2023.
-                            ARGENTA, S. Estudo descobre a rota da chegada do ZIKV ao Brasil. Disponível em:
-                            https://portal.fiocruz.br/noticia/estudo-descobre-rota-da-chegada-do-virus-zika-ao-brasil.
-                            Acesso em: 12 ago. 2019.
-                            <br>
-                            <br>
-                            BARJAS-CASTRO, M. et al. Probable transfusion-transmitted Zika virus in Brazil. The Journal
-                            of AABB Transfusion, v. 56, n. 7, p. 1.684-1.688, 2016. Disponível em: <https: onlinelibrary.wiley.com="" doi="" abs="" 10.1111="" trf.13681="">. Acesso em: 21 ago. 2023.
-                                BRASIL. Ministério da Saúde. Portaria n. 1.813, de 11 de novembro de 2015. Declara
-                                Emergência em Saúde Pública de Importância Nacional (ESPIN) por alteração do padrão de
-                                ocorrência de microcefalias no Brasil. Disponível em: <https: bvsms.saude.gov.br="" bvs="" saudelegis="" gm="" 2015="" prt1813_11_11_2015.html="">. Acesso em: 2
-                                    ago. 2023.
-                                    <br>
-                                    <br>
-                                    BRASIL. Ministério da Saúde. Orientações integradas de vigilância e atenção à saúde
-                                    no âmbito da Emergência de Saúde Pública de Importância Nacional: procedimentos para
-                                    o monitoramento das alterações no crescimento e desenvolvimento a partir da gestação
-                                    até a primeira infância, relacionadas à infecção pelo vírus zika e outras etiologias
-                                    infeciosas dentro da capacidade operacional do SUS. 2017a. Disponível em:
-                                    https://bvsms.saude.gov.br/bvs/publicacoes/orientacoes_integradas_vigilancia_atencao_emergencia_saude_publica.pdf.
-                                    Acesso em: 23 ago. 2023.
-                                    <br>
-                                    <br>
-                                    BRASIL. Ministério da Saúde. Manual de vigilância sentinela de doenças
-                                    neuroinvasivas por arbovírus. Brasília: Ministério da Saúde, 2017b. Disponível em:
-                                    <https: bvsms.saude.gov.br="" bvs="" publicacoes="" manual_vigilancia_sentinela_doencas_arbovirus.pdf="">
-                                        . Acesso em: 23 ago. 2023.
-                                        <br>
-                                        <br>
-                                        BRASIL. Ministério da Saúde declara fim da Emergência Nacional para zika e
-                                        microcefalia. 2022. Disponível em: <https: www.gov.br="" saude="" pt-br="" assuntos="" noticias="" 2017="" maio="" ministerio-da-saude-declara-fim-da-emergencia-nacional-para-zika-e-microcefalia="">
-                                            . Acesso em: 7 ago. 2023.
-                                            <br>
-                                            <br>
-                                            BRASIL. Série histórica casos prováveis de zika (2015-2023). Brasília:
-                                            Ministério da Saúde, 2023a. Disponível em:
-                                            https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica/serie-historica-casos-provaveis-de-zika-2015-2023/view.
-                                            Acesso em: 19 ago. 2023.
-                                            <br>
-                                            <br>
-                                            BRASIL. Série histórica casos óbitos zika (2015-2023). Brasília: Ministério
-                                            da Saúde, 2023b. Disponível em:
-                                            https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/z/zika-virus/situacao-epidemiologica/serie-historica-casos-obitos-zika-2015-2023/view.
-                                            Acesso em: 19 ago. 2023.
-                                            <br>
-                                            <br>
-                                            BRASIL. Guia de Vigilância em Saúde. 6. ed. Brasília: Ministério da Saúde,
-                                            2023c. Disponível em:
-                                            https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view.
-                                            Acesso em: 28 dez. 2023.
-                                            <br>
-                                            <br>
-                                            ITT, W. J. Adverse outcomes of pregnancy associated Zika virus infection.
-                                            Seminars in Perinatology, v. 42, n. 3, p. 155-167, 2018.
-                                            CAMPOS, G. S.; BANDEIRA, A. C.; SARDI, S. I. Zika virus outbreak, Bahia,
-                                            Brazil. Emerging Infectious Disease, v. 21, n. 10, p. 1.885-1.886, 2015.
-                                            Disponível em: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4593454/. Acesso
-                                            em: 19 ago. 2023.
-                                            <br>
-                                            <br>
-                                            CARDOSO, C. W. et al. Outbreak of exanthematous illness associated with
-                                            zika, chikungunya, and dengue viruses, Salvador, Brazil. Emerging Infectious
-                                            Disease, v. 21, n. 12, p. 2.274-2.276, 2015. Disponível em: <http: dx.doi.org="" 10.3201="" eid2112.151167="">. Acesso em: 19 ago. 2023.
-                                                <br>
-                                                <br>
-                                                CENTERS FOR DISEASE CONTROL AND PREVENTION (CDC). About Zika-prevention
-                                                and transmission. 2019. Disponível em:
-                                                https://www.cdc.gov/zika/prevention/index.html. Acesso em: 19 ago. 2023.
-                                                <br>
-                                                <br>
-                                                CENTERS OF DISEASE CONTROL AND PREVENTION (CDC). Areas with risk of
-                                                Zika. Disponível em:
-                                                https://wwwnc.cdc.gov/travel/files/zika-areas-of-risk.pdf. Acesso em: 5
-                                                dez. 2023.
-                                                <br>
-                                                <br>
-                                                COUTINHO, M. et al. Early maternal Zika infection predicts severe
-                                                neonatal neurological damage: results from the prospective Natural
-                                                History of ZIKA Virus Infection in Gestation (NATZIG) cohort study.
-                                                British Journal of Obstetrics &amp; Gynaecology, 1 jun. 2020. DOI:
-                                                10.22541/au.159103608.85557750. Disponível em:
-                                                https://www.authorea.com/users/328445/articles/455724-early-maternal-zika-infection-predicts-severe-neonatal-neurological-damage-results-from-the-prospective-natural-history-of-zika-virus-infection-in-gestation-natzig-cohort-study.
-                                                Acesso em: 15 ago. 2023.
-                                                <br>
-                                                <br>
-                                                DIALLO, D. et al. Zika virus emergence in mosquitoes in southeastern
-                                                Senegal, 2011. PLoS One, v. 9, n. 10, e109442, 2014. Disponível em:
-                                                https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0109442&amp;type=printable
-                                                . Acesso em: 5 dez. 2023.
-                                                <br>
-                                                <br>
-                                                DICK, G. W.; KITCHEN, S. K.; HADDOW, A. J. Zika virus (I): isolations
-                                                and serological specificity. Royal Society of Tropical Medicine and
-                                                Hygiene, v. 46, n. 5, p. 506-524, 1952. Disponível em: <http: dx.doi.org="" 10.1016="" 0035-9203(52)90042-4="">. Acesso em: 19 ago. 2023.
-                                                    <br>
-                                                    <br>
-                                                    DUFFY, M. R. et al. Zika virus outbreak on Yap Island, Federated
-                                                    States of Micronesia. The New England Journal of Medicine, v. 360,
-                                                    n. 24, p. 2.536-2.543, 2009. Disponível em: <http: dx.doi.org="" 10.1056="" nejmoa0805715="">. Acesso em: 19 ago. 2023.
-                                                        <br>
-                                                        <br>
-                                                        DUPONT-ROUZEYROL, M. et al. Co-infection with zika and dengue
-                                                        viruses in 2 patients, New Caledonia, 2014. Emerging Infectious
-                                                        Diseases, v. 21, n. 2, p. 381-382, 2015. Disponível em: <http: dx.doi.org="" 10.3201="" eid2102.141553="">. Acesso em: 19 ago.
-                                                            2023.
-                                                            <br>
-                                                            <br>
-                                                            GÖERTZ, G. P. et al. Functional RNA during Zika virus
-                                                            infection. Virus Research, n. 254, p. 41-53, 2018. DOI:
-                                                            10.1016/j.virusres.2017.08.015. Epub 2017 Aug 31. PMID:
-                                                            28864425.
-                </http:></http:></http:></http:></https:></https:></https:></https:></scielo.br></https:></span>
+                <p>
+                    ARAUJO, L. M.; FERREIRA, M. L.; NASCIMENTO, O. J. Guillain-Barré syndrome associated with the
+                    Zika virus outbreak in Brazil. Arquivos de Neuropsiquiatria, v. 74, n. 3, p. 253-255, 2016. DOI:
+                    10.1590/0004-282X20160035. PMID: 27050856. Acesso em: 5 dez. 2023.
+                </p>
+                <p>
+                    BOLAN, R. S. et al. Síndrome de Guillain-Barré. Associação Médica do Rio Grande do Sul (AMRIGS),
+                    v. 51, n. 1, p. 58-61, jan.-mar. 2007.
+
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Febre de chikungunya: manejo clínico. Brasília: Ministério da
+                    Saúde, 2015a.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Protocolo de Atenção à Saúde e
+                    Resposta à Ocorrência de Microcefalia Relacionada à Infecção pelo Vírus Zika. Brasília:
+                    Ministério da Saúde, 2015b.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
+                    Protocolos da Atenção Básica: saúde das mulheres. Brasília: Ministério da Saúde, 2015c
+                    (preliminar).
+
+                </p>
+                <p>
+                    BRASIL. Guia para Diagnóstico Laboratorial em Saúde Pública: orientações para o sistema nacional
+                    de laboratórios de saúde pública. 2021. Disponível em:
+                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/saude-politicas-publicas/guia-para-diagnostico-laboratorial-em-saude-publica.pdf/view#:~:text=O%20presente%20guia%20tem%20como%20finalidade%20auxiliar%20e,dos%20princ%C3%ADpios%20do%20Sistema%20%C3%9Anico%20de%20Sa%C3%BAde%20%28SUS%29.
+                    Acesso em: 11 set. 2023.
+                </p>
             </div>
             <div class="col-12 col-lg-6">
-                <span>
-        
-                    GOVERO, J. et al. Zika virus infection damages the testes in
-                    mice. Nature, v. 540, n. 7.633, p. 438-442, 2016. Disponível
-                    em: https://pubmed.ncbi.nlm.nih.gov/27798603/. Acesso em: 5
-                    <br>
-                    <br>
-                    dez. 2023.
-                    GRARD, G. et al. Zika virus in Gabon (Central Africa) - 2007: a new threat from Aedes albopictus?
-                    PLoS Neglected Tropical Diseases, v. 8, n. 2, e2681, 2014. Disponível em: <http: dx.doi.org="" 10.1371="" journal.pntd.0002681="">. Acesso em: 19 ago. 2023.
-                        <br>
-                        <br>
-                        HAMEL, R. et al. Biology of Zika virus infection in human skin cells. Journal of Virology, v.
-                        89, n. 17, p. 8.880-8.896, 2015. Disponível em: <http: dx.doi.org="" 10.1128="" jvi.00354-15="">.
-                            Acesso em: 19 ago. 2023.
-                            <br>
-                            <br>
-                            HEUKELBACH J. et al. Zika virus outbreak in Brazil. The Journal of Infection in Developing
-                            Countries, v. 10, n. 2, p. 116-120, 2016.
-                            IOOS, S. et al. Current Zika virus epidemiology and recent epidemics. Médecine et Maladies
-                            Infectieuses, v. 44, n. 7, p. 302-307, 2014. Disponível em: <http: dx.doi.org="" 10.1016="" j.medmal.2014.04.008="">. Acesso em: 19 ago. 2023.
-                                <br>
-                                <br>
-                                KRAUER, F. et al. Zika virus infection as a cause of congenital brain abnormalities and
-                                Guillain-Barré syndrome: systematic review. PLoS Medicine, v. 14, n. 1, e1002203, 2017.
-                                <br>
-                                <br>
-                                LEDERMANN, J. P. et al. Aedes hensilli as a potential vector of Chikungunya and Zika
-                                viruses. PLOS Neglected Tropical Disease, v. 8, n. 10, e3188, 2014. Disponível em:
-                                https://pubmed.ncbi.nlm.nih.gov/25299181/. Acesso em: 5 dez. 2023.
-                                <br>
-                                <br>
-                                LI C. et al. Zika virus disrupts neural progenitor development and leads to microcephaly
-                                in mice. Cell Stem Cell, v. 19, n. 1, p. 120-126, 2016. DOI: 10.1016/j.stem.2016.04.017.
-                                Epub 2016 May 11. PMID: 27179424. Disponível em:
-                                https://pubmed.ncbi.nlm.nih.gov/27179424/. Acesso em: 5 dez. 2023.
-                                MACNAMARA, F. N. Zika virus: a report on three cases of human infection during an
-                                epidemic of jaundice in Nigeria. Royal Society of Tropical Medicine and Hygiene, v. 48,
-                                n. 2, p. 139-145, 1954. Disponível em:
-                                https://www.sciencedirect.com/science/article/abs/pii/0035920354900061. Acesso em: 5
-                                dez. 2023.
-                                MAGNUS, M. M. et al. Risk of Zika virus transmission by blood donations in Brazil.
-                                Hematology, Transfusion and Cell Therapy, v. 40, n. 3, p. 250-254, 2018. Disponível em:
-                                <https: www.ncbi.nlm.nih.gov="" pmc="" articles="" pmc6098187="">. Acesso em: 21 ago. 2023.
-                                <br>
-                                <br>
-                                MARCONDES, C. B.; XIMENES, M. F. F. M. Zika virus in Brazil and the danger of
-                                infestation by Aedes (Stegomyia) mosquitoes. Revista da Sociedade Brasileira de Medicina
-                                Tropical, v. 49, n. 1, 2015. Disponível em: <http: dx.doi.org="" 10.1590="" 0037-8682-0220-2015="">.
-                                    Acesso em: 29 ago. 2023.
-                                    MINER, J. J.; DIAMOND, M. S. Review Zika virus pathogenesis and tissue tropism. Cell
-                                    Host Microbe, v. 21, p. 134-142, 2017. Disponível em:
-                                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5328190/. Acesso em: 5 dez. 2023.
-                                    <br>
-                                    <br>
-                                    MUSSO, D.; NILLES, E. J.; CAO-LORMEAU, V. M. Rapid spread of emerging Zika virus in
-                                    the Pacific area. Clinical Microbiology and Infection, v. 20, n. 10, p. O595-O596,
-                                    2014. Disponível em: http://dx.doi.org/10.1111/1469-0691.12707. Acesso em: 15 ago.
-                                    2023.
-                                    <br>
-                                    <br>
-                                    MUSSO, D. et al. Potential for Zika virus transmission through blood transfusion
-                                    demonstrated during an outbreak in French Polynesia, November 2013 to February 2014.
-                                    Eurosurveillance, v. 19, n. 14, 20761, 2014. Disponível em:
-                                    http://dx.doi.org/10.2807/1560-7917.ES2014.19.14.20761. Acesso em: 15 ago. 2023.
-                                    MUSSO, D. et al. Potential sexual transmission of Zika virus. Emerging Infectious
-                                    Disease, v. 21, n. 2, p. 359-361, 2015. Disponível em:
-                                    http://dx.doi.org/10.3201/eid2102.141363. Acesso em: 15 ago. 2023.
-                                    <br>
-                                    <br>
-                                    NITHIYANANTHAM, S. F.; BADAWI, A. Maternal infection with Zika virus and prevalence
-                                    of congenital disorders in infants: systematic review and meta-analysis. Canadian
-                                    Journal of Public Health, v. 110, n. 5, p. 638-648, 2019.
-                                    <br>
-                                    <br>
-                                    NOGUEIRA, M. L. et al. Zika virus infection and solid organ transplantation: a new
-                                    challenge. American Journal of Transplant, v. 17, p. 791-795, 2017.
-                                    NOOR, R. et al. Zika virus: epidemiological study and its association with public
-                                    health risk. Journal of Infection and Public Health, v. 11, n. 5, p. 611-616, 2018.
-                                    PAN AMERICAN HEALTH ORGANIZATION (PAHO). Tool for diagnosis and care of patients
-                                    with suspected arboviral disease. Washington, DC: PAHO, 2017. Disponível em:
-                                    https://iris.paho.org/handle/10665.2/33895. Acesso em: 19 ago. 2023.
-                                    <br>
-                                    <br>
-                                    SANCHEZ CLEMENTE, N. et al. Zika virus infection in pregnancy and adverse fetal
-                                    outcomes in São Paulo State, Brazil: a prospective cohort study. Scientific Reports,
-                                    v. 10, n. 1, 12673, 2020. DOI: 10.1038/s41598-020-69235-0. Disponível em:
-                                    https://pubmed.ncbi.nlm.nih.gov/32728054/. Acesso em: 29 ago. 2023.
-                                    SINGH, R. et al. Zika vírus: emergence, evolution, pathology, diagnosis and control:
-                                    current global scenario and future perspectives - a comprehensive review. The
-                                    Veterinary Quarterly, v. 36, n. 3, p. 1-26, 2016. Disponível em:
-                                    http://www.tandfonline.com/doi/full/10.1080/01652176.2016.1188333. Acesso em: 28
-                                    dez. 2023.
-                                    SLAVOV, S. N. et al. Zika virus RNA detection in asymptomatic blood donors during an
-                                    outbreak in the northeast region of São Paulo State, Brazil, 2016. Transfusion, v.
-                                    57, n. 12, p. 2.897-2.901, 2017.
-                                    <br>
-                                    <br>
-                                    TANG, H. et al. Zika virus infects human cortical neural progenitors and attenuates
-                                    their growth. Cell Stem Cell, v. 18, n. 5, p. 587-590, 2016.
-                                    WORLD HEALTH ORGANIZATION (WHO). WHO guidelines for the prevention of sexual
-                                    transmission of Zika virus. Geneva: World Health Organization, 2020. Disponível em:
-                                    <https: apps.who.int="" iris="" bitstream="" handle="" 10665="" 332466="" 9789241550482-eng.pdf="">.
-                                        Acesso em: 21 ago. 2023.
-                                        <br>
-                                        <br>
-                                        WORLD HEALTH ORGANIZATION (WHO). Zika virus. 2022. Disponível em: <https: www.who.int="" news-room="" fact-sheets="" detail="" zika-virus?gclid="Cj0KCQjwuZGnBhD1ARIsACxbAVhT5D_hX0YAQ6Mj-thA5i_nwin6MG23LbzWg9FQfTcOVj334UwUPB8aAkA3EALw_wcB">
-                                            . Acesso em: 15 ago. 2023.
-                                            YIN, X.; ZHONG, X.; PAN, S. Vertical transmission of dengue infection: the
-                                            first putative case reported in China. Revista do Instituto de Medicina
-                                            Tropical de São Paulo, v. 58, p. 90, 2016. Disponível em:
-                                            https://www.scielo.br/j/rimtsp/a/HWWDhycYdNFpcrL5HvfG8QS/?lang=en. Acesso
-                                            em: 7 ago. 2023.
-        
-                </https:></https:></http:></https:></http:></http:></http:></span>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Articulação
+                    Estratégica de Vigilância em Saúde. Guia de Vigilância em Saúde. 5. ed. rev. e atual. Brasília:
+                    Ministério da Saúde, 2022. Disponível em:
+                    https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev_atual.pdf. Acesso em:
+                    25 set. 2023.
+                </p>
+                <p>
+                    DEVAKUMAR, D. et al. Infectious causes of microcephaly: epidemiology, pathogenesis, diagnosis,
+                    and management. Lancet Infectious Diseases, n. 18, e1-13, 2018.
+                </p>
+                <p>
+                    DEVAKUMAR, D. et al. Infectious causes of microcephaly: epidemiology, pathogenesis,
+                    diagnosis, and management. Lancet Infectious Diseases, n. 18, e1-13, 2018.
+                </p>
+                <p>
+                    LEWTHWAITE, P. et al. Chikungunya virus and central nervous system infections in children,
+                    India. Emerging Infectious Disease, v. 15, n. 2, p. 329-331, 2009. Disponível em: http://10.
+                </p>
+                <p>
+                    OEHLER, E. et al. Increase in cases of Guillain-Barré syndrome during a Chikungunya
+                    outbreak, French Polynesia, 2014 to 2015. Eurosurverillance, v. 20, n. 48, p. 1-2, 2015.
+                    Disponível em: http://10.2807/1560-7917.ES.2015.20.48.30079. Acesso em: 5 dez. 2023.
+                </p>
+                <p>
+                    SOCIEDADE BRASILEIRA DE INFECTOLOGIA (SBI). Guia de Manejo da Infecção pelo Vírus Zika.
+                    2016. Disponível em: http://sierj.org.br/artigos/Guia_Manejo_Zika_SBI.pdf. Acesso em: 8 set.
+                    2023.
+                </p>
             </div>
         </div>
-        <script src="./se_unasus_pack.js"></script>
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./js/botoes.js"></script>
-        <script src="./js/index.min.js"></script>
-        <script src="./js/animacao.min.js"></script>
-        <script src="./js/alternativas.js"></script>
-        <script src="./js/imagem-interativa.js"></script>
+    </div>
+    <script src="./se_unasus_pack.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/botoes.js"></script>
+    <script src="./js/index.min.js"></script>
+    <script src="./js/animacao.min.js"></script>
+    <script src="./js/alternativas.js"></script>
+    <script src="./js/imagem-interativa.js"></script>
 </body>
 
 </html>

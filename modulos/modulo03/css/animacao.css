@@ -124,12 +124,12 @@
 
 
 [data-animation="left-to-right"] {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
     transition: transform 1s ease-in-out;
 }
 
 [data-animation="right-to-left"] {
-    transform: translateX(200%);
+    transform: translateX(500%);
     transition: transform 1s ease-in-out;
 }
 
@@ -205,17 +205,15 @@
 }
 
 .card {
-    max-width: 46.25rem;
-    min-height:46.87rem; /* Definindo uma altura mínima para a card */
+    height: var(--card-size);
     perspective: 1000px;
     border: none;
     position: relative;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
-.card-back, .card-front {
-    color: var(--font-light);
+.card-back,.card-front {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -227,37 +225,36 @@
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1rem;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
-    overflow: auto; /* Adicionado para permitir rolagem se o conteúdo for muito longo */
+    box-shadow: 0 10px 10px rgba(0,0,0,.25)
 }
 
 .card-front {
-    background-size: cover;
-background-repeat: no-repeat;
     transform: rotateY(0);
+    overflow: hidden;
+    justify-content: center;
+    overflow: auto
 }
 
 .card-back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)
 }
 
 .card.not-flipped .card-front {
-    transform: rotateY(0);
+    transform: rotateY(0)
 }
 
 .card.not-flipped .card-back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)
 }
 
 .card.is-flipped .card-front {
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
 }
 
 .card.is-flipped .card-back {
-    transform: rotateY(0);
+    transform: rotateY(0)
 }
 
-.text-card {
-    font-weight: 100;
+.card .card-scroll {
+    overflow-y: scroll
 }
