@@ -205,15 +205,17 @@
 }
 
 .card {
-    height: var(--card-size);
+    max-width: 46.25rem;
+    min-height:46.87rem; /* Definindo uma altura mínima para a card */
     perspective: 1000px;
     border: none;
     position: relative;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
-.card-back,.card-front {
+.card-back, .card-front {
+    color: var(--font-light);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -225,36 +227,37 @@
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 10px 10px rgba(0,0,0,.25)
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
+    overflow: auto; /* Adicionado para permitir rolagem se o conteúdo for muito longo */
 }
 
 .card-front {
+    background-size: cover;
+background-repeat: no-repeat;
     transform: rotateY(0);
-    overflow: hidden;
-    justify-content: center;
-    overflow: auto
 }
 
 .card-back {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
 .card.not-flipped .card-front {
-    transform: rotateY(0)
+    transform: rotateY(0);
 }
 
 .card.not-flipped .card-back {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
 .card.is-flipped .card-front {
-    transform: rotateY(-180deg)
+    transform: rotateY(-180deg);
 }
 
 .card.is-flipped .card-back {
-    transform: rotateY(0)
+    transform: rotateY(0);
 }
 
-.card .card-scroll {
-    overflow-y: scroll
+.text-card {
+    font-weight: 100;
 }
