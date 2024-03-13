@@ -460,7 +460,7 @@ a.button {
 
 .button.btn-outline {
     background-color: transparent;
-    color: var(--primary-dark-hover);
+    color: var(--dark);
     font-weight: 500;
 }
 
@@ -623,7 +623,6 @@ kbd {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 41.25%;
 }
 
 .video-wrapper video {
@@ -1121,16 +1120,11 @@ kbd {
     background-size: cover;
 }
 
+
 .caixa-rec-comp {
     padding-left: 3rem;
 }
 
 .icon-s {
-    font-size: 4rem;
-    height: 99%;
-    width: 98%;
-}
-.icon-s-b {
-    font-size: 4rem;
-    width: 106%;
+    font-size: 3rem;
 }
