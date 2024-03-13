@@ -873,9 +873,6 @@ kbd {
         line-height: 2rem;
     }
 
-    .titulo-unidade {
-        font-size: 0.62rem;
-    }
     .sub-titulo-dois {
         font-size: 1rem;
         line-height: 1.62rem;
@@ -1128,4 +1125,3 @@ kbd {
     margin-top: 12rem; /* Adicione uma margem superior para empurrar a div para baixo */
 }
 /* MODULO 04 */
-

@@ -12,3 +12,41 @@
     border-bottom: 2px solid var(--primary-dark);
     color: var(--primary-dark);
 }
+
+.btn-ciclo-mpox {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    height: 5%;
+    width: 4%
+}
+
+.btn-ciclo-mpox.btn-ciclo-1 {
+    top: 8%;
+    left: 49%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-2 {
+    top: 35%;
+    left: 66%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-3 {
+    top: 54%;
+    left: 41%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-4 {
+    top: 38%;
+    left: 28%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-5 {
+    top: 68%;
+    left: 61%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-6 {
+    top: 13%;
+    left: 45%;
+}

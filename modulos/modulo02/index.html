@@ -48,59 +48,89 @@
                 </a>
             </div>
             <div class="sidebar-item">
-                <a href="#distribuicao" class="d-flex">
+                <a href="#quadro" class="d-flex">
                     <div class="sidebar-item-icon  text-center">
                         <b>02</b>
                     </div>
                     <div class="sidebar-item-title">
-                        Distribuição da doença no mundo e no país
-                    </div>
-                </a>
-            </div>
-            <div class="sidebar-item">
-                <a href="#transmissao" class="d-flex">
-                    <div class="sidebar-item-icon  text-center">
-                        <b>03</b>
-                    </div>
-                    <div class="sidebar-item-title">
-                        Modos de transmissão de infecção causada por ZIKV
+                        Quadro clínico e sintomas
                     </div>
                 </a>
             </div>
             <div class="sidebar-item">
                 <a href="#diagnostico" class="d-flex">
                     <div class="sidebar-item-icon  text-center">
-                        <b>04</b>
+                        <b>03</b>
                     </div>
                     <div class="sidebar-item-title">
-                        Diagnóstico e orientações
+                        Síntese de solicitação de diagnóstico de referência em ZIKV
                     </div>
                 </a>
             </div>
             <div class="sidebar-item">
-                <a href="#estrategias" class="d-flex">
+                <a href="#laboratorial" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>04</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Investigação laboratorial de ZIKV
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#amostras" class="d-flex">
                     <div class="sidebar-item-icon  text-center">
                         <b>05</b>
                     </div>
                     <div class="sidebar-item-title">
-                        Estratégias de educação em saúde e educação permanente
+                        Instruções para coleta de amostras biológicas
                     </div>
                 </a>
             </div>
             <div class="sidebar-item">
-                <a href="#vigilancia" class="d-flex">
+                <a href="#guillain" class="d-flex">
                     <div class="sidebar-item-icon  text-center">
                         <b>06</b>
                     </div>
                     <div class="sidebar-item-title">
-                        Vigilância em Saúde
+                        ZIKV e Síndrome de Guillain-Barré - SGB
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#microcefalia" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>07</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        ZIKV e microcefalia
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#rientacoes" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>08</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Orientações básicas
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#relato" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>09</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Relato de caso clínico
                     </div>
                 </a>
             </div>
             <div class="sidebar-item">
                 <a href="#exercicios" class="d-flex">
                     <div class="sidebar-item-icon  text-center">
-                        <b>07</b>
+                        <b>10</b>
                     </div>
                     <div class="sidebar-item-title">
                         Exercícios interativos
@@ -110,7 +140,7 @@
             <div class="sidebar-item">
                 <a href="#referencias" class="d-flex">
                     <div class="sidebar-item-icon  text-center">
-                        <b>08</b>
+                        <b>11</b>
                     </div>
                     <div class="sidebar-item-title">
                         Referências
@@ -143,8 +173,7 @@
                     <p>NA ATENÇÃO PRIMÁRIA À SAÚDE</p>
                 </span>
                 <span class="texto-capa mx-auto d-block ">
-                    <p>Aspectos epidemiológicos, promoção à saúde e prevenção de
-                        infecção por vírus zika</p>
+                    <p>Na atenção primária à saúde</p>
                 </span>
 
                 <div class="row">
@@ -327,7 +356,7 @@
         <p class="titulo-unidade font-dark text-center">UNIDADE</p>
         <p class="sub-titulo pb-5">QUADRO CLÍNICO E ABORDAGEM A PESSOAS INFECTADAS COM VÍRUS ZIKA - ZIKV</p>
 
-        <div id="distribuicao" class="">
+        <div id="quadro" class="">
             <p class="titulo font-dark text-start pt-3">Quadro clínico e sintomas</p>
             <div class="text-justify">
                 <p class="py-2">Muitas pessoas infectadas por ZIKV não desenvolvem sintomas (cerca de 80% dos casos).
@@ -351,12 +380,20 @@
                 <span class="text-center">
                     <p>Clique nos pontos vermelhos para interagir</p>
                 </span>
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto">
-                            <img class="img-fluid" src="./image/humann-body 1.svg" alt="Corpo humano">
-                        </div>
-                    </div>
+                <div class="container padding-container position-relative">
+                    <img src="./image/humann-body 1.svg" alt="Ciclo de transmissão" class="d-block mx-auto w-75" usemap="#ciclo_transmissao">
+                    <button type="button" class="btn-ciclo-mpox btn-ciclo-1" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de roedores a macacos;" data-bs-original-title="de roedores a macacos;">
+                    </button>
+                    <button type="button" class="btn-ciclo-mpox btn-ciclo-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de macacos a humanos;" data-bs-original-title="de macacos a humanos;">
+                    </button>
+                    <button type="button" class="btn-ciclo-mpox btn-ciclo-3" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de roedores a humanos" data-bs-original-title="de roedores a humanos">
+                    </button>
+                    <button type="button" class="btn-ciclo-mpox btn-ciclo-4" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;" data-bs-original-title="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;">
+                    </button>
+                    <button type="button" class="btn-ciclo-mpox btn-ciclo-5" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;" data-bs-original-title="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;">
+                    </button>
+                    <button type="button" class="btn-ciclo-mpox btn-ciclo-6" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;" data-bs-original-title="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;">
+                    </button>
                 </div>
             </div>
         </div>
@@ -366,17 +403,17 @@
                 <p>Clique nas abas para interagir</p>
             </span>
             <div class="d-flex" role="tablist">
-                <div class="w-100 d-flex align-items-bottom titulo-unidade" role="presentation">
+                <div class="w-100 d-flex align-items-bottom sub-titulo" role="presentation">
                     <button class="btn-panel w-100 active" data-bs-toggle="tab" data-bs-target="#estrategia_01"
                         type="button" role="tab" aria-selected="true">Diagnóstico diferencial</button>
                 </div>
-                <div class="w-100 d-flex align-items-bottom titulo-unidade" role="presentation">
+                <div class="w-100 d-flex align-items-bottom sub-titulo" role="presentation">
                     <button class="btn-panel w-100" data-bs-toggle="tab" data-bs-target="#estrategia_02" type="button"
                         role="tab" aria-selected="false" tabindex="-1">Diagnóstico laboratorial</button>
                 </div>
 
             </div>
-            <div class="tab-content p-lg-5 py-3 py-sm-5">
+            <div class="tab-content p-lg-5 py-3 py-sm-5 text-justify">
                 <div class="tab-pane fade active show" id="estrategia_01" role="tabpanel" tabindex="0">
                     Por se tratar de doença febril, o diagnóstico diferencial é amplo, devendo-se utilizar os dados
                     epidemiológicos de sua região para levantar as possibilidades de diagnósticos. Por isso, é
@@ -433,8 +470,7 @@
             </div>
         </div>
         <div>
-            <span>
-                <p>
+                <p class="text-justify">
                     Por se tratar de doença febril, o diagnóstico diferencial é amplo, devendo-se utilizar os dados
                     epidemiológicos de sua região para levantar as possibilidades de diagnósticos. Por isso, é
                     importante conhecer as doenças infecciosas que são prevalentes em seu território de atuação.
@@ -444,14 +480,13 @@
                     através de exames de sangue, que permitam diferenciar entre chikungunya e zika, já que as
                     manifestações clínicas produzidas são parecidas.
                 </p>
-            </span>
         </div>
         <img class="img-fluid col-12 d-flex col-12 d-flex justify-content-center img-centro w-75"
             src="image/guia_laboratorial_sistema_nacional-292 1.svg" alt="Guia laboratorial">
         <p class="text-center text-s"> <small><br><br>Imagem disponível em <a
                     href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_laboratorial_sistema_nacional.pdf">https://bvsms.saude.gov.br/bvs/publicacoes</a>
                 - <b>Página 291</b></small></p>
-        <p class="titulo font-dark text-start pt-3"><br>Síntese de solicitação de diagnóstico de referência em ZIKV</p>
+        <p id="diagnostico" class="titulo font-dark text-start pt-3"><br>Síntese de solicitação de diagnóstico de referência em ZIKV</p>
         <div class="text-justify">
             <p class="py-2">As amostras podem ser encaminhadas por integrantes da Rede de Laboratórios Central de Saúde
                 Pública
@@ -490,7 +525,7 @@
             <p class="titulo text-center">Consulte a rede laboratorial de referência para ZIKV que atende seu
                 território, para maiores esclarecimentos sobre as análises para ZIKV.
                 <br><br>
-            <p class="titulo text-justify">Investigação laboratorial de <i>ZIKV</i></p>
+            <p id="laboratorial" class="titulo text-justify">Investigação laboratorial de <i>ZIKV</i></p>
             </p>
             <p class="text-justify">
                 A rede laboratorial de referência para zika vírus, atualmente, é composta por seis laboratórios: IEC/PA
@@ -506,8 +541,7 @@
         </div>
     </div>
 
-    <div id="estrategias" class="bg-primary-light font-dark padding-x-container py-5 overflow-hidden">
-
+    <div id="amostras" class="bg-primary-light font-dark padding-x-container py-5 overflow-hidden text-justify">
         <p class="titulo text-">Instruções para coleta de amostras biológicas para exames de casos suspeitos de ZIKV
         </p>
         <p class="">Recém-nascidos até o <b>8º dia de vida</b>, com microcefalia ou alteração do sistema nervoso
@@ -528,7 +562,7 @@
         <div class="w-lg-75 mx-auto my-md-0 my-2 accordion pt-md-5" id="accordion_remedios">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button active" type="button" data-bs-toggle="collapse"
                         data-bs-target="#accordion_remedios_1" aria-expanded="false" aria-controls="accordion_remedios">
                         Transmissão vetorial, decorrente da picada do mosquito
                     </button>
@@ -615,9 +649,9 @@
         </div>
     </div>
 
-    <div id="vigilancia" class="padding-x-container text-justify bg-primary-dark text-light py-5 overflow-hidden">
+    <div id="guillain" class="padding-x-container text-justify bg-primary-dark text-light py-5 overflow-hidden">
         <div class="row">
-            <div class="col-12 col-lg-6 pe-lg-5">
+            <div class="col-12 col-lg-6 pe-lg-5 order-last">
                 <p>
                 <p class="titulo">ZIKV e Síndrome de Guillain-Barré - SG</p>
                 Durante a Emergência em Saúde Pública pelo vírus zika no Brasil, em 2015-2016, e anteriormente na
@@ -633,29 +667,20 @@
             </div>
 
             <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center">
-                <img class="img-fluid img-dor" src="image/sindrome-guillan-barre 1.svg" alt="sindrome guillan-barre">
+                <img class="img-fluid img-dor order-first" src="image/sindrome-guillan-barre 1.svg" alt="sindrome guillan-barre">
             </div>
         </div>
     </div>
 
-    <div id="vigilancia" class="padding-x-container text-justify bg-primary-light text-dark py-5 overflow-hidden">
+    <div id="microcefalia" class="padding-x-container text-justify bg-primary-light text-dark py-5 overflow-hidden">
         <div class="row">
             <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center">
                 <img class="img-fluid" src="image/microcefalia 1.svg" alt="sindrome guillan-barre">
             </div>
             <div class="col-12 col-lg-6">
                 <p>
-                <p class="titulo">ZIKV e Síndrome de Guillain-Barré - SG</p>
-                Durante a Emergência em Saúde Pública pelo vírus zika no Brasil, em 2015-2016, e anteriormente na
-                epidemia na Polinésia Francesa, em 2014, houve o aumento na incidência de pessoas com a Síndrome de
-                Guillain-Barré - SGB. Assim, formularam-se hipóteses sobre a relação direta entre essas duas condições e
-                estimulou-se melhor coleta de informações epidemiológicas, mas ainda não foi estabelecida uma relação
-                causal direta entre ZIKV e SGB.
-                <br><br>
-                É sabido que fatores podem contribuir para o aumento de casos de SGB. A infecção prévia por dengue ou
-                fatores genéticos presentes nas pessoas podem estar associados, uma vez que esta síndrome ocorre após
-                infecções, geralmente virais, tendo como agentes causais os vírus citomegalovírus, Epstein-Barr e HIV.
-                </p>
+                <p class="titulo">ZIKV e microcefalia</p>
+                <p>A Síndrome Congênita de Zika (SCZ) é caracterizada por um conjunto de sinais e sintomas; um dos principais sinais clínicos é a microcefalia. A microcefalia congênita é uma condição definida como um perímetro cefálico pequeno, presente no nascimento. Esse achado clínico, em sua maioria, pode estar associado ao comprometimento do Sistema Nervoso Central (SNC) e alterações cognitivas. No entanto, não indica necessariamente um desenvolvimento cerebral anormal, e alguns neonatos com microcefalia são normais.</p>
             </div>
         </div>
         <br>
@@ -677,7 +702,7 @@
             </p>
         </span>
         <br><br>
-        <div id="estrategias" class="">
+        <div id="rientacoes" class="">
             <p class="titulo text-">Orientações básicas sobre planejamento reprodutivo em localidades de ocorrência de
                 ZIKV
             </p>
@@ -701,7 +726,7 @@
                 pré-natal tão logo a pessoa suspeite de uma possível gravidez.
             </p>
             <br><br>
-            <div id="estrategias" class="text-center">
+            <div id="relato" class="text-center">
                 <p class="titulo text-">Relato de caso clínico</p>
                 <p>
                     Clique no cartão para interagir
@@ -710,12 +735,12 @@
             <!-- CARD -->
             <button class="card bg-primary-light w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
                 <div class="card-front d-flex flex-column py-3 bg-primary-dark w-100"
-                    style="background-image: url(image/front-view-old-man-sitting-bench\ 1.svg);">
+                    style="background-image: url(image/front-view-old-man-sitting-bench\ 1.svg); background-position: center;">
                     <div class="d-flex justify-content-end align-items-end flex-grow-1">
                         <i class="pe-4 bi bi-arrow-repeat titulo"></i>
                     </div>
                 </div>
-                <div class=" container-fluid card-back d-flex flex-column p-sm-0 p-sm-5 pt-5 bg-primary-dark w-100">
+                <div class=" container-fluid card-back d-flex flex-column p-sm-0 p-sm-5 py-5 bg-primary-dark w-100">
                     <p class="text-card text-start"><i>Francisco, 72 anos, morador de Cizânia, que é uma localidade com
                             alto índice
                             de casos de dengue, ZIKV e chikungunya, procurou o serviço de saúde próximo à sua
@@ -746,7 +771,7 @@
                 </div>
             </button>
             <P class="pt-5">Diante de um paciente com os sintomas apresentados em território com tríplice carga de
-                arboviroses, deve-se aplicar o fluxograma para classificação de dengue, disponibilizado pelo Ministério
+                arboviroses, deve-se aplicar o <a href="">fluxograma para classificação de dengue</a>, disponibilizado pelo Ministério
                 da Saúde.</P>
         </div>
 

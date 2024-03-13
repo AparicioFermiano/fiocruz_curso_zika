@@ -648,6 +648,11 @@ kbd {
     width: 100%;
 }
 
+.carousel-inner {
+    height: 90%;
+    overflow-y: scroll;
+}
+
 .carousel-indicators .active {
     background-color: var(--secondary);
 }
@@ -893,18 +898,6 @@ kbd {
        margin-bottom: 2rem !important;
     }
 }
-
-
-@media (max-width: 1440px) {
-
-    .carousel-indicators {
-        display: none;
-    }
-
-}
-
-
-
 
 @media (max-width: 991px) {
     .imagem-menor {
