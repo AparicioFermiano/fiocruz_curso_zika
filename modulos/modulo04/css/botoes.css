@@ -1,0 +1,14 @@
+.btn-panel {
+    border: none;
+    border-bottom: 1px solid var(--disabled);
+    background-color: transparent;
+    color: var(--disabled);
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-panel.active, .btn-panel:hover {
+    border-bottom: 2px solid var(--primary-dark);
+    color: var(--primary-dark);
+}

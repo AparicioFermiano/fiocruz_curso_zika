@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animacao.css">
+    <link rel="stylesheet" href="./css/botoes.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
+    <link rel="stylesheet" href="./css/perguntas.css">
+
+    <title>Vírus Zika: Uma Abordagem Geral para Profissionais de Saúde</title>
+</head>
+
+<body>
+    <div class="offcanvas"></div>
+    <!-- SIDEBAR -->
+    <button type="button" class="btn-sidebar" aria-expanded="false" aria-label="Botão - Menu lateral" onclick="nav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="sidebar sidebar-p">
+        <div>
+            <!-- SIDEBAR - HOME -->
+            <div class="sidebar-item">
+                <a href="#" class="d-flex">
+                    <div class="sidebar-item-icon">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Início
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#sobre" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>01</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Sobre
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#distribuicao" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>02</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Distribuição da doença no mundo e no país
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#transmissao" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>03</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Modos de transmissão de infecção causada por ZIKV
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#diagnostico" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>04</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Diagnóstico e orientações
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#estrategias" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>05</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Estratégias de educação em saúde e educação permanente
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#vigilancia" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>06</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Vigilância em Saúde
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#exercicios" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>07</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Exercícios interativos
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#referencias" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>08</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Referências
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- BOTOES nav -->
+        <div class="d-flex justify-content-around px-4">
+            <button type="button" class="btn-sidebar-icon" onclick="window.open('creditos.html','_self')">
+                <i class="bi bi-door-open-fill"></i>
+            </button>
+            <button type="button" class="btn-sidebar-icon" data-bs-toggle="modal" data-bs-target="#instrucao_navegacao">
+                <i class="bi bi-file-earmark-person-fill"></i>
+            </button>
+            </button>
+            <button type="button" class="btn-sidebar-icon" data-bs-toggle="modal" data-bs-target="#instrucao_navegacao">
+                <i class="bi bi-exclamation-circle"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="capa" class="borrado background-image container-fluid p-lg-5">
+        <div class="row pt-mobile-5">
+            <div class="container-cap capa-flui col-12 col-xl-4 col-lg-6">
+                <img src="./image/mosquito.png" alt="Mosquito" class="pb-lg-0 pb-sm-5 mosquito img-fluid">
+                <span class="mx-auto d-block sub-titulo-capa">ABORDAGEM CLÍNICA DE</span>
+                <span class="tituloZ mx-auto d-block">ZIKA</span>
+                <span class="mx-auto d-block sub-titulo-capa">
+                    <p>NA ATENÇÃO PRIMÁRIA À SAÚDE</p>
+                </span>
+                <span class="texto-capa mx-auto d-block ">
+                    <p>Aspectos epidemiológicos, promoção à saúde e prevenção de
+                        infecção por vírus zika</p>
+                </span>
+
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between mb-4">
+                        <button class="button btn-col-2 btn-outline"
+                            onclick="window.open('creditos.html', '_self')">Créditos</button>
+                        <button class="button btn-col-2 btn-outline" data-bs-toggle="modal"
+                            data-bs-target="#instrucao_navegacao">Instruções</button>
+                    </div>
+                    <div class="col-12">
+                        <button class="button btn-col-2 btn-secondary w-100"
+                            onclick="window.location.href='#sobre'">Iniciar</button>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="instrucao_navegacao" tabindex="-1" aria-hidden="true"
+                    data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content modal-conteudo">
+                            <div class="mx-auto border-0">
+                                <button type="button" class="btn-close bg-light rounded-circle p-3"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="pt-3 text-justify">
+                                <p class="py-2 bold text-center">Instruções para navegação
+                                </p>
+                                <p>Você pode ajustar a visualização do material de acordo com o nível de zoom do seu
+                                    navegador,
+                                    pressione:
+                                </p>
+                                <div class="text-center">
+                                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                                </div>
+                                <p>Você também pode acessar o ícone no canto superior direito do material para navegar
+                                    de forma
+                                    livre através do menu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="video_modal" tabindex="-1" aria-hidden="true" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content modal-conteudo">
+                            <div class="mx-auto border-0">
+                                <button type="button" class="btn-close bg-light rounded-circle p-3"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="pt-3 text-center">
+                                <!-- Vídeo do YouTube incorporado -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" width="800" height="450"
+                                        src="https://www.youtube.com/embed/tPBxXkIIjt0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="justify-content-center">
+                <div class="d-flex flex-column position-relative">
+                    <img src="./image/logos_capa.svg" alt="Logos"
+                        class="w-100 w-lg-50 logo mx-auto py-4 py-lg-0 pt-lg-5 logos">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobre" class="container-fluid pt-5 bg-primary-dark-hover box-scrool">
+        <p class="titulo-material text-light text-center">SOBRE O MATERIAL</p>
+        <div class="carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="circle" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="circle" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        class="circle" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-lg-6  text-light pt-md-0">
+                                    <div class="pb-md-0 d-flex justify-content-start">
+                                        <span class="titulo  my-auto mx-2">
+                                            <p>SOBRE O CURSO</p>
+                                        </span>
+                                    </div>
+                                    <p>Este curso foi elaborado justamente para ampliar os conhecimentos referentes à
+                                        zika, tendo caráter autoinstrucional, para que os profissionais de saúde podem
+                                        acessá-lo conforme sua disponibilidade. O módulo tem 45 horas e é dividido em
+                                        quatro unidades de ensino. No final, há uma avaliação objetiva e a certificação
+                                        on-line. Na biblioteca, estão disponibilizados livros e vídeos com conteúdo
+                                        referente ao tema; utilize-os caso sinta necessidade de aprofundar seus
+                                        conhecimentos.
+                                    </p>
+                                    <p>O curso é uma iniciativa das seguintes instituições: Universidade Aberta do
+                                        Sistema Único de Saúde (UNA-SUS), Fiocruz-Mato Grosso do Sul, Secretaria de
+                                        Gestão do Trabalho e da Educação na Saúde (SGTES), Secretaria de Atenção à Saúde
+                                        (SAS), Secretaria de Vigilância em Saúde e Ambiente (SVSA) e Universidade
+                                        Federal de Mato Grosso do Sul (UFMS).
+                                    </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-md-6 pt-md-0 text-light">
+                                    <div class="d-flex justify-content-start">
+                                        <span class="titulo-capa  my-auto mx-2">OBJETIVOS DO CURSO</span>
+                                    </div>
+                                    <ul class="py-md-0 py-lg-">
+                                        <li>Orientar os profissionais de saúde com as melhores evidências possíveis
+                                            sobre o
+                                            histórico e as características gerais da doença: vetor, formas de
+                                            transmissão,
+                                            características do vírus e período de incubação;
+                                        </li>
+                                        <li>Orientar quanto aos meios de proteção individual e coletiva;</li>
+                                        <li>Sensibilizar e instrumentalizar o profissional para identificação de quadro
+                                            clínico sugestivo de infecção pelo ZIKV (dengue e chikungunya) e realização
+                                            do
+                                            cuidado adequado de pacientes com quadro suspeito;</li>
+                                        <li>Compreender o agente etiológico e suas características gerais;</li>
+                                        <li>Apresentar critérios para indicação e interpretação de exames laboratoriais
+                                            e
+                                            por imagens referentes à doença;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-6 pt-md-0 text-light">
+                                    <ul class="py-lg- py-0">
+                                        <li>Qualificar o tratamento do paciente com ZIKV;</li>
+                                        <li>Promover a identificação dos quadros de ZIKV que demandam assistência
+                                            hospitalar;</li>
+                                        <li>Qualificar a abordagem às gestantes e lactantes com suspeita ou confirmação
+                                            de
+                                            infecção pelo ZIKV, bem como os bebês, independentemente de suspeita ou
+                                            diagnóstico da síndrome congênita relacionada ao ZIKV;</li>
+                                        <li>Promover conhecimentos sobre a realização adequada da notificação, bem como
+                                            atuar nas ações de vigilância em saúde;</li>
+                                        <li>stimular a atuação do profissional de saúde como agente sentinela no
+                                            diagnóstico oportuno de possíveis complicações;</li>
+                                        <li>Estimular o profissional de saúde a atuar como agente disseminador de
+                                            informação e de atuação na educação permanente de toda a equipe de trabalho.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+                                    <div class="d-flex justify-content-start">
+                                        <span class="titulo-capa  my-auto mx-2">CARGA HORÁRIA DE ESTUDO</span>
+                                    </div>
+                                    <p>45 horas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <p class="titulo-unidade font-dark text-center">UNIDADE</p>
+        <p class="sub-titulo pb-5 text-start">VIGILÂNCIA DA INFECÇÃO PELO VÍRUS ZIKA: NOTIFICAÇÃO E INVESTIGAÇÃO DE
+            CASOS E ÓBITOS SUSPEITOS/CONFIRMADOS</p>
+
+        <div id="vigilancia" class="padding-x-container text-justify font-dark py-5 overflow-hidden">
+            <div class="row">
+                <p class="titulo text-start">VIGILÂNCIA E NOTIFICAÇÃO</p>
+                <p>
+                    A doença desencadeada pelo vírus zika (ZIKV) é de notificação compulsória desde fevereiro de 2016,
+                    momento em que o Brasil passava pela Emergência em Saúde Pública por ZIKV.
+                <p>
+                    Quando a doença aguda é detectada em gestante, a notificação deverá ser realizada imediatamente,
+                    isto é, em até 24 horas, às secretarias municipais e estaduais de Saúde, e quando há óbito com
+                    suspeita de doença pelo ZIKV, a notificação é realizada em até 24 horas às secretarias municipais e
+                    estaduais de Saúde e ao Ministério da Saúde
+                </p>
+                <p>
+                    Já os casos suspeitos e/ou confirmados (não as gestantes) devem ser obrigatoriamente notificado ao
+                    Serviço de Vigilância Epidemiológica da Secretaria Municipal de Saúde de forma semanal</p>
+                <div class="row pt-0 pt-lg-5 justify-content-between">
+                    <div class="col-12 col-lg-4 d-flex flex-wrap align-content-start w-25">
+                        <img class="img-fluid" src="image/loupe 1 (1).svg" alt="Mulher gravida">
+                    </div>
+
+
+                    <div class="col-12 col-lg-8 text-justify">
+                        <p>
+                            A gestante com exantema deve ser acompanhada no pré-natal de baixo risco, entretanto se a
+                            estratificação do risco obstétrico indicar necessidade, esta será acompanhada no pré-natal
+                            de
+                            alto risco.
+                        </p>
+                        É fundamental informar à gestante e sua família que a confirmação de infecção pelo Zika Vírus
+                        (ZIKV)
+                        durante a gestação não é sinônimo de presença de microcefalia.
+                        <p>
+                            Entretanto, na constatação de comprometimento fetal, a conduta durante a gravidez não é
+                            alterada, todavia, é de suma importância o auxílio à família na programação do nascimento e
+                            na
+                            organização futura para o cuidado da criança. Nesse cenário, a equipe de saúde precisa estar
+                            sensibilizada para acolher a gestante e suas angústias, dúvidas e medos, por meio de uma
+                            escuta
+                            qualificada, sem julgamento nem preconceitos, que permita à mulher falar de sua intimidade
+                            com
+                            segurança.
+                        </p>
+                        <p>
+                            A Síndrome Congênita Associada à infecção pelo vírus zika (SCZ), compreende um conjunto de
+                            anomalias congênitas que podem incluir alterações visuais, auditivas e neuropsicomotoras que
+                            ocorrem em indivíduos (embriões ou fetos) expostos à infecção pelo ZIKV durante a gestação.
+                        </p>
+                        <div id="sobre"
+                            class="container-fluid p-5 bg-primary-dark-hover box-scrool carousel-person-dois rounded-4 col-12 col-lg-8">
+                            <div class="carousel-container">
+
+                                <div id="carouselExampleIndicatorsDois"
+                                    class="carousel slide carousel-cust pointer-event" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                            data-bs-slide-to="0" class="circle active" aria-label="Slide 1"
+                                            aria-current="true"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                            data-bs-slide-to="1" class="circle" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                            data-bs-slide-to="2" class="circle" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                            data-bs-slide-to="3" class="circle" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                            data-bs-slide-to="4" class="circle" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                            data-bs-slide-to="5" class="circle" aria-label="Slide 5"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="">
+                                                <div class="row justify-content-center text-justify">
+                                                    <div class="col-12 col-lg-6  text-light pt-md-0">
+                                                        <div class="pb-md-0 d-flex justify-content">
+                                                        </div>
+                                                        <p>Detectar casos e/ou surtos de doenças para a adoção de ações
+                                                            oportunas e efetivas;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="">
+                                                <div class="row justify-content-center text-justify">
+                                                    <div class="col-12 col-md-6 pt-md-0 text-light">
+                                                        <div class="d-flex justify-content-start">
+                                                        </div>
+                                                        <p>Aumentar a sensibilidade na confirmação de doenças e agravos
+                                                            de notificação;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-md-6 pt-md-0 text-light">
+                                                        <p>Melhorar a oportunidade em diagnóstico, tratamento,
+                                                            notificação e instituição de medidas epidemiológicas de
+                                                            controle em caso de doenças e agravos de notificação;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="">
+                                                <div class="row justify-content-center text-justify">
+                                                    <div class="col-12 col-md-6 text-light">
+                                                        <div class="d-flex justify-content-start">
+                                                        </div>
+                                                        <p>Ampliar a definição etiológica das doenças; detectar doenças
+                                                            emergentes e reemergentes;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="">
+                                                <div class="row justify-content-center text-justify">
+                                                    <div class="col-12 col-md-6 text-light">
+                                                        <div class="d-flex justify-content-start">
+                                                        </div>
+                                                        <p>Fortalecer o sistema de vigilância epidemiológica local; e
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="">
+                                                <div class="row justify-content-center text-justify">
+                                                    <div class="col-12 col-md-6 text-light">
+                                                        <div class="d-flex justify-content-start">
+                                                        </div>
+                                                        <p>Avaliar os impactos das medidas aplicadas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicatorsDois" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicatorsDois" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-x-container py-5">
+            <div class="row">
+                <div class="text-justify col-12 col-xl-8 pe-0 pe-xl-5">
+                    <p><b>Como notificar casos suspeitos/confirmados para ZIKV</b></p>
+                    <p>As notificações de casos suspeitos de infecção pelo ZIKV devem ser registradas na Ficha de
+                        Notificação Individual/Conclusão e inseridas no Sistema de Informação de Agravos de Notificação
+                        (Sinan Net)
+                    </p>
+                    <p>Já os óbitos suspeitos pela infecção do ZIKV devem ser comunicados para todas as esferas de
+                        gestão do Sistema Único de Saúde (SUS), no canal de comunicação mais rápido que esteja
+                        disponível, respeitando-se os fluxos pactuados entre as secretarias estaduais e municipais de
+                        saúde e o Ministério da Saúde.</p>
+                    <p class="py-3"><i>Casos suspeitos ou confirmados para síndrome congênita do zika (SCZ)</i></p>
+                    <p>A notificação dos casos suspeitos para SCZ (feto, recém-nascido, criança, óbito fetal, aborto ou
+                        natimorto) deve ser feita por meio do formulário eletrônico do Registro de Eventos em Saúde
+                        Pública (RESP) – Microcefalia. Destaca-se que a notificação da ocorrência de microcefalia no
+                        RESP é realizada por unidades de saúde, ambulatórios especializados, hospitais e maternidades,
+                        consultórios ou clínicas da rede pública e privada. Para notificar, não é necessário possuir
+                        cadastro no RESP; a notificação pode ser realizada pelo primeiro estabelecimento de saúde que
+                        identificar um caso suspeito, provável ou confirmado, podendo ocorrer no momento do pré-natal,
+                        nascimento ou puericultura. Sugere-se que o estabelecimento de saúde que fizer a notificação no
+                        RESP sinalize na Caderneta da Gestante ou da Criança que a notificação foi realizada.</p>
+                </div>
+                <div class="col-12 col-xl-4 d-flex justify-content-center">
+                    <img class="w-lg-100" src="image/layer1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bg-aux box-saiba-mais padding-x-container py-5 text-center">
+            <img src="./image/exclamation-circle.svg" class="active" alt="Exclamação"
+                data-animation="circle-saiba-mais">
+            <div class="text-center ">
+                <p class="pt-3">Fique atento</p>
+                <p class="titulo text-center">Atenção</p>
+                <div class="row d-flex justify-content-center">
+                    <p class="text-center text-lg-start col-lg-6 ">
+                        É importante salientar ainda que a notificação do caso suspeito de microcefalia no RESP não
+                        exclui a necessidade de se notificar no Sistema de Informação de
+                        Nascidos Vivos (Sinasc). Este sistema permite o registro de informações dos nascidos vivos (NV),
+                        gestantes e do parto.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-x-container row py-5 justify-content-between">
+            <div class="col-12 col-lg-4 d-flex flex-wrap align-content-start w-25">
+                <img class="img-fluid" src="image/tumb.svg" alt="Mulher gravida">
+            </div>
+
+
+            <div class="col-12 col-lg-8 text-justify">
+                <p>
+                    A gestante com exantema deve ser acompanhada no pré-natal de baixo risco, entretanto se a
+                    estratificação do risco obstétrico indicar necessidade, esta será acompanhada no pré-natal
+                    de
+                    alto risco.
+                </p>
+                É fundamental informar à gestante e sua família que a confirmação de infecção pelo Zika Vírus
+                (ZIKV)
+                durante a gestação não é sinônimo de presença de microcefalia.
+                <p>
+                    Entretanto, na constatação de comprometimento fetal, a conduta durante a gravidez não é
+                    alterada, todavia, é de suma importância o auxílio à família na programação do nascimento e
+                    na
+                    organização futura para o cuidado da criança. Nesse cenário, a equipe de saúde precisa estar
+                    sensibilizada para acolher a gestante e suas angústias, dúvidas e medos, por meio de uma
+                    escuta
+                    qualificada, sem julgamento nem preconceitos, que permita à mulher falar de sua intimidade
+                    com
+                    segurança.
+                </p>
+                <p>
+                    A Síndrome Congênita Associada à infecção pelo vírus zika (SCZ), compreende um conjunto de
+                    anomalias congênitas que podem incluir alterações visuais, auditivas e neuropsicomotoras que
+                    ocorrem em indivíduos (embriões ou fetos) expostos à infecção pelo ZIKV durante a gestação.
+                </p>
+                <div id="sobre"
+                    class="container-fluid p-5 bg-primary-dark-hover box-scrool carousel-person-dois rounded-4 col-12 col-lg-8">
+                    <div class="carousel-container">
+                        <div id="carouselExampleIndicatorsDois" class="carousel slide carousel-cust pointer-event"
+                            data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="0" class="circle active" aria-label="Slide 1"
+                                    aria-current="true"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="1" class="circle" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="2" class="circle" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="3" class="circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="4" class="circle" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="5" class="circle" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-lg-6  text-light pt-md-0">
+                                                <div class="pb-md-0 d-flex justify-content">
+                                                </div>
+                                                <p>Detectar casos e/ou surtos de doenças para a adoção de ações
+                                                    oportunas e efetivas;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 pt-md-0 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Aumentar a sensibilidade na confirmação de doenças e agravos
+                                                    de notificação;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 col-md-6 pt-md-0 text-light">
+                                                <p>Melhorar a oportunidade em diagnóstico, tratamento,
+                                                    notificação e instituição de medidas epidemiológicas de
+                                                    controle em caso de doenças e agravos de notificação;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Ampliar a definição etiológica das doenças; detectar doenças
+                                                    emergentes e reemergentes;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Fortalecer o sistema de vigilância epidemiológica local; e
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Avaliar os impactos das medidas aplicadas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicatorsDois" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicatorsDois" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-5">
+                <p class="text-center pb-0 pb-lg-3">Na investigação de casos de síndrome congênita relacionada ao ZIKV,
+                    estes podem ocorrer em:</p>
+                <div id="sobre"
+                    class="container-fluid p-5 bg-primary-dark-hover box-scrool carousel-person-dois rounded-4 col-12 col-lg-8">
+                    <div class="carousel-container">
+
+                        <div id="carouselExampleIndicatorsDois" class="carousel slide carousel-cust pointer-event"
+                            data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="0" class="circle active" aria-label="Slide 1"
+                                    aria-current="true"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="1" class="circle" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="2" class="circle" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="3" class="circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="4" class="circle" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicatorsDois"
+                                    data-bs-slide-to="5" class="circle" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-lg-6  text-light pt-md-0">
+                                                <div class="pb-md-0 d-flex justify-content">
+                                                </div>
+                                                <p>Detectar casos e/ou surtos de doenças para a adoção de ações
+                                                    oportunas e efetivas;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 pt-md-0 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Aumentar a sensibilidade na confirmação de doenças e agravos
+                                                    de notificação;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 col-md-6 pt-md-0 text-light">
+                                                <p>Melhorar a oportunidade em diagnóstico, tratamento,
+                                                    notificação e instituição de medidas epidemiológicas de
+                                                    controle em caso de doenças e agravos de notificação;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Ampliar a definição etiológica das doenças; detectar doenças
+                                                    emergentes e reemergentes;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Fortalecer o sistema de vigilância epidemiológica local; e
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="row justify-content-center text-justify">
+                                            <div class="col-12 col-md-6 text-light">
+                                                <div class="d-flex justify-content-start">
+                                                </div>
+                                                <p>Avaliar os impactos das medidas aplicadas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicatorsDois" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicatorsDois" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><b>Investigação de óbitos suspeitos/confirmados de ZIKV</b></p>
+            <p>Para os óbitos suspeitos por ZIKV, é necessária a investigação detalhada e oportuna, sendo necessária a
+                confirmação laboratorial. Em localidades que não tenham um instrumento específico de investigação para
+                óbitos suspeitos pelo ZIKV, é recomendada a utilização do protocolo de investigação de óbitos por
+                dengue.
+            </p>
+            <span>
+                <p>Para a confirmação de óbitos suspeitos por zika, são considerados os seguintes parâmetros, quando
+                    realizados os testes específicos para diagnóstico de ZIKV:
+                <ul>
+                    <li>RNA ou antígeno do ZIKV em amostras de soro, urina, saliva, tecidos ou sangue total; ou
+                    </li>
+                    <li>anticorpos IgM anti-ZIKV positivos e prova de neutralização por redução de placa (PRNT90) para
+                        ZIKV
+                        a títulos ≥ 20, aumentado em quatro vezes ou mais que para outros flavivírus, e exclusão de
+                        outros
+                        flavivírus; ou</li>
+                    <li>Detecção molecular do genoma viral a partir de tecido de autópsia, fresco ou em parafina.</li>
+                </ul>
+                </p>
+            </span>
+            <p>A investigação de óbitos suspeitos/confirmados de zika deve ser iniciada imediatamente após a
+                notificação. O município realiza a investigação, podendo ter apoio da regional de saúde.
+            </p>
+            <p>Também na investigação de óbitos suspeitos/confirmados por ZIKV é importante que o profissional de saúde
+                tenha em mãos algum instrumento de coleta de dados que possa orientar e qualificar a investigação.
+                Comumente, os instrumentos utilizados são padronizados pela VE municipal e estadual e requerem
+                informações como:</p>
+        </div>
+
+        <div class="padding-x-container row mx-0 justify-content-around">
+            <div class="col-12 col-xl-4 pe-0 pe-lg-5">
+                <button class="card bg-primary-light w-100 mx-auto not-flipped">
+                    <div class="card-front rounded-4 d-flex align-items-center text-start bg-primary-dark h-100 text-light">
+                        <p>
+                            <ul><li>dados do prontuário de atendimento;
+                            </li>
+                            <li>dados de internação;
+                            </li>
+                            <li>dados e manejo clínico;
+                            </li>
+                            <li>dados laboratoriais;
+                            </li>
+                            <li>dados de óbito;
+                            </li>
+                            <li>entrevista com familiares.</li></ul>
+                        </p>
+                    </div>
+                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                        <div class="my-auto text-justify">
+                            <ul>
+                                <li>Sorologias da mãe e do RN: IgM por captura e IgG quantitativo para dengue,
+                                    chikungunya, toxoplasmose, rubéola, citomegalovírus e herpes, Elisa para ZIKV (IgM e
+                                    IgG, quando disponível) e VDRL </li>
+                                <li>Teste molecular para ZIKV (RT-PCR) nos materiais biológicos</li>
+                                <li>Hemograma completo Aminotransferases hepáticas e bilirrubinas</li>
+                                <li>Ureia e creatinina</li>
+                            </ul>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="col-12 col-xl-8 pt-5 pt-lg-0 pe-0 ">
+                <button class="card bg-primary-light w-100 mx-auto is-flipped">
+                    <div class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
+                        <p class="titulo">Exames laboratoriais</p>
+                    </div>
+                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                        <div class="bg-aux box-saiba-mais padding-x-container py-5 text-center rounded-4">
+                            <img src="./image/exclamation-circle.svg" class="active" alt="Exclamação" data-animation="circle-saiba-mais">
+                            <div class="text-center ">
+                                <p class="pt-3">Fique atento</p>
+                                <p class="titulo text-center">Atenção</p>
+                                <div class="row d-flex justify-content-center">
+                                    <p class="text-center text-lg-start col-lg-6 ">
+                                        É importante salientar ainda que a notificação do caso suspeito de microcefalia no RESP não
+                                        exclui a necessidade de se notificar no Sistema de Informação de
+                                        Nascidos Vivos (Sinasc). Este sistema permite o registro de informações dos nascidos vivos (NV),
+                                        gestantes e do parto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="padding-x-container row py-5">
+            <div id="referencias" class="text-justify row">
+                <p class="titulo pb-3">Referências</p>
+                <div class="col-12 col-lg-6 pe-lg-5 ">
+                    <p>BRASIL. Ministério da Saúde. Protocolo de investigação de óbitos por arbovírus urbanos no Brasil:
+                        dengue, chikungunya e zika. 2016. Disponível em: https://central.to.gov.br/download/102525.
+                        Acesso em: 25 nov. 2023.
+                    </p>
+                    <p>BRASIL. Anexo V da portaria de consolidação GM/MS n. 4, de 28 de setembro de 2017, que dispõe
+                        sobre a lista nacional de notificação compulsória de doenças, agravos e
+                    </p>
+                    <p>eventos de saúde pública. 2017. Disponível em:
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0004_03_10_2017.html. Acesso em: 15 nov.
+                        2023.
+                    </p>
+                    <p>BRASIL. Ministério da Saúde. Sistema de Informação de Agravos de Notificação – SINAN: Zika Vírus.
+                        Atualizado em 01/2019. Disponível em: https://portalsinan.saude.gov.br/zika. Acesso em: 20 dez.
+                        2023.
+                    </p>
+                    <p>BRASIL. Ministério da Saúde. Notificação compulsória. Disponível em:
+                        https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria. 2022a. Acesso em: 10
+                        nov. 2023.
+                    </p>
+                    <p>BRASIL. Ministério da Saúde. Rede Nacional de Vigilância, Alerta e Resposta às Emergências em
+                        Saúde Pública no âmbito do SUS. Resultados das ações nos anos de 2020 e 2021. 2022b. Disponível
+                        em:
+                        https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/rede-nacional-de-vigilancia-alerta-e-resposta-as-emergencias-em-saude-publica-no-ambito-do-sistema-unico-de-saude-rede-vigiar-sus-resultados-das-acoes-nos-anos-2020-e-2021.pdf/view.
+                        Acesso em: 15 nov. 2023.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p>BRASIL. Ministério da Saúde. RESP-Microcefalia: manual de instruções. 2022c. Disponível em:
+                        http://plataforma.saude.gov.br/anomalias-congenitas/resp-microcefalia-manual-instrucoes.pdf.
+                        Acesso em: 10 nov. 2023.
+                    </p>
+                    <p>
+                        BRASIL. Ministério da Saúde. Calendário Básico de Vacinação da Criança. 2023b. Disponível em:
+                        http://pni.datasus.gov.br/calendario_vacina_Infantil.asp. Acesso em: 22 out. 2023.
+
+                    </p>
+                    <p>BRASIL. Guia de Vigilância em Saúde. 6. ed. Brasília: Ministério da Saúde, 2023. Disponível em:
+                        https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view.
+                        Acesso em: 28 dez. 2023.
+                    </p>
+                    <p>PARANÁ. Secretaria de Saúde. Nota técnica n. 16/2021 DAV/Sesa. Assunto: Orientações Integradas de
+                        Vigilância e Atenção à Saúde relacionadas à Notificação de Microcefalia no RESP. 2021.
+                        Disponível em:
+                        https://www.dengue.pr.gov.br/sites/dengue/arquivos_restritos/files/documento/2021-10/notatecnica_no_16-2021_resp_microcefalia.pdf.
+                        Acesso em: 10 nov. 2023.</p>
+                </div>
+            </div>
+        </div>
+        <script src="./se_unasus_pack.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/botoes.js"></script>
+        <script src="./js/index.min.js"></script>
+        <script src="./js/animacao.min.js"></script>
+        <script src="./js/alternativas.js"></script>
+        <script src="./js/imagem-interativa.js"></script>
+</body>
+
+</html>
