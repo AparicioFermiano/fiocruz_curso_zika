@@ -4,7 +4,7 @@
     --primary-light: #ffffff;
     --primary-light-hover: #6EC9EA;
     --primary-dark: #403C01;
-    --primary-dark-hover: #403C01;
+    --primary-dark-hover: #665f00;
     --secondary: #A60311;
     --secondary-hover: #8d0510;
     --secondary-dark: #B33433;
@@ -218,7 +218,7 @@ p {
 }
 
 #creditos {
-    margin-top: 3%;
+    margin-top: 4.5rem;
     margin-bottom: 5%;
 }
 
@@ -352,7 +352,6 @@ p {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 2rem;
-    margin: 0 auto;
 }
 
 .titulo-italico {
@@ -432,6 +431,28 @@ small {
     transition: 0.3s;
 }
 
+.button,
+.button.primary-dark-hover:hover {
+    background-color: var(--primary-dark-hover);
+    border-radius: 3rem;
+    padding: 0.3rem;
+    border: 2px solid var(--primary-dark-hover);
+    color: var(--font-light);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.button,
+.button.primary-dark-hover {
+    background-color: var(--primary-dark);
+    border-radius: 3rem;
+    padding: 0.3rem;
+    border: 2px solid var(--primary-dark);
+    color: var(--font-light);
+    text-align: center;
+    transition: 0.3s;
+}
+
 a.button {
     display: block;
     text-decoration: none;
@@ -452,7 +473,7 @@ a.button {
 
 .button.btn-outline {
     background-color: transparent;
-    color: var(--primary-dark-hover);
+    color: var(--primary-dark);
     font-weight: 500;
 }
 
@@ -741,7 +762,6 @@ kbd {
     }
 
     #creditos {
-        margin-top: 8%;
         margin-bottom: 15%;
     }
 }
@@ -813,7 +833,7 @@ kbd {
     }
 
     #creditos {
-        margin-top: 15%;
+     
         margin-bottom: 25%;
     }
 }
@@ -880,6 +900,8 @@ kbd {
         height: auto; /* Altura fixa */
     }
 }
+
+
 
 @media (max-width: 991px) {
     .box-saiba-mais-float {
