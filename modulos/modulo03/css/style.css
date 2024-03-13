@@ -552,6 +552,15 @@ kbd {
     width: auto;
 }
 
+.modal-video {
+    min-width: 50rem;
+    background-color: var(--aux);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex !important;
+}
+
 .div-modal-orientacao {
     width: 108rem; /* Definindo a largura em pixels */
     height: 35rem; /* Definindo a altura em pixels */
@@ -615,7 +624,7 @@ kbd {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 41.25%;
 }
 
 .video-wrapper video {
@@ -658,6 +667,11 @@ kbd {
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
     max-height: 600px; /* Define a altura máxima para cada item do carrossel */
     width: 100%;
+}
+
+.carousel-inner {
+    height: 90%;
+    overflow-y: auto;
 }
 
 .carousel-indicators .active {
@@ -875,9 +889,6 @@ kbd {
         line-height: 2rem;
     }
 
-    .titulo-unidade {
-        font-size: 0.62rem;
-    }
     .sub-titulo-dois {
         font-size: 1rem;
         line-height: 1.62rem;
@@ -890,6 +901,9 @@ kbd {
 @media (max-width: 1024px) {
     .caixa-rec-comp {
         padding-left: 0 !important;
+    }
+    .modal-video {
+        min-width: 100%;
     }
 }
 
@@ -911,18 +925,6 @@ kbd {
        margin-bottom: 2rem !important;
     }
 }
-
-
-@media (max-width: 1440px) {
-
-    .carousel-indicators {
-        display: none;
-    }
-
-}
-
-
-
 
 @media (max-width: 991px) {
     .imagem-menor {
@@ -1115,7 +1117,7 @@ kbd {
 }
 /* MODULO 03 */
 .card-cust {
-    min-height: 800px;
+    background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
 }
@@ -1124,6 +1126,12 @@ kbd {
     padding-left: 3rem;
 }
 
-#exercicios {
-    margin-top: 12rem; /* Adicione uma margem superior para empurrar a div para baixo */
+.icon-s {
+    font-size: 4rem;
+    height: 99%;
+    width: 98%;
+}
+.icon-s-b {
+    font-size: 4rem;
+    width: 106%;
 }

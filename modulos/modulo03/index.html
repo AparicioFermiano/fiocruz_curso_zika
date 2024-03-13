@@ -191,17 +191,17 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="video_modal" tabindex="-1" aria-hidden="true" data-bs-keyboard="false">
+                <div class="modal fade" id="video_modal" tabindex="-1" aria-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content modal-conteudo">
+                        <div class="modal-content modal-video">
                             <div class="mx-auto border-0">
                                 <button type="button" class="btn-close bg-light rounded-circle p-3"
                                     data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="pt-3 text-center">
                                 <!-- Vídeo do YouTube incorporado -->
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" width="800" height="450"
+                                <div class="ratio ratio-16x9">
+                                    <iframe class="embed-responsive-item "
                                         src="https://www.youtube.com/embed/tPBxXkIIjt0" allowfullscreen></iframe>
                                 </div>
                             </div>
@@ -574,11 +574,13 @@
             clínicos em crianças com microcefalia, cujas mães foram infectadas pelo ZIKV na gestação.</p>
         <p class="text-center">Clique no cartão para ver o vídeo.</p>
         <button class="card bg-primary-dark w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
-            <div class="row card-front padding-x-container pt-3 bg-primary-light w-100 h-100 rounded-4"
-                style="background-image: url(image/video_1.svg); background-repeat: no-repeat; background-size: cover;">
-
+            <img src="image/arrow-counterclockwise.svg" alt="">
+            <div class="row card-front rounded-4 img-fluid"
+                style="background-image: url(image/video_1.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <i class="text-light bi bi-arrow-repeat d-flex justify-content-end align-items-end icon-s"></i>
             </div>
-            <div class="card-back d-flex flex-column padding-x-container py-3 bg-primary-light w-100 rounded-4">
+            
+            <div class="card-back d-flex  flex-column padding-x-container bg-primary-light w-100 rounded-4">
                 <div class="my-auto ajuste-video">
                     <div class="video-wrapper">
                         <video controls="">
@@ -587,10 +589,9 @@
                         </video>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <small class="text-center my-auto">Clique nesta caixa para interagir!</small>
-                    <i class="bi bi-arrow-repeat titulo d-block my-auto ml-auto"></i>
-                </div>
+               
+                    <i class="bi bi-arrow-repeat d-flex justify-content-end align-items-end icon-s-b"></i>
+            
             </div>
         </button>
     </div>
@@ -614,47 +615,42 @@
             Abaixo são sumariadas as indicações de notificação de casos suspeitos e confirmados de SCZ.
         </p>
 
-
-        <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-lg-75 rounded-4">
-            <div class="text-center text-text-center text-lg-start d-flex flex-column flex-lg-row">
-                <div class="me-3">
-                    <img src="image/relatorio-medico 1.svg" alt="Relatorio medico" class="active img-fluid img-momento"
-                        data-animation="left-to-right">
+        <div class="text-center text-lg-start padding-x-container py-5">
+        <div class="container-fluid bg-font-light py-3 px-0">
+            <p class="titulo padding-x-container py-5">Momento da identificação do caso</p>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 text-center">
+                    <img src="image/relatorio-medico 1.svg" alt="Relatorio medico" class="active img-fluid img-momento" data-animation="left-to-right">
                 </div>
-                <div>
-                    <p class="titulo">Momento da identificação do caso</p>
-                    <p><b>RESP</b></p>
-                    <p><b>Pré-natal:</b> Feto, Aborto e Óbito fetal/natimorto</p>
-                    <p><b>Ao Nascer:</b> Recém-nascido com microcefalia (PC < -2 desvios-padrão para IG e sexo) e/ou
-                            outras anomalias congênitas</p>
-                            <p><b>Na puericultura:</b> Recém-nascido e Criança</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid bg-font-light text-center padding-x-container py-0  w-lg-75 rounded-4">
-            <div class="text-center text-lg-start d-flex flex-column flex-lg-row">
-                <div class="me-3">
-                    <img src="image/recem-nascido 1.svg" alt="Relatorio medico" class="active img-fluid img-momento"
-                        data-animation="left-to-right">
-                </div>
-                <div>
+                <div class="col-lg-9 px-5 px-xl-0 px-5 px-xl-0">
                     <p><b>Declaração de nascido vivo (Sinasc)</b></p>
                     <p><b>Pré-natal:</b> --</p>
-                    <p><b>Ao Nascer:</b> Recém-nascido com microcefalia grave (PC < - 3 desvios- padrão p/IG e sexo)
-                            e/ou outras anomalias congênitas</p>
-                            <p><b>Na puericultura:</b> --</p>
+                    <p><b>Ao Nascer:</b> Recém-nascido com microcefalia grave (PC < - 3 desvios- padrão p/IG e sexo) e/ou outras anomalias congênitas</p>
+                    <p><b>Na puericultura:</b> --</p>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-lg-75 rounded-4">
-            <div class="text-center text-lg-start d-flex flex-column flex-lg-row">
-                <div class="me-3">
-                    <img src="image/certidao-de-obito 1.svg" alt="Relatorio medico" class="active img-fluid img-momento"
-                        data-animation="left-to-right">
+        <div class="container-fluid bg-font-light py-3 px-0">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 text-center">
+                    <img src="image/recem-nascido 1.svg" alt="Relatorio medico" class="active img-fluid img-momento" data-animation="left-to-right">
                 </div>
-                <div>
+                <div class="col-lg-9 px-5 px-xl-0">
+                    <p><b>Declaração de nascido vivo (Sinasc)</b></p>
+                    <p><b>Pré-natal:</b> --</p>
+                    <p><b>Ao Nascer:</b> Recém-nascido com microcefalia grave (PC < - 3 desvios- padrão p/IG e sexo) e/ou outras anomalias congênitas</p>
+                    <p><b>Na puericultura:</b> --</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid bg-font-light py-3 px-0">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 text-center">
+                    <img src="image/certidao-de-obito 1.svg" alt="Relatorio medico" class="active img-fluid img-momento" data-animation="left-to-right">
+                </div>
+                <div class="col-lg-9 px-5 px-xl-0">
                     <p><b>Declaração de óbito (SIM)</b></p>
                     <p><b>Pré-natal:</b>--</p>
                     <p><b>Ao Nascer:</b> Natimorto, Óbito</p>
@@ -662,24 +658,21 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid bg-font-light text-center padding-x-container py-5 w-lg-75 rounded-4">
-            <div class="text-center text-lg-start d-flex flex-column flex-lg-row">
-                <div class="me-3">
-                    <img src="image/cadastro 1.svg" alt="Relatorio medico" class="active img-fluid img-momento"
-                        data-animation="left-to-right">
+        
+        <div class="container-fluid bg-font-light py-3 px-0">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 text-center pb-5">
+                    <img src="image/cadastro 1.svg" alt="Relatorio medico" class="active img-fluid img-momento" data-animation="left-to-right">
                 </div>
-                <div>
+                <div class="col-lg-9 px-5 px-xl-0 pb-5">
                     <p><b>Ficha de notificação no Sinan</b></p>
                     <p><b>Pré-natal:</b>Gestante com suspeita ou confirmação de infecção pelo ZIKV</p>
                     <p><b>Ao Nascer:</b>Gestante com suspeita ou confirmação de infecção pelo ZIKV</p>
-                    <p><b>Na puericultura:</b>Mãe com suspeita ou confirmação de infecção pelo ZIKV durante a gestação,
-                        · RN ou criança com suspeita ou confirmação de infecção pelo ZIKV</p>
+                    <p><b>Na puericultura:</b>Mãe com suspeita ou confirmação de infecção pelo ZIKV durante a gestação, · RN ou criança com suspeita ou confirmação de infecção pelo ZIKV</p>
                 </div>
             </div>
         </div>
     </div>
-
 
 
     <div class="padding-x-container pt-5">
@@ -695,15 +688,15 @@
             nascimento e a realização dos testes de triagem neonatal.</p>
     </div>
     <!-- DUAS CAIXAS -->
-    <div class="padding-x-container pt-5">
+    <div class="pt-5">
         <div class="row mx-0 justify-content-around">
-            <div class="col-12 col-xl-6 pe-0 pe-lg-5">
+            <div class="col-12 col-xl-6 pe-0 pe-xl-5 mb-5 mb-xl-0">
                 <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
                     <div
                         class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
                         <p class="titulo">Exames laboratoriais</p>
                     </div>
-                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                    <div class="card-back padding-x-container d-flex justify-content-center bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Sorologias da mãe e do RN: IgM por captura e IgG quantitativo para dengue,
@@ -723,7 +716,7 @@
                         class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
                         <p class="titulo">Exames laboratoriais</p>
                     </div>
-                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                    <div class="card-back padding-x-container d-flex justify-content-center bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Ultrassonografia transfontanelarli</li>
@@ -737,13 +730,13 @@
         </div>
         <!-- 6 CAIXAS -->
         <div class="row mx-0 justify-content-around">
-            <div class="col-12 col-xl-4 pt-5 pe-0 pe-lg-5">
+            <div class="col-12 col-xl-4 pt-5 pe-0 pe-xl-5">
                 <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
                     <div
                         class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
                         <p class="titulo">Triagem biológica</p>
                     </div>
-                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                    <div class="card-back d-flex justify-content-center flex-wrap padding-x-container bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Teste do pezinho</li>
@@ -752,13 +745,13 @@
                     </div>
                 </button>
             </div>
-            <div class="col-12 col-xl-4 pt-5 pe-0 pe-lg-5">
+            <div class="col-12 col-xl-4 pt-5 pe-0 pe-xl-5">
                 <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
                     <div
                         class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
                         <p class="titulo">Exames oculares</p>
                     </div>
-                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                    <div class="card-back d-flex padding-x-container justify-content-center bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Teste do olhinho</li>
@@ -774,7 +767,7 @@
                         class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
                         <p class="titulo">Triagem auditiva</p>
                     </div>
-                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                    <div class="card-back d-flex padding-x-container justify-content-center bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Potencial evocado auditivo do tronco encefálico (PEATE)</li>
@@ -784,13 +777,13 @@
                 </button>
             </div>
 
-            <div class="col-12 col-xl-4 pt-5 pe-0 pe-lg-5">
+            <div class="col-12 col-xl-4 pt-5 pe-0 pe-xl-5">
                 <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
                     <div
                         class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
                         <p class="titulo">Triagem do coração</p>
                     </div>
-                    <div class="card-back d-flex bg-aux text-dark rounded-4">
+                    <div class="card-back d-flex padding-x-container justify-content-center bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Teste do coraçãozinho (oximetria de pulso)</li>
@@ -800,13 +793,13 @@
                 </button>
             </div>
 
-            <div class="col-12 col-xl-4 pt-5 pe-0 pe-lg-5">
+            <div class="col-12 col-xl-4 pt-5 pe-0 pe-xl-5">
                 <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
                     <div
-                        class="card-front rounded-4 d-flex align-items-center text-center padding-x-container bg-primary-dark h-100 text-light">
-                        <p class="titulo">Avaliação da cavidade bucal</p>
+                        class="card-front rounded-4 d-flex align-items-center text-center bg-primary-dark h-100 text-light">
+                        <p class="titulo text-center">Avaliação da cavidade bucal</p>
                     </div>
-                    <div class="card-back d-flex padding-x-container bg-aux text-dark rounded-4">
+                    <div class="card-back d-flex padding-x-container justify-content-center bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Teste da linguinha (avaliação do frênulo lingual)</li>
@@ -822,7 +815,7 @@
                         class="card-front rounded-4 d-flex align-items-center text-center padding-x-container bg-primary-dark h-100 text-light">
                         <p class="titulo">Imunizações</p>
                     </div>
-                    <div class="card-back d-flex padding-x-container bg-aux text-dark rounded-4">
+                    <div class="card-back d-flex padding-x-container justify-content-center padding-x-container bg-aux text-dark rounded-4">
                         <div class="my-auto text-justify">
                             <ul>
                                 <li>Seguir o calendário vacinal, conforme o Programa Nacional de Imunização do
@@ -934,29 +927,17 @@
             </div>
             <div class="col-12 col-xl-6 caixa-rec-comp">
                 <p class="titulo">Recursos Complementares</p>
-                <button class="card bg-primary-light w-100 mx-auto not-flipped" data-bs-toggle="modal"
-                    data-bs-target="#video_modal">
+                <button class="card bg-primary-light w-100 mx-auto not-flipped" data-bs-toggle="modal" data-bs-target="#video_modal">
                     <div
                         class="card-front rounded-4 d-flex flex-column align-items-center text-center padding-x-container bg-primary-dark h-100 text-light">
                         <p>Como medir o perímetro cefálico CDC, 2016. Clique aqui e assista!</p>
                         <p>Planejamento Assistencial - Crianças expostas ao ZIKV na gestação e assintomáticas no
-                            nascimento. Disponível aqui!</p>
-                    </div>
-                    <div class="card-back d-flex padding-x-container bg-aux text-dark rounded-4">
-                        <div class="my-auto text-justify">
-                            <p>
-                                Como medir o perímetro cefálico CDC, 2016. Clique aqui e assista!
-                            </p>
-                            <p>Planejamento Assistencial - Crianças expostas ao ZIKV na gestação e assintomáticas no
-                                nascimento. Disponível aqui!</p>
-                        </div>
-                    </div>
                 </button>
             </div>
         </div>
     </div>
 
-    <div id="card" class="padding-x-container d-flex flex-column align-items-center">
+    <div id="card" class="padding-x-container py-5 d-flex flex-column align-items-center">
         <p class="titulo text-center">ESTUDO DE CASO 1 - FERNANDA</p>
         <div class="col-12  col-xl-6 py-5 pe-0 pe-lg-5">
             <button class="card bg-primary-light w-100 h- mx-auto not-flipped" onclick="virar_card(this)">
@@ -996,7 +977,7 @@
             </button>
         </div>
     </div>
-    <div id="exercicios" class="text-justify bg-primary-light padding-x-container font-dark">
+    <div id="exercicios" class="text-justify bg-primary-light font-dark">
         <div id="pergunta1" class="font-dark ">
             <div class="text-light py-5 overflow-hidden">
                 <div class="row">
@@ -1105,13 +1086,13 @@
         </div>
     </div>
 
-    <div id="card" class="padding-x-container py-5 d-flex flex-column align-items-center">
-        <p class="titulo text-center">ESTUDO DE CASO 1 - FERNANDA</p>
-        <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
-            <div class="card-front card-cust-bebe rounded-4 d-flex align-items-center text-center padding-x-container bg-primary-dark text-light"
+    <div id="card" class="padding-x-container d-flex flex-column align-items-center">
+        <p class="titulo text-center">ESTUDO DE CASO 2  RECÉM NASCIDO</p>
+        <button class="card bg-primary-light w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
+            <div class="card-front card-cust rounded-4 d-flex align-items-center padding-x-container bg-primary-dark text-light"
                 style="background-image: url(image/bebe.svg);">
             </div>
-            <div class="card-back card-cust-bebe padding-x-container bg-primary-dark text-light rounded-4">
+            <div class="card-back padding-x-container bg-primary-dark text-light rounded-4 text-justify">
 
                 <p>
                     Lactente masculino, atendido em 4/12/2015, com um mês e 10 dias de vida. Foi avaliado pelo pediatra
@@ -1154,7 +1135,7 @@
 
     </div>
 
-    <div id="exercicios" class="text-justify bg-primary-light padding-x-container font-dark py-5">
+    <div id="exercicios" class="text-justify bg-primary-light  font-dark py-5">
         <div id="pergunta4" class="font-dark ">
             <div class="text-light py-5 overflow-hidden">
                 <div class="row">
