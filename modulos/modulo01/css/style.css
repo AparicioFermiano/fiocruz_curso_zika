@@ -71,7 +71,7 @@ body {
     font-size: 20px;
     margin: 0% !important;
     color: var(--font-dark);
-    background-color: var(--font-light);
+    background-color: var(--primary-light);
 }
 
 /* CSS para desativar a barra de rolagem horizontal durante a animação shake */
@@ -214,7 +214,15 @@ p {
 }
 
 .carousel-person {
-    height: 600px;
+    height: 500px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
+    max-height: 500px; /* Define a altura máxima para cada item do carrossel */
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 90%;
+    overflow: auto;
 }
 
 #creditos {
@@ -276,6 +284,9 @@ p {
 
 .bg-secondary {
     background-color: var(--secondary) !important;
+}
+.bg-primary-light {
+    background-color: var(--primary-light) !important;
 }
 
 .bg-aux-hover {
@@ -936,17 +947,6 @@ kbd {
        margin-bottom: 2rem !important;
     }
 }
-
-
-@media (max-width: 1440px) {
-
-    .carousel-indicators {
-        display: none;
-    }
-
-}
-
-
 
 
 @media (max-width: 991px) {
