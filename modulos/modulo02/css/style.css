@@ -213,10 +213,6 @@ p {
     padding-top: 8rem; /* ou o valor que desejar */
 }
 
-.carousel-person {
-    height: 600px;
-}
-
 #creditos {
     margin-top: 4.5rem;
     margin-bottom: 5%;
@@ -642,9 +638,9 @@ kbd {
 }
 
 .carousel-person {
-    height: 600px;
+    height: 500px;
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
-    max-height: 600px; /* Define a altura máxima para cada item do carrossel */
+    max-height: 500px; /* Define a altura máxima para cada item do carrossel */
     width: 100%;
 }
 
@@ -756,7 +752,6 @@ kbd {
     }
 
     #creditos {
-        margin-top: 8%;
         margin-bottom: 15%;
     }
 }
@@ -828,14 +823,7 @@ kbd {
     }
 
     #creditos {
-        margin-top: 15%;
         margin-bottom: 25%;
-    }
-}
-
-@media (min-width: 767px) and (max-width: 992px) {
-    .carousel-person {
-        height: 750px;
     }
 }
 

@@ -213,10 +213,6 @@ p {
     padding-top: 8rem; /* ou o valor que desejar */
 }
 
-.carousel-person {
-    height: 600px;
-}
-
 #creditos {
     margin-top: 4.5rem;
     margin-bottom: 5%;
@@ -789,7 +785,6 @@ kbd {
     }
 
     #creditos {
-        margin-top: 8%;
         margin-bottom: 15%;
     }
 }
@@ -859,16 +854,10 @@ kbd {
     }
 
     #creditos {
-        margin-top: 15%;
         margin-bottom: 25%;
     }
 }
 
-@media (min-width: 767px) and (max-width: 992px) {
-    .carousel-person {
-        height: 750px;
-    }
-}
 
 @keyframes fadeInPopup {
     from { opacity: 0; }
