@@ -547,12 +547,11 @@ kbd {
     margin: 1.4rem !important;
 }
 
-.modal-content {
-    width: auto;
+.modal-lg-vid {
+    min-width: 50rem;
 }
 
 .modal-video {
-    min-width: 50rem;
     background-color: var(--aux);
     padding: 2rem;
     border-radius: 1rem;
@@ -917,15 +916,18 @@ kbd {
     .sub-titulo {
         width: 100%;
     }
+    .card-front, .card-back, .card {
+        max-width: 28rem;
+        max-height: 28rem;
+    }
 }
 
 @media (max-width: 1024px) {
     .caixa-rec-comp {
         padding-left: 0 !important;
     }
-    .modal-video {
-        min-width: 100%;
-    }
+    .modal-lg-vid {
+        min-width: auto;    
 }
 
 @media (max-width: 425px) {
@@ -1057,6 +1059,10 @@ kbd {
     .opcoes label span {
         margin-bottom: 0.5rem; /* Adiciona um espaçamento entre a bolinha e o texto */
     }
+    .card-front, .card-back, .card {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1118,6 +1124,7 @@ kbd {
     .cust {
         padding-left: 0 !important;
     }
+}
 }
 
 .cust {
