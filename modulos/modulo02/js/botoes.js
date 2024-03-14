@@ -36,3 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.background-image').classList.remove('remove-backdrop');
     });
 });
+
+
+
+
+  

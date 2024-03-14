@@ -650,7 +650,7 @@ kbd {
 
 .carousel-inner {
     height: 90%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .carousel-indicators .active {
@@ -688,6 +688,16 @@ kbd {
     border: none;
     padding: 1.2rem;
     margin-left: 1rem;
+}
+
+.img-centro {
+    margin: 0 auto;
+    height: auto;
+}
+
+.img-dor {
+    width: 600px;  
+    height: auto;
 }
 
 @media (min-width: 992px) {
@@ -1068,17 +1078,4 @@ kbd {
 
 .cust {
     padding-left: 3rem;
-}
-
-
-
-/* MODULO 2 */
-.img-centro {
-    margin: 0 auto;
-    height: auto;
-}
-
-.img-dor {
-    width: 600px;  
-    height: auto;
 }

@@ -709,6 +709,31 @@ kbd {
     margin-left: 1rem;
 }
 
+.img-centro {
+    margin: 0 auto;
+    height: auto;
+}
+
+.img-dor {
+    width: 600px;  
+    height: auto;
+}
+
+.card-cust {
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.caixa-rec-comp {
+    padding-left: 3rem;
+}
+
+.icon-s {
+    font-size: 3rem;
+}
+
 @media (min-width: 992px) {
     
     .w-lg-75 {
@@ -769,8 +794,6 @@ kbd {
         margin-bottom: 15%;
     }
 }
-
-
 
 @media (max-width: 767px) {
    
@@ -1099,32 +1122,4 @@ kbd {
 
 .cust {
     padding-left: 3rem;
-}
-
-
-
-/* MODULO 2 */
-.img-centro {
-    margin: 0 auto;
-    height: auto;
-}
-
-.img-dor {
-    width: 600px;  
-    height: auto;
-}
-/* MODULO 03 */
-.card-cust {
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-}
-
-
-.caixa-rec-comp {
-    padding-left: 3rem;
-}
-
-.icon-s {
-    font-size: 3rem;
 }

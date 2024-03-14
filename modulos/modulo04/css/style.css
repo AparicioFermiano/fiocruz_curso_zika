@@ -658,16 +658,26 @@ kbd {
     width: 100%;
 }
 
-.carousel-indicators .active {
-    background-color: var(--secondary);
+.carousel-person-dois {
+    height: 200px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
+    max-height: 200px; /* Define a altura máxima para cada item do carrossel */
+    width: 100%;
+}
+.carousel-inner-dois {
+    height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.mapa {
-    width: 70%; /* Alterando a largura para ocupar 100% da largura da coluna */
-    height: auto;
-    display: block; /* Garante que a imagem se comporte como um elemento de bloco */
-    margin: 0 auto; /* Define margem automática na parte superior e inferior e centraliza horizontalmente */
-    max-width: 100%; /* Certifica-se de que a imagem não ultrapasse o tamanho do seu contêiner */
+
+.carousel-inner {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.carousel-indicators .active {
+    background-color: var(--secondary);
 }
 
 .div-animada-conteudo {
@@ -685,14 +695,6 @@ kbd {
     height: 7.5rem; /* Altura fixa */
     max-width: 47.5rem; /* Limitando a largura máxima */
     margin: 0.5rem; /* Espaçamento entre as divs */
-}
-
-.btn-mapa {
-    width: 20px;
-    height: 20px;
-    border: none;
-    padding: 1.2rem;
-    margin-left: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -907,18 +909,6 @@ kbd {
     }
 }
 
-
-@media (max-width: 1440px) {
-
-    .carousel-indicators {
-        display: none;
-    }
-
-}
-
-
-
-
 @media (max-width: 991px) {
     .imagem-menor {
         max-width: 190px; /* Defina o tamanho máximo que você deseja para a imagem */
@@ -940,6 +930,13 @@ kbd {
     .background-image {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0) 100%), url(../image/fundo_capa.png);
     }
+    .img-layer {
+        width: 14.5rem;
+    }
+    .img-loupe {
+        min-width: 14.5rem;
+    }
+    
 }
 
 
@@ -1046,9 +1043,6 @@ kbd {
  }
  
 @media (max-width: 768px) {
-    .mapa {
-        width: 100%; /* Alterando a largura para ocupar 100% da largura da coluna */
-    }
     .img-lupa {
        width: 20%;
     }
@@ -1079,12 +1073,6 @@ kbd {
     .div-animada-conteudo {
         font-size: 13px;
         padding-top: 1rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .btn-mapa {
-        margin-left: 0.5rem;
     }
 }
 
