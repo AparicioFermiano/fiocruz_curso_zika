@@ -71,7 +71,7 @@ body {
     font-size: 20px;
     margin: 0% !important;
     color: var(--font-dark);
-    background-color: var(--font-light);
+    background-color: var(--primary-light);
 }
 
 /* CSS para desativar a barra de rolagem horizontal durante a animação shake */
@@ -218,7 +218,7 @@ p {
 }
 
 #creditos {
-    margin-top: 3%;
+    margin-top: 4.5rem;
     margin-bottom: 5%;
 }
 
@@ -290,6 +290,10 @@ p {
     background-color: var(--primary) !important;
 }
 
+.bg-primary-light {
+    background-color: var(--primary-light) !important;
+}
+
 .bg-primary-dark-hover {
     background-color: var(--primary-dark-hover) !important;
 }
@@ -300,10 +304,6 @@ p {
 
 .bg-primary-hover {
     background-color: var(--primary-hover) !important;
-}
-
-.bg-primary-light {
-    background-color: var(--primary-light) !important;
 }
 
 .bg-aux {
