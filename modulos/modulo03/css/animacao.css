@@ -269,6 +269,20 @@
     overflow-y: scroll
 }
 
+.card-back::-webkit-scrollbar {
+    width: 12px; /* Largura da scrollbar */
+}
+
+.card-back::-webkit-scrollbar-track {
+    background: transparent; /* Cor de fundo da track da scrollbar */
+}
+
+.card-back::-webkit-scrollbar-thumb {
+    background-color: var(--aux); /* Cor da thumb da scrollbar */
+    border-radius: 20px; /* Raio da borda da thumb da scrollbar */
+    border: 3px solid var(--primary-black); /* Borda da thumb da scrollbar */
+}
+
 .card-back-video,.card-front-video {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
