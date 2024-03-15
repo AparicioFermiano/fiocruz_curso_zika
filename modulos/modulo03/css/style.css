@@ -105,6 +105,23 @@ body::-webkit-scrollbar-thumb,
     border: 3px solid var(--font-light);
 }
 
+.scrool-item::-webkit-scrollbar,
+.box-scrool::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrool-item::-webkit-scrollbar-track,
+.box-scrool::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrool-item::-webkit-scrollbar-thumb,
+.box-scrool::-webkit-scrollbar-thumb {
+    background-color: var(--aux);
+    border-radius: 20px;
+    border: 4px solid var(--primary-dark);
+}
+
 p {
     font-size: 1em;
 }
@@ -719,7 +736,6 @@ kbd {
     background-repeat: no-repeat; 
     background-size: cover;
 }
-
 
 .caixa-rec-comp {
     padding-left: 3rem;

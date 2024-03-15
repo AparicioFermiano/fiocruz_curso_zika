@@ -87,7 +87,6 @@ body a {
     word-wrap: break-word;
 }
 
-
 body::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
     width: 12px;
@@ -105,12 +104,33 @@ body::-webkit-scrollbar-thumb,
     border: 3px solid var(--font-light);
 }
 
+.scrool-item::-webkit-scrollbar,
+.box-scrool::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrool-item::-webkit-scrollbar-track,
+.box-scrool::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrool-item::-webkit-scrollbar-thumb,
+.box-scrool::-webkit-scrollbar-thumb {
+    background-color: var(--aux);
+    border-radius: 20px;
+    border: 4px solid var(--primary-dark);
+}
+
 p {
     font-size: 1em;
 }
 
 .row {
     --bs-gutter-x: 0 !important;
+}
+
+.carousel-inner {
+    overflow-x: hidden !important;
 }
 
 .background-image {

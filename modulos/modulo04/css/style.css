@@ -356,7 +356,6 @@ p {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 4rem;
-    margin: 0 auto;
     line-height: 2.8rem;
 }
 
@@ -565,6 +564,23 @@ kbd {
 
 .scrool-item::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrool-item::-webkit-scrollbar-track,
+.box-scrool::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrool-item::-webkit-scrollbar-thumb,
+.box-scrool::-webkit-scrollbar-thumb {
+    background-color: var(--aux);
+    border-radius: 20px;
+    border: 3px solid var(--primary-dark);
+}
+
+.scrool-item::-webkit-scrollbar,
+.box-scrool::-webkit-scrollbar {
     width: 12px;
 }
 
@@ -577,17 +593,10 @@ kbd {
 .box-scrool::-webkit-scrollbar-thumb {
     background-color: var(--aux);
     border-radius: 20px;
-    border: 3px solid var(--aux);
-}
-
-
-/* Estilos para WebKit (Chrome, Safari, Opera) */
-.scrool-item::-webkit-scrollbar {
-    width: 6px;
+    border: 4px solid var(--primary-dark);
 }
 
 /* Accordion - Animacao */
-
 .accordion-button {
     color: var(--primary-dark) !important;
     font-weight: bold;
@@ -733,6 +742,11 @@ kbd {
     margin-right: auto;
     margin-left: auto;
 }
+
+.img-loupe {
+    padding-right: 4rem;
+}
+
 @media (min-width: 992px) {
     
     .w-lg-75 {
@@ -948,9 +962,9 @@ kbd {
     }
 }
 
-@media (max-width: 575px) {
-    .box-cust {
-       margin-bottom: 2rem !important;
+@media (max-width: 576px) {
+    .caixa {
+        width: 100%;
     }
 }
 
@@ -974,12 +988,17 @@ kbd {
     .background-image {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0) 100%), url(../image/fundo_capa.png);
     }
-    .img-layer {
+    .img-w {
         max-width: 13.4rem;
     }
     .box-atencao {
         padding-left: 0;
       }
+      .img-loupe {
+        padding: 0 !important;
+    }
+    
+    
 }
 
 @media (min-width: 992px) and (max-width: 1547px) {

@@ -229,7 +229,7 @@
         </div>
     </div>
 
-    <div id="sobre" class="container-fluid pt-5 bg-primary-dark-hover box-scrool">
+    <div id="sobre" class="container-fluid pt-5 bg-primary-dark-hover">
         <p class="titulo-material text-light text-center">SOBRE O MATERIAL</p>
         <div class="carousel-container">
             <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
@@ -243,7 +243,7 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                         class="circle" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner scrool-item">
                     <div class="carousel-item active">
                         <div class="">
                             <div class="row justify-content-center text-justify">
@@ -326,14 +326,10 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="">
-                            <div class="row justify-content-center text-justify">
-                                <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
-                                    <div class="d-flex justify-content-start">
-                                        <span class="titulo-capa  my-auto">CARGA HORÁRIA DE ESTUDO</span>
-                                    </div>
-                                    <p>45 horas</p>
-                                </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+                                <p class="titulo-capa text-lg-start text-center">CARGA HORÁRIA DE ESTUDO</p>
+                                <p class="text-lg-start text-center">45 horas</p>
                             </div>
                         </div>
                     </div>
@@ -381,24 +377,44 @@
                     <p>Clique nos pontos vermelhos para interagir</p>
                 </span>
                 <div class="container padding-x-container position-relative">
-                    <img src="./image/humann-body 1.svg" alt="Ciclo de transmissão" class="d-block mx-auto w-50" usemap="#ciclo_transmissao">
-                    <button type="button" id="btn-ciclo-1" class="btn-ciclo-mpox btn-ciclo-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-target="#tooltip1" aria-label="de roedores a macacos;" data-bs-original-title="<b>Febre / dores de cabeça</b>" data-bs-html="true">
+                    <img src="./image/humann-body 1.svg" alt="Ciclo de transmissão" class="d-block mx-auto w-50"
+                        usemap="#ciclo_transmissao">
+                    <button type="button" id="btn-ciclo-1" class="btn-ciclo-mpox btn-ciclo-1" data-bs-toggle="tooltip"
+                        data-bs-placement="top" data-bs-target="#tooltip1" aria-label="de roedores a macacos;"
+                        data-bs-original-title="<b>Febre / dores de cabeça</b>" data-bs-html="true">
                     </button>
-                    
-                    <button type="button" id="btn-ciclo-2" class="btn-ciclo-mpox btn-ciclo-2" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="de macacos a humanos;" data-bs-original-title="<strong>Dores nas juntas:</strong><br>Ocorre em cerca de 65% dos casos, com duração média de 6,8 dias" data-bs-html="true">
+
+                    <button type="button" id="btn-ciclo-2" class="btn-ciclo-mpox btn-ciclo-2" data-bs-toggle="tooltip"
+                        data-bs-placement="right" aria-label="de macacos a humanos;"
+                        data-bs-original-title="<strong>Dores nas juntas:</strong><br>Ocorre em cerca de 65% dos casos, com duração média de 6,8 dias"
+                        data-bs-html="true">
                     </button>
-                    
+
                     </button>
-                    <button type="button" id="btn-ciclo-3" class="btn-ciclo-mpox btn-ciclo-3" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="de roedores a humanos" data-bs-original-title="<b>Dores musculares:</b><br>Moderada" data-bs-html="true">
+                    <button type="button" id="btn-ciclo-3" class="btn-ciclo-mpox btn-ciclo-3" data-bs-toggle="tooltip"
+                        data-bs-placement="top" aria-label="de roedores a humanos"
+                        data-bs-original-title="<b>Dores musculares:</b><br>Moderada" data-bs-html="true">
                     </button>
-                   
-                    <button type="button" id="btn-ciclo-4" class="btn-ciclo-mpox btn-ciclo-4" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;" data-bs-original-title="<b>Irritação da pele:</b><br>Coceira de moderada a intensa" data-bs-html="true">
+
+                    <button type="button" id="btn-ciclo-4" class="btn-ciclo-mpox btn-ciclo-4" data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        aria-label="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;"
+                        data-bs-original-title="<b>Irritação da pele:</b><br>Coceira de moderada a intensa"
+                        data-bs-html="true">
                     </button>
-                   
-                    <button type="button" id="btn-ciclo-5" class="btn-ciclo-mpox btn-ciclo-5" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;" data-bs-original-title="<b>Dores nas juntas:</b><br>Ocorre em cerca de 65% dos casos, com duração média de 6,8 dias" data-bs-html="true">
+
+                    <button type="button" id="btn-ciclo-5" class="btn-ciclo-mpox btn-ciclo-5" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        aria-label="de pessoa infectada a pessoas saudáveis por meio de gotículas respiratórias;"
+                        data-bs-original-title="<b>Dores nas juntas:</b><br>Ocorre em cerca de 65% dos casos, com duração média de 6,8 dias"
+                        data-bs-html="true">
                     </button>
-                    <button type="button" id="btn-ciclo-6" class="btn-ciclo-mpox btn-ciclo-6" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;" data-bs-original-title="<b>Conjutivite / olhos vermelhos:</b><br>Frequante em 50 a 90% dos casos" data-bs-html="true">
-                   </button>
+                    <button type="button" id="btn-ciclo-6" class="btn-ciclo-mpox btn-ciclo-6" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        aria-label="de pessoa infectada a pessoas saudáveis pelo contato direto com a lesão;"
+                        data-bs-original-title="<b>Conjutivite / olhos vermelhos:</b><br>Frequante em 50 a 90% dos casos"
+                        data-bs-html="true">
+                    </button>
                 </div>
             </div>
         </div>
@@ -418,7 +434,7 @@
                 </div>
 
             </div>
-            <div class="tab-content p-lg-5 py-3 py-sm-5 text-justify">
+            <div class="tab-content p-5 p-lg-0 text-justify">
                 <div class="tab-pane fade active show" id="estrategia_01" role="tabpanel" tabindex="0">
                     Por se tratar de doença febril, o diagnóstico diferencial é amplo, devendo-se utilizar os dados
                     epidemiológicos de sua região para levantar as possibilidades de diagnósticos. Por isso, é
@@ -475,23 +491,15 @@
             </div>
         </div>
         <div>
-                <p class="text-justify">
-                    Por se tratar de doença febril, o diagnóstico diferencial é amplo, devendo-se utilizar os dados
-                    epidemiológicos de sua região para levantar as possibilidades de diagnósticos. Por isso, é
-                    importante conhecer as doenças infecciosas que são prevalentes em seu território de atuação.
-                    Sintomas como os de dengue, chikungunya, eritrema infeccioso (parvovírus B-19), Rubéola, Sarampo,
-                    Riquetsioses, Malária, Leptospirose, enteroviroses dentre outros, podem ser enquadrados como
-                    diagnósticos diferenciais de ZIKV. O diagnóstico de ZIKV é feito por meio de testes laboratoriais
-                    através de exames de sangue, que permitam diferenciar entre chikungunya e zika, já que as
-                    manifestações clínicas produzidas são parecidas.
-                </p>
+
         </div>
         <img class="img-fluid col-12 d-flex col-12 d-flex justify-content-center img-centro w-75"
             src="image/guia_laboratorial_sistema_nacional-292 1.svg" alt="Guia laboratorial">
         <p class="text-center text-s"> <small><br><br>Imagem disponível em <a
                     href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_laboratorial_sistema_nacional.pdf">https://bvsms.saude.gov.br/bvs/publicacoes</a>
                 - <b>Página 291</b></small></p>
-        <p id="diagnostico" class="titulo font-dark text-start pt-3"><br>Síntese de solicitação de diagnóstico de referência em ZIKV</p>
+        <p id="diagnostico" class="titulo font-dark text-start pt-3"><br>Síntese de solicitação de diagnóstico de
+            referência em ZIKV</p>
         <div class="text-justify">
             <p class="py-2">As amostras podem ser encaminhadas por integrantes da Rede de Laboratórios Central de Saúde
                 Pública
@@ -670,7 +678,8 @@
                 infecções, geralmente virais, tendo como agentes causais os vírus citomegalovírus, Epstein-Barr e HIV.
                 </p>
             </div>
-            <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center  order-first order-xl-last pe-lg-5 pe-xl-0">
+            <div
+                class="col-12 col-lg-6 d-flex flex-wrap justify-content-center  order-first order-xl-last pe-lg-5 pe-xl-0">
                 <img class="img-fluid img-dor" src="image/sindrome-guillan-barre 1.svg" alt="sindrome guillan-barre">
             </div>
         </div>
@@ -684,13 +693,18 @@
             <div class="col-12 col-lg-6">
                 <p>
                 <p class="titulo">ZIKV e microcefalia</p>
-                <p>A Síndrome Congênita de Zika (SCZ) é caracterizada por um conjunto de sinais e sintomas; um dos principais sinais clínicos é a microcefalia. A microcefalia congênita é uma condição definida como um perímetro cefálico pequeno, presente no nascimento. Esse achado clínico, em sua maioria, pode estar associado ao comprometimento do Sistema Nervoso Central (SNC) e alterações cognitivas. No entanto, não indica necessariamente um desenvolvimento cerebral anormal, e alguns neonatos com microcefalia são normais.</p>
+                <p>A Síndrome Congênita de Zika (SCZ) é caracterizada por um conjunto de sinais e sintomas; um dos
+                    principais sinais clínicos é a microcefalia. A microcefalia congênita é uma condição definida como
+                    um perímetro cefálico pequeno, presente no nascimento. Esse achado clínico, em sua maioria, pode
+                    estar associado ao comprometimento do Sistema Nervoso Central (SNC) e alterações cognitivas. No
+                    entanto, não indica necessariamente um desenvolvimento cerebral anormal, e alguns neonatos com
+                    microcefalia são normais.</p>
             </div>
         </div>
         <br>
         <span>
             <p class="text-start"><small>Disponível em: <a
-                    href="https://www.scmp.com/news/asia/southeast-asia/article/2024006/thailand-confirms-2-cases-zika-linked-microcephaly-first">https://www.scmp.com/news/asia/southeast-asia/article/2024006/thailand-confirms-2-cases-zika-linked-microcephaly-first</a>
+                        href="https://www.scmp.com/news/asia/southeast-asia/article/2024006/thailand-confirms-2-cases-zika-linked-microcephaly-first">https://www.scmp.com/news/asia/southeast-asia/article/2024006/thailand-confirms-2-cases-zika-linked-microcephaly-first</a>
             </p></small>
         </span>
         <br><br>
@@ -733,7 +747,7 @@
             <div id="relato" class="text-center">
                 <p class="titulo text-">Relato de caso clínico</p>
                 <p>
-                    Clique no cartão para interagir
+                    Clique no cartão para interagir!
                 </p>
             </div>
             <!-- CARD -->
@@ -741,10 +755,11 @@
                 <div class="card-front d-flex flex-column py-3 bg-primary-dark w-100"
                     style="background-image: url(image/front-view-old-man-sitting-bench\ 1.svg); background-position: center;">
                     <div class="d-flex justify-content-end align-items-end flex-grow-1">
-                        <i class="pe-4 bi bi-arrow-repeat titulo"></i>
+                        <i class="bi bi-arrow-repeat icon-s pe-3"></i>
                     </div>
                 </div>
-                <div class=" container-fluid card-back d-flex flex-column p-sm-0 p-sm-5 py-5 bg-primary-dark w-100">
+                <div
+                    class="container-fluid card-back d-flex flex-column padding-x-container py-5 bg-primary-dark w-100 scrool-item">
                     <p class="text-card text-start"><i>Francisco, 72 anos, morador de Cizânia, que é uma localidade com
                             alto índice
                             de casos de dengue, ZIKV e chikungunya, procurou o serviço de saúde próximo à sua
@@ -775,7 +790,8 @@
                 </div>
             </button>
             <P class="pt-5">Diante de um paciente com os sintomas apresentados em território com tríplice carga de
-                arboviroses, deve-se aplicar o <a href="">fluxograma para classificação de dengue</a>, disponibilizado pelo Ministério
+                arboviroses, deve-se aplicar o <a href="">fluxograma para classificação de dengue</a>, disponibilizado
+                pelo Ministério
                 da Saúde.</P>
         </div>
 
@@ -893,7 +909,7 @@
                 </div>
             </div>
             <div id="pergunta4" class="font-dark">
-                <div class="text-light pb-5 overflow-hidden">
+                <div class="text-light overflow-hidden">
                     <div class="row">
                         <div class="col-12">
                             <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
@@ -946,7 +962,7 @@
             </div>
         </div>
         <div class="row">
-            <div id="referencias" class="text-justify row container-fluid py-5">
+            <div id="referencias" class="text-justify row container-fluid pt-5">
                 <p class="titulo pb-3">Referências</p>
                 <div class="col-12 col-lg-6 pe-lg-5 ">
                     <p>
@@ -1014,13 +1030,13 @@
                 </div>
             </div>
         </div>
-            <script src="./se_unasus_pack.js"></script>
-            <script src="./js/bootstrap.bundle.min.js"></script>
-            <script src="./js/botoes.js"></script>
-            <script src="./js/index.min.js"></script>
-            <script src="./js/animacao.min.js"></script>
-            <script src="./js/alternativas.js"></script>
-            <script src="./js/imagem-interativa.js"></script>
+        <script src="./se_unasus_pack.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/botoes.js"></script>
+        <script src="./js/index.min.js"></script>
+        <script src="./js/animacao.min.js"></script>
+        <script src="./js/alternativas.js"></script>
+        <script src="./js/imagem-interativa.js"></script>
 </body>
 
 </html>
