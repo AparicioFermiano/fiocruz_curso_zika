@@ -106,6 +106,8 @@ body::-webkit-scrollbar-thumb,
     border: 3px solid var(--font-light);
 }
 
+
+
 p {
     font-size: 1em;
 }
@@ -654,9 +656,10 @@ kbd {
     width: 100%;
 }
 
-.carousel-person-dois {
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
-    max-height: 16rem;
+.carousel-inner-dois {
+    min-height: 10rem;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .carousel-inner-dois {
     min-height: 16rem;
@@ -1148,4 +1151,5 @@ kbd {
 /* MODULO 04 */
 .icon-s {
     font-size: 3rem;
+    padding: 1rem;
 }
