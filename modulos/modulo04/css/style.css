@@ -221,7 +221,7 @@ p {
 
 
 #creditos {
-    margin-top: 4.5rem;
+    margin-top: 3rem;
     margin-bottom: 5%;
 }
 
@@ -430,8 +430,11 @@ small {
     font-size: 0.8rem;
 }
 
-/* BOTOES */
+.pe-clicar {
+    padding-left: 13%;
+}
 
+/* BOTOES */
 .button,
 .button.btn-outline:hover {
     background-color: var(--primary-dark);
@@ -997,8 +1000,9 @@ kbd {
       .img-loupe {
         padding: 0 !important;
     }
-    
-    
+    .pe-clicar {
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1547px) {
