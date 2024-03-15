@@ -563,17 +563,17 @@ kbd {
     overflow: auto; /* Adiciona barras de rolagem quando necessário */
 }
 
-.div-modal-orientacao::-webkit-scrollbar,
+.scrool-item::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
     width: 12px;
 }
 
-.div-modal-orientacao::-webkit-scrollbar-track,
+.scrool-item::-webkit-scrollbar-track,
 .box-scrool::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.div-modal-orientacao::-webkit-scrollbar-thumb,
+.scrool-item::-webkit-scrollbar-thumb,
 .box-scrool::-webkit-scrollbar-thumb {
     background-color: var(--aux);
     border-radius: 20px;
@@ -582,8 +582,8 @@ kbd {
 
 
 /* Estilos para WebKit (Chrome, Safari, Opera) */
-.div-modal-orientacao::-webkit-scrollbar {
-    width: 12px;
+.scrool-item::-webkit-scrollbar {
+    width: 6px;
 }
 
 /* Accordion - Animacao */
@@ -662,6 +662,10 @@ kbd {
     min-height: 10rem;
     overflow-y: auto;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: var(--primary-light);    
 }
 .carousel-inner-dois {
     min-height: 20.5rem;
@@ -691,6 +695,15 @@ kbd {
     height: 5%;
 }
 
+.caixa {
+    width: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2rem;
+    justify-content: center;
+    background-color: var(--primary-dark);
+}
 
 .div-animada-conteudo {
     padding: 1rem;
@@ -715,6 +728,11 @@ kbd {
     border-color: var(--aux);
 }
 
+.img-w {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 @media (min-width: 992px) {
     
     .w-lg-75 {
@@ -915,14 +933,8 @@ kbd {
     .div-animada {
         height: auto; /* Altura fixa */
     }
-    .img-loupe {
+    .img-w {
         max-width: 5rem !important;
-    }
-    .img-layer {
-        width: 5rem !important;
-    }
-    .img-tumb {
-        width: 5rem !important;
     }
     .card-atenção {
         max-width: 20rem;
@@ -1073,17 +1085,8 @@ kbd {
  }
  
 @media (max-width: 768px) {
-    .img-loupe {
+    .img-w {
         max-width: 10rem;
-    }
-    .img-layer {
-        width: 10rem;
-    }
-    .img-tumb {
-        width: 10rem;
-    }
-    .larg {
-        max-width: 29rem;
     }
 }
 
