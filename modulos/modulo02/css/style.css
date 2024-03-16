@@ -224,6 +224,9 @@ p {
     color: var(--primary) !important;
 }
 
+.font-light {
+    color: var(--font-light) !important;
+}
 
 .primary-light {
     color: var(--primary-light) !important;
@@ -272,6 +275,10 @@ p {
 
 .bg-secondary {
     background-color: var(--secondary) !important;
+}
+
+.bg-font-light {
+    background-color: var(--font-light) !important;
 }
 
 .bg-aux-hover {
