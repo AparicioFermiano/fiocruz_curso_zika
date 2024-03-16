@@ -430,10 +430,6 @@ small {
     font-size: 0.8rem;
 }
 
-.pe-clicar {
-    padding-left: 13%;
-}
-
 /* BOTOES */
 .button,
 .button.btn-outline:hover {
@@ -706,7 +702,7 @@ kbd {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 2rem;
+    border-radius: 1rem;
     justify-content: center;
     background-color: var(--primary-dark);
 }

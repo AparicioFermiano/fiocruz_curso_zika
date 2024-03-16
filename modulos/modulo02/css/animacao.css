@@ -173,9 +173,6 @@
 }
 
 /* Animacao para piscar bolinha no destaque */
-
-
-
 [data-animation="circle-saiba-mais"].active {
     animation-name: circle_saiba_mais;
     animation-duration: 4s;

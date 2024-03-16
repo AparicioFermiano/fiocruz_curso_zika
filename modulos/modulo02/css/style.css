@@ -272,7 +272,6 @@ p {
 }
 
 /* BACKGROUND */
-
 .bg-secondary {
     background-color: var(--secondary) !important;
 }

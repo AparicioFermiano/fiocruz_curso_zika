@@ -124,7 +124,7 @@ body::-webkit-scrollbar-thumb,
 .box-scrool::-webkit-scrollbar-thumb {
     background-color: var(--aux);
     border-radius: 20px;
-    border: 4px solid var(--primary-dark);
+    border: 4px solid var(--primary-dark) !important;
 }
 
 p {
@@ -345,6 +345,9 @@ p {
     font-size: 15rem;
 }
 
+.w-cust {
+    max-height: 50%;
+}
 
 .sub-titulo-italico
 {
