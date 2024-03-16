@@ -740,6 +740,9 @@ kbd {
     padding-right: 4rem;
 }
 
+.h-cust {
+    max-height: 30rem;
+}
 @media (min-width: 992px) {
     
     .w-lg-75 {

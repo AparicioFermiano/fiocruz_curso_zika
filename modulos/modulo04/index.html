@@ -156,24 +156,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="modal fade" id="video_modal" tabindex="-1" aria-hidden="true" data-bs-keyboard="false">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content modal-conteudo">
-                            <div class="mx-auto border-0">
-                                <button type="button" class="btn-close bg-light rounded-circle p-3"
-                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="pt-3 text-center">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" width="800" height="450"
-                                        src="https://www.youtube.com/embed/tPBxXkIIjt0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
             <div class="justify-content-center">
                 <div class="d-flex flex-column position-relative">
@@ -667,7 +649,7 @@
     <div id="complementar" class="col-12 col-xl-6 d-block mx-auto padding-x-container pt-5">
         <p class="text-center text-xl-start text-muted pe-clicar">Clique no cartão para interagir!</p>
 
-        <button class="card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
+        <button class="pb-5 card bg-primary-light w-100 mx-auto not-flipped" onclick="virar_card(this)">
             <div class="container-fluid caixa row card-front-video d-flex align-content-center p-0 p-lg-5 h-75"
                 style="background-image: url(image/video_1.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
                 <p class="titulo text-light text-center">Material complementar</p>
@@ -677,11 +659,11 @@
                     class="text-light bi bi-arrow-repeat d-flex justify-content-end align-items-end icon-s text-light fixed-bottom"></i>
             </div>
 
-            <div class="card-back-video d-flex flex-column padding-x-container bg-primary-dark w-100 h-75">
+            <div class="card-back-video d-flex flex-column padding-x-container bg-primary-dark rounded-4 h-cust">
                 <div class="my-auto ajuste-video">
                     <div class="video-wrapper">
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/InPdkDqaHqw" allowfullscreen></iframe>
+                            <video controls src="./videos/webnario_360p.mp4"></video>
                         </div>
                     </div>
                 </div>
