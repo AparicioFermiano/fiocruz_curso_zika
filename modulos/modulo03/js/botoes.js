@@ -36,3 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.background-image').classList.remove('remove-backdrop');
     });
 });
+
+function caixa(caixa) {
+    var elemento = document.getElementById(caixa);
+    elemento.classList.remove("d-none");
+    elemento.classList.add("d-block");
+}

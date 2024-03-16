@@ -131,5 +131,8 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-
+function mostrarDiv() {
+  var div = document.getElementById('natimorto');
+  div.style.display = 'block';
+}
 

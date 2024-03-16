@@ -671,19 +671,14 @@ kbd {
 }
 
 .carousel-inner-dois {
-    min-height: 10rem;
+    min-height: 12.5rem;
+    max-height: 12.5rem;
     overflow-y: auto;
     overflow-x: hidden;
+    color: var(--primary-light);
     display: flex;
     align-items: center;
     text-align: start;
-    color: var(--primary-light);    
-}
-.carousel-inner-dois {
-    min-height: 20.5rem;
-    max-height: 20.5rem;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .carousel-control-prev-icon {
@@ -708,7 +703,6 @@ kbd {
 }
 
 .caixa {
-    width: 75%;
     display: block;
     margin-right: auto;
     margin-left: auto;

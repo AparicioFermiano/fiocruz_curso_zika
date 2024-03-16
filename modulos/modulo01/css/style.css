@@ -156,7 +156,9 @@ p {
     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
-
+.body-cust {
+    min-height: 14rem;
+}
 
 #capa {
     overflow: hidden;
@@ -305,6 +307,11 @@ p {
 .bg-secondary {
     background-color: var(--secondary) !important;
 }
+
+.bg-font-light {
+    background-color: var(--font-light) !important;
+}
+
 .bg-primary-light {
     background-color: var(--primary-light) !important;
 }
