@@ -1,0 +1,35 @@
+{
+    "Package": "CI0",
+    "Institution": {
+        "AroucaID": 4511621,
+        "Acronym": "FIOCRUZ-MS",
+        "Name": "Fiocruz Mato Grosso do Sul"
+    },
+    "Resource": {
+        "Name": "ABORDAGEM CLÍNICA DE ZIKA NA ATENÇÃO PRIMÁRIA À SAÚDE: Vigilância da infecção pelo vírus zika: notificação e investigação de casos e óbitos suspeitos/confirmados",
+        "Language": "pt-BR",
+        "CreationDate": "2024-18-03",
+        "Review": 1,
+        "ReviewDate": "2024-18-03",
+        "CoverImage": "capa.png"
+    },
+    "SupportedDevices": [
+        "Desktop",
+        "Smartphone",
+        "Tablet"
+    ],
+    "Video": {
+        "Formats": [
+            "mp4"
+        ],
+        "Resolutions": [
+            "720p"
+        ]
+    },
+    "Persistence": {
+        "InstitutionAcronym": "FIOCRUZ_MS",
+        "Version": "0001",
+        "Name": "MAGPS"
+    },
+    "Dictionary": []
+}
