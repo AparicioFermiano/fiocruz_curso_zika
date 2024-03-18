@@ -49,7 +49,7 @@ function verificarResposta(perguntaId, respostaCorreta, explicacaoCorreta, exibi
             textoExplicacao = "A resposta correta é a alternativa " + respostaCorreta.toUpperCase() + ".<br><br>";
             opcaoSelecionada.parentNode.classList.add('resposta-correta');
         } else {
-            textoExplicacao = "Resposta: Verdadeira.<br><br>";
+            textoExplicacao = "Resposta certa: Incorreta.<br><br>";
             opcaoSelecionada.parentNode.classList.add('resposta-incorreta');
         }
         textoExplicacao += "<span class='bold'>Comentário:</span> " + "<br><br>" + explicacaoCorreta;

@@ -87,6 +87,14 @@ body a {
     word-wrap: break-word;
 }
 
+.non-links {
+    word-wrap: break-word;
+}
+
+#referencias {
+    word-wrap: break-word !important;
+}
+
 body::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
     width: 12px;

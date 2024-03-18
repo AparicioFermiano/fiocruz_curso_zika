@@ -960,6 +960,9 @@ kbd {
     .box-cust {
        margin-bottom: 2rem !important;
     }
+    .icon-s {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 991px) {
