@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/animacao.css">
     <link rel="stylesheet" href="./css/animacao.min.css">
     <link rel="stylesheet" href="./css/botoes.min.css">
     <link rel="stylesheet" href="./css/sidenav.min.css">
@@ -395,6 +394,9 @@
                     gestão do Sistema Único de Saúde (SUS), no canal de comunicação mais rápido que esteja
                     disponível, respeitando-se os fluxos pactuados entre as secretarias estaduais e municipais de
                     saúde e o Ministério da Saúde.</p>
+                    <p>Todo paciente que preencha os critérios de definição de caso (suspeito ou confirmado) e que morreu como consequência da doença é definido como caso de óbito por Zika.    
+                    </p>
+                    <p>Além dos óbitos suspeitos por Zika, os óbitos suspeitos pelas arboviroses dengue e chikungunya também são de notificação compulsória imediata para todas as esferas de gestão do SUS, a ser realizada em até 24 horas a partir do seu conhecimento, pelo meio de comunicação mais rápido disponível. Posteriormente, os dados devem ser inseridos no Sistema de Informação de Agravos de Notificação (Sinan), bem como os de Zika.</p>
                 <p class="py-3"><i>Casos suspeitos ou confirmados para síndrome congênita do zika (SCZ)</i></p>
                 <p>A notificação dos casos suspeitos para SCZ (feto, recém-nascido, criança, óbito fetal, aborto ou
                     natimorto) deve ser feita por meio do formulário eletrônico do Registro de Eventos em Saúde
@@ -591,8 +593,9 @@
                     </li>
                     <li>anticorpos IgM anti-ZIKV positivos e prova de neutralização por redução de placa (PRNT90) para ZIKV a títulos ≥ 20, aumentado em quatro vezes ou mais que para outros flavivírus, e exclusão de outros flavivírus; ou</li>
                     <li>Detecção molecular do genoma viral a partir de tecido de autópsia, fresco ou em parafina.</li></ul>
-                    <p>A investigação de óbitos suspeitos/confirmados de zika deve ser iniciada imediatamente após a notificação. O município realiza a investigação, podendo ter apoio da regional de saúde.
+                    <p>A investigação de óbitos suspeitos/confirmados de zika deve ser iniciada imediatamente após a notificação. O município realiza a investigação, podendo ter apoio da regional de saúde. Recomenda-se que os óbitos suspeitos ou confirmados por esses arbovírus sejam investigados exaustivamente pela vigilância epidemiológica e revisados por um comitê de investigação de óbitos interdisciplinar, afim de se classificar adequadamente o caso e identificar possíveis causas para seu desfecho. O Ministério da Saúde orienta que comitês sejam formados e implantados em todas as UFs e, a depender dos cenários epidemiológicos e capacidade operacional, nos municípios. Ressalta-se que a estruturação dos comitês de investigação de óbitos por arboviroses pode ser ampliada a partir do comitê de óbitos por dengue. Para confirmação dos óbitos, faz-se necessária a realização de exames laboratoriais específicos, e deve-se estimular a realização de necropsias, considerando-se que esses achados podem auxiliar no encerramento dos casos.
                     </p>
+                    <p>Considerando-se a impossibilidade de coleta de material, o encerramento por critério clínico-epidemiológico poderá ser realizado, desde que seja validado por um comitê de investigação de óbito por arbovírus.</p>
                     <p>Também na investigação de óbitos suspeitos/confirmados por ZIKV é importante que o profissional de saúde tenha em mãos algum instrumento de coleta de dados que possa orientar e qualificar a investigação. Comumente, os instrumentos utilizados são padronizados pela VE municipal e estadual e requerem informações como:</p>
                 </div>
             </div>
@@ -669,7 +672,7 @@
                                     <p class="text-center text-lg-start col-lg-6 ">
                                         É importante lembrar que os óbitos associados ao ZIKV devem ser revisados por
                                         uma
-                                        comissão interdisciplinar e terão estudos laboratoriais específicos.
+                                        comissão interdisciplinar de investigação de óbitos.
                                     </p>
                                 </div>
                             </div>
@@ -769,10 +772,12 @@
         </div>
         <script src="./se_unasus_pack.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./js/botoes.js"></script>
         <script src="./js/botoes.min.js"></script>
         <script src="./js/index.min.js"></script>
         <script src="./js/animacao.min.js"></script>
+        <script>
+            let lib = unasus.pack;
+            lib.initialize();
+        </script>
 </body>
-
 </html>
